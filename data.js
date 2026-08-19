@@ -90,6 +90,12 @@ const CLIENTES = [
       {t:'Foto de perfil', v:'Retrato formal. Serve, mas distante.', s:'ok'},
       {t:'Destaques', v:'Não organizam a jornada do paciente.', s:'ajustar'}
     ],
+    feedCores:{
+      aut:{bg:'#52151C', fg:'#D1C1B2', l:'Autoridade'},
+      duv:{bg:'#D1C1B2', fg:'#52151C', l:'Dúvidas'},
+      bas:{bg:'#191915', fg:'#D1C1B2', l:'Bastidores'},
+      pes:{bg:'#8E6A5E', fg:'#F6EFE8', l:'Pessoal'}
+    },
     feedIdeal:[
       {t:'Depoimento', c:'aut'},{t:'Dúvida', c:'duv'},{t:'Bastidor', c:'bas'},
       {t:'Dúvida', c:'duv'},{t:'Pessoal', c:'pes'},{t:'Depoimento', c:'aut'},
@@ -291,12 +297,163 @@ const CLIENTES = [
 
 /* ============================ IDÉE ============================ */
 {
-  slug:'idee', ativo:false, emAnalise:true,
-  nome:'Idée · Dr. Roberto', categoria:'Ortodontia e alinhadores',
-  resumo:'Previsibilidade e discrição. Campanha "Nunca é tarde".',
+  slug:'idee', ativo:true,
+  nome:'Idée · Dr. Roberto Simonetti', categoria:'Ortodontia e alinhadores',
+  resumo:'Ortodontia adulta com alinhadores. O professor que planeja o sorriso. Campanha "Nunca é tarde".',
   arroba:'@robertosimonetti_ortodontia', perfil:'https://www.instagram.com/robertosimonetti_ortodontia/',
-  seguidores:'3.096',
-  nota:'Próximo da fila. Diagnóstico e benchmark iniciais feitos, a refazer no novo modelo.'
+  seguidores:'3.095',
+
+  /* ---------- 01 DIAGNÓSTICO ---------- */
+  nicho:'Ortodontia adulta com alinhadores. Aparelho fixo e mentoria para dentistas como frentes de apoio.',
+  posicionamento:'O ortodontista que planeja o sorriso como um arquiteto planeja uma obra: estrutura, tempo e previsibilidade. Para o adulto que acha que já passou da idade ou que alinhador é coisa de adolescente. Trinta anos de clínica, mestrado e um método que mostra o resultado antes de começar.',
+  publico:[
+    {t:'Quem', d:'Adulto de 30 a 55 anos, maioria mulher, classe média e alta.'},
+    {t:'Momento', d:'Se incomoda com os dentes há anos e vai adiando a decisão.'},
+    {t:'Dor', d:'Dente torto ou recidiva de tratamento antigo. Vergonha de sorrir em foto.'},
+    {t:'Trava', d:'Acha que passou da idade, que aparelho é de adolescente, que não tem tempo.'}
+  ],
+  signos:[
+    {t:'Luz', d:'Clara e sofisticada. Diurna e natural, longe da clínica fria.'},
+    {t:'Cor', d:'Azul profundo e dourado. Elegância sóbria.'},
+    {t:'Corpo', d:'Sorriso adulto real e o gesto de confiança de quem decidiu.'},
+    {t:'Método', d:'Escaneamento, planejamento digital, o depois previsto na tela.'},
+    {t:'Ritmo', d:'Sereno e didático. O tempo de quem explica com calma.'}
+  ],
+  linhaEditorial:[
+    {n:'01', t:'O professor humano', peso:'25%', d:'A pessoa por trás de trinta anos de carreira. História, rotina e o porquê de ainda ensinar.', porque:'Humaniza a autoridade e é o que mais gera alcance no nicho.', temas:['origem','rotina','30 anos','a família de sorrisos']},
+    {n:'02', t:'Nunca é tarde', peso:'30%', d:'Quebra da idade e do rótulo de adolescente. O adulto tem vez.', porque:'É a maior dor do público e o território menos ocupado pelos concorrentes.', temas:['mito da idade','antes de adiar','depois dos 40','autoestima']},
+    {n:'03', t:'Discrição e transformação', peso:'25%', d:'O alinhador que ninguém percebe e a mudança do sorriso com história.', porque:'Gera desejo sem soar como anúncio.', temas:['ninguém vê','no dia a dia','a jornada','resultado com contexto']},
+    {n:'04', t:'Dúvidas de paciente', peso:'20%', d:'Quanto tempo, se dói e o que fazer depois que o dentista falou.', porque:'Puxa alcance orgânico de busca e alimenta o funil.', temas:['quanto tempo','dói?','higiene','manutenção']}
+  ],
+  canais:[
+    {c:'Reels', papel:'Alcance e humanização', o:'Talking head leve, relatable, depoimento e bastidor.', f:'3x por semana'},
+    {c:'Carrossel', papel:'Salvamento', o:'Mitos da idade, etapas do alinhador, dúvidas.', f:'1x por semana'},
+    {c:'Estático', papel:'Campanha', o:'Nunca é tarde, mote e chamada de avaliação.', f:'1x por semana'},
+    {c:'Stories', papel:'Relação diária', o:'Bastidor, enquete, caixinha e dia a dia da clínica.', f:'diário, 3 a 5 telas'},
+    {c:'Foto', papel:'Acervo', o:'Retrato claro, consultório, escaneamento e sorriso adulto.', f:'1 ensaio/trimestre'}
+  ],
+
+  /* ---------- 02 IDENTIDADE ---------- */
+  identidade:{
+    logos:[
+      {img:'img/idee/marca/idee-branco.webp', t:'Assinatura', d:'Marca principal, versão clara.'},
+      {img:'img/idee/marca/lockup-azul.webp', t:'Lockup completo', d:'Símbolo e nome juntos.'},
+      {img:'img/idee/marca/simbolo-azul.webp', t:'Símbolo', d:'Ícone para avatar e selo.'},
+      {img:'img/idee/marca/reduzido-azul.webp', t:'Reduzida', d:'Para aplicações pequenas.'}
+    ],
+    paleta:[
+      {hex:'#3C405B', nome:'Azul profundo'},
+      {hex:'#C69C6C', nome:'Dourado'},
+      {hex:'#2B2B33', nome:'Grafite'},
+      {hex:'#EDE7DC', nome:'Areia clara'}
+    ],
+    tipos:[
+      {papel:'Títulos', nome:'Avenir Next Heavy'},
+      {papel:'Texto', nome:'Avenir Next DemiBold'},
+      {papel:'Apoio e labels', nome:'Avenir Next Regular'}
+    ]
+  },
+
+  /* ---------- 03 LEITURA DE PERFIL ---------- */
+  perfilAnalise:{
+    resumo:'Autoridade real de trinta anos, mas o perfil conversa com colega de profissão, não com paciente. Os reels são quase todos ele sozinho falando para a câmera, e o alcance fica entre 277 e 700 views. O feed mistura paciente, mentoria e formatura, e o público se perde no caminho.',
+    diag:[
+      {t:'Formato', v:'Talking head sério domina. Ele sozinho, pouco ritmo.', s:'ajustar'},
+      {t:'Alcance', v:'Reels de 277 a 700 views. Ainda não escala.', s:'ajustar'},
+      {t:'Feed', v:'Mistura paciente com mentoria e formatura de dentista.', s:'ajustar'},
+      {t:'Atmosfera', v:'Sóbria e distante. Falta calor e leveza.', s:'ajustar'},
+      {t:'Foto de perfil', v:'Retrato sério. Serve, dá para aproximar.', s:'ok'},
+      {t:'Campanha', v:'Nunca é tarde já está no ar. Boa direção.', s:'ok'}
+    ],
+    feedCores:{
+      pro:{bg:'#3C405B', fg:'#EDE7DC', l:'Professor humano'},
+      obj:{bg:'#C69C6C', fg:'#2B2B33', l:'Nunca é tarde'},
+      dis:{bg:'#2B2B33', fg:'#C69C6C', l:'Discrição'},
+      duv:{bg:'#EDE7DC', fg:'#3C405B', l:'Dúvidas'}
+    },
+    feedIdeal:[
+      {t:'Professor', c:'pro'},{t:'Nunca é tarde', c:'obj'},{t:'Discrição', c:'dis'},
+      {t:'Dúvida', c:'duv'},{t:'Nunca é tarde', c:'obj'},{t:'Professor', c:'pro'},
+      {t:'Discrição', c:'dis'},{t:'Dúvida', c:'duv'},{t:'Nunca é tarde', c:'obj'}
+    ],
+    checklist:[
+      {t:'Depoimento de paciente adulto', d:'Antes de decidir e depois de tratar. Rosto, voz e história.', ok:false},
+      {t:'Ensaio do professor humano', d:'Sorrindo, ouvindo, na aula e no consultório. Luz clara.', ok:false},
+      {t:'Escaneamento e planejamento', d:'A câmera intraoral, o 3D na tela, o depois previsto.', ok:false},
+      {t:'Discrição no dia a dia', d:'O alinhador na mão e na boca, sem ninguém perceber.', ok:false},
+      {t:'Separar a conta de mentoria', d:'Formatura e curso de dentista saem do feed de paciente.', ok:false},
+      {t:'Padrão de gravação', d:'Mesma luz, enquadramento e fundo em todo talking head.', ok:false},
+      {t:'Retratos sobre fundo da marca', d:'Azul e dourado, meio corpo e close, com e sem jaleco.', ok:false},
+      {t:'Fotos horizontais', d:'Para capa, LinkedIn e 16:9.', ok:false}
+    ]
+  },
+
+  /* ---------- 04 CAMPANHA ---------- */
+  campanha:{
+    status:'No ar · captação por alinhadores',
+    nome:'Nunca é tarde para corrigir. Tarde é continuar adiando.',
+    eixos:[
+      {t:'Frio', d:'desperta desejo e discrição'},
+      {t:'Médio', d:'quebra a objeção da idade'},
+      {t:'Aquecido', d:'autoridade, prova e avaliação'}
+    ],
+    alerta:'Persona-âncora: a adulta que parou de aparecer sorrindo nas fotos.',
+    deck:'https://idee-nunca-e-tarde.vercel.app/'
+  },
+
+  /* ---------- 05 BENCHMARK ---------- */
+  benchmark:[
+    {at:'@larapassosalvim', url:'https://www.instagram.com/larapassosalvim/', porte:'13,2 mil', perfil:'Ortodontista e creator, entre o Rio e Juiz de Fora.', mecanismo:'Vida pessoal e leveza de creator. Os maiores reels são pessoais: a filha (32,2 mil), um get ready (26,8 mil) e o anúncio aos amigos (16,2 mil).', leitura:'Quem cresce no nicho humaniza primeiro. A ortodontia entra como pano de fundo, não como gancho.'},
+    {at:'@odontologiadicas', url:'https://www.instagram.com/odontologiadicas/', porte:'193 mil', perfil:'Andréa Figueiredo, conteúdo de odontologia, Minas Gerais.', mecanismo:'Relatable, curiosidade e vulnerabilidade. Reels de 35,7 mil (reação coletiva), 32,3 mil (curiosidade de equipamento) e o "do outro lado da cadeira" (23,9 mil).', leitura:'Emoção e curiosidade escalam. A ressalva: a audiência dela é de dentista, então adaptamos o gancho para o paciente.'},
+    {at:'@smilleralinhadores', url:'https://www.instagram.com/smilleralinhadores/', porte:'15,9 mil', perfil:'Marca de alinhador invisível, comunicação voltada a dentistas.', mecanismo:'Alinhador tratado como produto e número. Reels entre 790 e 5,7 mil views, sem rosto e sem história.', leitura:'Contraexemplo útil. Produto sem gente e sem narrativa não constrói audiência de paciente.'}
+  ],
+  sintese:{
+    alta:['Vida pessoal e o humano do profissional','Relatable e curiosidade que geram save','Transformação de sorriso contada com história'],
+    saturado:['Talking head técnico e sério','Alinhador como produto para dentista','Caso clínico solto, sem narrativa'],
+    lacuna:['O adulto que acha que passou da idade','O professor gente, além do técnico','A discrição do alinhador no dia a dia']
+  },
+
+  /* ---------- 06 PAUTAS ---------- */
+  pautas:[
+    {n:'01', bm:'@larapassosalvim', cls:'posicionamento', tema:'O marco humano por trás dos 30 anos',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'Nascimento da filha. O maior alcance do perfil, e é vida pessoal.', porque:'Um momento humano real alcança mais que qualquer caso clínico.'},
+     angulo:'Roberto abre um marco pessoal no lugar de um caso clínico. A autoridade fica perto quando ele aparece como gente.',
+     desdobra:{reels:'Ele narra um marco de vida (uma turma que formou, um neto, trinta anos de profissão) sobre fotos de acervo, voz em off, ritmo calmo. 40s.', carrossel:'A linha do tempo de trinta anos de sorrisos, um capítulo por slide.', stories:'Bastidor do dia a dia sem edição, com caixinha de pergunta.', estatico:'Retrato dele com uma frase pessoal sobre por que faz o que faz.'}},
+    {n:'02', bm:'@larapassosalvim', cls:'alcance', tema:'Vem comigo num dia de consultório',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me a caminho de ser madrinha. Rotina e leveza.', porque:'Bastidor leve aproxima e viraliza mais que conteúdo técnico.'},
+     angulo:'O contraste com o talking head sério: um dia real, leve, com o professor como pessoa.',
+     desdobra:{reels:'POV do dia dele: chegada, café, um paciente, a aula. Música em alta, cortes leves. 45s.', carrossel:'Um dia na Idée em seis quadros.', stories:'A sequência do dia em tempo real.', estatico:'Foto de bastidor com legenda do momento.'}},
+    {n:'03', bm:'@larapassosalvim', cls:'posicionamento', tema:'Por que virei ortodontista',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Contar aos amigos que seria pai. Emoção compartilhada em primeira pessoa.', porque:'Narrativa emocional em primeira pessoa engaja e faz salvar.'},
+     angulo:'A história de origem contada com emoção, no lugar do currículo.',
+     desdobra:{reels:'Ele conta a pessoa ou o caso que o fez escolher a ortodontia. Direto na câmera, luz quente. 50s.', carrossel:'A história em capítulos, com fotos antigas.', stories:'Enquete "o que te fez escolher sua profissão?" e a resposta dele.', estatico:'Foto antiga dele com a frase de origem.'}},
+    {n:'04', bm:'@odontologiadicas', cls:'alcance', tema:'Coisas que todo adulto que esconde o sorriso faz',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reel de reação coletiva. Nos comentários é só "eu também".', porque:'Reconhecimento coletivo faz marcar amigo e salvar.'},
+     angulo:'Relatable puro dentro do território da campanha: os hábitos de quem trava por causa dos dentes.',
+     desdobra:{reels:'Lista rápida de hábitos (rir de boca fechada, foto sempre de lado, a mão na frente). Áudio em alta, ritmo seco. 30s.', carrossel:'Um hábito por slide, tom acolhedor.', stories:'Enquete por hábito, "você faz isso?".', estatico:'Card com o hábito mais reconhecível.'}},
+    {n:'05', bm:'@odontologiadicas', cls:'posicionamento', tema:'Quando quem cuida também teve vergonha de sorrir',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DYqD2JiTHVb/', metrica:'23,9 mil views', o:'A dentista conta quando esteve do outro lado da cadeira, com medo.', porque:'Vulnerabilidade real gera identificação e compartilhamento.'},
+     angulo:'Roberto, ou um paciente, conta a insegurança que veio antes da decisão. Baixa a guarda de quem assiste.',
+     desdobra:{reels:'Depoimento honesto sobre o incômodo com o próprio sorriso, antes da solução. Direto na câmera. 50s.', carrossel:'A jornada emocional de quem decide se cuidar depois de adulto.', stories:'Caixinha "o que te trava para cuidar do sorriso?".', estatico:'Uma frase de vulnerabilidade entre aspas, sobre fundo azul.'}},
+    {n:'06', bm:'@odontologiadicas', cls:'alcance', tema:'A máquina que mostra seu sorriso pronto antes de começar',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DUMZ5J0DVyA/', metrica:'32,3 mil views', o:'Curiosidade sobre um equipamento novo visto numa feira.', porque:'Curiosidade sobre tecnologia surpreende, retém e faz comentar.'},
+     angulo:'A mesma curiosidade virada para o paciente: o escaneamento que projeta o resultado antes do tratamento.',
+     desdobra:{reels:'Ele passa a câmera intraoral e o sorriso final aparece no 3D na tela, com a reação do paciente. 40s.', carrossel:'Como funciona o planejamento digital, do escaneamento ao resultado previsto.', stories:'"Verdadeiro ou falso" sobre alinhador e tecnologia.', estatico:'Print do 3D com a chamada "seu depois, antes de começar".'}},
+    {n:'07', bm:'@smilleralinhadores', cls:'conversão', tema:'O alinhador que ninguém percebe',
+     ref:{url:'https://www.instagram.com/smilleralinhadores/reel/DbB7I5lgoAH/', metrica:'5,7 mil views', o:'Reel de produto do alinhador, comunicação para dentista.', porque:'Contraexemplo: o produto sozinho, sem rosto, trava o alcance de paciente.'},
+     angulo:'A discrição vira desejo quando aparece uma pessoa real usando no dia a dia, no lugar do produto na embalagem.',
+     desdobra:{reels:'Paciente falando, rindo e bebendo água com o alinhador, e a pergunta "deu para ver?". 30s.', carrossel:'Cinco situações do dia em que ninguém percebe o alinhador.', stories:'Close do alinhador na boca com enquete "você notaria?".', estatico:'Retrato sorrindo com selo "discreto de verdade".'}},
+    {n:'08', bm:'@smilleralinhadores', cls:'conversão', tema:'A prova que fala com paciente',
+     ref:{url:'https://www.instagram.com/smilleralinhadores/', metrica:'"+10 mil dentistas confiam"', o:'A prova social da marca é medida em dentistas, não em pacientes.', porque:'Contraexemplo: a prova precisa ser traduzida para quem senta na cadeira.'},
+     angulo:'Nossa prova é o adulto que voltou a sorrir. Depoimento e resultado com contexto, no lugar do número técnico.',
+     desdobra:{reels:'Sequência de três pacientes adultos dizendo em uma frase o que mudou depois do tratamento. 40s.', carrossel:'Uma transformação contada em jornada: a trava, a decisão, o depois.', stories:'Repost de mensagem real de paciente, com autorização por escrito.', estatico:'Depoimento entre aspas, com o primeiro nome e a idade.'}},
+    {n:'09', bm:'@smilleralinhadores', cls:'conversão', tema:'Tenho 50 anos, ainda dá tempo?',
+     ref:{url:'https://www.instagram.com/smilleralinhadores/', metrica:'nicho B2B', o:'A marca fala de produto e deixa a objeção da idade de fora.', porque:'Contraexemplo: a maior dúvida do paciente adulto fica sem resposta.'},
+     angulo:'O gancho central da campanha: o adulto de 40, 50 ou 60 tem vez, com prazo e previsibilidade na mesa.',
+     desdobra:{reels:'Ele responde direto "tenho 50 anos, ainda dá?" com um caso real e o tempo médio de tratamento. 45s.', carrossel:'Três mitos sobre corrigir os dentes depois dos 40.', stories:'Caixinha "qual a sua idade e o seu medo?" respondida por ele.', estatico:'Peça da campanha "Nunca é tarde" com chamada de avaliação.'}}
+  ],
+
+  ciclos:[]
 },
 
 {slug:'delabela', nome:'Delabela', categoria:'Clínica boutique', resumo:'Sofisticação, status e autoestima.'},

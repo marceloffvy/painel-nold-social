@@ -21,10 +21,13 @@ function viewHome(){
   setCrumbs([{t:'Carteira'}]);
   const card = c => {
     const off = !c.ativo && !c.emAnalise;
-    const status = c.ativo ? '<span class="tag coral">ciclo ativo</span>'
+    const temCiclo = c.ativo && c.ciclos && c.ciclos.length;
+    const status = temCiclo ? '<span class="tag coral">ciclo ativo</span>'
+                 : c.ativo ? '<span class="tag coral">pautas prontas</span>'
                  : c.emAnalise ? '<span class="tag">em análise</span>'
                  : '<span class="tag">sem ciclo</span>';
-    const right = c.ativo ? `<span class="mono">${c.ciclos[0].pecas.length} peças</span>`
+    const right = temCiclo ? `<span class="mono">${c.ciclos[0].pecas.length} peças</span>`
+                : c.ativo ? `<span class="mono">${c.pautas.length} pautas</span>`
                 : c.emAnalise ? '<span class="mono">8 pautas</span>' : '<span class="mono">—</span>';
     const inner = `<span class="mono">${esc(c.categoria)}</span>
         <div class="nm">${esc(c.nome)}</div>
@@ -59,15 +62,17 @@ function viewClient(slug){
     return;
   }
 
-  const id=c.identidade, pa=c.perfilAnalise, cp=c.campanha, s=c.sintese, cy=c.ciclos[0];
+  const id=c.identidade, pa=c.perfilAnalise, cp=c.campanha, s=c.sintese, cy=(c.ciclos&&c.ciclos[0])||null;
+  const marca=c.nome.split('·')[0].trim();
+  const lum=h=>{const n=parseInt(h.slice(1),16);return (0.299*(n>>16&255)+0.587*(n>>8&255)+0.114*(n&255))/255};
   const nav=[['b1','Diagnóstico'],['b2','Identidade'],['b3','Leitura de perfil'],['b4','Campanha'],
              ['b5','Benchmark'],['b6','Pautas'],['b7','Ciclos e peças']]
     .map((x,i)=>`<a href="#${x[0]}" data-j="${x[0]}"><i>${pad2(i+1)}</i>${x[1]}</a>`).join('');
   const head=(n,t,sub)=>`<div class="blk-head"><span class="n">${n}</span><h2>${t}</h2><span class="sp"></span>${sub?`<span class="mono">${sub}</span>`:''}</div>`;
 
-  const fmap={aut:'Autoridade',duv:'Dúvidas',bas:'Bastidores',pes:'Pessoal'};
-  const feed=pa.feedIdeal.map(f=>`<div class="${f.c}">${esc(f.t)}</div>`).join('');
-  const legenda=Object.keys(fmap).map(k=>`<span><i class="${k}" style="background:${{aut:'#52151C',duv:'#D1C1B2',bas:'#191915',pes:'#8E6A5E'}[k]}"></i>${fmap[k]}</span>`).join('');
+  const fc=pa.feedCores;
+  const feed=pa.feedIdeal.map(f=>`<div style="background:${fc[f.c].bg};color:${fc[f.c].fg}">${esc(f.t)}</div>`).join('');
+  const legenda=Object.keys(fc).map(k=>`<span><i style="background:${fc[k].bg}"></i>${fc[k].l}</span>`).join('');
 
   const pauta=p=>`<article class="pt">
     <div class="pt-h">
@@ -85,7 +90,7 @@ function viewClient(slug){
         <a class="lk" href="${p.ref.url}" target="_blank" rel="noopener">→ assistir o post original</a>
       </div>
       <div class="pt-our">
-        <div class="mono on" style="margin-bottom:9px">◆ Versão Biliart</div>
+        <div class="mono on" style="margin-bottom:9px">◆ Versão ${esc(marca)}</div>
         <p class="ang">${esc(p.angulo)}</p>
         <div class="des">
           <div><div class="k">Reels</div><div class="v">${esc(p.desdobra.reels)}</div></div>
@@ -153,7 +158,7 @@ function viewClient(slug){
               <div class="t">${esc(l.t)}</div><div class="d">${esc(l.d)}</div></div>`).join('')}</div>
           <div class="grid-4" style="margin-top:12px">${id.paleta.map(p=>`
             <div class="sw" style="background:${p.hex}">
-              <span style="color:${['#52151C','#191915'].includes(p.hex)?'#D1C1B2':'#191915'}">${p.hex}<br>${esc(p.nome)}</span>
+              <span style="color:${lum(p.hex)<0.55?'#F1EDE6':'#181818'}">${p.hex}<br>${esc(p.nome)}</span>
             </div>`).join('')}</div>
           <div class="card" style="margin-top:12px"><dl class="facts">
             ${id.tipos.map(t=>`<dt>${esc(t.papel)}</dt><dd><b>${esc(t.nome)}</b></dd>`).join('')}
@@ -219,10 +224,10 @@ function viewClient(slug){
 
         <section class="blk" id="b7">
           ${head('07','Ciclos e peças')}
-          <a class="cycle-card" href="#/c/${c.slug}/ciclo/${cy.slug}">
+          ${cy?`<a class="cycle-card" href="#/c/${c.slug}/ciclo/${cy.slug}">
             <div><span class="mono">${esc(cy.periodo)}</span><h3 style="margin-top:6px">${esc(cy.titulo)}</h3></div>
             <div class="row"><span class="tag">${cy.pecas.length} peças</span><span class="mono on">abrir →</span></div>
-          </a>
+          </a>`:`<div class="empty">Pautas aprovadas. O primeiro ciclo de produção entra aqui assim que as peças forem desenhadas.</div>`}
         </section>
 
       </div>
@@ -238,7 +243,7 @@ function viewClient(slug){
 
 /* ============================ CICLO ============================ */
 function viewCycle(slug, cyslug){
-  const c = find(slug); if(!c || !c.ativo) return viewHome();
+  const c = find(slug); if(!c || !c.ativo || !c.ciclos || !c.ciclos.length) return viewClient(slug);
   const cy = c.ciclos.find(x => x.slug === cyslug) || c.ciclos[0];
   setCrumbs([{t:'Carteira',href:'#/'},{t:c.nome.split('·')[0].trim(),href:'#/c/'+c.slug},{t:cy.titulo}]);
 
@@ -263,7 +268,7 @@ function viewCycle(slug, cyslug){
 
 /* ============================ PEÇA ============================ */
 async function viewPiece(slug, pid){
-  const c = find(slug); if(!c || !c.ativo) return viewHome();
+  const c = find(slug); if(!c || !c.ativo || !c.ciclos || !c.ciclos.length) return viewClient(slug);
   const cy = c.ciclos[0];
   const p = cy.pecas.find(x => x.id === pid); if(!p) return viewCycle(slug, cy.slug);
   setCrumbs([{t:'Carteira',href:'#/'},{t:c.nome.split('·')[0].trim(),href:'#/c/'+c.slug},
