@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel Nold · Esqueleto</title>
+<style>
+  :root{
+    --green:#163227; --off:#F6F6F6; --coral:#FE5F55; --ink:#181818;
+    --gray:#6D6D6D; --line:#D6D6D6; --wire:#B9B9B9; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--off); color:var(--ink);
+    font-family:ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif;
+    font-size:15px; line-height:1.5;
+  }
+  /* sem animações bruscas — conforto visual */
+  *{animation:none!important}
+  a{color:inherit}
+  .mono{font-family:ui-monospace,"IBM Plex Mono","SF Mono",Menlo,monospace;
+        font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gray)}
+  .mark::before{content:"■"; color:var(--coral); margin-right:8px; font-size:9px; vertical-align:2px}
+  .serif{font-family:"Playfair Display",Georgia,"Times New Roman",serif; font-weight:600; letter-spacing:-.01em}
+
+  /* ===== CHROME ===== */
+  header.top{
+    position:sticky; top:0; z-index:20; background:var(--off);
+    border-bottom:1px solid var(--line); padding:14px 26px;
+    display:flex; align-items:center; gap:20px;
+  }
+  .logo{font-family:Georgia,serif; font-size:22px; letter-spacing:-.02em}
+  .crumb{display:flex; gap:8px; align-items:center; flex:1}
+  .crumb button{
+    background:none; border:none; cursor:pointer; padding:0;
+    font-family:ui-monospace,monospace; font-size:11px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--gray);
+  }
+  .crumb button:hover{color:var(--ink)}
+  .crumb .sep{color:var(--wire); font-size:11px}
+
+  .wrap{max-width:1180px; margin:0 auto; padding:30px 26px 90px}
+
+  /* ===== WIREFRAME PRIMITIVES ===== */
+  .box{border:1px dashed var(--wire); background:#fff; border-radius:3px; padding:14px}
+  .ph{ /* placeholder de imagem */
+    border:1px dashed var(--wire); background:
+      repeating-linear-gradient(45deg,#fafafa,#fafafa 9px,#f2f2f2 9px,#f2f2f2 18px);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    color:var(--gray); border-radius:3px; padding:8px;
+  }
+  .note{
+    border-left:2px solid var(--coral); background:#fff; padding:10px 14px;
+    color:var(--gray); font-size:13px;
+  }
+  h1.big{font-family:Georgia,serif; font-weight:400; font-size:44px; line-height:1.05;
+         letter-spacing:-.02em; margin:6px 0 4px}
+  h2.sec{font-family:Georgia,serif; font-weight:400; font-size:26px; margin:0 0 2px}
+  .lead{color:var(--gray); max-width:62ch; margin:0 0 22px}
+  .row{display:flex; gap:10px; flex-wrap:wrap}
+  .tag{font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.12em;
+       text-transform:uppercase; border:1px solid var(--line); padding:4px 9px; border-radius:2px; color:var(--gray)}
+  .tag.on{border-color:var(--coral); color:var(--coral)}
+  .tag.fill{background:var(--green); color:#fff; border-color:var(--green)}
+  hr.rule{border:none; border-top:1px solid var(--line); margin:34px 0}
+
+  /* ===== HOME ===== */
+  .grid-clients{display:grid; grid-template-columns:repeat(auto-fill,minmax(258px,1fr)); gap:14px}
+  .client-card{border:1px solid var(--line); background:#fff; padding:16px; cursor:pointer; border-radius:3px}
+  .client-card:hover{border-color:var(--ink)}
+  .client-card .nm{font-family:Georgia,serif; font-size:20px; margin:8px 0 2px}
+  .client-card .terr{color:var(--gray); font-size:13px; min-height:34px}
+  .client-card .meta{display:flex; justify-content:space-between; margin-top:12px;
+                     padding-top:10px; border-top:1px solid #eee}
+
+  /* ===== CLIENT PAGE ===== */
+  .client-layout{display:grid; grid-template-columns:198px 1fr; gap:34px; align-items:start}
+  nav.side{position:sticky; top:74px}
+  nav.side a{display:block; padding:7px 0; border-bottom:1px solid #ececec;
+             font-family:ui-monospace,monospace; font-size:11px; letter-spacing:.1em;
+             text-transform:uppercase; color:var(--gray); text-decoration:none; cursor:pointer}
+  nav.side a:hover{color:var(--ink)}
+  nav.side a.act{color:var(--coral)}
+  section.blk{margin-bottom:42px; scroll-margin-top:80px}
+  .sec-head{display:flex; align-items:baseline; gap:12px; margin-bottom:14px}
+  .sec-num{font-family:Georgia,serif; font-size:30px; color:var(--wire)}
+
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .three{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+  .four{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+  dl.facts{margin:0; display:grid; grid-template-columns:118px 1fr; gap:8px 14px}
+  dl.facts dt{font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.1em;
+              text-transform:uppercase; color:var(--gray); padding-top:3px}
+  dl.facts dd{margin:0}
+
+  /* ===== PAUTA CARD (o coração) ===== */
+  .pauta{border:1px solid var(--line); background:#fff; margin-bottom:14px; border-radius:3px}
+  .pauta-h{padding:13px 16px; border-bottom:1px dashed var(--wire);
+           display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+  .pauta-h .t{font-family:Georgia,serif; font-size:18px; flex:1; min-width:220px}
+  .pauta-b{display:grid; grid-template-columns:1fr 1fr}
+  .side-ref{padding:16px; border-right:1px dashed var(--wire); background:#fcfcfc}
+  .side-ours{padding:16px}
+  .side-lab{margin-bottom:10px}
+  .ph-post{height:132px; margin-bottom:10px}
+  .link{font-family:ui-monospace,monospace; font-size:11px; letter-spacing:.06em;
+        color:var(--coral); text-decoration:none; display:inline-block; margin-top:8px}
+
+  /* ===== CICLO / PEÇA ===== */
+  .pieces{display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:14px}
+  .piece{border:1px solid var(--line); background:#fff; cursor:pointer; border-radius:3px; overflow:hidden}
+  .piece:hover{border-color:var(--ink)}
+  .piece .ph{height:172px; border:none; border-bottom:1px dashed var(--wire)}
+  .piece .cap{padding:10px 12px}
+  .slides{display:grid; grid-template-columns:repeat(auto-fill,minmax(128px,1fr)); gap:10px}
+  .slides .ph{height:170px}
+  pre.copy{background:#fff; border:1px dashed var(--wire); padding:14px; white-space:pre-wrap;
+           font-family:ui-monospace,monospace; font-size:12px; line-height:1.65; color:#333; border-radius:3px}
+
+  .screen{display:none}
+  .screen.on{display:block}
+  footer.bot{border-top:1px solid var(--line); padding:16px 26px; display:flex;
+             justify-content:space-between; background:var(--off)}
+  @media(max-width:860px){
+    .client-layout{grid-template-columns:1fr}
+    nav.side{position:static; display:flex; gap:14px; overflow-x:auto; padding-bottom:8px}
+    nav.side a{border:none; white-space:nowrap}
+    .pauta-b,.two,.three{grid-template-columns:1fr}
+    .side-ref{border-right:none; border-bottom:1px dashed var(--wire)}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="logo">nold</div>
+  <div class="crumb">
+    <button onclick="go('home')">Carteira</button>
+    <span class="sep" id="c1" hidden>/</span>
+    <button id="c2" hidden onclick="go('client')">Biliart</button>
+    <span class="sep" id="c3" hidden>/</span>
+    <button id="c4" hidden onclick="go('cycle')">Ciclo Ago 2026</button>
+    <span class="sep" id="c5" hidden>/</span>
+    <button id="c6" hidden>Peça</button>
+  </div>
+  <span class="mono">esqueleto v1</span>
+</header>
+
+<!-- ================= HOME ================= -->
+<div class="screen on" id="s-home">
+  <div class="wrap">
+    <span class="mono mark">Painel de social · espelho do trabalho</span>
+    <h1 class="big">Carteira</h1>
+    <p class="lead">Cada cliente tem seu diagnóstico, leitura de perfil, benchmark, pautas e ciclos de produção. Tudo o que a gente discute no chat aparece aqui em formato visual.</p>
+
+    <div class="grid-clients">
+      <div class="client-card" onclick="go('client')">
+        <span class="mono">Reabilitação oral e facial</span>
+        <div class="nm">Biliart · Dr. Luiz Felipe</div>
+        <div class="terr">Autoestima e reconexão com o sorriso. Recorte cirúrgico (ortognática, ATM).</div>
+        <div class="meta"><span class="tag on">ciclo ativo</span><span class="mono">10 peças</span></div>
+      </div>
+      <div class="client-card" onclick="go('client')">
+        <span class="mono">Ortodontia · alinhadores</span>
+        <div class="nm">Idée · Dr. Roberto</div>
+        <div class="terr">Previsibilidade e discrição. Campanha "Nunca é tarde".</div>
+        <div class="meta"><span class="tag">em análise</span><span class="mono">8 pautas</span></div>
+      </div>
+      <div class="client-card">
+        <span class="mono">Clínica boutique</span>
+        <div class="nm">Delabela</div>
+        <div class="terr">Sofisticação, status e autoestima.</div>
+        <div class="meta"><span class="tag">sem ciclo</span><span class="mono">—</span></div>
+      </div>
+      <div class="client-card">
+        <span class="mono">Check-up 360°</span>
+        <div class="nm">OdontoGON</div>
+        <div class="terr">Confiança e clareza. Multidisciplinar.</div>
+        <div class="meta"><span class="tag">sem ciclo</span><span class="mono">—</span></div>
+      </div>
+      <div class="client-card">
+        <span class="mono">Educação p/ dentistas</span>
+        <div class="nm">MaxFocos</div>
+        <div class="terr">Método e aprovação. Mentoria e residência.</div>
+        <div class="meta"><span class="tag">sem ciclo</span><span class="mono">—</span></div>
+      </div>
+      <div class="client-card">
+        <span class="mono">Próteses e implantes</span>
+        <div class="nm">Marcelo Tavares</div>
+        <div class="terr">Excelência técnica, segurança e resolução.</div>
+        <div class="meta"><span class="tag">sem ciclo</span><span class="mono">—</span></div>
+      </div>
+      <div class="client-card">
+        <span class="mono">Protocolo e prótese</span>
+        <div class="nm">Clínica LK</div>
+        <div class="terr">Controle técnico interno, laboratório próprio.</div>
+        <div class="meta"><span class="tag">sem ciclo</span><span class="mono">—</span></div>
+      </div>
+    </div>
+
+    <hr class="rule">
+    <div class="note"><strong>Nota de conforto visual.</strong> O painel é desenhado sem animação, sem piscar, sem autoplay e sem alto contraste vibrante. Navegação estática e previsível.</div>
+  </div>
+</div>
+
+<!-- ================= CLIENTE ================= -->
+<div class="screen" id="s-client">
+  <div class="wrap">
+    <span class="mono mark">Cliente</span>
+    <h1 class="big">Biliart · Dr. Luiz Felipe</h1>
+    <p class="lead">Tudo que define como a gente fala por esse cliente, em sete blocos.</p>
+
+    <div class="client-layout">
+      <nav class="side">
+        <a class="act" onclick="jump('b1')">01 Diagnóstico</a>
+        <a onclick="jump('b2')">02 Identidade</a>
+        <a onclick="jump('b3')">03 Leitura de perfil</a>
+        <a onclick="jump('b4')">04 Campanha ativa</a>
+        <a onclick="jump('b5')">05 Benchmark</a>
+        <a onclick="jump('b6')">06 Pautas</a>
+        <a onclick="jump('b7')">07 Ciclos e peças</a>
+      </nav>
+
+      <div>
+        <!-- 01 -->
+        <section class="blk" id="b1">
+          <div class="sec-head"><span class="sec-num">01</span><h2 class="sec">Diagnóstico</h2></div>
+          <div class="box">
+            <dl class="facts">
+              <dt>Quem é</dt><dd>Cirurgião bucomaxilofacial. Ortognática, ATM, implantes.</dd>
+              <dt>Pra quem fala</dt><dd>Adulto que já sabe que precisa, mas trava por medo.</dd>
+              <dt>Território</dt><dd>Reconstrução de confiança. Ciência com sensibilidade.</dd>
+              <dt>Tom de voz</dt><dd>Calmo, seguro, elegante, explicativo.</dd>
+              <dt>Não pode</dt><dd>Promessa de resultado · antes/depois sem autorização · medo como gatilho.</dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- 02 -->
+        <section class="blk" id="b2">
+          <div class="sec-head"><span class="sec-num">02</span><h2 class="sec">Identidade</h2></div>
+          <div class="two">
+            <div class="box">
+              <span class="mono">Paleta</span>
+              <div class="four" style="margin-top:10px">
+                <div class="ph" style="height:54px">#52151C</div>
+                <div class="ph" style="height:54px">#D1C1B2</div>
+                <div class="ph" style="height:54px">#8E6A5E</div>
+                <div class="ph" style="height:54px">#191915</div>
+              </div>
+            </div>
+            <div class="box">
+              <span class="mono">Tipografia e logo</span>
+              <div class="two" style="margin-top:10px">
+                <div class="ph" style="height:54px">Playfair · títulos</div>
+                <div class="ph" style="height:54px">Geist · texto</div>
+              </div>
+              <div class="ph" style="height:46px; margin-top:10px">[ logo biliart + selo b. ]</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 03 -->
+        <section class="blk" id="b3">
+          <div class="sec-head"><span class="sec-num">03</span><h2 class="sec">Leitura de perfil</h2></div>
+          <p class="lead" style="margin-bottom:12px">Como a conta se comunica hoje, o que ela tem de acervo e o que falta produzir.</p>
+          <div class="two">
+            <div class="box">
+              <span class="mono">Grid atual (@drlfmartinho)</span>
+              <div class="three" style="margin-top:10px">
+                <div class="ph" style="height:74px">post</div><div class="ph" style="height:74px">post</div><div class="ph" style="height:74px">post</div>
+                <div class="ph" style="height:74px">post</div><div class="ph" style="height:74px">post</div><div class="ph" style="height:74px">post</div>
+              </div>
+              <div class="note" style="margin-top:10px">Leitura: b-roll cirúrgico escuro, estáticos tipográficos, talking head. Coerente, mas ATM e apneia subexplorados.</div>
+            </div>
+            <div class="box">
+              <span class="mono">Diagnóstico visual</span>
+              <dl class="facts" style="margin-top:10px">
+                <dt>Atmosfera</dt><dd>Escura, cinematográfica, clínica premium.</dd>
+                <dt>Foto de perfil</dt><dd>Retrato formal. Serve.</dd>
+                <dt>Acervo que temos</dt><dd>1 retrato de estúdio · b-roll cirúrgico.</dd>
+                <dt>Falta produzir</dt><dd>Ensaio em consultório · foto de mãos/detalhe · vídeo talking head novo.</dd>
+                <dt>Tipos de conteúdo</dt><dd>Educativo · prova · bastidor · conversão.</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 -->
+        <section class="blk" id="b4">
+          <div class="sec-head"><span class="sec-num">04</span><h2 class="sec">Campanha ativa</h2></div>
+          <div class="box">
+            <div class="row" style="margin-bottom:10px"><span class="tag fill">Nunca é tarde / O perfil que você procura</span><span class="tag">2 eixos</span></div>
+            <dl class="facts">
+              <dt>Mote</dt><dd>"O perfil que você procura na foto. Construído aqui."</dd>
+              <dt>Eixos</dt><dd>Estético (comportamento como sintoma) · Funcional (ATM, apneia, dor)</dd>
+              <dt>Deck</dt><dd><a class="link" href="#">→ abrir apresentação</a></dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- 05 -->
+        <section class="blk" id="b5">
+          <div class="sec-head"><span class="sec-num">05</span><h2 class="sec">Benchmark</h2></div>
+          <div class="three">
+            <div class="box">
+              <div class="ph" style="height:70px">[ print do perfil ]</div>
+              <div style="margin-top:10px"><strong>@cirurgia.ortognatica</strong></div>
+              <span class="mono">10,1k · nacional</span>
+              <p style="font-size:13px;color:var(--gray);margin:8px 0 0">Antes/depois de perfil, depoimento, autoridade por tempo.</p>
+              <a class="link" href="#">→ ver perfil</a>
+            </div>
+            <div class="box">
+              <div class="ph" style="height:70px">[ print do perfil ]</div>
+              <div style="margin-top:10px"><strong>@instituto_facce</strong></div>
+              <span class="mono">4k · regional</span>
+              <p style="font-size:13px;color:var(--gray);margin:8px 0 0">Comportamento-sintoma e apneia. O mais perigoso.</p>
+              <a class="link" href="#">→ ver perfil</a>
+            </div>
+            <div class="box">
+              <div class="ph" style="height:70px">[ print do perfil ]</div>
+              <div style="margin-top:10px"><strong>@institutobucomaxilofacial</strong></div>
+              <span class="mono">6,5k · contraexemplo</span>
+              <p style="font-size:13px;color:var(--gray);margin:8px 0 0">100% antes/depois. Serve pra mostrar o que não fazer.</p>
+              <a class="link" href="#">→ ver perfil</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 06 -->
+        <section class="blk" id="b6">
+          <div class="sec-head"><span class="sec-num">06</span><h2 class="sec">Pautas</h2></div>
+          <p class="lead" style="margin-bottom:14px">De um lado a referência que funcionou lá fora. Do outro, a versão do nosso jeito.</p>
+
+          <div class="pauta">
+            <div class="pauta-h">
+              <span class="mono">Pauta 01</span>
+              <span class="t">O estalo e o travamento da mandíbula</span>
+              <span class="tag on">audiência</span><span class="tag">carrossel</span>
+            </div>
+            <div class="pauta-b">
+              <div class="side-ref">
+                <span class="mono side-lab">◇ Referência que funciona</span>
+                <div class="ph ph-post">[ thumb do post original ]</div>
+                <dl class="facts">
+                  <dt>Perfil</dt><dd>@drthiagobucomaxilo</dd>
+                  <dt>Sinal</dt><dd>ATM com CTA direto, formato "1 sinal por slide"</dd>
+                  <dt>Por que vai</dt><dd>Dúvida real, alta taxa de salvamento</dd>
+                </dl>
+                <a class="link" href="#">→ assistir o post original</a>
+              </div>
+              <div class="side-ours">
+                <span class="mono side-lab">◆ Versão Biliart</span>
+                <div class="ph ph-post">[ nossa arte / capa ]</div>
+                <dl class="facts">
+                  <dt>Ângulo</dt><dd>Nomear o sintoma que a pessoa normalizou</dd>
+                  <dt>Hook</dt><dd>"Sua mandíbula faz barulho e você já nem repara mais."</dd>
+                  <dt>CTA</dt><dd>Seguir</dd>
+                </dl>
+                <a class="link" href="#">→ abrir peça produzida</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pauta">
+            <div class="pauta-h">
+              <span class="mono">Pauta 07</span>
+              <span class="t">Checklist de ATM</span>
+              <span class="tag fill">conversão</span><span class="tag">carrossel</span>
+            </div>
+            <div class="pauta-b">
+              <div class="side-ref">
+                <span class="mono side-lab">◇ Referência que funciona</span>
+                <div class="ph ph-post">[ thumb do post original ]</div>
+                <a class="link" href="#">→ assistir o post original</a>
+              </div>
+              <div class="side-ours">
+                <span class="mono side-lab">◆ Versão Biliart</span>
+                <div class="ph ph-post">[ nossa arte / capa ]</div>
+                <a class="link" href="#">→ abrir peça produzida</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 07 -->
+        <section class="blk" id="b7">
+          <div class="sec-head"><span class="sec-num">07</span><h2 class="sec">Ciclos e peças</h2></div>
+          <div class="box" onclick="go('cycle')" style="cursor:pointer">
+            <div class="row" style="justify-content:space-between">
+              <div>
+                <span class="mono">Ago 2026</span>
+                <div style="font-family:Georgia,serif;font-size:20px;margin-top:4px">Sinais que viram rotina</div>
+              </div>
+              <div class="row" style="align-items:center">
+                <span class="tag">10 peças</span><span class="tag on">70/30</span>
+                <a class="link" href="#">→ abrir ciclo</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CICLO ================= -->
+<div class="screen" id="s-cycle">
+  <div class="wrap">
+    <span class="mono mark">Ciclo · Biliart</span>
+    <h1 class="big">Sinais que viram rotina</h1>
+    <p class="lead">Agosto 2026 · 10 peças · mix 70/30 · sistema visual "Radiografia".</p>
+    <div class="row" style="margin-bottom:20px">
+      <span class="tag">5 carrosséis</span><span class="tag">2 reels</span><span class="tag">2 estáticos</span><span class="tag on">2 conversão</span>
+    </div>
+    <div class="pieces">
+      <div class="piece" onclick="go('piece')">
+        <div class="ph">[ capa 01 ]</div>
+        <div class="cap"><span class="mono">Carrossel · 9 slides</span><div>ATM</div></div>
+      </div>
+      <div class="piece" onclick="go('piece')">
+        <div class="ph">[ capa 04 ]</div>
+        <div class="cap"><span class="mono">Carrossel · 9 slides</span><div>Apneia e ronco</div></div>
+      </div>
+      <div class="piece" onclick="go('piece')">
+        <div class="ph">[ capa 05 ]</div>
+        <div class="cap"><span class="mono">Carrossel · 9 slides</span><div>Comportamentos</div></div>
+      </div>
+      <div class="piece" onclick="go('piece')">
+        <div class="ph">[ capa 06 ]</div>
+        <div class="cap"><span class="mono">Carrossel · 9 slides</span><div>Recuperação</div></div>
+      </div>
+      <div class="piece" onclick="go('piece')">
+        <div class="ph">[ capa 07 ]</div>
+        <div class="cap"><span class="mono">Carrossel · conversão</span><div>Checklist ATM</div></div>
+      </div>
+      <div class="piece" onclick="go('piece')">
+        <div class="ph">[ roteiro ]</div>
+        <div class="cap"><span class="mono">Reel · roteiro</span><div>Indicação do orto</div></div>
+      </div>
+      <div class="piece" onclick="go('piece')">
+        <div class="ph">[ 4:5 e 9:16 ]</div>
+        <div class="cap"><span class="mono">Estático · conversão</span><div>Convênios · Mentoplastia</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PEÇA ================= -->
+<div class="screen" id="s-piece">
+  <div class="wrap">
+    <span class="mono mark">Peça · carrossel</span>
+    <h1 class="big">ATM</h1>
+    <div class="row" style="margin-bottom:22px">
+      <span class="tag">educação</span><span class="tag">9 slides · 3:4</span><span class="tag on">CTA seguir</span>
+      <a class="link" href="#">→ abrir pasta local</a><a class="link" href="#">→ baixar tudo</a>
+    </div>
+
+    <span class="mono mark">Slides</span>
+    <div class="slides" style="margin:10px 0 26px">
+      <div class="ph">01 capa</div><div class="ph">02</div><div class="ph">03</div><div class="ph">04</div>
+      <div class="ph">05</div><div class="ph">06</div><div class="ph">07</div><div class="ph">08</div><div class="ph">09 fecho</div>
+    </div>
+
+    <div class="two">
+      <div>
+        <span class="mono mark">Copy slide a slide</span>
+        <pre class="copy" style="margin-top:10px">Slide 1 · Sua mandíbula faz barulho
+e você já nem repara mais.
+
+Slide 2 · Isso tem nome: ATM.
+...</pre>
+      </div>
+      <div>
+        <span class="mono mark">Legenda pronta</span>
+        <pre class="copy" style="margin-top:10px">Tem gente que convive há anos com a
+mandíbula estalando e acha que é normal.
+...
+
+#ATM #DTM #bruxismo</pre>
+        <div class="note" style="margin-top:10px">Compliance: sem promessa de cura. Slide 8 diz que nem todo caso é cirúrgico. CRO na assinatura.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bot">
+  <span class="mono">Nold — painel de social</span>
+  <span class="mono">esqueleto para aprovação</span>
+</footer>
+
+<script>
+  function go(s){
+    document.querySelectorAll('.screen').forEach(function(e){e.classList.remove('on')});
+    document.getElementById('s-'+s).classList.add('on');
+    var show={home:[0,0,0],client:[1,0,0],cycle:[1,1,0],piece:[1,1,1]}[s];
+    document.getElementById('c1').hidden=!show[0]; document.getElementById('c2').hidden=!show[0];
+    document.getElementById('c3').hidden=!show[1]; document.getElementById('c4').hidden=!show[1];
+    document.getElementById('c5').hidden=!show[2]; document.getElementById('c6').hidden=!show[2];
+    window.scrollTo(0,0);
+  }
+  function jump(id){
+    document.querySelectorAll('nav.side a').forEach(function(a){a.classList.remove('act')});
+    event.target.classList.add('act');
+    document.getElementById(id).scrollIntoView({block:'start'});
+  }
+</script>
+</body>
+</html>

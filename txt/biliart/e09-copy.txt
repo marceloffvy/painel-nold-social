@@ -1,0 +1,17 @@
+ESTÁTICOS DE CONVERSÃO · Convênios · versão final
+Estrutura das refs (Cabrini / Manoel Roque): foto forte + procedimento em manchete + sub de benefício + selo pequeno de convênios (cantos boleados). Sem botão (Meta). Logo do Dr. Luiz Felipe legível (nome + especialidade + CROSP).
+
+Formatos entregues:
+- 4:5 (feed): arte-01-mentoplastia.png · arte-02-ortognatica.png
+- 9:16 (stories/reels): arte-01-mentoplastia-9x16.png · arte-02-ortognatica-9x16.png
+
+ARTE 01 — Mentoplastia (Dr. Luiz Felipe): foto original em 1º plano, fundo vinho de estúdio recriado com profundidade (luz, vinheta, sombra de contato, ajuste de luz).
+  Headline: Mentoplastia
+  Sub: Equilibre o contorno do queixo com um procedimento seguro, planejado e de resultado natural.
+
+ARTE 02 — Cirurgia Ortognática (mulher gerada, opção A).
+  Headline: Cirurgia Ortognática
+  Sub: Assimetria e mordida fora de posição têm solução, e ela começa por um diagnóstico completo.
+
+Selo (logos reais): Unimed · Amil · Alice · Porto · Bradesco Saúde · SulAmérica. Cantos boleados.
+Pendente: confirmar a lista real de convênios da Biliart (e mandar Omint/CarePlus/CASSI/Petrobras se quiser incluir).
