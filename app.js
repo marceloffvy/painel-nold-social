@@ -54,59 +54,48 @@ function viewClient(slug){
     app.innerHTML = `<div class="wrap">
       <span class="mono mark eyebrow">Cliente</span><h1>${esc(c.nome)}</h1>
       <p class="lead">${esc(c.resumo)}</p>
-      <div class="empty" style="margin-top:30px">${esc(c.nota || 'Ainda sem ciclo aberto neste painel.')}</div>
+      <div class="empty" style="margin-top:30px">${esc(c.nota || 'Ainda sem ciclo aberto.')}</div>
     </div>`;
     return;
   }
 
-  const d = c.diagnostico, id = c.identidade, pa = c.perfilAnalise, cp = c.campanha, s = c.sintese;
-
-  const nav = [['b1','Diagnóstico'],['b2','Identidade'],['b3','Leitura de perfil'],['b4','Campanha ativa'],
-               ['b5','Benchmark'],['b6','Pautas'],['b7','Ciclos e peças']]
+  const id=c.identidade, pa=c.perfilAnalise, cp=c.campanha, s=c.sintese, cy=c.ciclos[0];
+  const nav=[['b1','Diagnóstico'],['b2','Identidade'],['b3','Leitura de perfil'],['b4','Campanha'],
+             ['b5','Benchmark'],['b6','Pautas'],['b7','Ciclos e peças']]
     .map((x,i)=>`<a href="#${x[0]}" data-j="${x[0]}"><i>${pad2(i+1)}</i>${x[1]}</a>`).join('');
+  const head=(n,t,sub)=>`<div class="blk-head"><span class="n">${n}</span><h2>${t}</h2><span class="sp"></span>${sub?`<span class="mono">${sub}</span>`:''}</div>`;
 
-  const head = (n,t,sub)=>`<div class="blk-head"><span class="n">${n}</span><h2>${t}</h2><span class="sp"></span>${sub?`<span class="mono">${sub}</span>`:''}</div>`;
+  const fmap={aut:'Autoridade',duv:'Dúvidas',bas:'Bastidores',pes:'Pessoal'};
+  const feed=pa.feedIdeal.map(f=>`<div class="${f.c}">${esc(f.t)}</div>`).join('');
+  const legenda=Object.keys(fmap).map(k=>`<span><i class="${k}" style="background:${{aut:'#52151C',duv:'#D1C1B2',bas:'#191915',pes:'#8E6A5E'}[k]}"></i>${fmap[k]}</span>`).join('');
 
-  /* pautas */
-  const pauta = p => {
-    const r = p.ref, o = p.nossa;
-    const refImg = `<div class="noimg">Referência externa · abrir no Instagram</div>`;
-    const ourImg = o.img ? `<img src="${o.img}" alt="Capa da peça ${esc(p.tema)}" loading="lazy">`
-                         : `<div class="noimg">Roteiro · sem arte</div>`;
-    return `<article class="pauta">
-      <div class="pauta-h">
-        <span class="mono">Pauta ${p.n}</span>
-        <span class="t">${esc(p.tema)}</span>
-        <span class="${tagCls(p.cls)}">${esc(p.cls)}</span>
-        <span class="tag">${esc(p.fmt)}</span>
+  const pauta=p=>`<article class="pt">
+    <div class="pt-h">
+      <span class="mono">Pauta ${p.n}</span>
+      <span class="t">${esc(p.tema)}</span>
+      <span class="tag coral">${esc(p.cls)}</span>
+      <span class="tag">${esc(p.bm)}</span>
+    </div>
+    <div class="pt-b">
+      <div class="pt-ref">
+        <div class="mono" style="margin-bottom:9px">◇ Post de referência</div>
+        <div class="metrica">${esc(p.ref.metrica)}</div>
+        <p class="o">${esc(p.ref.o)}</p>
+        <p class="pq">${esc(p.ref.porque)}</p>
+        <a class="lk" href="${p.ref.url}" target="_blank" rel="noopener">→ assistir o post original</a>
       </div>
-      <div class="pauta-b">
-        <div class="pane ref">
-          <div class="plab">◇ Referência que funciona</div>
-          ${refImg}
-          <dl class="facts">
-            <dt>Perfil</dt><dd><b>${esc(r.at)}</b></dd>
-            <dt>O que faz</dt><dd>${esc(r.sinal)}</dd>
-            <dt>Por que vai</dt><dd>${esc(r.porque)}</dd>
-          </dl>
-          <a class="lk" href="${r.url}" target="_blank" rel="noopener">→ ver perfil de referência</a>
-          ${r.post ? `<br><a class="lk" href="${r.post}" target="_blank" rel="noopener">→ ${esc(r.postLabel||'ver post')}</a>` : ''}
-        </div>
-        <div class="pane ours">
-          <div class="plab">◆ Versão Biliart</div>
-          ${ourImg}
-          <dl class="facts">
-            <dt>Ângulo</dt><dd>${esc(o.angulo)}</dd>
-            <dt>Hook</dt><dd><p class="hook">${esc(o.hook)}</p></dd>
-            <dt>CTA</dt><dd>${esc(o.cta)}</dd>
-          </dl>
-          ${o.peca ? `<a class="lk" href="#/c/${c.slug}/p/${o.peca}">→ abrir peça produzida</a>` : ''}
+      <div class="pt-our">
+        <div class="mono on" style="margin-bottom:9px">◆ Versão Biliart</div>
+        <p class="ang">${esc(p.angulo)}</p>
+        <div class="des">
+          <div><div class="k">Reels</div><div class="v">${esc(p.desdobra.reels)}</div></div>
+          <div><div class="k">Carrossel</div><div class="v">${esc(p.desdobra.carrossel)}</div></div>
+          <div><div class="k">Stories</div><div class="v">${esc(p.desdobra.stories)}</div></div>
+          <div><div class="k">Estático</div><div class="v">${esc(p.desdobra.estatico)}</div></div>
         </div>
       </div>
-    </article>`;
-  };
-
-  const cy = c.ciclos[0];
+    </div>
+  </article>`;
 
   app.innerHTML = `<div class="wrap">
     <div class="hero-client">
@@ -127,93 +116,94 @@ function viewClient(slug){
 
         <section class="blk" id="b1">
           ${head('01','Diagnóstico')}
-          <div class="card"><dl class="facts">
-            <dt>Quem é</dt><dd>${esc(d.quem)}</dd>
-            <dt>Pra quem fala</dt><dd>${esc(d.publico)}</dd>
-            <dt>Território</dt><dd>${esc(d.territorio)}</dd>
-            <dt>Tom de voz</dt><dd>${esc(d.tom)}</dd>
-            <dt>Não pode</dt><dd>${esc(d.proibido)}</dd>
-          </dl></div>
+          <div class="nicho"><span class="mono">Nicho</span><div class="v">${esc(c.nicho)}</div></div>
+          <div class="pos">
+            <span class="mono mark">Posicionamento</span>
+            <p class="q">${esc(c.posicionamento)}</p>
+          </div>
+
+          <div class="grid-2" style="margin-top:12px">
+            <div class="card"><span class="mono">Público</span>
+              <dl class="facts" style="margin-top:12px">${c.publico.map(x=>`<dt>${esc(x.t)}</dt><dd>${esc(x.d)}</dd>`).join('')}</dl></div>
+            <div class="card"><span class="mono">Signos que usamos</span>
+              <dl class="facts" style="margin-top:12px">${c.signos.map(x=>`<dt>${esc(x.t)}</dt><dd>${esc(x.d)}</dd>`).join('')}</dl></div>
+          </div>
+
+          <div style="margin:30px 0 12px"><span class="mono mark">Linha editorial · 4 territórios</span></div>
+          <div class="ed">${c.linhaEditorial.map(e=>`
+            <div class="c">
+              <span class="n">${e.n}</span>
+              <h4>${esc(e.t)}</h4>
+              <div class="d">${esc(e.d)}</div>
+              <div class="w">${esc(e.peso)} do volume</div>
+              <div class="tm">${e.temas.map(t=>`<span>· ${esc(t)}</span>`).join('')}</div>
+            </div>`).join('')}</div>
+
+          <div style="margin:30px 0 12px"><span class="mono mark">Distribuição por canal</span></div>
+          <table class="canais">
+            <tr><th>Canal</th><th>Papel</th><th>O que entra</th><th>Frequência</th></tr>
+            ${c.canais.map(x=>`<tr><td>${esc(x.c)}</td><td>${esc(x.papel)}</td><td>${esc(x.o)}</td><td class="mono">${esc(x.f)}</td></tr>`).join('')}
+          </table>
         </section>
 
         <section class="blk" id="b2">
           ${head('02','Identidade')}
-          <div class="grid-4">${id.paleta.map(p=>`
+          <div class="logos">${id.logos.map(l=>`
+            <div class="l"><img src="${l.img}" alt="${esc(l.t)}" loading="lazy">
+              <div class="t">${esc(l.t)}</div><div class="d">${esc(l.d)}</div></div>`).join('')}</div>
+          <div class="grid-4" style="margin-top:12px">${id.paleta.map(p=>`
             <div class="sw" style="background:${p.hex}">
               <span style="color:${['#52151C','#191915'].includes(p.hex)?'#D1C1B2':'#191915'}">${p.hex}<br>${esc(p.nome)}</span>
             </div>`).join('')}</div>
           <div class="card" style="margin-top:12px"><dl class="facts">
             ${id.tipos.map(t=>`<dt>${esc(t.papel)}</dt><dd><b>${esc(t.nome)}</b></dd>`).join('')}
-            <dt>Logos</dt><dd>${esc(id.logos)}</dd>
           </dl></div>
         </section>
 
         <section class="blk" id="b3">
-          ${head('03','Leitura de perfil','como a conta comunica hoje')}
-          <div class="card dark" style="margin-bottom:12px">
-            <span class="mono mark">Diagnóstico de social</span>
-            <p style="margin:12px 0 0;font-size:17px;max-width:70ch">${esc(pa.resumo)}</p>
-          </div>
-          <div class="grid-2">
-            <div class="card">
-              <span class="mono">Como comunica</span>
-              <ul style="margin:12px 0 0;padding-left:18px;font-size:15px">${pa.comoComunica.map(x=>`<li style="margin-bottom:7px">${esc(x)}</li>`).join('')}</ul>
-            </div>
-            <div class="card">
-              <span class="mono">Organização do feed</span>
-              <ul style="margin:12px 0 0;padding-left:18px;font-size:15px">${pa.organizacao.map(x=>`<li style="margin-bottom:7px">${esc(x)}</li>`).join('')}</ul>
-            </div>
-          </div>
-          <div class="card" style="margin-top:12px"><dl class="facts">
-            <dt>Atmosfera</dt><dd>${esc(pa.atmosfera)}</dd>
-            <dt>Foto de perfil</dt><dd>${esc(pa.fotoPerfil)}</dd>
-          </dl></div>
+          ${head('03','Leitura de perfil')}
+          <div class="gap" style="margin-bottom:16px"><b>${esc(pa.resumo)}</b></div>
+          <div class="diag">${pa.diag.map(d=>`
+            <div class="${d.s==='ajustar'?'fix':''}"><div class="k">${esc(d.t)}</div><div class="v">${esc(d.v)}</div></div>`).join('')}</div>
 
-          <div class="grid-2" style="margin-top:12px">
-            <div class="card">
-              <span class="mono">Acervo de imagem</span>
-              <dl class="facts" style="margin-top:12px">
-                ${pa.acervo.map(a=>`<dt style="color:${a.s==='falta'?'#FE5F55':'#6D6D6D'}">${a.s}</dt>
-                  <dd><b>${esc(a.t)}</b><br><span class="muted" style="font-size:14px">${esc(a.obs)}</span></dd>`).join('')}
-              </dl>
+          <div class="grid-2" style="margin-top:26px">
+            <div>
+              <span class="mono mark">Feed reorganizado</span>
+              <p class="lead" style="font-size:14.5px;margin:10px 0 14px">Como o grid deve ficar com a linha editorial aplicada.</p>
+              <div class="feedmock">${feed}</div>
+              <div class="legenda-feed">${legenda}</div>
             </div>
-            <div class="card">
-              <span class="mono">Precisa produzir</span>
-              <ul style="margin:12px 0 0;padding-left:18px;font-size:15px">${pa.produzir.map(x=>`<li style="margin-bottom:8px">${esc(x)}</li>`).join('')}</ul>
-              <div class="chips">${pa.tiposConteudo.map(t=>`<span class="tag">${esc(t.t)}</span>`).join('')}</div>
+            <div>
+              <span class="mono mark">Acervo · o que produzir</span>
+              <p class="lead" style="font-size:14.5px;margin:10px 0 14px">Checklist de produção de imagem.</p>
+              <div class="check">${pa.checklist.map(i=>`
+                <div class="${i.ok?'done':''}"><span class="bx">${i.ok?'✓':''}</span>
+                  <div><div class="t">${esc(i.t)}</div><div class="d">${esc(i.d)}</div></div></div>`).join('')}</div>
             </div>
-          </div>
-          <div class="card" style="margin-top:12px">
-            <span class="mono">Tipos de conteúdo</span>
-            <dl class="facts" style="margin-top:12px">${pa.tiposConteudo.map(t=>`<dt>${esc(t.t)}</dt><dd>${esc(t.d)}</dd>`).join('')}</dl>
           </div>
         </section>
 
         <section class="blk" id="b4">
           ${head('04','Campanha ativa')}
           <div class="card dark">
-            <span class="mono mark">Mote</span>
-            <h2 style="margin:12px 0 6px;max-width:20ch">${esc(cp.nome)}</h2>
-            <p style="color:#C9D3CD;max-width:62ch;margin:0 0 20px">${esc(cp.mote)}</p>
-            <div class="grid-2">${cp.eixos.map(e=>`<div style="border-top:1px solid #37514400;border-top:1px solid rgba(255,255,255,.18);padding-top:12px">
-              <span class="mono">${esc(e.t)}</span><p style="margin:6px 0 0;color:#DCE3DE">${esc(e.d)}</p></div>`).join('')}</div>
-            <p class="mono" style="margin:22px 0 0;color:#9FB2A8">${esc(cp.status)}</p>
-            <a class="lk" style="display:inline-block;margin-top:14px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#FE5F55" href="${cp.deck}" target="_blank" rel="noopener">→ abrir apresentação da campanha</a>
+            <span class="mono mark">${esc(cp.status)}</span>
+            <h2 style="margin:12px 0 16px;max-width:22ch">${esc(cp.nome)}</h2>
+            <div class="row">${cp.eixos.map(e=>`<span class="tag" style="border-color:rgba(255,255,255,.3);color:#DCE3DE">${esc(e.t)}: ${esc(e.d)}</span>`).join('')}</div>
+            <p class="mono" style="margin:20px 0 0;color:#FE5F55">${esc(cp.alerta)}</p>
+            <a style="display:inline-block;margin-top:14px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#FE5F55" href="${cp.deck}" target="_blank" rel="noopener">→ abrir apresentação</a>
           </div>
         </section>
 
         <section class="blk" id="b5">
-          ${head('05','Benchmark', c.benchmark.length + ' perfis')}
-          <div class="grid-2">${c.benchmark.map(b=>`
-            <div class="bm" ${b.anti?'data-anti="1"':''}>
-              <div class="h"><span class="at">${esc(b.at)}</span><span class="mono">${esc(b.porte)}</span></div>
-              ${b.alerta?'<span class="tag coral">concorrente direto</span>':''}
-              ${b.anti?'<span class="tag coral">contraexemplo</span>':''}
-              <p>${esc(b.faz)}</p>
-              <p style="color:#181818"><b style="font-weight:500">O que extrair:</b> ${esc(b.extrair)}</p>
+          ${head('05','Benchmark','perfis acima de 10 mil')}
+          <div class="grid-3">${c.benchmark.map(b=>`
+            <div class="bm">
+              <div class="h"><span class="at">${esc(b.at)}</span><span class="metrica" style="font-size:20px">${esc(b.porte)}</span></div>
+              <p>${esc(b.perfil)}</p>
+              <p style="color:#181818"><b style="font-weight:500">Mecanismo:</b> ${esc(b.mecanismo)}</p>
+              <p><b style="font-weight:500;color:#181818">Leitura:</b> ${esc(b.leitura)}</p>
               <a class="lk" href="${b.url}" target="_blank" rel="noopener">→ ver perfil</a>
             </div>`).join('')}</div>
-
           <div class="grid-3" style="margin-top:12px">
             <div class="card"><span class="mono on">Em alta</span><ul style="margin:10px 0 0;padding-left:18px;font-size:15px">${s.alta.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
             <div class="card"><span class="mono">Saturado</span><ul style="margin:10px 0 0;padding-left:18px;font-size:15px">${s.saturado.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
@@ -222,23 +212,16 @@ function viewClient(slug){
         </section>
 
         <section class="blk" id="b6">
-          ${head('06','Pautas', c.pautas.length + ' temas')}
-          <p class="lead" style="margin-bottom:20px">De um lado a referência que funcionou lá fora. Do outro, a nossa versão.</p>
+          ${head('06','Pautas', c.pautas.length+' temas · 3 por benchmark')}
+          <p class="lead" style="margin-bottom:20px">Cada pauta vem de um post real que performou. À direita, a versão Biliart em quatro formatos.</p>
           ${c.pautas.map(pauta).join('')}
         </section>
 
         <section class="blk" id="b7">
           ${head('07','Ciclos e peças')}
           <a class="cycle-card" href="#/c/${c.slug}/ciclo/${cy.slug}">
-            <div>
-              <span class="mono">${esc(cy.periodo)}</span>
-              <h3 style="margin-top:6px">${esc(cy.titulo)}</h3>
-            </div>
-            <div class="row">
-              <span class="tag">${cy.pecas.length} peças</span>
-              <span class="tag coral">70/30</span>
-              <span class="mono on">abrir →</span>
-            </div>
+            <div><span class="mono">${esc(cy.periodo)}</span><h3 style="margin-top:6px">${esc(cy.titulo)}</h3></div>
+            <div class="row"><span class="tag">${cy.pecas.length} peças</span><span class="mono on">abrir →</span></div>
           </a>
         </section>
 
@@ -246,18 +229,11 @@ function viewClient(slug){
     </div>
   </div>`;
 
-  /* marcar item ativo do menu conforme rolagem */
-  const links = [...document.querySelectorAll('#side a')];
-  links.forEach(a => a.addEventListener('click', e => {
-    e.preventDefault();
-    document.getElementById(a.dataset.j).scrollIntoView({block:'start'});
-  }));
-  const obs = new IntersectionObserver(en => {
-    en.forEach(x => { if(x.isIntersecting){
-      links.forEach(a => a.classList.toggle('act', a.dataset.j === x.target.id));
-    }});
-  }, {rootMargin:'-90px 0px -70% 0px'});
-  document.querySelectorAll('.blk').forEach(b => obs.observe(b));
+  const links=[...document.querySelectorAll('#side a')];
+  links.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.getElementById(a.dataset.j).scrollIntoView({block:'start'})}));
+  const obs=new IntersectionObserver(en=>{en.forEach(x=>{if(x.isIntersecting){
+    links.forEach(a=>a.classList.toggle('act', a.dataset.j===x.target.id))}})},{rootMargin:'-90px 0px -70% 0px'});
+  document.querySelectorAll('.blk').forEach(b=>obs.observe(b));
 }
 
 /* ============================ CICLO ============================ */
