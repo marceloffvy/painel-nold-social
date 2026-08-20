@@ -234,6 +234,16 @@ function viewClient(slug){
           ${head('07','Pautas', c.pautas.length+' temas · 3 por benchmark')}
           <p class="lead" style="margin-bottom:20px">Cada pauta vem de um post real que performou. À direita, a versão ${esc(marca)} em quatro formatos.</p>
           ${c.pautas.map(pauta).join('')}
+          ${c.fixados?`
+          <div style="margin:38px 0 6px"><span class="mono mark on">Posts de apresentação · fixados e prioritários</span></div>
+          <p class="lead" style="margin-bottom:14px;font-size:15px">Inspirados no perfil da Lara Passos, ficam fixados no topo. Fáceis de produzir: precisam do ensaio e do portfólio.</p>
+          ${c.fixados.map(fp=>`<article class="fixed-post">
+            <div class="fh"><span class="tag solid">★ fixado</span><span class="t">${esc(fp.tema)}</span></div>
+            <p class="o">${esc(fp.papel)}</p>
+            <div class="fslides">${fp.slides.map((sl,i)=>`<div><span class="sn">${pad2(i+1)}</span><span>${esc(sl)}</span></div>`).join('')}</div>
+            <p class="mono" style="margin-top:12px;color:var(--gray)">Precisa de: ${esc(fp.precisa)}</p>
+          </article>`).join('')}
+          `:''}
         </section>
 
         <section class="blk" id="b8">

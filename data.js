@@ -296,6 +296,14 @@ const CLIENTES = [
      }}
   ],
 
+  /* posts de apresentação · fixados e prioritários (Felipe não usa casos clínicos) */
+  fixados:[
+    {n:'01', tema:'Prazer, Dr. Luís Felipe', papel:'Apresenta o cirurgião. O primeiro post que o paciente vê ao chegar no perfil.', precisa:'ensaio do cirurgião e identidade',
+     slides:['Capa: retrato e a especialidade','Quem é: hospital de ponta, planejamento digital','A filosofia: a mandíbula como estrutura','Para quem: dor, ronco, o perfil que incomoda','O método: 3D e guia cirúrgica','Chamada: avalie o seu caso']},
+    {n:'02', tema:'A transformação vai além da estética', papel:'Fala da transformação do paciente, por função e autoestima. Post de captação.', precisa:'ensaio e um depoimento (sem antes e depois sem autorização escrita)',
+     slides:['Capa: "mais que um perfil novo"','O incômodo funcional e estético','O planejamento em 3D','O depois: função e autoestima','Um depoimento real, com autorização','Chamada: comece a sua']}
+  ],
+
   /* ---------- 07 CICLOS ---------- */
   ciclos:[{
     slug:'2026-08', titulo:'Sinais que viram rotina', periodo:'Agosto 2026',
@@ -331,30 +339,30 @@ const CLIENTES = [
 {
   slug:'idee', ativo:true,
   nome:'Idée · Dr. Roberto Simonetti', categoria:'Ortodontia e alinhadores',
-  resumo:'Ortodontia da família, da criança ao adulto. O ortodontista que conversa com o pai e a mãe.',
+  resumo:'Ortodontia para a família, da criança ao adulto. O professor experiente que olha para a pessoa antes do dente.',
   arroba:'@robertosimonetti_ortodontia', perfil:'https://www.instagram.com/robertosimonetti_ortodontia/',
   seguidores:'3.095',
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
-  nicho:'Ortodontia da família. Crianças e adolescentes no centro, alinhador do adulto como frente de apoio.',
-  posicionamento:'O ortodontista de confiança da família, que acompanha o sorriso desde criança. Conversa com o pai e a mãe que não sabem a hora certa de levar o filho, trata o medo do aparelho com paciência e explica cada passo. Trinta anos de clínica e mestrado, do primeiro aparelho ao alinhador do adulto.',
+  nicho:'Ortodontia para a família, do primeiro aparelho da criança ao alinhador do adulto.',
+  posicionamento:'O ortodontista de confiança da família, com trinta anos de estrada. Cuida do sorriso em todas as fases, da primeira avaliação da criança ao alinhador do adulto, e olha para a pessoa antes de olhar para o dente. A sobriedade de quem já viu de tudo e explica sem pressa.',
   publico:[
-    {t:'Quem', d:'Mãe e pai de 30 a 50 anos que decidem pelo filho. E o adulto que ainda quer alinhar.'},
-    {t:'Momento', d:'Percebeu o dente torto do filho ou ouviu do dentista que precisa avaliar.'},
-    {t:'Dor', d:'Não sabe a idade certa, teme o custo e o tempo, o filho tem medo de aparelho.'},
-    {t:'Trava', d:'"Será que já é hora?", "vai doer?", "e se ele não cuidar direito?".'}
+    {t:'Quem', d:'A família. O pai e a mãe que escolhem por confiança, e o adulto que cuida do próprio sorriso.'},
+    {t:'Momento', d:'Chegou a hora de cuidar do sorriso, do filho ou do próprio.'},
+    {t:'Dor', d:'Quer um profissional experiente e de confiança para tratar a família toda.'},
+    {t:'Trava', d:'Cansou de indicação sem critério. Quer seriedade e alguém que explique.'}
   ],
   signos:[
-    {t:'Luz', d:'Clara e acolhedora. Natural e diurna, longe da clínica fria.'},
-    {t:'Cor', d:'Azul profundo e dourado. Sério, mas caloroso.'},
-    {t:'Corpo', d:'Criança e adolescente sorrindo, a mão do pai no ombro, o professor atento.'},
-    {t:'Método', d:'Escaneamento, o antes e o depois, o acompanhamento ao longo do tempo.'},
-    {t:'Ritmo', d:'Calmo e didático. O tempo de quem explica para a família.'}
+    {t:'Luz', d:'Natural e limpa, um pouco mais fria. Janela e sombra macia.'},
+    {t:'Cor', d:'Azul profundo e dourado. Sóbrio e elegante.'},
+    {t:'Presença', d:'O professor experiente, olhar que escuta. Gesto contido.'},
+    {t:'Alcance', d:'Sorrisos de todas as idades, da criança ao adulto.'},
+    {t:'Ritmo', d:'Calmo e maduro. O tempo de quem tem estrada.'}
   ],
   linhaEditorial:[
     {n:'01', t:'Vida pessoal', peso:'22%', d:'O homem por trás do ortodontista. Pai, professor, trinta anos de história.', porque:'Aproxima e gera identificação. Pai confia em quem também é pai.', temas:['por que virei ortodontista','rotina de professor','30 anos de profissão','valores de família']},
-    {n:'02', t:'Autoridade', peso:'28%', d:'Depoimento de pais, caso de criança e adolescente com contexto, reconhecimento.', porque:'Prova social é o que mais converte. Mãe indica para outra mãe.', temas:['depoimento de mãe','antes e depois autorizado','caso de adolescente','mestrado e 30 anos']},
-    {n:'03', t:'Bastidores', peso:'20%', d:'O consultório que acolhe a criança, o escaneamento, como se trata o medo.', porque:'Mostra método e cuidado. Tira o medo antes da primeira consulta.', temas:['a primeira visita','o escaneamento 3D','como acalmamos o medo','o ambiente e a equipe']},
+    {n:'02', t:'Autoridade', peso:'28%', d:'Depoimento de famílias, caso com contexto em qualquer idade, reconhecimento.', porque:'Prova social é o que mais converte. Uma família indica para outra.', temas:['depoimento de família','antes e depois autorizado','caso de adolescente e adulto','mestrado e 30 anos']},
+    {n:'03', t:'Bastidores', peso:'20%', d:'O consultório sóbrio, o escaneamento, o cuidado em cada fase.', porque:'Mostra método e seriedade. Tira a insegurança antes da primeira consulta.', temas:['a primeira visita','o escaneamento 3D','o cuidado em cada idade','o ambiente e a equipe']},
     {n:'04', t:'Dúvidas de paciente', peso:'30%', d:'A pergunta que o pai e a mãe fazem, respondida sem jargão.', porque:'Puxa alcance orgânico de busca e é a porta de entrada da família.', temas:['qual a idade certa?','meu filho precisa de aparelho?','aparelho ou alinhador?','e se ele não cuidar?']}
   ],
   canais:[
@@ -422,33 +430,33 @@ const CLIENTES = [
 
   /* ---------- 04 ENSAIO FOTOGRÁFICO ---------- */
   ensaio:{
-    intro:'A atmosfera que queremos capturar num ensaio: calor, família e o cuidado de quem acompanha o sorriso desde criança. Abaixo, referências de foto. Ao lado, o que precisamos fotografar.',
+    intro:'A atmosfera do ensaio do Dr. Roberto: sóbria e sofisticada, luz natural e a elegância discreta de quem cuida da família há trinta anos, da criança ao adulto. Referências masculinas inspiradas no mood do perfil da Lara Passos. Abaixo, as fotos. Ao lado, o que fotografar.',
     atmosfera:[
-      {t:'Luz', d:'Natural e clara. Manhã e janela, nada de flash duro.'},
-      {t:'Emoção', d:'Proximidade real. Colo, mão no ombro, riso solto.'},
-      {t:'Cor', d:'Azul e dourado da marca, madeira e tons quentes.'},
-      {t:'Elenco', d:'Criança, adolescente, pai e mãe. O professor junto.'}
+      {t:'Luz', d:'Natural e limpa. Janela e sombra macia, um toque mais fria.'},
+      {t:'Paleta', d:'Neutros sóbrios com azul e dourado. Quiet luxury.'},
+      {t:'Presença', d:'O professor experiente. Olhar que escuta, gesto contido.'},
+      {t:'Alcance', d:'A família toda, da criança ao adulto. Sem infantilizar.'}
     ],
     refs:[
-      {img:'img/idee/ref/r01.webp', fonte:'https://www.pinterest.com/pin/300122762680689726/', t:'Atmosfera humana, sem pose'},
-      {img:'img/idee/ref/r02.webp', fonte:'https://www.pinterest.com/pin/35114072092361242/', t:'Tirar o medo: profissional e criança'},
-      {img:'img/idee/ref/r03.webp', fonte:'https://www.pinterest.com/pin/714594665870460246/', t:'A família junta, leve'},
-      {img:'img/idee/ref/r04.webp', fonte:'https://www.pinterest.com/pin/686728643161136226/', t:'Os pais no consultório'},
-      {img:'img/idee/ref/r05.webp', fonte:'https://www.pinterest.com/pin/563653709645473134/', t:'Rotina em casa: pai e filho'},
-      {img:'img/idee/ref/r06.webp', fonte:'https://www.pinterest.com/pin/7388786883150317/', t:'Luz suave, colo e cuidado'},
-      {img:'img/idee/ref/r07.webp', fonte:'https://www.pinterest.com/pin/136796907427320338/', t:'Acolhimento na cadeira'},
-      {img:'img/idee/ref/r08.webp', fonte:'https://www.pinterest.com/pin/865183778432146761/', t:'Luz quente, momento de família'},
-      {img:'img/idee/ref/r09.webp', fonte:'https://www.pinterest.com/pin/763360205637522670/', t:'A conversa com a mãe'}
+      {img:'img/idee/ref/r01.webp', fonte:'https://www.pinterest.com/pin/158400111892346729/', t:'Luz de janela, sobriedade'},
+      {img:'img/idee/ref/r02.webp', fonte:'https://www.pinterest.com/pin/52072939437860384/', t:'O professor experiente'},
+      {img:'img/idee/ref/r03.webp', fonte:'https://www.pinterest.com/pin/54254370507840461/', t:'Próximo, olhando para a pessoa'},
+      {img:'img/idee/ref/r04.webp', fonte:'https://www.pinterest.com/pin/322781498316627205/', t:'Elegância discreta'},
+      {img:'img/idee/ref/r05.webp', fonte:'https://www.pinterest.com/pin/37084396931797250/', t:'O tempo de quem tem estrada'},
+      {img:'img/idee/ref/r06.webp', fonte:'https://www.pinterest.com/pin/232850243247266490/', t:'O olhar que escuta'},
+      {img:'img/idee/ref/r07.webp', fonte:'https://www.pinterest.com/pin/225250418858996525/', t:'Sofisticação sem esforço'},
+      {img:'img/idee/ref/r08.webp', fonte:'https://www.pinterest.com/pin/844493672789084/', t:'Autoridade sóbria'},
+      {img:'img/idee/ref/r09.webp', fonte:'https://www.pinterest.com/pin/372602569194234859/', t:'A confiança de trinta anos'}
     ],
     shotlist:[
-      {t:'Retrato do professor', d:'Meio corpo e close, luz clara, com e sem jaleco. Olhar acolhedor.', c:'pes'},
-      {t:'O professor com a criança', d:'Atendendo, ouvindo, tirando o medo. Sorriso real.', c:'bas'},
-      {t:'A conversa com os pais', d:'Ele explicando o plano para o pai e a mãe.', c:'duv'},
-      {t:'Escaneamento e a tela 3D', d:'A câmera intraoral e o antes e depois no monitor.', c:'bas'},
-      {t:'Sorriso do adolescente', d:'Antes e depois autorizado, com naturalidade.', c:'aut'},
-      {t:'Família no ambiente', d:'A recepção que acolhe, o consultório que não assusta.', c:'pes'},
+      {t:'Retrato do professor', d:'Meio corpo e close, luz de janela. Sóbrio e elegante.', c:'pes'},
+      {t:'O olhar que escuta', d:'Em consulta, atento à pessoa antes do dente.', c:'bas'},
+      {t:'A família reunida', d:'Da criança ao adulto, o ortodontista de todas as fases.', c:'aut'},
+      {t:'Escaneamento e a tela 3D', d:'A câmera intraoral e o planejamento no monitor.', c:'bas'},
+      {t:'Sorrisos de cada idade', d:'Adolescente e adulto, com naturalidade e autorização.', c:'aut'},
+      {t:'O consultório sóbrio', d:'O ambiente limpo e sério, a cara da marca.', c:'duv'},
       {t:'Detalhes da marca', d:'Alinhador na mão, azul e dourado, os materiais.', c:'aut'},
-      {t:'Bastidor leve', d:'Um dia no consultório, a equipe, o café.', c:'bas'}
+      {t:'Bastidor com experiência', d:'Um dia de trabalho, a estrada em ação.', c:'bas'}
     ]
   },
 
@@ -515,6 +523,16 @@ const CLIENTES = [
      ref:{url:'https://www.instagram.com/odontopediatria.brasil/', metrica:'contraexemplo · técnico', o:'A comunidade discute técnica de aparelho para o dentista.', porque:'A escolha prática que o pai enfrenta fica de fora.'},
      angulo:'A decisão que o pai enfrenta, sem jargão. Aqui o alinhador aparece, sem ser o foco.',
      desdobra:{reels:'Ele compara em 45s: quando cada um serve, prazo e cuidado. Chamada para avaliar.', carrossel:'Aparelho ou alinhador para adolescente, ponto a ponto.', stories:'Enquete "seu filho usaria aparelho ou alinhador?".', estatico:'Card comparativo simples com chamada de avaliação.'}}
+  ],
+
+  /* posts de apresentação · fixados e prioritários (inspirados no perfil da Lara) */
+  fixados:[
+    {n:'01', tema:'Prazer, Dr. Roberto', papel:'Apresenta o profissional. O primeiro post que a família vê ao chegar no perfil.', precisa:'ensaio do professor e identidade',
+     slides:['Capa: retrato e "ortodontia da família há 30 anos"','Quem é: mestrado, professor, experiência','A filosofia: olhar para a pessoa antes do dente','Para quem: da criança ao adulto, a família toda','O método: escaneamento e planejamento','Chamada: agende uma avaliação']},
+    {n:'02', tema:'Casos que acompanhei', papel:'Mostra casos clínicos reais, com contexto e autorização. Prova de resultado.', precisa:'portfólio de casos autorizados',
+     slides:['Capa: "casos que acompanhei"','Um caso de criança, antes e depois autorizado','Um caso de adolescente','Um caso de adulto','O que eles têm em comum','Chamada: o seu caso também tem caminho']},
+    {n:'03', tema:'A transformação vai além do sorriso', papel:'Fala da transformação do paciente. Post de desejo e captação.', precisa:'ensaio, portfólio e um depoimento',
+     slides:['Capa: "mais que dentes alinhados"','A insegurança de antes','A jornada do tratamento','O depois: confiança para sorrir','Um depoimento real, com autorização','Chamada: comece a sua']}
   ],
 
   ciclos:[]

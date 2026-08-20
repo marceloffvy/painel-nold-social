@@ -263,6 +263,16 @@ dl.facts dd b{font-weight:500}
 .shot .d{font-size:13px; color:var(--gray); margin-top:2px}
 @media(max-width:720px){ .mood{grid-template-columns:repeat(2,1fr)} .shots{grid-template-columns:1fr} }
 
+/* posts fixados (apresentação) */
+.fixed-post{border:1px solid var(--line); border-left:3px solid var(--coral); background:var(--paper); padding:16px 20px; margin-top:12px}
+.fixed-post .fh{display:flex; gap:12px; align-items:center; margin-bottom:8px; flex-wrap:wrap}
+.fixed-post .fh .t{font-family:var(--serif); font-size:19px}
+.fixed-post .o{font-size:14px; color:var(--gray); margin-bottom:12px}
+.fslides{display:grid; grid-template-columns:repeat(2,1fr); gap:7px 20px}
+.fslides div{display:flex; gap:9px; font-size:14px; align-items:baseline}
+.fslides .sn{font-family:var(--mono); font-size:10px; color:var(--coral); flex:none}
+@media(max-width:720px){ .fslides{grid-template-columns:1fr} }
+
 /* checklist */
 .check{background:var(--paper); border:1px solid var(--line)}
 .check div{display:flex; gap:12px; padding:12px 18px; border-bottom:1px solid var(--line); align-items:flex-start}
