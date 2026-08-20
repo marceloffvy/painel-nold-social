@@ -249,6 +249,20 @@ dl.facts dd b{font-weight:500}
   letter-spacing:.1em; text-transform:uppercase; color:var(--gray)}
 .legenda-feed i{width:11px; height:11px; display:inline-block}
 
+/* ensaio: moodboard + shotlist */
+.mood{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
+.mood .mo{position:relative; display:block; aspect-ratio:4/5; overflow:hidden; border:1px solid var(--line)}
+.mood .mo img{width:100%; height:100%; object-fit:cover; display:block}
+.mood .mo .cap{position:absolute; left:0; right:0; bottom:0; padding:20px 10px 8px;
+  font-family:var(--mono); font-size:9.5px; letter-spacing:.06em; text-transform:uppercase;
+  color:#fff; background:linear-gradient(transparent,rgba(0,0,0,.78))}
+.shots{display:grid; grid-template-columns:repeat(2,1fr); gap:10px}
+.shot{display:flex; gap:11px; padding:13px 15px; border:1px solid var(--line); background:var(--paper)}
+.shot .dot{width:12px; height:12px; border-radius:50%; margin-top:4px; flex:none}
+.shot .t{font-weight:500; font-size:15px}
+.shot .d{font-size:13px; color:var(--gray); margin-top:2px}
+@media(max-width:720px){ .mood{grid-template-columns:repeat(2,1fr)} .shots{grid-template-columns:1fr} }
+
 /* checklist */
 .check{background:var(--paper); border:1px solid var(--line)}
 .check div{display:flex; gap:12px; padding:12px 18px; border-bottom:1px solid var(--line); align-items:flex-start}

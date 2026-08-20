@@ -113,7 +113,39 @@ const CLIENTES = [
     ]
   },
 
-  /* ---------- 04 CAMPANHA ---------- */
+  /* ---------- 04 ENSAIO FOTOGRÁFICO ---------- */
+  ensaio:{
+    intro:'A atmosfera do ensaio do Dr. Luiz Felipe: cinematográfica, séria e masculina, no tom vinho da marca. Abaixo, referências de foto. Ao lado, o que precisamos fotografar.',
+    atmosfera:[
+      {t:'Luz', d:'Quente e baixa. Sombra viva, nada de branco hospitalar.'},
+      {t:'Gesto', d:'Contido. Mão no queixo, rosto em repouso, perfil.'},
+      {t:'Cor', d:'Vinho, nude e quase-preto. Fundo escuro.'},
+      {t:'Ciência', d:'Tomografia, guia 3D, instrumental. Precisão visível.'}
+    ],
+    refs:[
+      {img:'img/biliart/ref/r01.webp', fonte:'https://www.pinterest.com/pin/199495458490752570/', t:'Bastidor cirúrgico, luz de foco'},
+      {img:'img/biliart/ref/r02.webp', fonte:'https://www.pinterest.com/pin/402861129191864415/', t:'Retrato de autoridade, fundo escuro'},
+      {img:'img/biliart/ref/r03.webp', fonte:'https://www.pinterest.com/pin/2322237302937946/', t:'Força e contenção'},
+      {img:'img/biliart/ref/r04.webp', fonte:'https://www.pinterest.com/pin/49398927160250717/', t:'Planejamento: exame na tela'},
+      {img:'img/biliart/ref/r05.webp', fonte:'https://www.pinterest.com/pin/561964859773104535/', t:'O detalhe nas mãos'},
+      {img:'img/biliart/ref/r06.webp', fonte:'https://www.pinterest.com/pin/7318418142238762/', t:'Retrato sóbrio, luz quente'},
+      {img:'img/biliart/ref/r07.webp', fonte:'https://www.pinterest.com/pin/70016969204558387/', t:'Editorial masculino, gesto contido'},
+      {img:'img/biliart/ref/r08.webp', fonte:'https://www.pinterest.com/pin/83527768085608407/', t:'O tom vinho da marca'},
+      {img:'img/biliart/ref/r09.webp', fonte:'https://www.pinterest.com/pin/25684660372387472/', t:'Contemplação, ciência na mesa'}
+    ],
+    shotlist:[
+      {t:'Retrato do cirurgião', d:'Meio corpo e close, luz quente e baixa, gesto contido.', c:'aut'},
+      {t:'Bloco cirúrgico', d:'Bastidor com a luz de foco, a equipe em sincronia.', c:'bas'},
+      {t:'Planejamento 3D', d:'Tomografia na tela, guia cirúrgica, mão no queixo.', c:'bas'},
+      {t:'O detalhe nas mãos', d:'Instrumental, guia impressa, o objeto do procedimento.', c:'aut'},
+      {t:'Perfil e mandíbula', d:'Rosto em repouso, o perfil que ele trata.', c:'pes'},
+      {t:'Retrato editorial vinho', d:'Fundo da marca, o tom vinho, terno.', c:'aut'},
+      {t:'Consultório sério', d:'O ambiente, a tela do planejamento ao fundo.', c:'bas'},
+      {t:'Depoimento em vídeo', d:'Paciente no dia da cirurgia, luz quente, rosto na tela.', c:'duv'}
+    ]
+  },
+
+  /* ---------- 05 CAMPANHA ---------- */
   campanha:{
     nome:'O perfil que você procura na foto. Construído aqui.',
     deck:'https://biliart-pres.vercel.app/',
@@ -299,38 +331,38 @@ const CLIENTES = [
 {
   slug:'idee', ativo:true,
   nome:'Idée · Dr. Roberto Simonetti', categoria:'Ortodontia e alinhadores',
-  resumo:'Ortodontia adulta com alinhadores. O professor que planeja o sorriso. Campanha "Nunca é tarde".',
+  resumo:'Ortodontia da família, da criança ao adulto. O ortodontista que conversa com o pai e a mãe.',
   arroba:'@robertosimonetti_ortodontia', perfil:'https://www.instagram.com/robertosimonetti_ortodontia/',
   seguidores:'3.095',
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
-  nicho:'Ortodontia adulta com alinhadores. Aparelho fixo e mentoria para dentistas como frentes de apoio.',
-  posicionamento:'O ortodontista que planeja o sorriso como um arquiteto planeja uma obra: estrutura, tempo e previsibilidade. Para o adulto que acha que já passou da idade ou que alinhador é coisa de adolescente. Trinta anos de clínica, mestrado e um método que mostra o resultado antes de começar.',
+  nicho:'Ortodontia da família. Crianças e adolescentes no centro, alinhador do adulto como frente de apoio.',
+  posicionamento:'O ortodontista de confiança da família, que acompanha o sorriso desde criança. Conversa com o pai e a mãe que não sabem a hora certa de levar o filho, trata o medo do aparelho com paciência e explica cada passo. Trinta anos de clínica e mestrado, do primeiro aparelho ao alinhador do adulto.',
   publico:[
-    {t:'Quem', d:'Adulto de 30 a 55 anos, maioria mulher, classe média e alta.'},
-    {t:'Momento', d:'Se incomoda com os dentes há anos e vai adiando a decisão.'},
-    {t:'Dor', d:'Dente torto ou recidiva de tratamento antigo. Vergonha de sorrir em foto.'},
-    {t:'Trava', d:'Acha que passou da idade, que aparelho é de adolescente, que não tem tempo.'}
+    {t:'Quem', d:'Mãe e pai de 30 a 50 anos que decidem pelo filho. E o adulto que ainda quer alinhar.'},
+    {t:'Momento', d:'Percebeu o dente torto do filho ou ouviu do dentista que precisa avaliar.'},
+    {t:'Dor', d:'Não sabe a idade certa, teme o custo e o tempo, o filho tem medo de aparelho.'},
+    {t:'Trava', d:'"Será que já é hora?", "vai doer?", "e se ele não cuidar direito?".'}
   ],
   signos:[
-    {t:'Luz', d:'Clara e sofisticada. Diurna e natural, longe da clínica fria.'},
-    {t:'Cor', d:'Azul profundo e dourado. Elegância sóbria.'},
-    {t:'Corpo', d:'Sorriso adulto real e o gesto de confiança de quem decidiu.'},
-    {t:'Método', d:'Escaneamento, planejamento digital, o depois previsto na tela.'},
-    {t:'Ritmo', d:'Sereno e didático. O tempo de quem explica com calma.'}
+    {t:'Luz', d:'Clara e acolhedora. Natural e diurna, longe da clínica fria.'},
+    {t:'Cor', d:'Azul profundo e dourado. Sério, mas caloroso.'},
+    {t:'Corpo', d:'Criança e adolescente sorrindo, a mão do pai no ombro, o professor atento.'},
+    {t:'Método', d:'Escaneamento, o antes e o depois, o acompanhamento ao longo do tempo.'},
+    {t:'Ritmo', d:'Calmo e didático. O tempo de quem explica para a família.'}
   ],
   linhaEditorial:[
-    {n:'01', t:'O professor humano', peso:'25%', d:'A pessoa por trás de trinta anos de carreira. História, rotina e o porquê de ainda ensinar.', porque:'Humaniza a autoridade e é o que mais gera alcance no nicho.', temas:['origem','rotina','30 anos','a família de sorrisos']},
-    {n:'02', t:'Nunca é tarde', peso:'30%', d:'Quebra da idade e do rótulo de adolescente. O adulto tem vez.', porque:'É a maior dor do público e o território menos ocupado pelos concorrentes.', temas:['mito da idade','antes de adiar','depois dos 40','autoestima']},
-    {n:'03', t:'Discrição e transformação', peso:'25%', d:'O alinhador que ninguém percebe e a mudança do sorriso com história.', porque:'Gera desejo sem soar como anúncio.', temas:['ninguém vê','no dia a dia','a jornada','resultado com contexto']},
-    {n:'04', t:'Dúvidas de paciente', peso:'20%', d:'Quanto tempo, se dói e o que fazer depois que o dentista falou.', porque:'Puxa alcance orgânico de busca e alimenta o funil.', temas:['quanto tempo','dói?','higiene','manutenção']}
+    {n:'01', t:'Vida pessoal', peso:'22%', d:'O homem por trás do ortodontista. Pai, professor, trinta anos de história.', porque:'Aproxima e gera identificação. Pai confia em quem também é pai.', temas:['por que virei ortodontista','rotina de professor','30 anos de profissão','valores de família']},
+    {n:'02', t:'Autoridade', peso:'28%', d:'Depoimento de pais, caso de criança e adolescente com contexto, reconhecimento.', porque:'Prova social é o que mais converte. Mãe indica para outra mãe.', temas:['depoimento de mãe','antes e depois autorizado','caso de adolescente','mestrado e 30 anos']},
+    {n:'03', t:'Bastidores', peso:'20%', d:'O consultório que acolhe a criança, o escaneamento, como se trata o medo.', porque:'Mostra método e cuidado. Tira o medo antes da primeira consulta.', temas:['a primeira visita','o escaneamento 3D','como acalmamos o medo','o ambiente e a equipe']},
+    {n:'04', t:'Dúvidas de paciente', peso:'30%', d:'A pergunta que o pai e a mãe fazem, respondida sem jargão.', porque:'Puxa alcance orgânico de busca e é a porta de entrada da família.', temas:['qual a idade certa?','meu filho precisa de aparelho?','aparelho ou alinhador?','e se ele não cuidar?']}
   ],
   canais:[
-    {c:'Reels', papel:'Alcance e humanização', o:'Talking head leve, relatable, depoimento e bastidor.', f:'3x por semana'},
-    {c:'Carrossel', papel:'Salvamento', o:'Mitos da idade, etapas do alinhador, dúvidas.', f:'1x por semana'},
-    {c:'Estático', papel:'Campanha', o:'Nunca é tarde, mote e chamada de avaliação.', f:'1x por semana'},
-    {c:'Stories', papel:'Relação diária', o:'Bastidor, enquete, caixinha e dia a dia da clínica.', f:'diário, 3 a 5 telas'},
-    {c:'Foto', papel:'Acervo', o:'Retrato claro, consultório, escaneamento e sorriso adulto.', f:'1 ensaio/trimestre'}
+    {c:'Reels', papel:'Alcance e proximidade', o:'Dúvida de pai e mãe, bastidor acolhedor, depoimento. 30 a 60s, rosto na tela.', f:'3 por semana'},
+    {c:'Carrossel', papel:'Salvamento', o:'Idade certa, etapas do tratamento, aparelho ou alinhador.', f:'1 por semana'},
+    {c:'Estático', papel:'Posicionamento e captação', o:'Frase para a família, avaliação, convênio.', f:'1 por semana'},
+    {c:'Stories', papel:'Relação diária', o:'Rotina, enquete de mãe, caixinha de dúvida, bastidor cru.', f:'Diário, 3 a 5 telas'},
+    {c:'Foto', papel:'Acervo', o:'Criança e adolescente, família, o professor, consultório acolhedor.', f:'1 ensaio por trimestre'}
   ],
 
   /* ---------- 02 IDENTIDADE ---------- */
@@ -356,101 +388,133 @@ const CLIENTES = [
 
   /* ---------- 03 LEITURA DE PERFIL ---------- */
   perfilAnalise:{
-    resumo:'Autoridade real de trinta anos, mas o perfil conversa com colega de profissão, não com paciente. Os reels são quase todos ele sozinho falando para a câmera, e o alcance fica entre 277 e 700 views. O feed mistura paciente, mentoria e formatura, e o público se perde no caminho.',
+    resumo:'Autoridade real de trinta anos, mas o perfil conversa com colega de profissão, não com o pai e a mãe. Os reels são quase todos ele sozinho falando para a câmera, e o alcance fica entre 277 e 700 views. O feed mistura paciente, mentoria e formatura, e a família que procura por ele se perde no caminho.',
     diag:[
       {t:'Formato', v:'Talking head sério domina. Ele sozinho, pouco ritmo.', s:'ajustar'},
       {t:'Alcance', v:'Reels de 277 a 700 views. Ainda não escala.', s:'ajustar'},
-      {t:'Feed', v:'Mistura paciente com mentoria e formatura de dentista.', s:'ajustar'},
-      {t:'Atmosfera', v:'Sóbria e distante. Falta calor e leveza.', s:'ajustar'},
+      {t:'Público', v:'Fala com colega dentista, não com o pai e a mãe.', s:'ajustar'},
+      {t:'Feed', v:'Mistura paciente, mentoria e formatura. Sem foco.', s:'ajustar'},
       {t:'Foto de perfil', v:'Retrato sério. Serve, dá para aproximar.', s:'ok'},
-      {t:'Campanha', v:'Nunca é tarde já está no ar. Boa direção.', s:'ok'}
+      {t:'Base', v:'Muitos casos de criança e adolescente. Matéria-prima ótima.', s:'ok'}
     ],
     feedCores:{
-      pro:{bg:'#3C405B', fg:'#EDE7DC', l:'Professor humano'},
-      obj:{bg:'#C69C6C', fg:'#2B2B33', l:'Nunca é tarde'},
-      dis:{bg:'#2B2B33', fg:'#C69C6C', l:'Discrição'},
+      pes:{bg:'#3C405B', fg:'#EDE7DC', l:'Vida pessoal'},
+      aut:{bg:'#C69C6C', fg:'#2B2B33', l:'Autoridade'},
+      bas:{bg:'#2B2B33', fg:'#C69C6C', l:'Bastidores'},
       duv:{bg:'#EDE7DC', fg:'#3C405B', l:'Dúvidas'}
     },
     feedIdeal:[
-      {t:'Professor', c:'pro'},{t:'Nunca é tarde', c:'obj'},{t:'Discrição', c:'dis'},
-      {t:'Dúvida', c:'duv'},{t:'Nunca é tarde', c:'obj'},{t:'Professor', c:'pro'},
-      {t:'Discrição', c:'dis'},{t:'Dúvida', c:'duv'},{t:'Nunca é tarde', c:'obj'}
+      {t:'Dúvida', c:'duv'},{t:'Autoridade', c:'aut'},{t:'Pessoal', c:'pes'},
+      {t:'Bastidor', c:'bas'},{t:'Dúvida', c:'duv'},{t:'Autoridade', c:'aut'},
+      {t:'Pessoal', c:'pes'},{t:'Dúvida', c:'duv'},{t:'Bastidor', c:'bas'}
     ],
     checklist:[
-      {t:'Depoimento de paciente adulto', d:'Antes de decidir e depois de tratar. Rosto, voz e história.', ok:false},
-      {t:'Ensaio do professor humano', d:'Sorrindo, ouvindo, na aula e no consultório. Luz clara.', ok:false},
-      {t:'Escaneamento e planejamento', d:'A câmera intraoral, o 3D na tela, o depois previsto.', ok:false},
-      {t:'Discrição no dia a dia', d:'O alinhador na mão e na boca, sem ninguém perceber.', ok:false},
-      {t:'Separar a conta de mentoria', d:'Formatura e curso de dentista saem do feed de paciente.', ok:false},
+      {t:'Depoimento de mãe e pai', d:'Uma família contando a transformação do filho, com autorização.', ok:false},
+      {t:'Ensaio do professor com crianças', d:'Atendendo, ouvindo, tirando o medo. Luz clara.', ok:false},
+      {t:'Escaneamento e a tela 3D', d:'A câmera intraoral e o antes e depois no monitor.', ok:false},
+      {t:'Sorriso do adolescente', d:'Antes e depois autorizado, com naturalidade.', ok:false},
+      {t:'Separar a conta de mentoria', d:'Formatura e curso de dentista saem do feed de família.', ok:false},
       {t:'Padrão de gravação', d:'Mesma luz, enquadramento e fundo em todo talking head.', ok:false},
       {t:'Retratos sobre fundo da marca', d:'Azul e dourado, meio corpo e close, com e sem jaleco.', ok:false},
       {t:'Fotos horizontais', d:'Para capa, LinkedIn e 16:9.', ok:false}
     ]
   },
 
-  /* ---------- 04 CAMPANHA ---------- */
+  /* ---------- 04 ENSAIO FOTOGRÁFICO ---------- */
+  ensaio:{
+    intro:'A atmosfera que queremos capturar num ensaio: calor, família e o cuidado de quem acompanha o sorriso desde criança. Abaixo, referências de foto. Ao lado, o que precisamos fotografar.',
+    atmosfera:[
+      {t:'Luz', d:'Natural e clara. Manhã e janela, nada de flash duro.'},
+      {t:'Emoção', d:'Proximidade real. Colo, mão no ombro, riso solto.'},
+      {t:'Cor', d:'Azul e dourado da marca, madeira e tons quentes.'},
+      {t:'Elenco', d:'Criança, adolescente, pai e mãe. O professor junto.'}
+    ],
+    refs:[
+      {img:'img/idee/ref/r01.webp', fonte:'https://www.pinterest.com/pin/300122762680689726/', t:'Atmosfera humana, sem pose'},
+      {img:'img/idee/ref/r02.webp', fonte:'https://www.pinterest.com/pin/35114072092361242/', t:'Tirar o medo: profissional e criança'},
+      {img:'img/idee/ref/r03.webp', fonte:'https://www.pinterest.com/pin/714594665870460246/', t:'A família junta, leve'},
+      {img:'img/idee/ref/r04.webp', fonte:'https://www.pinterest.com/pin/686728643161136226/', t:'Os pais no consultório'},
+      {img:'img/idee/ref/r05.webp', fonte:'https://www.pinterest.com/pin/563653709645473134/', t:'Rotina em casa: pai e filho'},
+      {img:'img/idee/ref/r06.webp', fonte:'https://www.pinterest.com/pin/7388786883150317/', t:'Luz suave, colo e cuidado'},
+      {img:'img/idee/ref/r07.webp', fonte:'https://www.pinterest.com/pin/136796907427320338/', t:'Acolhimento na cadeira'},
+      {img:'img/idee/ref/r08.webp', fonte:'https://www.pinterest.com/pin/865183778432146761/', t:'Luz quente, momento de família'},
+      {img:'img/idee/ref/r09.webp', fonte:'https://www.pinterest.com/pin/763360205637522670/', t:'A conversa com a mãe'}
+    ],
+    shotlist:[
+      {t:'Retrato do professor', d:'Meio corpo e close, luz clara, com e sem jaleco. Olhar acolhedor.', c:'pes'},
+      {t:'O professor com a criança', d:'Atendendo, ouvindo, tirando o medo. Sorriso real.', c:'bas'},
+      {t:'A conversa com os pais', d:'Ele explicando o plano para o pai e a mãe.', c:'duv'},
+      {t:'Escaneamento e a tela 3D', d:'A câmera intraoral e o antes e depois no monitor.', c:'bas'},
+      {t:'Sorriso do adolescente', d:'Antes e depois autorizado, com naturalidade.', c:'aut'},
+      {t:'Família no ambiente', d:'A recepção que acolhe, o consultório que não assusta.', c:'pes'},
+      {t:'Detalhes da marca', d:'Alinhador na mão, azul e dourado, os materiais.', c:'aut'},
+      {t:'Bastidor leve', d:'Um dia no consultório, a equipe, o café.', c:'bas'}
+    ]
+  },
+
+  /* ---------- 05 CAMPANHA ---------- */
   campanha:{
-    status:'No ar · captação por alinhadores',
+    status:'No ar · frente adulta, hoje secundária',
     nome:'Nunca é tarde para corrigir. Tarde é continuar adiando.',
     eixos:[
       {t:'Frio', d:'desperta desejo e discrição'},
       {t:'Médio', d:'quebra a objeção da idade'},
       {t:'Aquecido', d:'autoridade, prova e avaliação'}
     ],
-    alerta:'Persona-âncora: a adulta que parou de aparecer sorrindo nas fotos.',
+    alerta:'O posicionamento do perfil passou a conversar com a família. Esta campanha vira a frente adulta e secundária.',
     deck:'https://idee-nunca-e-tarde.vercel.app/'
   },
 
-  /* ---------- 05 BENCHMARK ---------- */
+  /* ---------- 06 BENCHMARK ---------- */
   benchmark:[
-    {at:'@larapassosalvim', url:'https://www.instagram.com/larapassosalvim/', porte:'13,2 mil', perfil:'Ortodontista e creator, entre o Rio e Juiz de Fora.', mecanismo:'Vida pessoal e leveza de creator. Os maiores reels são pessoais: a filha (32,2 mil), um get ready (26,8 mil) e o anúncio aos amigos (16,2 mil).', leitura:'Quem cresce no nicho humaniza primeiro. A ortodontia entra como pano de fundo, não como gancho.'},
-    {at:'@odontologiadicas', url:'https://www.instagram.com/odontologiadicas/', porte:'193 mil', perfil:'Andréa Figueiredo, conteúdo de odontologia, Minas Gerais.', mecanismo:'Relatable, curiosidade e vulnerabilidade. Reels de 35,7 mil (reação coletiva), 32,3 mil (curiosidade de equipamento) e o "do outro lado da cadeira" (23,9 mil).', leitura:'Emoção e curiosidade escalam. A ressalva: a audiência dela é de dentista, então adaptamos o gancho para o paciente.'},
-    {at:'@smilleralinhadores', url:'https://www.instagram.com/smilleralinhadores/', porte:'15,9 mil', perfil:'Marca de alinhador invisível, comunicação voltada a dentistas.', mecanismo:'Alinhador tratado como produto e número. Reels entre 790 e 5,7 mil views, sem rosto e sem história.', leitura:'Contraexemplo útil. Produto sem gente e sem narrativa não constrói audiência de paciente.'}
+    {at:'@larapassosalvim', url:'https://www.instagram.com/larapassosalvim/', porte:'13,2 mil', perfil:'Ortodontista e creator, entre o Rio e Juiz de Fora.', mecanismo:'Vida pessoal e leveza de creator. Os maiores reels são pessoais: a filha (32,2 mil), um get ready (26,8 mil) e o anúncio aos amigos (16,2 mil).', leitura:'Quem cresce no nicho humaniza primeiro. Para o Roberto, é o professor-pai que aproxima, não o técnico.'},
+    {at:'@odontologiadicas', url:'https://www.instagram.com/odontologiadicas/', porte:'193 mil', perfil:'Andréa Figueiredo, conteúdo de odontologia, Minas Gerais.', mecanismo:'Relatable e curiosidade. Reels de 35,7 mil (reação coletiva), 32,3 mil (curiosidade) e o "do outro lado da cadeira" (23,9 mil).', leitura:'O gancho "eu também" e "sinais" faz o pai marcar e salvar. A audiência dela é de dentista, então viramos o gancho para a mãe e o pai.'},
+    {at:'@odontopediatria.brasil', url:'https://www.instagram.com/odontopediatria.brasil/', porte:'61,1 mil', perfil:'A maior comunidade de odontopediatria do mundo. Fala com dentista.', mecanismo:'Educação e comunidade para o dentista, não para a família. Conteúdo técnico e institucional.', leitura:'Contraexemplo revelador. O maior perfil do nicho fala com colega. A conversa com o pai e a mãe está aberta e quase ninguém ocupa.'}
   ],
   sintese:{
-    alta:['Vida pessoal e o humano do profissional','Relatable e curiosidade que geram save','Transformação de sorriso contada com história'],
-    saturado:['Talking head técnico e sério','Alinhador como produto para dentista','Caso clínico solto, sem narrativa'],
-    lacuna:['O adulto que acha que passou da idade','O professor gente, além do técnico','A discrição do alinhador no dia a dia']
+    alta:['O humano do profissional, o professor-pai','Relatable e sinais que o pai reconhece','A criança e o adolescente com naturalidade'],
+    saturado:['Talking head técnico e sério','Conteúdo para colega dentista','Caso clínico solto, sem história'],
+    lacuna:['A conversa direta com o pai e a mãe','A hora certa de levar a criança','O medo do aparelho, tratado com calma']
   },
 
-  /* ---------- 06 PAUTAS ---------- */
+  /* ---------- 07 PAUTAS ---------- */
   pautas:[
-    {n:'01', bm:'@larapassosalvim', cls:'posicionamento', tema:'O marco humano por trás dos 30 anos',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'Nascimento da filha. O maior alcance do perfil, e é vida pessoal.', porque:'Um momento humano real alcança mais que qualquer caso clínico.'},
-     angulo:'Roberto abre um marco pessoal no lugar de um caso clínico. A autoridade fica perto quando ele aparece como gente.',
-     desdobra:{reels:'Ele narra um marco de vida (uma turma que formou, um neto, trinta anos de profissão) sobre fotos de acervo, voz em off, ritmo calmo. 40s.', carrossel:'A linha do tempo de trinta anos de sorrisos, um capítulo por slide.', stories:'Bastidor do dia a dia sem edição, com caixinha de pergunta.', estatico:'Retrato dele com uma frase pessoal sobre por que faz o que faz.'}},
-    {n:'02', bm:'@larapassosalvim', cls:'alcance', tema:'Vem comigo num dia de consultório',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me a caminho de ser madrinha. Rotina e leveza.', porque:'Bastidor leve aproxima e viraliza mais que conteúdo técnico.'},
-     angulo:'O contraste com o talking head sério: um dia real, leve, com o professor como pessoa.',
-     desdobra:{reels:'POV do dia dele: chegada, café, um paciente, a aula. Música em alta, cortes leves. 45s.', carrossel:'Um dia na Idée em seis quadros.', stories:'A sequência do dia em tempo real.', estatico:'Foto de bastidor com legenda do momento.'}},
-    {n:'03', bm:'@larapassosalvim', cls:'posicionamento', tema:'Por que virei ortodontista',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Contar aos amigos que seria pai. Emoção compartilhada em primeira pessoa.', porque:'Narrativa emocional em primeira pessoa engaja e faz salvar.'},
-     angulo:'A história de origem contada com emoção, no lugar do currículo.',
-     desdobra:{reels:'Ele conta a pessoa ou o caso que o fez escolher a ortodontia. Direto na câmera, luz quente. 50s.', carrossel:'A história em capítulos, com fotos antigas.', stories:'Enquete "o que te fez escolher sua profissão?" e a resposta dele.', estatico:'Foto antiga dele com a frase de origem.'}},
-    {n:'04', bm:'@odontologiadicas', cls:'alcance', tema:'Coisas que todo adulto que esconde o sorriso faz',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reel de reação coletiva. Nos comentários é só "eu também".', porque:'Reconhecimento coletivo faz marcar amigo e salvar.'},
-     angulo:'Relatable puro dentro do território da campanha: os hábitos de quem trava por causa dos dentes.',
-     desdobra:{reels:'Lista rápida de hábitos (rir de boca fechada, foto sempre de lado, a mão na frente). Áudio em alta, ritmo seco. 30s.', carrossel:'Um hábito por slide, tom acolhedor.', stories:'Enquete por hábito, "você faz isso?".', estatico:'Card com o hábito mais reconhecível.'}},
-    {n:'05', bm:'@odontologiadicas', cls:'posicionamento', tema:'Quando quem cuida também teve vergonha de sorrir',
+    {n:'01', bm:'@larapassosalvim', cls:'Vida pessoal', tema:'Por que virei ortodontista',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Contar aos amigos que seria pai. Emoção em primeira pessoa.', porque:'Narrativa emocional pessoal engaja e faz salvar.'},
+     angulo:'A história de origem contada com emoção. Pai confia em quem também é pai e professor.',
+     desdobra:{reels:'Ele conta o que o fez virar ortodontista, um caso de criança que marcou. Direto na câmera, luz quente. 50s.', carrossel:'A história em capítulos, com fotos antigas.', stories:'Enquete "o que te fez escolher sua profissão?" e a resposta.', estatico:'Foto antiga dele com a frase de origem.'}},
+    {n:'02', bm:'@larapassosalvim', cls:'Bastidores', tema:'Vem comigo num dia de consultório',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me, rotina e leveza.', porque:'Bastidor leve aproxima e viraliza mais que conteúdo técnico.'},
+     angulo:'Um dia real no consultório, leve, mostrando o ambiente que acolhe a criança.',
+     desdobra:{reels:'POV de um dia: a recepção, uma criança chegando sem medo, o escaneamento, o café. 45s.', carrossel:'Um dia na Idée em seis quadros.', stories:'A sequência do dia em tempo real.', estatico:'Foto de bastidor com legenda do momento.'}},
+    {n:'03', bm:'@larapassosalvim', cls:'Autoridade', tema:'30 anos, milhares de sorrisos acompanhados',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'Nascimento da filha. O maior alcance do perfil, e é vida pessoal.', porque:'Um marco humano real alcança mais que qualquer caso clínico.'},
+     angulo:'Um marco de trinta anos como marca humana. Sorrisos acompanhados desde criança, contados com emoção.',
+     desdobra:{reels:'Linha do tempo dos 30 anos sobre fotos de acervo, voz em off, ritmo calmo. 40s.', carrossel:'Trinta anos de sorrisos, um capítulo por slide.', stories:'Bastidor da rotina com caixinha de pergunta.', estatico:'Retrato dele com a frase sobre por que faz o que faz.'}},
+    {n:'04', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Sinais de que seu filho vai precisar de aparelho',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DUMZ5J0DVyA/', metrica:'32,3 mil views', o:'Curiosidade sobre um equipamento novo. Prende pela novidade.', porque:'Curiosidade e "sinais" surpreendem, retêm e fazem comentar.'},
+     angulo:'Os sinais que o pai e a mãe deveriam observar na boca do filho, com didática de professor.',
+     desdobra:{reels:'Lista rápida de sinais (dente nascendo torto, respira pela boca, ronca, morde errado). Modelo na mão. 40s.', carrossel:'Um sinal por slide, tom acolhedor.', stories:'Quiz "verdadeiro ou falso" sobre a idade de avaliar.', estatico:'Card com o sinal mais comum e a chamada de avaliação.'}},
+    {n:'05', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Coisas que todo pai de criança com aparelho vive',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reel de reação coletiva. Nos comentários é só "eu também".', porque:'Reconhecimento coletivo faz o pai marcar outro pai e salvar.'},
+     angulo:'Relatable para pais: as cenas que todo pai de criança com aparelho reconhece.',
+     desdobra:{reels:'Lista rápida de cenas (esconder o doce, a borrachinha que solta, a escovação de guerra). Áudio em alta. 30s.', carrossel:'Uma cena por slide, com humor leve.', stories:'Enquete "seu filho faz isso?".', estatico:'Card com a cena mais reconhecível.'}},
+    {n:'06', bm:'@odontologiadicas', cls:'Bastidores', tema:'Quando a criança tem medo do dentista',
      ref:{url:'https://www.instagram.com/odontologiadicas/reel/DYqD2JiTHVb/', metrica:'23,9 mil views', o:'A dentista conta quando esteve do outro lado da cadeira, com medo.', porque:'Vulnerabilidade real gera identificação e compartilhamento.'},
-     angulo:'Roberto, ou um paciente, conta a insegurança que veio antes da decisão. Baixa a guarda de quem assiste.',
-     desdobra:{reels:'Depoimento honesto sobre o incômodo com o próprio sorriso, antes da solução. Direto na câmera. 50s.', carrossel:'A jornada emocional de quem decide se cuidar depois de adulto.', stories:'Caixinha "o que te trava para cuidar do sorriso?".', estatico:'Uma frase de vulnerabilidade entre aspas, sobre fundo azul.'}},
-    {n:'06', bm:'@odontologiadicas', cls:'alcance', tema:'A máquina que mostra seu sorriso pronto antes de começar',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DUMZ5J0DVyA/', metrica:'32,3 mil views', o:'Curiosidade sobre um equipamento novo visto numa feira.', porque:'Curiosidade sobre tecnologia surpreende, retém e faz comentar.'},
-     angulo:'A mesma curiosidade virada para o paciente: o escaneamento que projeta o resultado antes do tratamento.',
-     desdobra:{reels:'Ele passa a câmera intraoral e o sorriso final aparece no 3D na tela, com a reação do paciente. 40s.', carrossel:'Como funciona o planejamento digital, do escaneamento ao resultado previsto.', stories:'"Verdadeiro ou falso" sobre alinhador e tecnologia.', estatico:'Print do 3D com a chamada "seu depois, antes de começar".'}},
-    {n:'07', bm:'@smilleralinhadores', cls:'conversão', tema:'O alinhador que ninguém percebe',
-     ref:{url:'https://www.instagram.com/smilleralinhadores/reel/DbB7I5lgoAH/', metrica:'5,7 mil views', o:'Reel de produto do alinhador, comunicação para dentista.', porque:'Contraexemplo: o produto sozinho, sem rosto, trava o alcance de paciente.'},
-     angulo:'A discrição vira desejo quando aparece uma pessoa real usando no dia a dia, no lugar do produto na embalagem.',
-     desdobra:{reels:'Paciente falando, rindo e bebendo água com o alinhador, e a pergunta "deu para ver?". 30s.', carrossel:'Cinco situações do dia em que ninguém percebe o alinhador.', stories:'Close do alinhador na boca com enquete "você notaria?".', estatico:'Retrato sorrindo com selo "discreto de verdade".'}},
-    {n:'08', bm:'@smilleralinhadores', cls:'conversão', tema:'A prova que fala com paciente',
-     ref:{url:'https://www.instagram.com/smilleralinhadores/', metrica:'"+10 mil dentistas confiam"', o:'A prova social da marca é medida em dentistas, não em pacientes.', porque:'Contraexemplo: a prova precisa ser traduzida para quem senta na cadeira.'},
-     angulo:'Nossa prova é o adulto que voltou a sorrir. Depoimento e resultado com contexto, no lugar do número técnico.',
-     desdobra:{reels:'Sequência de três pacientes adultos dizendo em uma frase o que mudou depois do tratamento. 40s.', carrossel:'Uma transformação contada em jornada: a trava, a decisão, o depois.', stories:'Repost de mensagem real de paciente, com autorização por escrito.', estatico:'Depoimento entre aspas, com o primeiro nome e a idade.'}},
-    {n:'09', bm:'@smilleralinhadores', cls:'conversão', tema:'Tenho 50 anos, ainda dá tempo?',
-     ref:{url:'https://www.instagram.com/smilleralinhadores/', metrica:'nicho B2B', o:'A marca fala de produto e deixa a objeção da idade de fora.', porque:'Contraexemplo: a maior dúvida do paciente adulto fica sem resposta.'},
-     angulo:'O gancho central da campanha: o adulto de 40, 50 ou 60 tem vez, com prazo e previsibilidade na mesa.',
-     desdobra:{reels:'Ele responde direto "tenho 50 anos, ainda dá?" com um caso real e o tempo médio de tratamento. 45s.', carrossel:'Três mitos sobre corrigir os dentes depois dos 40.', stories:'Caixinha "qual a sua idade e o seu medo?" respondida por ele.', estatico:'Peça da campanha "Nunca é tarde" com chamada de avaliação.'}}
+     angulo:'O medo da criança, tratado com calma. O pai vê como o filho é acolhido antes de sentar na cadeira.',
+     desdobra:{reels:'Ele mostra como recebe uma criança com medo: o tom de voz, o passo a passo, sem pressa. 50s.', carrossel:'Como preparar seu filho para a primeira consulta.', stories:'Caixinha "seu filho tem medo de dentista?".', estatico:'Frase acolhedora entre aspas, sobre fundo azul.'}},
+    {n:'07', bm:'@odontopediatria.brasil', cls:'Dúvidas', conv:true, tema:'Qual a idade certa de levar ao ortodontista?',
+     ref:{url:'https://www.instagram.com/odontopediatria.brasil/', metrica:'contraexemplo · 61,1 mil', o:'A maior comunidade responde ao dentista, não à mãe e ao pai.', porque:'A dúvida número um dos pais fica sem uma resposta simples.'},
+     angulo:'Responder direto a pergunta que todo pai faz: a hora certa de levar a criança ao ortodontista.',
+     desdobra:{reels:'Ele responde em 40s: a idade recomendada, por que não adiar, o que é avaliado. Chamada para avaliar.', carrossel:'A linha do tempo do sorriso da criança, idade por idade.', stories:'Caixinha "quantos anos tem seu filho?" com orientação.', estatico:'Card "a idade certa de avaliar" com chamada de avaliação.'}},
+    {n:'08', bm:'@odontopediatria.brasil', cls:'Autoridade', conv:true, tema:'Depoimento de mãe',
+     ref:{url:'https://www.instagram.com/odontopediatria.brasil/', metrica:'contraexemplo · institucional', o:'O perfil mostra números e técnica, não histórias de família.', porque:'A prova que convence pai é outra mãe, não um selo.'},
+     angulo:'Uma mãe contando para outra a transformação do filho. Prova social que fala com quem decide.',
+     desdobra:{reels:'Mãe falando em uma frase o que mudou no filho depois do tratamento. Rosto e emoção. 40s.', carrossel:'A jornada da família: a dúvida, a decisão, o resultado.', stories:'Repost de mensagem real de mãe, com autorização por escrito.', estatico:'Depoimento entre aspas, com o primeiro nome e a idade do filho.'}},
+    {n:'09', bm:'@odontopediatria.brasil', cls:'Dúvidas', conv:true, tema:'Aparelho ou alinhador para o meu filho?',
+     ref:{url:'https://www.instagram.com/odontopediatria.brasil/', metrica:'contraexemplo · técnico', o:'A comunidade discute técnica de aparelho para o dentista.', porque:'A escolha prática que o pai enfrenta fica de fora.'},
+     angulo:'A decisão que o pai enfrenta, sem jargão. Aqui o alinhador aparece, sem ser o foco.',
+     desdobra:{reels:'Ele compara em 45s: quando cada um serve, prazo e cuidado. Chamada para avaliar.', carrossel:'Aparelho ou alinhador para adolescente, ponto a ponto.', stories:'Enquete "seu filho usaria aparelho ou alinhador?".', estatico:'Card comparativo simples com chamada de avaliação.'}}
   ],
 
   ciclos:[]

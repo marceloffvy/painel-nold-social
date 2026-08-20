@@ -65,8 +65,8 @@ function viewClient(slug){
   const id=c.identidade, pa=c.perfilAnalise, cp=c.campanha, s=c.sintese, cy=(c.ciclos&&c.ciclos[0])||null;
   const marca=c.nome.split('·')[0].trim();
   const lum=h=>{const n=parseInt(h.slice(1),16);return (0.299*(n>>16&255)+0.587*(n>>8&255)+0.114*(n&255))/255};
-  const nav=[['b1','Diagnóstico'],['b2','Identidade'],['b3','Leitura de perfil'],['b4','Campanha'],
-             ['b5','Benchmark'],['b6','Pautas'],['b7','Ciclos e peças']]
+  const nav=[['b1','Diagnóstico'],['b2','Identidade'],['b3','Leitura de perfil'],['b4','Ensaio fotográfico'],
+             ['b5','Campanha'],['b6','Benchmark'],['b7','Pautas'],['b8','Ciclos e peças']]
     .map((x,i)=>`<a href="#${x[0]}" data-j="${x[0]}"><i>${pad2(i+1)}</i>${x[1]}</a>`).join('');
   const head=(n,t,sub)=>`<div class="blk-head"><span class="n">${n}</span><h2>${t}</h2><span class="sp"></span>${sub?`<span class="mono">${sub}</span>`:''}</div>`;
 
@@ -79,6 +79,7 @@ function viewClient(slug){
       <span class="mono">Pauta ${p.n}</span>
       <span class="t">${esc(p.tema)}</span>
       <span class="tag coral">${esc(p.cls)}</span>
+      ${p.conv?'<span class="tag solid">conversão</span>':''}
       <span class="tag">${esc(p.bm)}</span>
     </div>
     <div class="pt-b">
@@ -189,7 +190,20 @@ function viewClient(slug){
         </section>
 
         <section class="blk" id="b4">
-          ${head('04','Campanha ativa')}
+          ${head('04','Ensaio fotográfico', c.ensaio?'referências e o que fotografar':'')}
+          ${c.ensaio?`
+          <p class="lead" style="margin-bottom:16px">${esc(c.ensaio.intro)}</p>
+          <div class="grid-4">${c.ensaio.atmosfera.map(a=>`<div class="card"><span class="mono">${esc(a.t)}</span><div style="margin-top:8px;font-size:14px">${esc(a.d)}</div></div>`).join('')}</div>
+          <div style="margin:28px 0 12px"><span class="mono mark">Moodboard · referências de foto</span></div>
+          <div class="mood">${c.ensaio.refs.map(r=>`<a class="mo" href="${r.fonte}" target="_blank" rel="noopener"><img src="${r.img}" alt="${esc(r.t)}" loading="lazy"><span class="cap">${esc(r.t)}</span></a>`).join('')}</div>
+          <p class="mono" style="margin:12px 0 0;color:var(--gray)">Referências do Pinterest, apenas para direção de arte. Toque para ver a fonte.</p>
+          <div style="margin:28px 0 12px"><span class="mono mark">O que precisamos fotografar</span></div>
+          <div class="shots">${c.ensaio.shotlist.map(sh=>{const col=(pa.feedCores&&pa.feedCores[sh.c])||{bg:'#163227'};return `<div class="shot"><span class="dot" style="background:${col.bg}"></span><div><div class="t">${esc(sh.t)}</div><div class="d">${esc(sh.d)}</div></div></div>`;}).join('')}</div>
+          `:`<div class="empty">Ensaio ainda não planejado para este cliente.</div>`}
+        </section>
+
+        <section class="blk" id="b5">
+          ${head('05','Campanha ativa')}
           <div class="card dark">
             <span class="mono mark">${esc(cp.status)}</span>
             <h2 style="margin:12px 0 16px;max-width:22ch">${esc(cp.nome)}</h2>
@@ -199,8 +213,8 @@ function viewClient(slug){
           </div>
         </section>
 
-        <section class="blk" id="b5">
-          ${head('05','Benchmark','perfis acima de 10 mil')}
+        <section class="blk" id="b6">
+          ${head('06','Benchmark','perfis acima de 10 mil')}
           <div class="grid-3">${c.benchmark.map(b=>`
             <div class="bm">
               <div class="h"><span class="at">${esc(b.at)}</span><span class="metrica" style="font-size:20px">${esc(b.porte)}</span></div>
@@ -216,14 +230,14 @@ function viewClient(slug){
           </div>
         </section>
 
-        <section class="blk" id="b6">
-          ${head('06','Pautas', c.pautas.length+' temas · 3 por benchmark')}
-          <p class="lead" style="margin-bottom:20px">Cada pauta vem de um post real que performou. À direita, a versão Biliart em quatro formatos.</p>
+        <section class="blk" id="b7">
+          ${head('07','Pautas', c.pautas.length+' temas · 3 por benchmark')}
+          <p class="lead" style="margin-bottom:20px">Cada pauta vem de um post real que performou. À direita, a versão ${esc(marca)} em quatro formatos.</p>
           ${c.pautas.map(pauta).join('')}
         </section>
 
-        <section class="blk" id="b7">
-          ${head('07','Ciclos e peças')}
+        <section class="blk" id="b8">
+          ${head('08','Ciclos e peças')}
           ${cy?`<a class="cycle-card" href="#/c/${c.slug}/ciclo/${cy.slug}">
             <div><span class="mono">${esc(cy.periodo)}</span><h3 style="margin-top:6px">${esc(cy.titulo)}</h3></div>
             <div class="row"><span class="tag">${cy.pecas.length} peças</span><span class="mono on">abrir →</span></div>
