@@ -8,12 +8,12 @@ const CLIENTES = [
 
 /* ============================ BILIART ============================ */
 {
-  slug:'biliart', ativo:true,
+  slug:'biliart', ativo:true, apelido:'Felipe',
   nome:'Biliart · Dr. Luiz Felipe',
   categoria:'Cirurgia bucomaxilofacial',
   resumo:'Ortognática e ATM. Autoestima e reconexão com o sorriso.',
   arroba:'@drlfmartinho', perfil:'https://www.instagram.com/drlfmartinho/',
-  seguidores:'2.432', posts:'184',
+  seguidores:'2.443', posts:'185', avatar:'img/biliart/avatar.webp',
   logo:'img/biliart/marca/felipe-claro.webp', selo:'img/biliart/marca/selo-claro.webp',
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
@@ -62,6 +62,24 @@ const CLIENTES = [
     {c:'Estático', papel:'Posicionamento e captação', o:'Frase de marca, procedimento, convênio.', f:'1 por semana'},
     {c:'Stories', papel:'Relação diária', o:'Rotina, enquete, caixinha de dúvida, bastidor cru.', f:'Diário, 3 a 5 telas'},
     {c:'Foto', papel:'Acervo', o:'Retrato, consultório, detalhe de mão e tela.', f:'1 ensaio por trimestre'}
+  ],
+
+  /* ---------- ZAG · diferenciação radical ---------- */
+  zag:{
+    zig:'O nicho vende cirurgia como estética: antes e depois, bisturi como espetáculo, resultado prometido em legenda.',
+    zag:'O cirurgião de estrutura. Função, respiração e dor tratadas com planejamento digital, hospital de ponta e uma escuta que não apressa.',
+    only:'O único bucomaxilo que constrói o rosto a partir da função, com o bastidor aberto e a decisão sem pressa.',
+    provas:['Bastidor cirúrgico real, e os 37 mil views provam','Dúvida funcional respondida sem jargão','Planejamento 3D visível em tela','Recuperação contada com honestidade']
+  },
+
+  /* ---------- melhores posts (medidos no perfil) ---------- */
+  melhores:[
+    {img:'img/biliart/best/b1.webp', url:'https://www.instagram.com/drlfmartinho/reel/DYiNhjeBwEY/', metrica:'37,3 mil', titulo:'Bastidor de cirurgia',
+     porque:'Bloco cirúrgico real, sem narração e sem promessa. O fascínio pelo bastidor carrega o alcance sozinho: 15 vezes a base de seguidores.'},
+    {img:'img/biliart/best/b2.webp', url:'https://www.instagram.com/drlfmartinho/reel/DZLb803sEWr/', metrica:'31 mil', titulo:'Cirurgia com o colega otorrino',
+     porque:'A dupla em ação passa método e parceria. Bastidor com contexto clínico é o formato que fura a bolha do perfil.'},
+    {img:'img/biliart/best/b3.webp', url:'https://www.instagram.com/drlfmartinho/reel/DXe0mkejv-x/', metrica:'4.678', titulo:'Vida pessoal, em viagem',
+     porque:'Ele como gente, fora do jaleco. O território pessoal sustenta alcance acima da média e prepara a confiança.'}
   ],
 
   /* ---------- 02 IDENTIDADE ---------- */
@@ -337,11 +355,11 @@ const CLIENTES = [
 
 /* ============================ IDÉE ============================ */
 {
-  slug:'idee', ativo:true,
+  slug:'idee', ativo:true, apelido:'Roberto',
   nome:'Idée · Dr. Roberto Simonetti', categoria:'Ortodontia e alinhadores',
   resumo:'Ortodontia para a família, da criança ao adulto. O professor experiente que olha para a pessoa antes do dente.',
   arroba:'@robertosimonetti_ortodontia', perfil:'https://www.instagram.com/robertosimonetti_ortodontia/',
-  seguidores:'3.095',
+  seguidores:'3.097', avatar:'img/idee/avatar.webp',
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
   nicho:'Ortodontia para a família, do primeiro aparelho da criança ao alinhador do adulto.',
@@ -371,6 +389,24 @@ const CLIENTES = [
     {c:'Estático', papel:'Posicionamento e captação', o:'Frase para a família, avaliação, convênio.', f:'1 por semana'},
     {c:'Stories', papel:'Relação diária', o:'Rotina, enquete de mãe, caixinha de dúvida, bastidor cru.', f:'Diário, 3 a 5 telas'},
     {c:'Foto', papel:'Acervo', o:'Criança e adolescente, família, o professor, consultório acolhedor.', f:'1 ensaio por trimestre'}
+  ],
+
+  /* ---------- ZAG · diferenciação radical ---------- */
+  zag:{
+    zig:'Ortodontia no Instagram fala com colega dentista, em tom técnico, e trata alinhador como produto de vitrine.',
+    zag:'O professor da família. Trinta anos de estrada, olha a pessoa antes do dente e acompanha o sorriso da infância à vida adulta.',
+    only:'A única ortodontia que acompanha a família inteira com a calma de um professor de trinta anos.',
+    provas:['Caso real contado como história, o melhor do perfil','Dúvida de pai e mãe respondida sem pressa','O professor que aparece como gente','Sorrisos de todas as idades no mesmo feed']
+  },
+
+  /* ---------- melhores posts (medidos no perfil) ---------- */
+  melhores:[
+    {img:'img/idee/best/b1.webp', url:'https://www.instagram.com/robertosimonetti_ortodontia/reel/DX65zKZxemA/', metrica:'3.369', titulo:'Ele em cena no consultório',
+     porque:'O melhor do perfil é ele mostrando o espaço e o método. Autoridade demonstrada em cena, no lugar de declarada em texto.'},
+    {img:'img/idee/best/b2.webp', url:'https://www.instagram.com/robertosimonetti_ortodontia/reel/DYfaaRtRmHj/', metrica:'1.414', titulo:'Caso orto-cirúrgico',
+     porque:'Caso real com rosto e história. É o formato que mais aproxima o público de paciente e dobra a média da conta.'},
+    {img:'img/idee/best/b3.webp', url:'https://www.instagram.com/robertosimonetti_ortodontia/reel/DXusmm5sQYd/', metrica:'1.376', titulo:'Conversa no sofá',
+     porque:'A entrevista dá ritmo e tira o peso do talking head solo. Bom molde para as dúvidas de pais em dupla.'}
   ],
 
   /* ---------- 02 IDENTIDADE ---------- */
@@ -552,11 +588,11 @@ const CLIENTES = [
 
 /* ============================ MARIA LUIZA (BILIART) ============================ */
 {
-  slug:'malu', ativo:true,
+  slug:'malu', ativo:true, apelido:'Malu',
   nome:'Biliart · Dra. Maria Luiza', categoria:'Lentes de porcelana e prótese',
   resumo:'Reabilitação estética e funcional. Lentes naturais, sem cara de lente.',
   arroba:'@dra.malumartinho', perfil:'https://www.instagram.com/dra.malumartinho/',
-  seguidores:'569',
+  seguidores:'569', avatar:'img/malu/avatar.webp',
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
   nicho:'Lentes de porcelana e prótese. Reabilitação estética e funcional do sorriso, dentro da Biliart.',
@@ -586,6 +622,24 @@ const CLIENTES = [
     {c:'Estático', papel:'Posicionamento', o:'Frase de marca, resultado, chamada de avaliação.', f:'1 por semana'},
     {c:'Stories', papel:'Relação diária', o:'Bastidor da prova, caixinha de dúvida, rotina do laboratório.', f:'Diário, 3 a 5 telas'},
     {c:'Foto', papel:'Acervo', o:'Retrato dela, laboratório, close de sorriso natural.', f:'1 ensaio por trimestre'}
+  ],
+
+  /* ---------- ZAG · diferenciação radical ---------- */
+  zag:{
+    zig:'Lentes viralizam pelo exagero: dentões brancos, transformação chocante, sorriso de outdoor igual em todo mundo.',
+    zag:'Naturalidade radical. Lentes que ninguém percebe, função que volta e um resultado que respeita o rosto de cada um.',
+    only:'A única protesista que assina o sorriso que parece que sempre foi seu, com estética e mastigação juntas.',
+    provas:['Educação simples que já rende, 2,7 mil no melhor reel','Natural e artificial mostrados lado a lado','O artesanato da lente em macro','Relato de caso com a função de volta']
+  },
+
+  /* ---------- melhores posts (medidos no perfil) ---------- */
+  melhores:[
+    {img:'img/malu/best/b1.webp', url:'https://www.instagram.com/dra.malumartinho/reel/DbisYrolfDz/', metrica:'2.761', titulo:'Erros na escovação',
+     porque:'Erro comum e demonstração prática. Utilidade imediata faz salvar e alcança 5 vezes a base da conta.'},
+    {img:'img/malu/best/b2.webp', url:'https://www.instagram.com/dra.malumartinho/reel/DbSzsDdiNLO/', metrica:'667', titulo:'"Às vezes não acredito"',
+     porque:'Reação com emoção real. O rosto dela reagindo já supera a média e mostra o caminho da humanização.'},
+    {img:'img/malu/best/b3.webp', url:'https://www.instagram.com/dra.malumartinho/reel/DbEG_4rCXdw/', metrica:'543', titulo:'3 cuidados',
+     porque:'Lista curta e prática. Formato de checklist rende salvamento e é fácil de repetir com constância.'}
   ],
 
   /* ---------- 02 IDENTIDADE (guarda-chuva Biliart) ---------- */
@@ -635,7 +689,37 @@ const CLIENTES = [
     ]
   },
 
-  /* ---------- 04 ENSAIO (a planejar) ---------- */
+  /* ---------- 04 ENSAIO FOTOGRÁFICO ---------- */
+  ensaio:{
+    intro:'A atmosfera do ensaio da Malu: luz quente de fim de tarde, o artesanato da lente em macro e o sorriso com textura real. O contraponto visual ao exagero artificial do nicho.',
+    atmosfera:[
+      {t:'Luz', d:'Quente e suave. Pele e textura de verdade, nada de flash duro.'},
+      {t:'Paleta', d:'Marfim, nude e o vinho Biliart. Elegância discreta.'},
+      {t:'Macro', d:'A lente na pinça, o milímetro, o gesto artesanal.'},
+      {t:'Sorriso', d:'Natural, com textura de dente real. Zero outdoor.'}
+    ],
+    refs:[
+      {img:'img/malu/ref/r01.webp', fonte:'https://www.pinterest.com/pin/985231165229797/', t:'Retrato elegante, luz quente'},
+      {img:'img/malu/ref/r02.webp', fonte:'https://www.pinterest.com/pin/774124931473011/', t:'A profissional, leve e próxima'},
+      {img:'img/malu/ref/r03.webp', fonte:'https://www.pinterest.com/pin/2392606047743324/', t:'Perfil sóbrio no consultório'},
+      {img:'img/malu/ref/r04.webp', fonte:'https://www.pinterest.com/pin/453948837466090521/', t:'A lente em macro, o milímetro'},
+      {img:'img/malu/ref/r05.webp', fonte:'https://www.pinterest.com/pin/170362798401766378/', t:'Porcelana como escultura'},
+      {img:'img/malu/ref/r06.webp', fonte:'https://www.pinterest.com/pin/4081455907860394/', t:'O pincel e o modelo'},
+      {img:'img/malu/ref/r07.webp', fonte:'https://www.pinterest.com/pin/703756188604195/', t:'O trabalho na mão'},
+      {img:'img/malu/ref/r08.webp', fonte:'https://www.pinterest.com/pin/26529085300862809/', t:'Sorriso com textura real'},
+      {img:'img/malu/ref/r09.webp', fonte:'https://www.pinterest.com/pin/7810999350236203/', t:'Luz de fim de tarde, natural'}
+    ],
+    shotlist:[
+      {t:'Retrato da Malu', d:'Meio corpo e close, luz quente. O rosto da naturalidade.', c:'pes'},
+      {t:'A lente em macro', d:'Na pinça e na ponta do dedo. A finura vira prova.', c:'bas'},
+      {t:'A prova na boca', d:'O encaixe, o teste de cor, o ajuste fino.', c:'bas'},
+      {t:'Bastidor de laboratório', d:'Pincel, modelo e cerâmica. O artesanato em cena.', c:'bas'},
+      {t:'Sorriso natural em close', d:'Textura de dente de verdade, com autorização.', c:'aut'},
+      {t:'Antes e depois discreto', d:'A transformação que respeita o rosto.', c:'aut'},
+      {t:'A conversa de planejamento', d:'Ela desenhando o sorriso com o paciente.', c:'duv'},
+      {t:'Detalhes da marca', d:'Marfim, nude e vinho. O universo Biliart.', c:'pes'}
+    ]
+  },
 
   /* ---------- 05 CAMPANHA (proposta) ---------- */
   campanha:{

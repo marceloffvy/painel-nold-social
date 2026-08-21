@@ -29,7 +29,8 @@ function viewHome(){
     const right = temCiclo ? `<span class="mono">${c.ciclos[0].pecas.length} peças</span>`
                 : c.ativo ? `<span class="mono">${c.pautas.length} pautas</span>`
                 : c.emAnalise ? '<span class="mono">8 pautas</span>' : '<span class="mono">—</span>';
-    const inner = `<span class="mono">${esc(c.categoria)}</span>
+    const av = c.avatar ? `<img class="avatar" src="${c.avatar}" alt="" loading="lazy">` : `<span class="avatar ph">${esc((c.nome.split('·').pop()||'').trim().slice(0,1)||'•')}</span>`;
+    const inner = `<div class="chead">${av}<span class="mono">${esc(c.categoria)}</span></div>
         <div class="nm">${esc(c.nome)}</div>
         <div class="terr">${esc(c.resumo)}</div>
         <div class="meta">${status}${right}</div>`;
@@ -51,7 +52,7 @@ function viewHome(){
 function viewClient(slug){
   const c = find(slug);
   if(!c) return viewHome();
-  setCrumbs([{t:'Carteira', href:'#/'}, {t:c.nome.split('·')[0].trim()}]);
+  setCrumbs([{t:'Carteira', href:'#/'}, {t:c.apelido||c.nome.split('·')[0].trim()}]);
 
   if(!c.ativo){
     app.innerHTML = `<div class="wrap">
@@ -63,10 +64,10 @@ function viewClient(slug){
   }
 
   const id=c.identidade, pa=c.perfilAnalise, cp=c.campanha, s=c.sintese, cy=(c.ciclos&&c.ciclos[0])||null;
-  const marca=c.nome.split('·')[0].trim();
+  const marca=c.apelido||c.nome.split('·')[0].trim();
   const lum=h=>{const n=parseInt(h.slice(1),16);return (0.299*(n>>16&255)+0.587*(n>>8&255)+0.114*(n&255))/255};
-  const nav=[['b1','Diagnóstico'],['b2','Identidade'],['b3','Leitura de perfil'],['b4','Ensaio fotográfico'],
-             ['b5','Campanha'],['b6','Benchmark'],['b7','Pautas'],['b8','Ciclos e peças']]
+  const nav=[['b1','Diagnóstico'],['b2','Zag'],['b3','Identidade'],['b4','Leitura de perfil'],['b5','O que já funciona'],
+             ['b6','Ensaio fotográfico'],['b7','Campanha'],['b8','Benchmark'],['b9','Pautas'],['b10','Ciclos e peças']]
     .map((x,i)=>`<a href="#${x[0]}" data-j="${x[0]}"><i>${pad2(i+1)}</i>${x[1]}</a>`).join('');
   const head=(n,t,sub)=>`<div class="blk-head"><span class="n">${n}</span><h2>${t}</h2><span class="sp"></span>${sub?`<span class="mono">${sub}</span>`:''}</div>`;
 
@@ -105,10 +106,13 @@ function viewClient(slug){
 
   app.innerHTML = `<div class="wrap">
     <div class="hero-client">
-      <div>
-        <span class="mono mark eyebrow">Cliente</span>
-        <h1>${esc(c.nome)}</h1>
-        <p class="lead">${esc(c.resumo)}</p>
+      <div class="hero-id">
+        ${c.avatar?`<img class="avatar xl" src="${c.avatar}" alt="${esc(c.nome)}">`:''}
+        <div>
+          <span class="mono mark eyebrow">Cliente</span>
+          <h1>${esc(c.nome)}</h1>
+          <p class="lead">${esc(c.resumo)}</p>
+        </div>
       </div>
       <div class="row">
         <span class="tag">${esc(c.seguidores)} seguidores</span>
@@ -153,7 +157,23 @@ function viewClient(slug){
         </section>
 
         <section class="blk" id="b2">
-          ${head('02','Identidade')}
+          ${head('02','Zag','diferenciação radical')}
+          ${c.zag?`
+          <div class="zagrid">
+            <div class="zg zig"><span class="mono">O nicho inteiro faz</span><p>${esc(c.zag.zig)}</p></div>
+            <div class="zg zzag"><span class="mono on">O nosso movimento</span><p>${esc(c.zag.zag)}</p></div>
+          </div>
+          <div class="only">
+            <svg width="86" height="16" viewBox="0 0 86 16" aria-hidden="true"><polyline points="2,14 16,2 30,14 44,2 58,14 72,2 84,14" fill="none" stroke="#FE5F55" stroke-width="3"/></svg>
+            <p class="q">${esc(c.zag.only)}</p>
+            <span class="mono">Onliness statement · uso interno, guia o conteúdo e não vira copy de anúncio</span>
+          </div>
+          <div class="provas">${c.zag.provas.map(p=>`<span>✓ ${esc(p)}</span>`).join('')}</div>
+          `:`<div class="empty">Zag ainda não definido para este cliente.</div>`}
+        </section>
+
+        <section class="blk" id="b3">
+          ${head('03','Identidade')}
           <div class="logos">${id.logos.map(l=>`
             <div class="l"><img src="${l.img}" alt="${esc(l.t)}" loading="lazy">
               <div class="t">${esc(l.t)}</div><div class="d">${esc(l.d)}</div></div>`).join('')}</div>
@@ -166,8 +186,8 @@ function viewClient(slug){
           </dl></div>
         </section>
 
-        <section class="blk" id="b3">
-          ${head('03','Leitura de perfil')}
+        <section class="blk" id="b4">
+          ${head('04','Leitura de perfil')}
           <div class="gap" style="margin-bottom:16px"><b>${esc(pa.resumo)}</b></div>
           <div class="diag">${pa.diag.map(d=>`
             <div class="${d.s==='ajustar'?'fix':''}"><div class="k">${esc(d.t)}</div><div class="v">${esc(d.v)}</div></div>`).join('')}</div>
@@ -189,8 +209,22 @@ function viewClient(slug){
           </div>
         </section>
 
-        <section class="blk" id="b4">
-          ${head('04','Ensaio fotográfico', c.ensaio?'referências e o que fotografar':'')}
+        <section class="blk" id="b5">
+          ${head('05','O que já funciona','melhores posts, medidos')}
+          ${c.melhores?`
+          <div class="best">${c.melhores.map(b=>`
+            <a class="bp" href="${b.url}" target="_blank" rel="noopener">
+              <div class="im"><img src="${b.img}" alt="${esc(b.titulo)}" loading="lazy"><span class="views">${esc(b.metrica)}</span></div>
+              <div class="bt">${esc(b.titulo)}</div>
+              <p class="why">${esc(b.porque)}</p>
+              <span class="lk">→ assistir o post</span>
+            </a>`).join('')}</div>
+          <p class="mono" style="margin:14px 0 0;color:var(--gray)">Views medidas direto no perfil. O melhor conteúdo aponta o caminho do próximo ciclo.</p>
+          `:`<div class="empty">Perfil ainda sem medição.</div>`}
+        </section>
+
+        <section class="blk" id="b6">
+          ${head('06','Ensaio fotográfico', c.ensaio?'referências e o que fotografar':'')}
           ${c.ensaio?`
           <p class="lead" style="margin-bottom:16px">${esc(c.ensaio.intro)}</p>
           <div class="grid-4">${c.ensaio.atmosfera.map(a=>`<div class="card"><span class="mono">${esc(a.t)}</span><div style="margin-top:8px;font-size:14px">${esc(a.d)}</div></div>`).join('')}</div>
@@ -202,8 +236,8 @@ function viewClient(slug){
           `:`<div class="empty">Ensaio ainda não planejado para este cliente.</div>`}
         </section>
 
-        <section class="blk" id="b5">
-          ${head('05','Campanha ativa')}
+        <section class="blk" id="b7">
+          ${head('07','Campanha ativa')}
           <div class="card dark">
             <span class="mono mark">${esc(cp.status)}</span>
             <h2 style="margin:12px 0 16px;max-width:22ch">${esc(cp.nome)}</h2>
@@ -213,8 +247,8 @@ function viewClient(slug){
           </div>
         </section>
 
-        <section class="blk" id="b6">
-          ${head('06','Benchmark','perfis acima de 10 mil')}
+        <section class="blk" id="b8">
+          ${head('08','Benchmark','perfis acima de 10 mil')}
           <div class="grid-3">${c.benchmark.map(b=>`
             <div class="bm">
               <div class="h"><span class="at">${esc(b.at)}</span><span class="metrica" style="font-size:20px">${esc(b.porte)}</span></div>
@@ -230,8 +264,8 @@ function viewClient(slug){
           </div>
         </section>
 
-        <section class="blk" id="b7">
-          ${head('07','Pautas', c.pautas.length+' temas · 3 por benchmark')}
+        <section class="blk" id="b9">
+          ${head('09','Pautas', c.pautas.length+' temas · 3 por benchmark')}
           <p class="lead" style="margin-bottom:20px">Cada pauta vem de um post real que performou. À direita, a versão ${esc(marca)} em quatro formatos.</p>
           ${c.pautas.map(pauta).join('')}
           ${c.fixados?`
@@ -246,8 +280,8 @@ function viewClient(slug){
           `:''}
         </section>
 
-        <section class="blk" id="b8">
-          ${head('08','Ciclos e peças')}
+        <section class="blk" id="b10">
+          ${head('10','Ciclos e peças')}
           ${cy?`<a class="cycle-card" href="#/c/${c.slug}/ciclo/${cy.slug}">
             <div><span class="mono">${esc(cy.periodo)}</span><h3 style="margin-top:6px">${esc(cy.titulo)}</h3></div>
             <div class="row"><span class="tag">${cy.pecas.length} peças</span><span class="mono on">abrir →</span></div>
@@ -269,7 +303,7 @@ function viewClient(slug){
 function viewCycle(slug, cyslug){
   const c = find(slug); if(!c || !c.ativo || !c.ciclos || !c.ciclos.length) return viewClient(slug);
   const cy = c.ciclos.find(x => x.slug === cyslug) || c.ciclos[0];
-  setCrumbs([{t:'Carteira',href:'#/'},{t:c.nome.split('·')[0].trim(),href:'#/c/'+c.slug},{t:cy.titulo}]);
+  setCrumbs([{t:'Carteira',href:'#/'},{t:c.apelido||c.nome.split('·')[0].trim(),href:'#/c/'+c.slug},{t:cy.titulo}]);
 
   const thumb = p => {
     if(p.dir) return `<div class="im"><img src="img/${c.slug}/${p.dir}/01-t.webp" alt="Capa ${esc(p.titulo)}" loading="lazy"></div>`;
@@ -277,7 +311,7 @@ function viewCycle(slug, cyslug){
     return `<div class="im script">roteiro</div>`;
   };
   app.innerHTML = `<div class="wrap">
-    <span class="mono mark eyebrow">Ciclo · ${esc(c.nome.split('·')[0].trim())}</span>
+    <span class="mono mark eyebrow">Ciclo · ${esc(c.apelido||c.nome.split('·')[0].trim())}</span>
     <h1>${esc(cy.titulo)}</h1>
     <p class="lead">${esc(cy.resumo)}</p>
     <div class="row" style="margin-top:16px"><span class="tag">${esc(cy.periodo)}</span><span class="tag">${cy.pecas.length} peças</span><span class="tag coral">${esc(cy.mix)}</span></div>
@@ -295,7 +329,7 @@ async function viewPiece(slug, pid){
   const c = find(slug); if(!c || !c.ativo || !c.ciclos || !c.ciclos.length) return viewClient(slug);
   const cy = c.ciclos[0];
   const p = cy.pecas.find(x => x.id === pid); if(!p) return viewCycle(slug, cy.slug);
-  setCrumbs([{t:'Carteira',href:'#/'},{t:c.nome.split('·')[0].trim(),href:'#/c/'+c.slug},
+  setCrumbs([{t:'Carteira',href:'#/'},{t:c.apelido||c.nome.split('·')[0].trim(),href:'#/c/'+c.slug},
              {t:cy.titulo,href:`#/c/${c.slug}/ciclo/${cy.slug}`},{t:p.titulo}]);
 
   let visual = '';
