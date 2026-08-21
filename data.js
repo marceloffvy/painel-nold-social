@@ -550,6 +550,171 @@ const CLIENTES = [
   }]
 },
 
+/* ============================ MARIA LUIZA (BILIART) ============================ */
+{
+  slug:'malu', ativo:true,
+  nome:'Biliart · Dra. Maria Luiza', categoria:'Lentes de porcelana e prótese',
+  resumo:'Reabilitação estética e funcional. Lentes naturais, sem cara de lente.',
+  arroba:'@dra.malumartinho', perfil:'https://www.instagram.com/dra.malumartinho/',
+  seguidores:'569',
+
+  /* ---------- 01 DIAGNÓSTICO ---------- */
+  nicho:'Lentes de porcelana e prótese. Reabilitação estética e funcional do sorriso, dentro da Biliart.',
+  posicionamento:'A protesista das lentes que ninguém percebe: naturalidade que respeita o rosto e função que devolve a mordida. Para quem quer melhorar o sorriso sem o exagero artificial. Dentro da Biliart, estética e função caminham juntas, com o cuidado de quem escuta antes de planejar.',
+  publico:[
+    {t:'Quem', d:'Adulto de 30 a 55 anos, homem e mulher, que se incomoda com o sorriso ou perdeu função.'},
+    {t:'Momento', d:'Quer melhorar a estética, ou precisa reabilitar dentes gastos, quebrados ou ausentes.'},
+    {t:'Dor', d:'Tem medo do resultado artificial, a "dentona", ou já não mastiga bem.'},
+    {t:'Trava', d:'"Vai ficar falso?", "vou perder muito dente?", "será que dura?".'}
+  ],
+  signos:[
+    {t:'Luz', d:'Natural e limpa, levemente quente. Realça a textura real do dente.'},
+    {t:'Cor', d:'Nude, marfim e o vinho da Biliart. Elegante e sóbrio.'},
+    {t:'Corpo', d:'Sorriso natural em close, a mão que segura a lente fininha.'},
+    {t:'Método', d:'Prova, planejamento do sorriso, o antes e o depois discreto.'},
+    {t:'Ritmo', d:'Cuidadoso e detalhista. O tempo de quem trabalha no milímetro.'}
+  ],
+  linhaEditorial:[
+    {n:'01', t:'Vida pessoal', peso:'20%', d:'A pessoa por trás da protesista. Quem é e por que escolheu a reabilitação.', porque:'Humaniza e aproxima, essencial para uma conta em construção.', temas:['quem é a Malu','por que reabilitação','rotina de laboratório','o que a move']},
+    {n:'02', t:'Autoridade', peso:'30%', d:'Relato de caso, depoimento e o resultado natural com contexto.', porque:'Prova social converte e mostra o padrão de naturalidade dela.', temas:['relato de caso','antes e depois autorizado','voltar a mastigar','o padrão natural']},
+    {n:'03', t:'Bastidores', peso:'25%', d:'O laboratório, a prova da lente, o detalhe do trabalho manual.', porque:'O "como é feito" encanta e mostra o cuidado artesanal.', temas:['a lente fininha','a prova','o detalhe da cor','o passo a passo']},
+    {n:'04', t:'Dúvidas de paciente', peso:'25%', d:'Fica falso? Precisa desgastar? Dura quanto? A pergunta respondida sem jargão.', porque:'Puxa alcance de busca e desarma o medo do resultado artificial.', temas:['fica falso?','precisa desgastar?','dura quanto?','resina ou porcelana?']}
+  ],
+  canais:[
+    {c:'Reels', papel:'Alcance e autoridade', o:'Antes e depois, prova de lente, dúvida, bastidor de laboratório. 30 a 60s.', f:'3 por semana'},
+    {c:'Carrossel', papel:'Salvamento', o:'Natural e artificial, etapas, cuidados com a lente.', f:'1 por semana'},
+    {c:'Estático', papel:'Posicionamento', o:'Frase de marca, resultado, chamada de avaliação.', f:'1 por semana'},
+    {c:'Stories', papel:'Relação diária', o:'Bastidor da prova, caixinha de dúvida, rotina do laboratório.', f:'Diário, 3 a 5 telas'},
+    {c:'Foto', papel:'Acervo', o:'Retrato dela, laboratório, close de sorriso natural.', f:'1 ensaio por trimestre'}
+  ],
+
+  /* ---------- 02 IDENTIDADE (guarda-chuva Biliart) ---------- */
+  identidade:{
+    logos:[
+      {img:'img/biliart/marca/biliart-claro.webp', t:'Biliart', d:'Marca da clínica'},
+      {img:'img/biliart/marca/selo-claro.webp', t:'Selo b.', d:'Submarca Biliart'}
+    ],
+    paleta:[
+      {hex:'#52151C', nome:'Vinho'}, {hex:'#D1C1B2', nome:'Nude'},
+      {hex:'#8E6A5E', nome:'Terracota'}, {hex:'#EFE7DA', nome:'Marfim'}
+    ],
+    tipos:[{papel:'títulos', nome:'Playfair Display'},{papel:'subtítulos', nome:'Uncut Sans'},{papel:'texto', nome:'Geist'}]
+  },
+
+  /* ---------- 03 LEITURA DE PERFIL ---------- */
+  perfilAnalise:{
+    resumo:'Conta nova (569 seguidores, 42 posts) com bom conteúdo clínico e educativo, mas ainda sem posicionamento afiado nem rosto forte. Os reels são talking head com título serifado e alcance baixo. A marca da Biliart aparece, a camada de identidade própria dela ainda não.',
+    diag:[
+      {t:'Formato', v:'Talking head com título serifado. Correto, pouco ritmo.', s:'ajustar'},
+      {t:'Alcance', v:'Conta nova, alcance baixo. Base a construir.', s:'ajustar'},
+      {t:'Posicionamento', v:'Fala de vários temas. Falta cravar "lente natural".', s:'ajustar'},
+      {t:'Feed', v:'Educativo e clínico. Bonito, mas ainda genérico.', s:'ajustar'},
+      {t:'Identidade', v:'Usa a Biliart. A camada própria dela falta.', s:'ajustar'},
+      {t:'Prova', v:'Tem relato de caso e resultado. Matéria-prima boa.', s:'ok'}
+    ],
+    feedCores:{
+      pes:{bg:'#8E6A5E', fg:'#F6EFE8', l:'Vida pessoal'},
+      aut:{bg:'#52151C', fg:'#D1C1B2', l:'Autoridade'},
+      bas:{bg:'#191915', fg:'#D1C1B2', l:'Bastidores'},
+      duv:{bg:'#D1C1B2', fg:'#52151C', l:'Dúvidas'}
+    },
+    feedIdeal:[
+      {t:'Autoridade', c:'aut'},{t:'Bastidor', c:'bas'},{t:'Dúvida', c:'duv'},
+      {t:'Pessoal', c:'pes'},{t:'Autoridade', c:'aut'},{t:'Dúvida', c:'duv'},
+      {t:'Bastidor', c:'bas'},{t:'Autoridade', c:'aut'},{t:'Dúvida', c:'duv'}
+    ],
+    checklist:[
+      {t:'Retrato da Maria Luiza', d:'Meio corpo e close, luz quente. O rosto da marca.', ok:false},
+      {t:'Bastidor de laboratório', d:'A lente fininha na mão, a prova, o detalhe manual.', ok:false},
+      {t:'Antes e depois autorizado', d:'Resultado natural, com autorização por escrito.', ok:false},
+      {t:'Close de sorriso natural', d:'A textura real do dente, sem exagero.', ok:false},
+      {t:'Camada de identidade própria', d:'Definir a sub-marca dela dentro da Biliart.', ok:false},
+      {t:'Padrão de gravação', d:'Mesma luz, fundo e enquadramento nos reels.', ok:false},
+      {t:'Depoimento em vídeo', d:'Paciente contando a função e a estética recuperadas.', ok:false},
+      {t:'Fotos horizontais', d:'Para capa, LinkedIn e 16:9.', ok:false}
+    ]
+  },
+
+  /* ---------- 04 ENSAIO (a planejar) ---------- */
+
+  /* ---------- 05 CAMPANHA (proposta) ---------- */
+  campanha:{
+    status:'Proposta · ainda não no ar',
+    nome:'O sorriso que parece que sempre foi seu.',
+    eixos:[
+      {t:'Frio', d:'desmistifica a cara de lente'},
+      {t:'Médio', d:'naturalidade e função juntas'},
+      {t:'Aquecido', d:'relato de caso e avaliação'}
+    ],
+    alerta:'Ângulo central: naturalidade. O gancho é ser o oposto do exagero artificial que viraliza por choque.',
+    deck:'https://www.biliart.com.br/marialuiza-protesista'
+  },
+
+  /* ---------- 06 BENCHMARK ---------- */
+  benchmark:[
+    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'90,7 mil', perfil:'"Realismo Dental", artista de lentes em SP, com marca própria de creme e laboratório.', mecanismo:'Personal brand de artista. Resultados ultra-realistas que impressionam, com ele como assinatura.', leitura:'O realismo vira espetáculo quando tem um autor. Para a Malu, o resultado natural dela precisa de rosto e assinatura.'},
+    {at:'@maraisafernandadentista', url:'https://www.instagram.com/maraisafernandadentista/', porte:'62,7 mil', perfil:'Lentes naturais "sem cara de lente", mais de 1.500 casos, interior de SP.', mecanismo:'Antes e depois, naturalidade e volume de prova. Resultado discreto como argumento.', leitura:'A naturalidade vende e o antes e depois é o motor. Ressalva: a audiência dela puxa dentista, então miramos o paciente.'},
+    {at:'padrão "cara de lente"', url:'https://www.instagram.com/explore/tags/lentedecontatodental/', porte:'tendência viral', perfil:'A onda de lentes artificiais e exageradas que viraliza pelo choque ("olha o que fizeram").', mecanismo:'Choque e polêmica. Alcança muito e constrói um desejo equivocado.', leitura:'Contraexemplo perfeito. O gancho da Malu é ser o oposto: natural, no lugar do exagero.'}
+  ],
+  sintese:{
+    alta:['Naturalidade, sem cara de lente','Antes e depois com resultado discreto','O detalhe artesanal do trabalho'],
+    saturado:['Lente artificial e exagerada','Promessa genérica de sorriso perfeito','Conteúdo técnico para dentista'],
+    lacuna:['A lente natural com rosto e assinatura','Estética e função juntas','O medo do resultado falso, desarmado']
+  },
+
+  /* ---------- 07 PAUTAS ---------- */
+  pautas:[
+    {n:'01', bm:'@lucasguerreiros', cls:'Vida pessoal', tema:'A protesista por trás do sorriso',
+     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'90,7 mil seguidores', o:'Ele cresce como artista, com nome e assinatura no realismo.', porque:'No nicho de lentes, o autor vale tanto quanto o resultado.'},
+     angulo:'Quem é a Maria Luiza e por que escolheu a reabilitação. O rosto da marca antes do dente.',
+     desdobra:{reels:'Ela conta, direto na câmera, por que ama devolver sorrisos naturais. 45s, luz quente.', carrossel:'A história dela em capítulos, com bastidor do laboratório.', stories:'Enquete "o que você acha que é uma lente natural?" e a resposta.', estatico:'Retrato dela com uma frase sobre naturalidade.'}},
+    {n:'02', bm:'@lucasguerreiros', cls:'Autoridade', tema:'Realismo tem autor',
+     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'referência de realismo', o:'Resultados ultra-realistas assinados por ele.', porque:'A assinatura transforma técnica em desejo.'},
+     angulo:'O padrão de naturalidade da Malu, com o close do resultado discreto. Ela assina.',
+     desdobra:{reels:'Close do antes e depois natural, com ela explicando a escolha da cor. 40s.', carrossel:'O que faz uma lente parecer real, ponto a ponto.', stories:'"Você percebe qual é a lente?" com enquete.', estatico:'Close do sorriso com selo "natural de verdade".'}},
+    {n:'03', bm:'@lucasguerreiros', cls:'Bastidores', tema:'O detalhe que ninguém vê',
+     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'processo que encanta', o:'O trabalho artesanal da lente vira conteúdo.', porque:'O bastidor do "como é feito" prende e mostra cuidado.'},
+     angulo:'A lente mais fina que parece, o trabalho no milímetro. O artesanato por trás do natural.',
+     desdobra:{reels:'A lente fininha na ponta do dedo e a prova na boca. Detalhe e luz. 30s.', carrossel:'Do planejamento à prova, o caminho de uma lente.', stories:'Bastidor da prova em tempo real.', estatico:'Macro da lente com a chamada "no detalhe".'}},
+    {n:'04', bm:'@maraisafernandadentista', cls:'Autoridade', tema:'Antes e depois natural',
+     ref:{url:'https://www.instagram.com/maraisafernandadentista/', metrica:'62,7 mil seguidores', o:'Antes e depois com resultado discreto é o motor do perfil.', porque:'A transformação natural é a prova mais forte.'},
+     angulo:'Relato de caso da Malu, com o resultado que não grita. Discrição como assinatura.',
+     desdobra:{reels:'Relato de caso: a queixa, o plano, o resultado natural. Com autorização. 50s.', carrossel:'O caso em etapas, do incômodo ao sorriso discreto.', stories:'Caixinha "o que te incomoda no seu sorriso?".', estatico:'Antes e depois autorizado, com contexto.'}},
+    {n:'05', bm:'@maraisafernandadentista', cls:'Dúvidas', tema:'Vai ficar falso?',
+     ref:{url:'https://www.instagram.com/maraisafernandadentista/', metrica:'ângulo "sem cara de lente"', o:'O medo do resultado artificial é a dúvida número um.', porque:'Desarmar o medo é o que aproxima o paciente certo.'},
+     angulo:'Ela mostra por que a lente natural não fica falsa: cor, formato e proporção do rosto.',
+     desdobra:{reels:'Ela compara, sem jargão, o natural e o exagerado. 40s.', carrossel:'Cinco sinais de uma lente natural bem feita.', stories:'"Verdadeiro ou falso" sobre cara de lente.', estatico:'Card "natural x artificial" lado a lado.'}},
+    {n:'06', bm:'@maraisafernandadentista', cls:'Autoridade', conv:true, tema:'Voltar a mastigar',
+     ref:{url:'https://www.instagram.com/maraisafernandadentista/', metrica:'transformação como prova', o:'A transformação vende, e a função é o diferencial da Malu.', porque:'Estética e função juntas ampliam o público.'},
+     angulo:'Reabilitação que devolve a mordida, não só a estética. O depoimento de quem voltou a comer bem.',
+     desdobra:{reels:'Depoimento real: comer, sorrir e falar de novo com conforto. Com autorização. 45s.', carrossel:'A jornada da reabilitação, da queixa à função.', stories:'Caixinha "você deixa de comer algo por causa dos dentes?".', estatico:'Depoimento entre aspas, com chamada de avaliação.'}},
+    {n:'07', bm:'padrão "cara de lente"', cls:'Dúvidas', conv:true, tema:'Olha o que fizeram',
+     ref:{url:'https://www.instagram.com/explore/tags/lentedecontatodental/', metrica:'padrão viral do nicho', o:'Vídeos de lentes exageradas viralizam pelo choque.', porque:'A polêmica alcança, mas constrói o desejo errado.'},
+     angulo:'Ela reage ao exagero e ensina o caminho natural, virando o alcance a favor do posicionamento.',
+     desdobra:{reels:'Reação a um caso artificial e o que faria diferente. Tom respeitoso. 45s.', carrossel:'Por que a "dentona" acontece e como evitar.', stories:'Enquete "natural ou artificial?" com exemplos.', estatico:'Card educativo sobre o exagero.'}},
+    {n:'08', bm:'padrão "cara de lente"', cls:'Dúvidas', tema:'Preciso desgastar meus dentes?',
+     ref:{url:'https://www.instagram.com/explore/tags/lentedecontatodental/', metrica:'medo recorrente', o:'O medo de "lixar" os dentes trava muita gente.', porque:'Responder o medo real puxa busca e confiança.'},
+     angulo:'Ela explica, com honestidade, quando há desgaste e quando quase não há. Sem promessa.',
+     desdobra:{reels:'Ela responde direto, com modelo na mão, sobre o desgaste. 40s.', carrossel:'Lente, faceta e o que muda no seu dente.', stories:'Caixinha "qual sua maior dúvida sobre lentes?".', estatico:'Card "mitos sobre desgaste".'}},
+    {n:'09', bm:'padrão "cara de lente"', cls:'Dúvidas', conv:true, tema:'Quanto dura e como cuidar',
+     ref:{url:'https://www.instagram.com/explore/tags/lentedecontatodental/', metrica:'decisão de compra', o:'Durabilidade e cuidado são a última dúvida antes de decidir.', porque:'Clareza sobre manutenção destrava a avaliação.'},
+     angulo:'Ela mostra a manutenção real e convida para uma avaliação, sem promessa de prazo absoluto.',
+     desdobra:{reels:'Rotina de cuidado da lente em 5 passos rápidos. 40s.', carrossel:'Como fazer sua lente durar, hábito a hábito.', stories:'Quiz de cuidados com a lente.', estatico:'Card de manutenção com chamada de avaliação.'}}
+  ],
+
+  /* posts de apresentação · fixados e prioritários */
+  fixados:[
+    {n:'01', tema:'Prazer, Dra. Maria Luiza', papel:'Apresenta a profissional. O primeiro post que o paciente vê ao chegar no perfil.', precisa:'ensaio da Malu e identidade',
+     slides:['Capa: retrato e "lentes naturais e prótese"','Quem é: protesista da Biliart, CROSP 173121','A filosofia: naturalidade que respeita o rosto','Para quem: estética sem exagero e função de volta','O método: prova e planejamento do sorriso','Chamada: agende uma avaliação']},
+    {n:'02', tema:'Relato de caso', papel:'Mostra um caso real, com contexto e autorização. Prova de naturalidade.', precisa:'portfólio de casos autorizados',
+     slides:['Capa: "relato de caso"','A queixa do paciente','O planejamento do sorriso','A prova das lentes','O depois natural, autorizado','Chamada: o seu caso também tem caminho']},
+    {n:'03', tema:'A transformação vai além da estética', papel:'Fala da transformação por estética e função. Post de desejo e captação.', precisa:'ensaio, portfólio e um depoimento',
+     slides:['Capa: "mais que um sorriso bonito"','O incômodo estético e funcional','A jornada da reabilitação','O depois: sorrir e mastigar com naturalidade','Um depoimento real, com autorização','Chamada: comece a sua']}
+  ],
+
+  ciclos:[]
+},
+
 {slug:'delabela', nome:'Delabela', categoria:'Clínica boutique', resumo:'Sofisticação, status e autoestima.'},
 {slug:'odontogon', nome:'OdontoGON', categoria:'Check-up 360°', resumo:'Confiança e clareza. Multidisciplinar.'},
 {slug:'maxfocos', nome:'MaxFocos', categoria:'Educação para dentistas', resumo:'Método e aprovação.'},
