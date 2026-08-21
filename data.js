@@ -535,7 +535,19 @@ const CLIENTES = [
      slides:['Capa: "mais que dentes alinhados"','A insegurança de antes','A jornada do tratamento','O depois: confiança para sorrir','Um depoimento real, com autorização','Chamada: comece a sua']}
   ],
 
-  ciclos:[]
+  ciclos:[{
+    slug:'2026-08-apresentacao', titulo:'Posts de apresentação', periodo:'Agosto 2026',
+    resumo:'Os três carrosséis fixados do topo do perfil, diagramados na identidade Idée. As zonas de foto entram do ensaio e do portfólio.',
+    mix:'3 fixados · a diagramação está pronta, faltam as fotos',
+    pecas:[
+      {id:'apres1', tipo:'Carrossel fixado · 6 slides', titulo:'Prazer, Dr. Roberto', cls:'posicionamento', dir:'apres1', n:6, txt:'apres1',
+       compliance:'Sem promessa de resultado. CRO na assinatura da marca.'},
+      {id:'apres2', tipo:'Carrossel fixado · 6 slides', titulo:'Casos que acompanhei', cls:'posicionamento', dir:'apres2', n:6, txt:'apres2',
+       compliance:'Antes e depois só com autorização escrita do paciente. Sem preço. Cada caso é individual.'},
+      {id:'apres3', tipo:'Carrossel fixado · 6 slides', titulo:'A transformação vai além do sorriso', cls:'conversão', dir:'apres3', n:6, txt:'apres3',
+       compliance:'Transformação por depoimento autorizado. Sem promessa de resultado padrão.'}
+    ]
+  }]
 },
 
 {slug:'delabela', nome:'Delabela', categoria:'Clínica boutique', resumo:'Sofisticação, status e autoestima.'},
