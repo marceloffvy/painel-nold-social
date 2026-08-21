@@ -803,5 +803,435 @@ const CLIENTES = [
 {slug:'odontogon', nome:'OdontoGON', categoria:'Check-up 360°', resumo:'Confiança e clareza. Multidisciplinar.'},
 {slug:'maxfocos', nome:'MaxFocos', categoria:'Educação para dentistas', resumo:'Método e aprovação.'},
 {slug:'marcelo-tavares', nome:'Marcelo Tavares', categoria:'Próteses e implantes', resumo:'Excelência técnica e resolução.'},
-{slug:'clinica-lk', nome:'Clínica LK', categoria:'Protocolo e prótese', resumo:'Controle técnico interno.'}
+/* ============================ CLÍNICA LK ============================ */
+{
+  slug:'clinica-lk', ativo:true, apelido:'Clínica LK',
+  nome:'Clínica LK', categoria:'Reabilitação oral · desde 1995',
+  resumo:'Implante, protocolo e estética. O recomeço de quem quer voltar a mastigar e sorrir.',
+  arroba:'@clinicalk', perfil:'https://www.instagram.com/clinicalk/',
+  seguidores:'6.508', avatar:'img/clinica-lk/avatar.webp',
+
+  /* ---------- 01 DIAGNÓSTICO ---------- */
+  nicho:'Reabilitação oral desde 1995. Implante, prótese protocolo, estética e lentes, no Paraíso, SP.',
+  posicionamento:'A clínica que devolve capítulos de vida. Trinta anos de reabilitação oral e uma equipe que trata a prótese como recomeço: voltar a mastigar, rir sem esconder a boca e confiar no próprio rosto. A frente de estética atende a família inteira.',
+  publico:[
+    {t:'Quem', d:'Adulto maduro, 50 a 75 anos. Os filhos participam da decisão.'},
+    {t:'Momento', d:'Perdeu dentes ou usa uma prótese que incomoda. Quer resolver de vez.'},
+    {t:'Dor', d:'Não mastiga direito, esconde o sorriso, se sente envelhecido pela boca.'},
+    {t:'Trava', d:'Medo de implante, preço, e a dúvida "será que vale a pena na minha idade?".'}
+  ],
+  signos:[
+    {t:'Luz', d:'Quente e digna. O paciente maduro filmado com respeito.'},
+    {t:'Cor', d:'Dourado da marca, grafite e off. Sobriedade com calor.'},
+    {t:'Rosto', d:'O riso solto de quem voltou a sorrir. Casal, família, abraço.'},
+    {t:'Método', d:'Protocolo em macro, GBT, laboratório. Técnica visível.'},
+    {t:'Tempo', d:'Desde 1995. A história como prova.'}
+  ],
+  linhaEditorial:[
+    {n:'01', t:'Vida pessoal', peso:'20%', d:'A vida que volta com o sorriso: o churrasco, a foto de família, a gargalhada.', porque:'Reabilitação vende recomeço de vida, e vida é o que alcança.', temas:['a primeira mordida','a foto de família','o riso solto','30 anos de casa']},
+    {n:'02', t:'Autoridade', peso:'30%', d:'Resultado de protocolo com história, depoimento maduro, três décadas de casos.', porque:'É o formato que já rende: o melhor reel da casa é um resultado.', temas:['resultado com contexto','depoimento real','desde 1995','a equipe especialista']},
+    {n:'03', t:'Bastidores', peso:'20%', d:'O laboratório, o GBT, a prova da prótese, a equipe em sincronia.', porque:'Técnica visível desarma o medo do implante.', temas:['a prótese em macro','o dia da instalação','GBT e limpeza','a equipe em cena']},
+    {n:'04', t:'Dúvidas de paciente', peso:'30%', d:'Preço, dor, idade e prazo, respondidos com honestidade.', porque:'A pergunta de preço é um dos maiores reels da casa. Dúvida é demanda.', temas:['quanto custa o protocolo','dói?','tem idade limite?','quanto tempo dura']}
+  ],
+  canais:[
+    {c:'Reels', papel:'Alcance e prova', o:'Depoimento, resultado com história, dúvida respondida. 30 a 60s.', f:'3 por semana'},
+    {c:'Carrossel', papel:'Salvamento', o:'Etapas do protocolo, mitos do implante, cuidados.', f:'1 por semana'},
+    {c:'Estático', papel:'Posicionamento', o:'Frase de marca, o recomeço, chamada de avaliação.', f:'1 por semana'},
+    {c:'Stories', papel:'Relação diária', o:'Bastidor, enquete, caixinha de dúvida, rotina da equipe.', f:'Diário, 3 a 5 telas'},
+    {c:'Foto', papel:'Acervo', o:'Paciente maduro rindo, equipe, protocolo em macro.', f:'1 ensaio por trimestre'}
+  ],
+
+  /* ---------- ZAG ---------- */
+  zag:{
+    zig:'Clínicas de implante vendem procedimento: dente novo, aparelho de última geração e promessa de dente em um dia.',
+    zag:'A LK devolve capítulos de vida. O churrasco de domingo, a gargalhada na foto, a mordida na maçã. Reabilitação contada por quem voltou a viver.',
+    only:'A única clínica que trata reabilitação como recomeço de vida, com trinta anos de história e depoimento real.',
+    provas:['O melhor reel da casa é um resultado de protocolo','Depoimentos maduros com rosto e emoção','A pergunta de preço respondida sem rodeio','Três décadas e três gerações atendidas']
+  },
+
+  /* ---------- melhores posts ---------- */
+  melhores:[
+    {img:'img/clinica-lk/best/b1.webp', url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'3.053', titulo:'Resultado de Protocolo',
+     porque:'Resultado com rosto, história e emoção real. O formato número um da casa: prova que reabilitação vende recomeço.'},
+    {img:'img/clinica-lk/best/b2.webp', url:'https://www.instagram.com/clinicalk/reel/DaiVg2VOjA8/', metrica:'2.474', titulo:'Paciente em cena',
+     porque:'Gente real na clínica, sem roteiro travado. A espontaneidade aproxima e segura a retenção.'},
+    {img:'img/clinica-lk/best/b3.webp', url:'https://www.instagram.com/clinicalk/reel/Da5ct_mOMvu/', metrica:'2.175', titulo:'Estética em cena',
+     porque:'A frente jovem também rende: prova que a LK fala com a família inteira, do protocolo à estética.'}
+  ],
+
+  /* ---------- 02 IDENTIDADE ---------- */
+  identidade:{
+    logos:[
+      {img:'img/clinica-lk/avatar.webp', t:'Símbolo LK', d:'A marca dourada em círculo, do perfil.'}
+    ],
+    paleta:[
+      {hex:'#C2A24B', nome:'Dourado LK'},
+      {hex:'#2E3A48', nome:'Azul-uniforme'},
+      {hex:'#23262B', nome:'Grafite'},
+      {hex:'#F4F1EA', nome:'Off quente'}
+    ],
+    tipos:[
+      {papel:'Manual da marca', nome:'A receber do cliente'},
+      {papel:'Provisório · títulos', nome:'Serif elegante (padrão Nold)'},
+      {papel:'Provisório · texto', nome:'Sans limpa (padrão Nold)'}
+    ]
+  },
+
+  /* ---------- 03 LEITURA DE PERFIL ---------- */
+  perfilAnalise:{
+    resumo:'A casa tem o que quase ninguém tem: pacientes maduros reais dando depoimento, e o melhor reel é um resultado de protocolo. Falta afiar o fio editorial: o feed mistura frentes e formatos, o texto na tela varia e a marca dourada aparece pouco. Base de 6,5 mil construída desde 1995, pronta para escalar com constância.',
+    diag:[
+      {t:'Prova', v:'Depoimento maduro real, o ativo mais raro do nicho.', s:'ok'},
+      {t:'Formato', v:'Resultado de protocolo já é o campeão da casa.', s:'ok'},
+      {t:'Feed', v:'Frentes misturadas sem hierarquia visual.', s:'ajustar'},
+      {t:'Identidade', v:'Dourado da marca aparece pouco no conteúdo.', s:'ajustar'},
+      {t:'Texto na tela', v:'Tipografia varia a cada post. Padronizar.', s:'ajustar'},
+      {t:'CTA', v:'Reels fortes sem chamada clara de avaliação.', s:'ajustar'}
+    ],
+    feedCores:{
+      pes:{bg:'#2E3A48', fg:'#F4F1EA', l:'Vida pessoal'},
+      aut:{bg:'#C2A24B', fg:'#23262B', l:'Autoridade'},
+      bas:{bg:'#23262B', fg:'#C2A24B', l:'Bastidores'},
+      duv:{bg:'#F4F1EA', fg:'#23262B', l:'Dúvidas'}
+    },
+    feedIdeal:[
+      {t:'Depoimento', c:'aut'},{t:'Dúvida', c:'duv'},{t:'Bastidor', c:'bas'},
+      {t:'Vida', c:'pes'},{t:'Resultado', c:'aut'},{t:'Dúvida', c:'duv'},
+      {t:'Bastidor', c:'bas'},{t:'Depoimento', c:'aut'},{t:'Dúvida', c:'duv'}
+    ],
+    checklist:[
+      {t:'Banco de depoimentos', d:'Pacientes maduros contando o recomeço, com autorização.', ok:true},
+      {t:'Casal maduro rindo', d:'O riso solto fora da clínica: café, campo, família.', ok:false},
+      {t:'Protocolo em macro', d:'A prótese como objeto de precisão, luz dramática.', ok:false},
+      {t:'Equipe em sincronia', d:'Retrato da equipe com calor, longe do institucional.', ok:false},
+      {t:'A entrega da prótese', d:'A mão que entrega, o espelho, a primeira reação.', ok:false},
+      {t:'Padrão de tipografia', d:'Uma família de texto na tela para todo reel.', ok:false},
+      {t:'Rosto da Fabi na casa', d:'A dona em cena, ligando os dois perfis.', ok:false},
+      {t:'Fotos horizontais', d:'Para capa, Google e 16:9.', ok:false}
+    ]
+  },
+
+  /* ---------- ENSAIO ---------- */
+  ensaio:{
+    intro:'A atmosfera do ensaio da LK: o riso de quem voltou a sorrir, filmado com dignidade e luz quente. Pacientes maduros como protagonistas, equipe com calor humano e o protocolo como objeto de precisão.',
+    atmosfera:[
+      {t:'Luz', d:'Quente e digna. Fim de tarde, janela, nada de flash frio.'},
+      {t:'Elenco', d:'Casal maduro rindo de verdade. A família junto.'},
+      {t:'Equipe', d:'Sincronia e acolhimento, longe do institucional duro.'},
+      {t:'Detalhe', d:'O protocolo em macro, o dourado da marca.'}
+    ],
+    refs:[
+      {img:'img/clinica-lk/ref/r01.webp', fonte:'https://www.pinterest.com/pin/41728734045213269/', t:'O riso do casal maduro'},
+      {img:'img/clinica-lk/ref/r02.webp', fonte:'https://www.pinterest.com/pin/639651953369218388/', t:'Close do riso íntimo'},
+      {img:'img/clinica-lk/ref/r03.webp', fonte:'https://www.pinterest.com/pin/748582769359128299/', t:'A cumplicidade no campo'},
+      {img:'img/clinica-lk/ref/r04.webp', fonte:'https://www.pinterest.com/pin/142567144448529146/', t:'O abraço do recomeço'},
+      {img:'img/clinica-lk/ref/r05.webp', fonte:'https://www.pinterest.com/pin/17592254792353673/', t:'O retrato digno'},
+      {img:'img/clinica-lk/ref/r06.webp', fonte:'https://www.pinterest.com/pin/80079699620180469/', t:'A gargalhada solta'},
+      {img:'img/clinica-lk/ref/r07.webp', fonte:'https://www.pinterest.com/pin/338755203248941091/', t:'Equipe em tom quente'},
+      {img:'img/clinica-lk/ref/r08.webp', fonte:'https://www.pinterest.com/pin/11892386513691884/', t:'O trio que acolhe'},
+      {img:'img/clinica-lk/ref/r09.webp', fonte:'https://www.pinterest.com/pin/203928689372852882/', t:'A equipe em casa'}
+    ],
+    shotlist:[
+      {t:'Casal maduro rindo', d:'Fora da clínica: café, campo, varanda. O recomeço em cena.', c:'pes'},
+      {t:'Retrato digno do paciente', d:'Close com luz quente, o sorriso restaurado.', c:'aut'},
+      {t:'A entrega da prótese', d:'A mão que entrega, o espelho, a primeira reação.', c:'aut'},
+      {t:'Protocolo em macro', d:'A prótese como objeto de precisão, fundo escuro.', c:'bas'},
+      {t:'Equipe em sincronia', d:'Retrato quente da equipe, sem pose dura.', c:'pes'},
+      {t:'GBT e tecnologia', d:'O equipamento em uso, mãos e detalhe.', c:'bas'},
+      {t:'O ambiente', d:'Recepção e consultório com a marca dourada presente.', c:'duv'},
+      {t:'A Fabi na casa', d:'A dona em cena, ponte entre os dois perfis.', c:'pes'}
+    ]
+  },
+
+  /* ---------- CAMPANHA ---------- */
+  campanha:{
+    status:'Proposta · ainda não estruturada',
+    nome:'Sorria novamente. O recomeço tem data.',
+    eixos:[
+      {t:'Frio', d:'a vida que volta com o sorriso'},
+      {t:'Médio', d:'medo e preço, respondidos de frente'},
+      {t:'Aquecido', d:'depoimento, resultado e avaliação'}
+    ],
+    alerta:'Mote "sorria novamente" já vive no feed da casa. A campanha organiza o que a clínica já sabe fazer.',
+    deck:'https://linktr.ee/clinicalk1995'
+  },
+
+  /* ---------- BENCHMARK ---------- */
+  benchmark:[
+    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'90,7 mil', perfil:'"Realismo Dental", prótese estética com autor e marca própria, SP.', mecanismo:'Resultado ultra-realista com assinatura. O autor vale tanto quanto a técnica.', leitura:'Prótese cresce quando tem rosto e assinatura. A LK tem trinta anos de autoridade para assinar seus resultados.'},
+    {at:'@odontologiadicas', url:'https://www.instagram.com/odontologiadicas/', porte:'193 mil', perfil:'Conteúdo de odontologia com relatable e emoção, MG.', mecanismo:'Reação coletiva (35,7 mil), curiosidade e vulnerabilidade. Emoção escala.', leitura:'O gancho emocional serve à LK: o medo do implante e o "voltei a mastigar" são emoção pura. Adaptamos do dentista para o paciente maduro.'},
+    {at:'padrão institucional', url:'https://www.instagram.com/explore/tags/implantodontia/', porte:'contraexemplo', perfil:'A média das clínicas de implante: aparelho, procedimento e promessa.', mecanismo:'Conteúdo de vitrine, sem rosto de paciente e sem história. Alcance baixo e frio.', leitura:'O nicho fala de dentes. A LK fala da vida que volta. Essa é a pista aberta.'}
+  ],
+  sintese:{
+    alta:['Depoimento maduro com emoção real','Resultado de protocolo com história','Preço e medo respondidos de frente'],
+    saturado:['Aparelho de última geração como pauta','Promessa de dente em um dia','Vitrine institucional sem gente'],
+    lacuna:['O recomeço de vida como narrativa','O paciente maduro como protagonista','A família na decisão do implante']
+  },
+
+  /* ---------- PAUTAS ---------- */
+  pautas:[
+    {n:'01', bm:'interno · @clinicalk', cls:'Autoridade', tema:'O protocolo que virou recomeço',
+     ref:{url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'3.053 views', o:'O melhor reel da casa: resultado de protocolo com rosto e história.', porque:'O formato campeão interno merece virar série.'},
+     angulo:'Uma série mensal: cada resultado de protocolo contado como capítulo de vida, com autorização.',
+     desdobra:{reels:'Depoimento do paciente + o momento do espelho + a vida depois. 50s, luz quente.', carrossel:'O caso em etapas: a chegada, o plano, o dia da entrega, o depois.', stories:'Bastidor do dia da entrega com a reação.', estatico:'Retrato do paciente sorrindo com uma frase do depoimento.'}},
+    {n:'02', bm:'interno · @clinicalk', cls:'Dúvidas', conv:true, tema:'Quanto custa um protocolo, de verdade',
+     ref:{url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'1.494 no reel de preço', o:'A pergunta de preço já é um dos maiores alcances da casa.', porque:'Dúvida de preço é demanda reprimida. Responder de frente gera confiança.'},
+     angulo:'Falar de investimento sem tabu: o que compõe o valor, formas de avaliar, sem prometer número na arte.',
+     desdobra:{reels:'A especialista explica o que define o investimento e por que varia. 45s.', carrossel:'O que está incluso num protocolo, etapa por etapa.', stories:'Caixinha "sua maior dúvida sobre implante" respondida.', estatico:'Card "avaliação é o primeiro passo" com chamada. Sem preço na arte.'}},
+    {n:'03', bm:'interno · @clinicalk', cls:'Vida pessoal', tema:'A primeira mordida',
+     ref:{url:'https://www.instagram.com/clinicalk/reel/DaiVg2VOjA8/', metrica:'2.474 views', o:'Gente real na clínica é o segundo maior alcance da casa.', porque:'A espontaneidade vence o institucional.'},
+     angulo:'A vida que volta: a primeira maçã, o churrasco, a foto de família sem esconder o sorriso.',
+     desdobra:{reels:'Paciente conta a primeira coisa que comeu depois do protocolo. Riso real. 40s.', carrossel:'"O que você voltaria a comer?" com respostas reais de pacientes.', stories:'Enquete "o que você comeria primeiro?".', estatico:'Foto de comida + frase "a mordida que voltou".'}},
+    {n:'04', bm:'@lucasguerreiros', cls:'Autoridade', tema:'Resultado com assinatura',
+     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'90,7 mil seguidores', o:'Prótese estética cresce com autor: o realismo assinado por um nome.', porque:'Assinatura transforma técnica em confiança.'},
+     angulo:'A LK assina seus resultados: quem fez, há quantos anos faz, e o padrão da casa desde 1995.',
+     desdobra:{reels:'A especialista apresenta um caso e assina: "feito aqui, do jeito LK". 40s.', carrossel:'O padrão LK: o que não abrimos mão em cada protocolo.', stories:'A equipe responde "o que é qualidade em prótese?".', estatico:'Selo "desde 1995" com retrato da equipe.'}},
+    {n:'05', bm:'@lucasguerreiros', cls:'Bastidores', tema:'A prótese como obra',
+     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'referência de macro', o:'O close do trabalho artesanal encanta e retém.', porque:'Técnica visível desarma o medo e gera fascínio.'},
+     angulo:'O protocolo em macro: cerâmica, encaixe, o milímetro. O laboratório como bastidor de obra.',
+     desdobra:{reels:'Macro da prótese + as mãos que ajustam + o encaixe final. Sem fala, só som ambiente. 30s.', carrossel:'Do molde à entrega: a jornada de um protocolo.', stories:'Bastidor do laboratório em tempo real.', estatico:'Macro da prótese sobre fundo grafite com o dourado LK.'}},
+    {n:'06', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Implante dói? Tem idade limite?',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reação coletiva a um medo comum: os comentários viram "eu também".', porque:'Medo compartilhado é o gancho emocional mais forte do nicho.'},
+     angulo:'Os medos reais do implante respondidos de frente, com a honestidade de quem faz há 30 anos.',
+     desdobra:{reels:'A especialista responde os três medos mais ouvidos na clínica. 45s.', carrossel:'Um medo por slide, com a resposta honesta.', stories:'"Verdadeiro ou falso" sobre implante.', estatico:'Card "medo é normal, dúvida é bem-vinda" com chamada.'}},
+    {n:'07', bm:'@odontologiadicas', cls:'Vida pessoal', conv:true, tema:'Do outro lado da cadeira da LK',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DYqD2JiTHVb/', metrica:'23,9 mil views', o:'A profissional que se mostra vulnerável gera identificação imediata.', porque:'Vulnerabilidade humaniza e viaja longe.'},
+     angulo:'A equipe da LK conta o caso que marcou: a entrega que fez a sala chorar. Emoção com autorização.',
+     desdobra:{reels:'Uma pessoa da equipe conta o caso inesquecível. Direto na câmera. 50s.', carrossel:'"O dia que não esquecemos": um caso contado pela equipe.', stories:'Caixinha "qual sorriso mudou sua vida?".', estatico:'Frase da equipe entre aspas sobre fundo grafite.'}},
+    {n:'08', bm:'padrão institucional', cls:'Bastidores', tema:'Gente no lugar de aparelho',
+     ref:{url:'https://www.instagram.com/explore/tags/implantodontia/', metrica:'contraexemplo', o:'O nicho posta aparelho e promessa. Vitrine sem gente não conecta.', porque:'O contraste com o institucional é a nossa vantagem.'},
+     angulo:'Cada tecnologia da LK aparece com uma pessoa usando e um paciente sentindo a diferença.',
+     desdobra:{reels:'GBT em uso: a profissional explica o que o paciente sente de diferente. 40s.', carrossel:'Tecnologia da casa traduzida em benefício, uma por slide.', stories:'Tour pela clínica com a equipe apresentando.', estatico:'Foto de detalhe da tecnologia com legenda humana.'}},
+    {n:'09', bm:'padrão institucional', cls:'Autoridade', conv:true, tema:'30 anos, três gerações',
+     ref:{url:'https://www.instagram.com/explore/tags/implantodontia/', metrica:'contraexemplo', o:'Clínicas novas prometem; poucas têm três décadas para mostrar.', porque:'Tempo de casa é a prova que ninguém copia.'},
+     angulo:'A história da LK como argumento de conversão: quem cuidou dos seus pais cuida de você.',
+     desdobra:{reels:'Linha do tempo 1995 até hoje, com fotos de época e a equipe atual. 45s.', carrossel:'Trinta anos em capítulos: como a reabilitação evoluiu na casa.', stories:'Enquete "há quanto tempo você conhece a LK?".', estatico:'Peça "desde 1995" com chamada de avaliação.'}}
+  ],
+
+  /* posts fixados ---------- */
+  fixados:[
+    {n:'01', tema:'Bem-vindo à LK', papel:'Apresenta a clínica: 30 anos, equipe e o que fazemos. O cartão de visita do perfil.', precisa:'ensaio da equipe e identidade',
+     slides:['Capa: a equipe e "reabilitação oral desde 1995"','Quem somos: a casa e a história','As frentes: implante, protocolo, estética e lentes','O jeito LK: técnica com calor humano','A equipe especialista','Chamada: agende uma avaliação']},
+    {n:'02', tema:'Recomeços que acompanhamos', papel:'Casos reais de reabilitação com contexto e autorização. A prova da casa.', precisa:'portfólio de casos e depoimentos autorizados',
+     slides:['Capa: "recomeços que acompanhamos"','Um protocolo, antes e depois autorizado','O depoimento de quem voltou a mastigar','Um caso de estética da nova geração','O que todos têm em comum: plano individual','Chamada: o seu recomeço começa na avaliação']},
+    {n:'03', tema:'A transformação vai além dos dentes', papel:'O recomeço de vida como argumento. Post de desejo e captação.', precisa:'ensaio, portfólio e um depoimento',
+     slides:['Capa: "mais que dentes novos"','O que a boca trava: comer, rir, conviver','A jornada da reabilitação, sem pressa','O depois: a vida que volta','Um depoimento real, com autorização','Chamada: comece o seu recomeço']}
+  ],
+
+  ciclos:[]
+},
+
+/* ============================ FABI KIM ============================ */
+{
+  slug:'fabi', ativo:true, apelido:'Fabi',
+  nome:'LK · Dra. Fabiana Kim', categoria:'Founder · rosto da clínica',
+  resumo:'A dona da LK como pessoa: montanha, viagem e consultório. A ponte humana da clínica.',
+  arroba:'@fabiikim', perfil:'https://www.instagram.com/fabiikim/',
+  seguidores:'873', avatar:'img/fabi/avatar.webp',
+
+  /* ---------- 01 DIAGNÓSTICO ---------- */
+  nicho:'Perfil pessoal da dona da Clínica LK. Vida real, viagem e odontologia na medida certa.',
+  posicionamento:'A dentista que vive o que recomenda: saúde, movimento e alegria de viver. O perfil dela é a porta humana da LK: quem conhece a Fabi confia na clínica. Vida pessoal na frente, odontologia como consequência natural.',
+  publico:[
+    {t:'Quem', d:'Quem chega pela pessoa: seguidores de lifestyle, pacientes e futuros pacientes.'},
+    {t:'Momento', d:'Conhece a Fabi antes de conhecer a clínica. A confiança nasce aqui.'},
+    {t:'Dor', d:'Desconfia de clínica sem rosto. Quer saber quem vai cuidar.'},
+    {t:'Trava', d:'Perfil pessoal sem ponte clara para a LK desperdiça a confiança criada.'}
+  ],
+  signos:[
+    {t:'Luz', d:'Natural e dourada. Montanha, trilha, fim de tarde.'},
+    {t:'Cor', d:'Verde musgo, terracota e areia. A paleta do outdoor.'},
+    {t:'Corpo', d:'Movimento real: trilha, mochila, vento. Zero pose dura.'},
+    {t:'Ponte', d:'O jaleco aparece como parte da vida, sem virar vitrine.'},
+    {t:'Tom', d:'Leve e genuíno. A energia de quem vive bem.'}
+  ],
+  linhaEditorial:[
+    {n:'01', t:'Vida pessoal', peso:'40%', d:'Trilha, viagem, esporte e o cotidiano real. O motor do perfil.', porque:'É o que já explode: 110 mil views num reel de trilha.', temas:['trilha e montanha','viagem','rotina real','o que a move']},
+    {n:'02', t:'Autoridade', peso:'20%', d:'A dentista por trás da viajante: formação, a LK, o cuidado.', porque:'Converte a confiança pessoal em confiança clínica.', temas:['por que odontologia','a LK por dentro','um caso que marcou','30 anos de casa']},
+    {n:'03', t:'Bastidores', peso:'20%', d:'O dia na clínica pelo olhar dela, a equipe, o caminho casa-consultório.', porque:'Liga os dois mundos sem esforço.', temas:['um dia comigo','a equipe','do trekking ao jaleco','a rotina da clínica']},
+    {n:'04', t:'Dúvidas de paciente', peso:'20%', d:'A pergunta respondida no tom dela: leve, direto, sem jargão.', porque:'Alcança quem nunca entraria num perfil de clínica.', temas:['saúde e esporte','o que como na trilha','dente e viagem','mitos rápidos']}
+  ],
+  canais:[
+    {c:'Reels', papel:'Alcance', o:'Lifestyle com gancho, POV de trilha, um dia comigo. 20 a 40s.', f:'2 a 3 por semana'},
+    {c:'Carrossel', papel:'Narrativa', o:'Fotos de viagem com legenda que conta história.', f:'1 por semana'},
+    {c:'Stories', papel:'Relação diária', o:'Rotina real, enquete, bastidor da LK.', f:'Diário'},
+    {c:'Colab', papel:'Ponte', o:'Posts em colab com @clinicalk nos conteúdos de clínica.', f:'2 por mês'},
+    {c:'Foto', papel:'Acervo', o:'Founder editorial + outdoor. Duas frentes no mesmo ensaio.', f:'1 ensaio por trimestre'}
+  ],
+
+  /* ---------- ZAG ---------- */
+  zag:{
+    zig:'Perfil de dona de clínica vira vitrine institucional: jaleco, procedimento e legenda de manual.',
+    zag:'A Fabi é gente primeiro. Montanha, viagem e vida real na frente; a clínica aparece como parte natural da história dela.',
+    only:'O único perfil que transforma a vida real da dona em porta de entrada da clínica.',
+    provas:['110 mil views num reel de trilha, 126 vezes a base','Feed pessoal autêntico, sem cara de anúncio','A ponte @clinicalk já está na bio','O blueprint Lara Passos validado no nicho']
+  },
+
+  /* ---------- melhores posts ---------- */
+  melhores:[
+    {img:'img/fabi/best/b1.webp', url:'https://www.instagram.com/fabiikim/reel/DbTSTMox6gu/', metrica:'110 mil', titulo:'Ideias de pose na trilha',
+     porque:'Lifestyle bem executado num perfil de 873 seguidores: 126 vezes a base. A Fabi já sabe criar alcance; o trabalho agora é direcionar uma fração dele para a LK. O segundo reel fez 896 e o feed de viagem não tem métrica pública: o potencial está todo concentrado nesse formato.'}
+  ],
+
+  /* ---------- 02 IDENTIDADE ---------- */
+  identidade:{
+    logos:[
+      {img:'img/fabi/avatar.webp', t:'Retrato', d:'O rosto é a marca deste perfil.'}
+    ],
+    paleta:[
+      {hex:'#5A6B4F', nome:'Verde musgo'},
+      {hex:'#C1663B', nome:'Terracota'},
+      {hex:'#EFE7D8', nome:'Areia'},
+      {hex:'#2B2B28', nome:'Grafite quente'}
+    ],
+    tipos:[
+      {papel:'Direção', nome:'Sem marca gráfica própria'},
+      {papel:'Texto na tela', nome:'Sans leve, minimalista'},
+      {papel:'Assinatura', nome:'@fabiikim + ponte @clinicalk'}
+    ]
+  },
+
+  /* ---------- 03 LEITURA DE PERFIL ---------- */
+  perfilAnalise:{
+    resumo:'Vinte posts, 873 seguidores e um reel de 110 mil views. O perfil é 100% pessoal: trilha, viagem e amigos, com autenticidade rara. A odontologia não aparece, e é exatamente essa a oportunidade: construir a ponte com a LK sem matar a leveza que faz o perfil funcionar.',
+    diag:[
+      {t:'Alcance', v:'110 mil num reel de trilha. O motor existe.', s:'ok'},
+      {t:'Autenticidade', v:'Feed genuíno, sem cara de marketing.', s:'ok'},
+      {t:'Ponte', v:'A LK aparece só na bio. Falta no conteúdo.', s:'ajustar'},
+      {t:'Constância', v:'20 posts no total. Ritmo a construir.', s:'ajustar'},
+      {t:'Formato', v:'Um único reel. O formato campeão está subusado.', s:'ajustar'},
+      {t:'Bio', v:'Sem posicionamento: quem é, o que faz, por quê.', s:'ajustar'}
+    ],
+    feedCores:{
+      pes:{bg:'#5A6B4F', fg:'#EFE7D8', l:'Vida pessoal'},
+      aut:{bg:'#C1663B', fg:'#EFE7D8', l:'Autoridade'},
+      bas:{bg:'#2B2B28', fg:'#C1663B', l:'Bastidores'},
+      duv:{bg:'#EFE7D8', fg:'#2B2B28', l:'Dúvidas'}
+    },
+    feedIdeal:[
+      {t:'Trilha', c:'pes'},{t:'Viagem', c:'pes'},{t:'Bastidor LK', c:'bas'},
+      {t:'Dúvida leve', c:'duv'},{t:'Trilha', c:'pes'},{t:'A dentista', c:'aut'},
+      {t:'Rotina', c:'pes'},{t:'Dúvida leve', c:'duv'},{t:'Um caso', c:'aut'}
+    ],
+    checklist:[
+      {t:'Acervo de trilha e viagem', d:'Já existe e é bom. Manter vivo.', ok:true},
+      {t:'Ensaio founder', d:'Retrato editorial dela: leve, luz quente, sem pose dura.', ok:false},
+      {t:'Ela na LK', d:'Jaleco, equipe e cadeira, pelo olhar pessoal.', ok:false},
+      {t:'POV do dia', d:'Do treino da manhã ao último paciente.', ok:false},
+      {t:'Bio reescrita', d:'Quem é, o que faz, a ponte para a LK.', ok:false},
+      {t:'Padrão de reels', d:'Formato replicável do reel de 110 mil.', ok:false},
+      {t:'Colab com @clinicalk', d:'Primeiro post em colaboração para cruzar audiências.', ok:false},
+      {t:'Destaques', d:'Trilhas · Viagens · LK · Quem sou.', ok:false}
+    ]
+  },
+
+  /* ---------- ENSAIO ---------- */
+  ensaio:{
+    intro:'A atmosfera do ensaio da Fabi: duas frentes no mesmo dia. A founder com luz suave e presença, e a vida real em movimento: trilha, vento e fim de tarde. O perfil dela pede verdade, não estúdio.',
+    atmosfera:[
+      {t:'Luz', d:'Natural e dourada. Manhã na trilha, janela na clínica.'},
+      {t:'Paleta', d:'Verde musgo, terracota e areia. Outdoor real.'},
+      {t:'Movimento', d:'Trilha, mochila, vento. Zero pose travada.'},
+      {t:'Founder', d:'Retrato com presença calma. A dona sem formalidade.'}
+    ],
+    refs:[
+      {img:'img/fabi/ref/r01.webp', fonte:'https://www.pinterest.com/pin/4081455908228526/', t:'Retrato leve, luz suave'},
+      {img:'img/fabi/ref/r02.webp', fonte:'https://www.pinterest.com/pin/13299761397016286/', t:'Sorriso natural, tom terroso'},
+      {img:'img/fabi/ref/r03.webp', fonte:'https://www.pinterest.com/pin/43276846421328909/', t:'Fundo terracota, presença'},
+      {img:'img/fabi/ref/r04.webp', fonte:'https://www.pinterest.com/pin/6473993212901651/', t:'Elegância escura'},
+      {img:'img/fabi/ref/r05.webp', fonte:'https://www.pinterest.com/pin/177047829097208857/', t:'A executiva pensativa'},
+      {img:'img/fabi/ref/r06.webp', fonte:'https://www.pinterest.com/pin/1105774514787308098/', t:'Trilha com alegria'},
+      {img:'img/fabi/ref/r07.webp', fonte:'https://www.pinterest.com/pin/440156563604733712/', t:'Pôr do sol na montanha'},
+      {img:'img/fabi/ref/r08.webp', fonte:'https://www.pinterest.com/pin/374924737753844835/', t:'Vento e movimento'},
+      {img:'img/fabi/ref/r09.webp', fonte:'https://www.pinterest.com/pin/6051780741583021/', t:'O caminho no outono'}
+    ],
+    shotlist:[
+      {t:'Retrato founder', d:'Meio corpo, luz suave, roupa dela. Presença calma.', c:'aut'},
+      {t:'Ela na LK', d:'Jaleco e sorriso, a clínica como casa.', c:'aut'},
+      {t:'Trilha em movimento', d:'Caminhando, mochila, vento. A vida real.', c:'pes'},
+      {t:'Fim de tarde dourado', d:'Contra-luz na montanha ou parque.', c:'pes'},
+      {t:'Com a equipe', d:'A dona entre as pessoas da casa.', c:'bas'},
+      {t:'Detalhes do caminho', d:'Bota, mochila, mapa, café. O universo dela.', c:'pes'},
+      {t:'Do treino ao jaleco', d:'A transição do dia em duas fotos.', c:'bas'},
+      {t:'Retrato próximo', d:'Close com sorriso real para avatar e capa.', c:'duv'}
+    ]
+  },
+
+  /* ---------- CAMPANHA ---------- */
+  campanha:{
+    status:'Estratégia de ponte · perfil pessoal → clínica',
+    nome:'A vida real de quem cuida do seu sorriso.',
+    eixos:[
+      {t:'Frio', d:'lifestyle alcança quem não segue clínica'},
+      {t:'Médio', d:'o bastidor da LK humaniza'},
+      {t:'Aquecido', d:'o caso e a avaliação convertem na LK'}
+    ],
+    alerta:'Regra de ouro: a leveza vem primeiro. A clínica entra como parte da vida, sem virar vitrine.',
+    deck:'https://www.instagram.com/clinicalk/'
+  },
+
+  /* ---------- BENCHMARK ---------- */
+  benchmark:[
+    {at:'@larapassosalvim', url:'https://www.instagram.com/larapassosalvim/', porte:'13,2 mil', perfil:'Ortodontista e creator: vida pessoal na frente, ortodontia como pano de fundo.', mecanismo:'Os maiores reels são pessoais: a filha (32,2 mil), get ready (26,8 mil). A profissão converte quem chegou pela pessoa.', leitura:'O blueprint exato da Fabi. A diferença: a Fabi já provou alcance maior com menos base.'},
+    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'90,7 mil', perfil:'Personal brand em odontologia: nome, assinatura e marca própria.', mecanismo:'O autor como marca. Tudo que ele posta carrega o nome e volta para o negócio.', leitura:'O teto do caminho founder: quando a pessoa vira marca, a clínica herda tudo.'},
+    {at:'interno · @fabiikim', url:'https://www.instagram.com/fabiikim/reel/DbTSTMox6gu/', porte:'110 mil views', perfil:'O próprio reel de trilha da Fabi, numa conta de 873 seguidores.', mecanismo:'Formato "ideias de pose", utilidade leve + cenário forte. O algoritmo entregou 126 vezes a base.', leitura:'A prova interna: o motor de alcance existe. Falta ritmo e ponte.'}
+  ],
+  sintese:{
+    alta:['Lifestyle com utilidade leve','Vida pessoal que carrega a profissão','POV e "um dia comigo"'],
+    saturado:['Perfil de dona como vitrine da clínica','Jaleco e procedimento em tom frio','Legenda institucional'],
+    lacuna:['A ponte leve entre vida e clínica','A founder como personagem contínua','O nicho saúde + montanha, quase vazio']
+  },
+
+  /* ---------- PAUTAS ---------- */
+  pautas:[
+    {n:'01', bm:'interno · @fabiikim', cls:'Vida pessoal', tema:'A série que o algoritmo pediu',
+     ref:{url:'https://www.instagram.com/fabiikim/reel/DbTSTMox6gu/', metrica:'110 mil views', o:'O reel de poses na trilha explodiu numa conta de 873 seguidores.', porque:'Formato validado internamente. Repetir é o caminho mais curto.'},
+     angulo:'Transformar o acerto em série: utilidade leve + cenário forte, uma vez por semana.',
+     desdobra:{reels:'"Ideias de pose" em novos cenários: montanha, cidade, viagem. 20 a 30s.', carrossel:'As melhores fotos do cenário com dicas na legenda.', stories:'Bastidor de como fez cada foto.', estatico:'A foto mais forte do cenário.'}},
+    {n:'02', bm:'@larapassosalvim', cls:'Vida pessoal', tema:'Um dia comigo, de verdade',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me com rotina real e leveza.', porque:'POV de rotina aproxima e viraliza no nicho.'},
+     angulo:'O dia real da Fabi: treino cedo, café, clínica, fim de tarde. A ponte aparece sozinha.',
+     desdobra:{reels:'POV do dia completo, do tênis ao jaleco. Cortes rápidos. 30s.', carrossel:'O dia em seis quadros.', stories:'A rotina em tempo real com enquetes.', estatico:'Foto da transição treino → clínica.'}},
+    {n:'03', bm:'@larapassosalvim', cls:'Autoridade', tema:'Por que virei dentista',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Narrativa emocional em primeira pessoa engaja e faz salvar.', porque:'História de origem converte seguidor em confiança.'},
+     angulo:'A história dela com a odontologia e com a LK, contada com emoção e sem institucionalês.',
+     desdobra:{reels:'Ela conta a origem: por que odontologia, por que a LK. 45s, luz quente.', carrossel:'A história em capítulos com fotos pessoais.', stories:'Caixinha "o que você quer saber sobre mim?".', estatico:'Retrato dela com uma frase de origem.'}},
+    {n:'04', bm:'@larapassosalvim', cls:'Bastidores', tema:'Da trilha para a cadeira',
+     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'O momento pessoal mais forte é o que mais alcança.', porque:'A vida pessoal carrega; a profissão pega carona.'},
+     angulo:'O contraste que define a Fabi: a mesma energia da montanha dentro da clínica.',
+     desdobra:{reels:'Transição trilha → clínica no mesmo reel, com match cut. 25s.', carrossel:'Dois mundos, uma pessoa: fotos pareadas.', stories:'Enquete "trilha ou consultório?".', estatico:'Díptico trilha + jaleco.'}},
+    {n:'05', bm:'interno · @clinicalk', cls:'Bastidores', tema:'A LK pelos olhos da dona',
+     ref:{url:'https://www.instagram.com/clinicalk/reel/DaiVg2VOjA8/', metrica:'2.474 views', o:'Gente real na clínica é o que melhor performa na conta da LK.', porque:'O olhar pessoal da dona humaniza a casa inteira.'},
+     angulo:'Tour e bastidor da LK narrados por ela, como quem apresenta a própria casa.',
+     desdobra:{reels:'"Deixa eu te mostrar minha clínica": tour informal. 40s, colab com @clinicalk.', carrossel:'Os cantos favoritos dela na LK.', stories:'Um dia na LK pelos stories dela.', estatico:'Ela na recepção, sorrindo.'}},
+    {n:'06', bm:'@lucasguerreiros', cls:'Autoridade', conv:true, tema:'Um caso que passou por mim',
+     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'90,7 mil seguidores', o:'O autor que assina o resultado transforma técnica em marca.', porque:'A assinatura pessoal converte melhor que o institucional.'},
+     angulo:'Ela conta um caso da LK que a marcou, com autorização. A conversão acontece no colab.',
+     desdobra:{reels:'O caso narrado por ela, com o resultado autorizado. Colab com @clinicalk. 45s.', carrossel:'O caso em etapas, no tom pessoal dela.', stories:'Repost com comentário dela.', estatico:'Frase dela sobre o caso, com chamada de avaliação na LK.'}},
+    {n:'07', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Dente de viajante',
+     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Curiosidade leve com reação coletiva alcança longe.', porque:'Dúvida no tom lifestyle alcança quem foge de perfil de clínica.'},
+     angulo:'Saúde bucal no universo dela: trilha, viagem, garrafa d’água, lanche de mochila.',
+     desdobra:{reels:'"O que eu levo na mochila para os dentes" e outros ganchos leves. 30s.', carrossel:'Kit de viagem da dentista viajante.', stories:'Quiz de mitos de viagem e dentes.', estatico:'Flat lay da mochila com o kit.'}},
+    {n:'08', bm:'@larapassosalvim', cls:'Vida pessoal', tema:'A viagem como capítulo',
+     ref:{url:'https://www.instagram.com/larapassosalvim/', metrica:'13,2 mil seguidores', o:'O feed pessoal dela sustenta a marca inteira.', porque:'Viagem contada como história cria vínculo, não só like.'},
+     angulo:'Cada viagem da Fabi vira capítulo narrado: o lugar, o perrengue, o aprendizado.',
+     desdobra:{reels:'Mini-vlog da viagem com narração pessoal. 40s.', carrossel:'A viagem em fotos com legenda-crônica.', stories:'Diário de bordo em tempo real.', estatico:'A foto definitiva da viagem.'}},
+    {n:'09', bm:'interno · @clinicalk', cls:'Autoridade', conv:true, tema:'Herdeira dos 30 anos',
+     ref:{url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'3.053 views', o:'O resultado de protocolo é o conteúdo mais forte da LK.', porque:'A história da casa ganha rosto quando a dona assume a narrativa.'},
+     angulo:'A Fabi como guardiã da história: os 30 anos da LK contados por quem carrega o nome adiante.',
+     desdobra:{reels:'Ela conta a história da LK e o que não muda nunca. Colab. 50s.', carrossel:'A LK em três décadas, pelo olhar dela.', stories:'Caixinha "pergunte sobre a LK".', estatico:'Retrato dela na clínica com "desde 1995" e chamada de avaliação.'}}
+  ],
+
+  /* posts fixados ---------- */
+  fixados:[
+    {n:'01', tema:'Prazer, Fabi', papel:'Apresenta a pessoa: quem é, o que ama, o que faz. O post que a bio não conta.', precisa:'ensaio founder e acervo pessoal',
+     slides:['Capa: retrato leve e "dentista, viajante, dona da LK"','Quem sou: montanha, viagem e consultório','Por que odontologia','A LK: a casa que carrego','O que você vai ver por aqui','Chamada: vem junto, segue o perfil']},
+    {n:'02', tema:'A LK por dentro', papel:'A clínica apresentada pela dona, em tom pessoal. A ponte oficial.', precisa:'fotos dela na clínica e da equipe',
+     slides:['Capa: ela na LK, "minha casa desde sempre"','A história: 30 anos de reabilitação','A equipe pelos olhos dela','O que fazemos: implante, protocolo, estética','Como é ser paciente aqui','Chamada: conheça a LK, link na bio']},
+    {n:'03', tema:'Vida de dentista viajante', papel:'O manifesto do perfil: saúde é estilo de vida. Desejo e identificação.', precisa:'acervo de trilha e viagem, já existente',
+     slides:['Capa: trilha com "saúde é o que você vive"','A montanha como escola','O que o esporte me ensinou sobre cuidado','O mesmo cuidado na cadeira','A rotina que sustenta tudo','Chamada: segue para acompanhar']}
+  ],
+
+  ciclos:[]
+}
 ];
