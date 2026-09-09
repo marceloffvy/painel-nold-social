@@ -74,12 +74,12 @@ const CLIENTES = [
 
   /* ---------- melhores posts (medidos no perfil) ---------- */
   melhores:[
-    {img:'img/biliart/best/b1.webp', url:'https://www.instagram.com/drlfmartinho/reel/DYiNhjeBwEY/', metrica:'37,3 mil', titulo:'Bastidor de cirurgia',
+    {img:'img/biliart/best/b1.webp', url:'https://www.instagram.com/reel/DYiNhjeBwEY/', metrica:'37,3 mil', titulo:'Bastidor de cirurgia',
      porque:'Bloco cirúrgico real, sem narração e sem promessa. O fascínio pelo bastidor carrega o alcance sozinho: 15 vezes a base de seguidores.'},
-    {img:'img/biliart/best/b2.webp', url:'https://www.instagram.com/drlfmartinho/reel/DZLb803sEWr/', metrica:'31 mil', titulo:'Cirurgia com o colega otorrino',
+    {img:'img/biliart/best/b2.webp', url:'https://www.instagram.com/reel/DZLb803sEWr/', metrica:'31 mil', titulo:'Cirurgia com o colega otorrino',
      porque:'A dupla em ação passa método e parceria. Bastidor com contexto clínico é o formato que fura a bolha do perfil.'},
-    {img:'img/biliart/best/b3.webp', url:'https://www.instagram.com/drlfmartinho/reel/DXe0mkejv-x/', metrica:'4.678', titulo:'Vida pessoal, em viagem',
-     porque:'Ele como gente, fora do jaleco. O território pessoal sustenta alcance acima da média e prepara a confiança.'}
+    {img:'img/biliart/best/b3.webp', url:'https://www.instagram.com/reel/DXe0mkejv-x/', metrica:'4.678', titulo:'Vida pessoal, em viagem',
+     porque:'Ele como gente, fora do jaleco, em colab com a @dra.jessicafcuri. O território pessoal sustenta alcance acima da média e prepara a confiança.'}
   ],
 
   /* ---------- 02 IDENTIDADE ---------- */
@@ -197,7 +197,7 @@ const CLIENTES = [
   /* ---------- 06 PAUTAS (3 por benchmark, de posts reais) ---------- */
   pautas:[
     {n:'01', bm:'@drmanoelroque', cls:'autoridade',
-     ref:{url:'https://www.instagram.com/drmanoelroque/reel/DYxxHTGhQ1t/', metrica:'40,1 mil views',
+     ref:{url:'https://www.instagram.com/reel/DYxxHTGhQ1t/', metrica:'40,1 mil views',
           o:'Depoimento da paciente Gabriela sobre ATM.',
           porque:'Os comentários viraram desabafo coletivo: "sofro há 7 anos", "já usei placa, botox e nada resolveu", "a boca trava todo dia". Dor real, público desassistido.'},
      tema:'O depoimento de quem convivia com dor de ATM',
@@ -210,7 +210,7 @@ const CLIENTES = [
      }},
 
     {n:'02', bm:'@drmanoelroque', cls:'autoridade',
-     ref:{url:'https://www.instagram.com/drmanoelroque/reel/DYihRSmhiCw/', metrica:'37,6 mil views',
+     ref:{url:'https://www.instagram.com/reel/DYihRSmhiCw/', metrica:'37,6 mil views',
           o:'Depoimento do paciente Fabrízio no dia da cirurgia, ligado a apneia.',
           porque:'Depoimento gravado no dia gera tensão e verdade. Conecta estética com respiração.'},
      tema:'O dia da cirurgia contado por quem estava lá',
@@ -223,7 +223,7 @@ const CLIENTES = [
      }},
 
     {n:'03', bm:'@drmanoelroque', cls:'duvidas',
-     ref:{url:'https://www.instagram.com/drmanoelroque/reel/CwOWwlSBq9e/', metrica:'64 mil views',
+     ref:{url:'https://www.instagram.com/reel/CwOWwlSBq9e/', metrica:'64 mil views',
           o:'Antes e depois de ortognática, o maior alcance do perfil.',
           porque:'Transformação visual ainda é o que mais viraliza. Mas é o que a Biliart não faz sem autorização.'},
      tema:'A transformação sem mostrar o rosto de ninguém',
@@ -236,7 +236,7 @@ const CLIENTES = [
      }},
 
     {n:'04', bm:'@cirurgia.ortognatica', cls:'duvidas',
-     ref:{url:'https://www.instagram.com/cirurgia.ortognatica/reel/DHwY1fdBcDa/', metrica:'33 mil views',
+     ref:{url:'https://www.instagram.com/reel/DHwY1fdBcDa/', metrica:'33 mil views',
           o:'Caso de retrabalho por falha de outro profissional.',
           porque:'Gerou comentários de intenção de compra: "em breve agendarei uma consulta", "preciso de uma ortognática".'},
      tema:'Por que algumas cirurgias precisam ser refeitas',
@@ -249,7 +249,7 @@ const CLIENTES = [
      }},
 
     {n:'05', bm:'@cirurgia.ortognatica', cls:'duvidas',
-     ref:{url:'https://www.instagram.com/cirurgia.ortognatica/reel/Dad83NfTtuM/', metrica:'6.931 views',
+     ref:{url:'https://www.instagram.com/reel/Dad83NfTtuM/', metrica:'6.931 views',
           o:'Explica ortognática usando o caso do Vini Jr.',
           porque:'Carona em assunto do momento. Traz público que nunca buscaria o tema sozinho.'},
      tema:'Ortognática em rosto conhecido',
@@ -275,7 +275,7 @@ const CLIENTES = [
      }},
 
     {n:'07', bm:'@drorionhaas', cls:'bastidores',
-     ref:{url:'https://www.instagram.com/drorionhaas/reel/DMYlljVv5Qv/', metrica:'5.935 views',
+     ref:{url:'https://www.instagram.com/reel/DMYlljVv5Qv/', metrica:'5.935 views',
           o:'Guias cirúrgicas impressas em 3D: "o planejamento vira realidade".',
           porque:'Fascínio por precisão. Objeto físico é mais concreto que discurso de tecnologia.'},
      tema:'A peça impressa que guia a cirurgia',
@@ -288,7 +288,7 @@ const CLIENTES = [
      }},
 
     {n:'08', bm:'@drorionhaas', cls:'bastidores',
-     ref:{url:'https://www.instagram.com/drorionhaas/reel/DK20LLgo7T0/', metrica:'4.471 views',
+     ref:{url:'https://www.instagram.com/reel/DK20LLgo7T0/', metrica:'4.471 views',
           o:'"Cirurgia ortognática é sinônimo de trabalho conjunto." Apresenta a equipe.',
           porque:'Mostrar time reduz o medo. O paciente entende que não depende de uma pessoa só.'},
      tema:'Quem mais está na sala além do cirurgião',
@@ -301,7 +301,7 @@ const CLIENTES = [
      }},
 
     {n:'09', bm:'@drorionhaas', cls:'pessoal',
-     ref:{url:'https://www.instagram.com/drorionhaas/reel/DYNU752x1fE/', metrica:'11,4 mil views',
+     ref:{url:'https://www.instagram.com/reel/DYNU752x1fE/', metrica:'11,4 mil views',
           o:'Curso internacional de cirurgia na Cidade do México.',
           porque:'Formação contínua vira autoridade percebida, mesmo com público leigo.'},
      tema:'Onde o cirurgião vai estudar',
@@ -401,11 +401,11 @@ const CLIENTES = [
 
   /* ---------- melhores posts (medidos no perfil) ---------- */
   melhores:[
-    {img:'img/idee/best/b1.webp', url:'https://www.instagram.com/robertosimonetti_ortodontia/reel/DX65zKZxemA/', metrica:'3.369', titulo:'Ele em cena no consultório',
+    {img:'img/idee/best/b1.webp', url:'https://www.instagram.com/reel/DX65zKZxemA/', metrica:'3.369', titulo:'Ele em cena no consultório',
      porque:'O melhor do perfil é ele mostrando o espaço e o método. Autoridade demonstrada em cena, no lugar de declarada em texto.'},
-    {img:'img/idee/best/b2.webp', url:'https://www.instagram.com/robertosimonetti_ortodontia/reel/DYfaaRtRmHj/', metrica:'1.414', titulo:'Caso orto-cirúrgico',
+    {img:'img/idee/best/b2.webp', url:'https://www.instagram.com/reel/DYfaaRtRmHj/', metrica:'1.414', titulo:'Caso orto-cirúrgico',
      porque:'Caso real com rosto e história. É o formato que mais aproxima o público de paciente e dobra a média da conta.'},
-    {img:'img/idee/best/b3.webp', url:'https://www.instagram.com/robertosimonetti_ortodontia/reel/DXusmm5sQYd/', metrica:'1.376', titulo:'Conversa no sofá',
+    {img:'img/idee/best/b3.webp', url:'https://www.instagram.com/reel/DXusmm5sQYd/', metrica:'1.376', titulo:'Conversa no sofá',
      porque:'A entrevista dá ritmo e tira o peso do talking head solo. Bom molde para as dúvidas de pais em dupla.'}
   ],
 
@@ -513,7 +513,7 @@ const CLIENTES = [
   benchmark:[
     {at:'@larapassosalvim', url:'https://www.instagram.com/larapassosalvim/', porte:'13,2 mil', perfil:'Ortodontista e creator, entre o Rio e Juiz de Fora.', mecanismo:'Vida pessoal e leveza de creator. Os maiores reels são pessoais: a filha (32,2 mil), um get ready (26,8 mil) e o anúncio aos amigos (16,2 mil).', leitura:'Quem cresce no nicho humaniza primeiro. Para o Roberto, é o professor-pai que aproxima, não o técnico.'},
     {at:'@odontologiadicas', url:'https://www.instagram.com/odontologiadicas/', porte:'193 mil', perfil:'Andréa Figueiredo, conteúdo de odontologia, Minas Gerais.', mecanismo:'Relatable e curiosidade. Reels de 35,7 mil (reação coletiva), 32,3 mil (curiosidade) e o "do outro lado da cadeira" (23,9 mil).', leitura:'O gancho "eu também" e "sinais" faz o pai marcar e salvar. A audiência dela é de dentista, então viramos o gancho para a mãe e o pai.'},
-    {at:'@odontopediatria.brasil', url:'https://www.instagram.com/odontopediatria.brasil/', porte:'61,1 mil', perfil:'A maior comunidade de odontopediatria do mundo. Fala com dentista.', mecanismo:'Educação e comunidade para o dentista, não para a família. Conteúdo técnico e institucional.', leitura:'Contraexemplo revelador. O maior perfil do nicho fala com colega. A conversa com o pai e a mãe está aberta e quase ninguém ocupa.'}
+    {at:'@odontopediatria.brasil', url:'https://www.instagram.com/odontopediatria.brasil/', porte:'61 mil', perfil:'A maior comunidade de odontopediatria do mundo. Fala com dentista.', mecanismo:'Educação e comunidade para o dentista, não para a família. Conteúdo técnico e institucional.', leitura:'Contraexemplo revelador. O maior perfil do nicho fala com colega. A conversa com o pai e a mãe está aberta e quase ninguém ocupa.'}
   ],
   sintese:{
     alta:['O humano do profissional, o professor-pai','Relatable e sinais que o pai reconhece','A criança e o adolescente com naturalidade'],
@@ -524,39 +524,39 @@ const CLIENTES = [
   /* ---------- 07 PAUTAS ---------- */
   pautas:[
     {n:'01', bm:'@larapassosalvim', cls:'Vida pessoal', tema:'Por que virei ortodontista',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Contar aos amigos que seria pai. Emoção em primeira pessoa.', porque:'Narrativa emocional pessoal engaja e faz salvar.'},
+     ref:{url:'https://www.instagram.com/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Contar aos amigos que seria pai. Emoção em primeira pessoa.', porque:'Narrativa emocional pessoal engaja e faz salvar.'},
      angulo:'A história de origem contada com emoção. Pai confia em quem também é pai e professor.',
      desdobra:{reels:'Ele conta o que o fez virar ortodontista, um caso de criança que marcou. Direto na câmera, luz quente. 50s.', carrossel:'A história em capítulos, com fotos antigas.', stories:'Enquete "o que te fez escolher sua profissão?" e a resposta.', estatico:'Foto antiga dele com a frase de origem.'}},
     {n:'02', bm:'@larapassosalvim', cls:'Bastidores', tema:'Vem comigo num dia de consultório',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me, rotina e leveza.', porque:'Bastidor leve aproxima e viraliza mais que conteúdo técnico.'},
+     ref:{url:'https://www.instagram.com/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me, rotina e leveza.', porque:'Bastidor leve aproxima e viraliza mais que conteúdo técnico.'},
      angulo:'Um dia real no consultório, leve, mostrando o ambiente que acolhe a criança.',
      desdobra:{reels:'POV de um dia: a recepção, uma criança chegando sem medo, o escaneamento, o café. 45s.', carrossel:'Um dia na Idée em seis quadros.', stories:'A sequência do dia em tempo real.', estatico:'Foto de bastidor com legenda do momento.'}},
     {n:'03', bm:'@larapassosalvim', cls:'Autoridade', tema:'30 anos, milhares de sorrisos acompanhados',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'Nascimento da filha. O maior alcance do perfil, e é vida pessoal.', porque:'Um marco humano real alcança mais que qualquer caso clínico.'},
+     ref:{url:'https://www.instagram.com/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'Nascimento da filha. O maior alcance do perfil, e é vida pessoal.', porque:'Um marco humano real alcança mais que qualquer caso clínico.'},
      angulo:'Um marco de trinta anos como marca humana. Sorrisos acompanhados desde criança, contados com emoção.',
      desdobra:{reels:'Linha do tempo dos 30 anos sobre fotos de acervo, voz em off, ritmo calmo. 40s.', carrossel:'Trinta anos de sorrisos, um capítulo por slide.', stories:'Bastidor da rotina com caixinha de pergunta.', estatico:'Retrato dele com a frase sobre por que faz o que faz.'}},
     {n:'04', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Sinais de que seu filho vai precisar de aparelho',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DUMZ5J0DVyA/', metrica:'32,3 mil views', o:'Curiosidade sobre um equipamento novo. Prende pela novidade.', porque:'Curiosidade e "sinais" surpreendem, retêm e fazem comentar.'},
+     ref:{url:'https://www.instagram.com/reel/DUMZ5J0DVyA/', metrica:'32,3 mil views', o:'Curiosidade sobre um equipamento novo. Prende pela novidade.', porque:'Curiosidade e "sinais" surpreendem, retêm e fazem comentar.'},
      angulo:'Os sinais que o pai e a mãe deveriam observar na boca do filho, com didática de professor.',
      desdobra:{reels:'Lista rápida de sinais (dente nascendo torto, respira pela boca, ronca, morde errado). Modelo na mão. 40s.', carrossel:'Um sinal por slide, tom acolhedor.', stories:'Quiz "verdadeiro ou falso" sobre a idade de avaliar.', estatico:'Card com o sinal mais comum e a chamada de avaliação.'}},
     {n:'05', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Coisas que todo pai de criança com aparelho vive',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reel de reação coletiva. Nos comentários é só "eu também".', porque:'Reconhecimento coletivo faz o pai marcar outro pai e salvar.'},
+     ref:{url:'https://www.instagram.com/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reel de reação coletiva. Nos comentários é só "eu também".', porque:'Reconhecimento coletivo faz o pai marcar outro pai e salvar.'},
      angulo:'Relatable para pais: as cenas que todo pai de criança com aparelho reconhece.',
      desdobra:{reels:'Lista rápida de cenas (esconder o doce, a borrachinha que solta, a escovação de guerra). Áudio em alta. 30s.', carrossel:'Uma cena por slide, com humor leve.', stories:'Enquete "seu filho faz isso?".', estatico:'Card com a cena mais reconhecível.'}},
     {n:'06', bm:'@odontologiadicas', cls:'Bastidores', tema:'Quando a criança tem medo do dentista',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DYqD2JiTHVb/', metrica:'23,9 mil views', o:'A dentista conta quando esteve do outro lado da cadeira, com medo.', porque:'Vulnerabilidade real gera identificação e compartilhamento.'},
+     ref:{url:'https://www.instagram.com/reel/DYqD2JiTHVb/', metrica:'23,9 mil views', o:'A dentista conta quando esteve do outro lado da cadeira, com medo.', porque:'Vulnerabilidade real gera identificação e compartilhamento.'},
      angulo:'O medo da criança, tratado com calma. O pai vê como o filho é acolhido antes de sentar na cadeira.',
      desdobra:{reels:'Ele mostra como recebe uma criança com medo: o tom de voz, o passo a passo, sem pressa. 50s.', carrossel:'Como preparar seu filho para a primeira consulta.', stories:'Caixinha "seu filho tem medo de dentista?".', estatico:'Frase acolhedora entre aspas, sobre fundo azul.'}},
     {n:'07', bm:'@odontopediatria.brasil', cls:'Dúvidas', conv:true, tema:'Qual a idade certa de levar ao ortodontista?',
-     ref:{url:'https://www.instagram.com/odontopediatria.brasil/', metrica:'contraexemplo · 61,1 mil', o:'A maior comunidade responde ao dentista, não à mãe e ao pai.', porque:'A dúvida número um dos pais fica sem uma resposta simples.'},
+     ref:{url:'https://www.instagram.com/reel/DJaVjpKSgNp/', metrica:'contraexemplo · 61 mil', o:'"Você leva seu filho ao pediatra só quando ele sente dor?" A pergunta certa, no formato errado: card institucional, sem rosto e sem história.', porque:'A lógica de levar antes da dor é a mesma da ortodontia. Falta gente na tela para a mensagem pegar.'},
      angulo:'Responder direto a pergunta que todo pai faz: a hora certa de levar a criança ao ortodontista.',
      desdobra:{reels:'Ele responde em 40s: a idade recomendada, por que não adiar, o que é avaliado. Chamada para avaliar.', carrossel:'A linha do tempo do sorriso da criança, idade por idade.', stories:'Caixinha "quantos anos tem seu filho?" com orientação.', estatico:'Card "a idade certa de avaliar" com chamada de avaliação.'}},
     {n:'08', bm:'@odontopediatria.brasil', cls:'Autoridade', conv:true, tema:'Depoimento de mãe',
-     ref:{url:'https://www.instagram.com/odontopediatria.brasil/', metrica:'contraexemplo · institucional', o:'O perfil mostra números e técnica, não histórias de família.', porque:'A prova que convence pai é outra mãe, não um selo.'},
+     ref:{url:'https://www.instagram.com/reel/DMgdpIFS8gO/', metrica:'40,4 mil views', o:'Card de Agosto Dourado. Alcança bem, e mesmo assim é arte institucional sem nenhuma família real na tela.', porque:'A prova que convence pai é outra mãe falando, não um card de data comemorativa.'},
      angulo:'Uma mãe contando para outra a transformação do filho. Prova social que fala com quem decide.',
      desdobra:{reels:'Mãe falando em uma frase o que mudou no filho depois do tratamento. Rosto e emoção. 40s.', carrossel:'A jornada da família: a dúvida, a decisão, o resultado.', stories:'Repost de mensagem real de mãe, com autorização por escrito.', estatico:'Depoimento entre aspas, com o primeiro nome e a idade do filho.'}},
     {n:'09', bm:'@odontopediatria.brasil', cls:'Dúvidas', conv:true, tema:'Aparelho ou alinhador para o meu filho?',
-     ref:{url:'https://www.instagram.com/odontopediatria.brasil/', metrica:'contraexemplo · técnico', o:'A comunidade discute técnica de aparelho para o dentista.', porque:'A escolha prática que o pai enfrenta fica de fora.'},
+     ref:{url:'https://www.instagram.com/reel/DPtT-9YkU7p/', metrica:'25,1 mil views', o:'Ilustração genérica de crianças. Bonito de ver, e não responde a nenhuma decisão prática de quem paga o tratamento.', porque:'A escolha real que o pai enfrenta fica de fora do maior perfil do nicho.'},
      angulo:'A decisão que o pai enfrenta, sem jargão. Aqui o alinhador aparece, sem ser o foco.',
      desdobra:{reels:'Ele compara em 45s: quando cada um serve, prazo e cuidado. Chamada para avaliar.', carrossel:'Aparelho ou alinhador para adolescente, ponto a ponto.', stories:'Enquete "seu filho usaria aparelho ou alinhador?".', estatico:'Card comparativo simples com chamada de avaliação.'}}
   ],
@@ -634,11 +634,11 @@ const CLIENTES = [
 
   /* ---------- melhores posts (medidos no perfil) ---------- */
   melhores:[
-    {img:'img/malu/best/b1.webp', url:'https://www.instagram.com/dra.malumartinho/reel/DbisYrolfDz/', metrica:'2.761', titulo:'Erros na escovação',
+    {img:'img/malu/best/b1.webp', url:'https://www.instagram.com/reel/DbisYrolfDz/', metrica:'2.761', titulo:'Erros na escovação',
      porque:'Erro comum e demonstração prática. Utilidade imediata faz salvar e alcança 5 vezes a base da conta.'},
-    {img:'img/malu/best/b2.webp', url:'https://www.instagram.com/dra.malumartinho/reel/DbSzsDdiNLO/', metrica:'667', titulo:'"Às vezes não acredito"',
+    {img:'img/malu/best/b2.webp', url:'https://www.instagram.com/reel/DbSzsDdiNLO/', metrica:'667', titulo:'"Às vezes não acredito"',
      porque:'Reação com emoção real. O rosto dela reagindo já supera a média e mostra o caminho da humanização.'},
-    {img:'img/malu/best/b3.webp', url:'https://www.instagram.com/dra.malumartinho/reel/DbEG_4rCXdw/', metrica:'543', titulo:'3 cuidados',
+    {img:'img/malu/best/b3.webp', url:'https://www.instagram.com/reel/DbEG_4rCXdw/', metrica:'543', titulo:'3 cuidados',
      porque:'Lista curta e prática. Formato de checklist rende salvamento e é fácil de repetir com constância.'}
   ],
 
@@ -736,9 +736,9 @@ const CLIENTES = [
 
   /* ---------- 06 BENCHMARK ---------- */
   benchmark:[
-    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'90,7 mil', perfil:'"Realismo Dental", artista de lentes em SP, com marca própria de creme e laboratório.', mecanismo:'Personal brand de artista. Resultados ultra-realistas que impressionam, com ele como assinatura.', leitura:'O realismo vira espetáculo quando tem um autor. Para a Malu, o resultado natural dela precisa de rosto e assinatura.'},
-    {at:'@maraisafernandadentista', url:'https://www.instagram.com/maraisafernandadentista/', porte:'62,7 mil', perfil:'Lentes naturais "sem cara de lente", mais de 1.500 casos, interior de SP.', mecanismo:'Antes e depois, naturalidade e volume de prova. Resultado discreto como argumento.', leitura:'A naturalidade vende e o antes e depois é o motor. Ressalva: a audiência dela puxa dentista, então miramos o paciente.'},
-    {at:'padrão "cara de lente"', url:'https://www.instagram.com/explore/tags/lentedecontatodental/', porte:'tendência viral', perfil:'A onda de lentes artificiais e exageradas que viraliza pelo choque ("olha o que fizeram").', mecanismo:'Choque e polêmica. Alcança muito e constrói um desejo equivocado.', leitura:'Contraexemplo perfeito. O gancho da Malu é ser o oposto: natural, no lugar do exagero.'}
+    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'91,2 mil', perfil:'"Realismo Dental", artista de lentes em SP, com marca própria de creme e laboratório.', mecanismo:'Personal brand de artista. Resultados ultra-realistas que impressionam, com ele como assinatura.', leitura:'O realismo vira espetáculo quando tem um autor. Para a Malu, o resultado natural dela precisa de rosto e assinatura.'},
+    {at:'@maraisafernandadentista', url:'https://www.instagram.com/maraisafernandadentista/', porte:'64 mil', perfil:'Lentes naturais "sem cara de lente", mais de 1.500 casos, interior de SP.', mecanismo:'Antes e depois, naturalidade e volume de prova. Resultado discreto como argumento.', leitura:'A naturalidade vende e o antes e depois é o motor. Ressalva: a audiência dela puxa dentista, então miramos o paciente.'},
+    {at:'@drlucasfirmino', url:'https://www.instagram.com/drlucasfirmino/', porte:'603 mil', perfil:'Lentes de porcelana e implantes em escala industrial, mais de 100 mil lentes realizadas.', mecanismo:'Espetáculo e polêmica: "CPI das Lentes" (473 mil), "Homem das Lentes" (304 mil) e reação a casos mal feitos (23,2 mil).', leitura:'Contraexemplo em escala. Alcança milhões pelo show, e deixa aberta a vaga de quem fala de naturalidade com seriedade.'}
   ],
   sintese:{
     alta:['Naturalidade, sem cara de lente','Antes e depois com resultado discreto','O detalhe artesanal do trabalho'],
@@ -749,39 +749,39 @@ const CLIENTES = [
   /* ---------- 07 PAUTAS ---------- */
   pautas:[
     {n:'01', bm:'@lucasguerreiros', cls:'Vida pessoal', tema:'A protesista por trás do sorriso',
-     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'90,7 mil seguidores', o:'Ele cresce como artista, com nome e assinatura no realismo.', porque:'No nicho de lentes, o autor vale tanto quanto o resultado.'},
+     ref:{url:'https://www.instagram.com/reel/DTO7SGvgB9p/', metrica:'2,5 milhões de views', o:'O maior reel dele não tem técnica nenhuma: é a festa da família. Vida pessoal do profissional.', porque:'No nicho de lentes o autor vale tanto quanto o resultado, e o que humaniza o autor é o que mais alcança.'},
      angulo:'Quem é a Maria Luiza e por que escolheu a reabilitação. O rosto da marca antes do dente.',
      desdobra:{reels:'Ela conta, direto na câmera, por que ama devolver sorrisos naturais. 45s, luz quente.', carrossel:'A história dela em capítulos, com bastidor do laboratório.', stories:'Enquete "o que você acha que é uma lente natural?" e a resposta.', estatico:'Retrato dela com uma frase sobre naturalidade.'}},
     {n:'02', bm:'@lucasguerreiros', cls:'Autoridade', tema:'Realismo tem autor',
-     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'referência de realismo', o:'Resultados ultra-realistas assinados por ele.', porque:'A assinatura transforma técnica em desejo.'},
+     ref:{url:'https://www.instagram.com/reel/Dcrh7E8Cwa8/', metrica:'7.319 views', o:'Close do resultado com a assinatura dele gravada na própria imagem.', porque:'A assinatura transforma técnica em desejo e faz o resultado ter dono.'},
      angulo:'O padrão de naturalidade da Malu, com o close do resultado discreto. Ela assina.',
      desdobra:{reels:'Close do antes e depois natural, com ela explicando a escolha da cor. 40s.', carrossel:'O que faz uma lente parecer real, ponto a ponto.', stories:'"Você percebe qual é a lente?" com enquete.', estatico:'Close do sorriso com selo "natural de verdade".'}},
     {n:'03', bm:'@lucasguerreiros', cls:'Bastidores', tema:'O detalhe que ninguém vê',
-     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'processo que encanta', o:'O trabalho artesanal da lente vira conteúdo.', porque:'O bastidor do "como é feito" prende e mostra cuidado.'},
+     ref:{url:'https://www.instagram.com/reel/DccC-b6iylO/', metrica:'31,2 mil views', o:'Macro das lentes na boca, com a textura e o brilho em detalhe.', porque:'O close do "como é feito" prende, encanta e prova cuidado sem precisar de uma palavra.'},
      angulo:'A lente mais fina que parece, o trabalho no milímetro. O artesanato por trás do natural.',
      desdobra:{reels:'A lente fininha na ponta do dedo e a prova na boca. Detalhe e luz. 30s.', carrossel:'Do planejamento à prova, o caminho de uma lente.', stories:'Bastidor da prova em tempo real.', estatico:'Macro da lente com a chamada "no detalhe".'}},
     {n:'04', bm:'@maraisafernandadentista', cls:'Autoridade', tema:'Antes e depois natural',
-     ref:{url:'https://www.instagram.com/maraisafernandadentista/', metrica:'62,7 mil seguidores', o:'Antes e depois com resultado discreto é o motor do perfil.', porque:'A transformação natural é a prova mais forte.'},
+     ref:{url:'https://www.instagram.com/reel/Daqm4zsNV0P/', metrica:'120 mil views', o:'O maior reel dela, em colab com uma maquiadora local de 23,6 mil: o que ela indica para uma boca limpa.', porque:'Quando a especialista assume opinião, o alcance dispara. O mesmo peso vale ao mostrar o próprio resultado.'},
      angulo:'Relato de caso da Malu, com o resultado que não grita. Discrição como assinatura.',
      desdobra:{reels:'Relato de caso: a queixa, o plano, o resultado natural. Com autorização. 50s.', carrossel:'O caso em etapas, do incômodo ao sorriso discreto.', stories:'Caixinha "o que te incomoda no seu sorriso?".', estatico:'Antes e depois autorizado, com contexto.'}},
     {n:'05', bm:'@maraisafernandadentista', cls:'Dúvidas', tema:'Vai ficar falso?',
-     ref:{url:'https://www.instagram.com/maraisafernandadentista/', metrica:'ângulo "sem cara de lente"', o:'O medo do resultado artificial é a dúvida número um.', porque:'Desarmar o medo é o que aproxima o paciente certo.'},
+     ref:{url:'https://www.instagram.com/reel/Da3c2EDR1wC/', metrica:'14,6 mil views', o:'"A paciente disse que a lente quebrou do nada." Ela encara a objeção de frente, sem defensiva.', porque:'Desarmar o medo com honestidade é o que aproxima o paciente certo.'},
      angulo:'Ela mostra por que a lente natural não fica falsa: cor, formato e proporção do rosto.',
      desdobra:{reels:'Ela compara, sem jargão, o natural e o exagerado. 40s.', carrossel:'Cinco sinais de uma lente natural bem feita.', stories:'"Verdadeiro ou falso" sobre cara de lente.', estatico:'Card "natural x artificial" lado a lado.'}},
     {n:'06', bm:'@maraisafernandadentista', cls:'Autoridade', conv:true, tema:'Voltar a mastigar',
-     ref:{url:'https://www.instagram.com/maraisafernandadentista/', metrica:'transformação como prova', o:'A transformação vende, e a função é o diferencial da Malu.', porque:'Estética e função juntas ampliam o público.'},
+     ref:{url:'https://www.instagram.com/reel/DcwV1_4xu4T/', metrica:'3.624 views', o:'"Doutora, sinto dor quando bate ar nos dentes." A queixa funcional que chega na consulta.', porque:'Função é a porta que a estética sozinha não abre. Estética e função juntas ampliam o público.'},
      angulo:'Reabilitação que devolve a mordida, não só a estética. O depoimento de quem voltou a comer bem.',
      desdobra:{reels:'Depoimento real: comer, sorrir e falar de novo com conforto. Com autorização. 45s.', carrossel:'A jornada da reabilitação, da queixa à função.', stories:'Caixinha "você deixa de comer algo por causa dos dentes?".', estatico:'Depoimento entre aspas, com chamada de avaliação.'}},
-    {n:'07', bm:'padrão "cara de lente"', cls:'Dúvidas', conv:true, tema:'Olha o que fizeram',
-     ref:{url:'https://www.instagram.com/explore/tags/lentedecontatodental/', metrica:'padrão viral do nicho', o:'Vídeos de lentes exageradas viralizam pelo choque.', porque:'A polêmica alcança, mas constrói o desejo errado.'},
+    {n:'07', bm:'@drlucasfirmino', cls:'Dúvidas', conv:true, tema:'Olha o que fizeram',
+     ref:{url:'https://www.instagram.com/reel/DdCVnodDMrj/', metrica:'23,2 mil views', o:'"Mulher mostra estar fazendo lentes de gel." Ele reage à desinformação do nicho e explica o certo.', porque:'Reagir ao erro alheio alcança e ensina ao mesmo tempo, sem precisar apontar dedo para ninguém.'},
      angulo:'Ela reage ao exagero e ensina o caminho natural, virando o alcance a favor do posicionamento.',
      desdobra:{reels:'Reação a um caso artificial e o que faria diferente. Tom respeitoso. 45s.', carrossel:'Por que a "dentona" acontece e como evitar.', stories:'Enquete "natural ou artificial?" com exemplos.', estatico:'Card educativo sobre o exagero.'}},
-    {n:'08', bm:'padrão "cara de lente"', cls:'Dúvidas', tema:'Preciso desgastar meus dentes?',
-     ref:{url:'https://www.instagram.com/explore/tags/lentedecontatodental/', metrica:'medo recorrente', o:'O medo de "lixar" os dentes trava muita gente.', porque:'Responder o medo real puxa busca e confiança.'},
+    {n:'08', bm:'@drlucasfirmino', cls:'Dúvidas', tema:'Preciso desgastar meus dentes?',
+     ref:{url:'https://www.instagram.com/reel/DdCM3X-Chur/', metrica:'@drlucasfirmino · 603 mil', o:'"Mulher faz troca de lentes e o resultado surpreende." Refazer lente é assunto que prende.', porque:'Quem já tem lente e quem teme o desgaste assistem ao mesmo conteúdo. Responder o medo real puxa busca.'},
      angulo:'Ela explica, com honestidade, quando há desgaste e quando quase não há. Sem promessa.',
      desdobra:{reels:'Ela responde direto, com modelo na mão, sobre o desgaste. 40s.', carrossel:'Lente, faceta e o que muda no seu dente.', stories:'Caixinha "qual sua maior dúvida sobre lentes?".', estatico:'Card "mitos sobre desgaste".'}},
-    {n:'09', bm:'padrão "cara de lente"', cls:'Dúvidas', conv:true, tema:'Quanto dura e como cuidar',
-     ref:{url:'https://www.instagram.com/explore/tags/lentedecontatodental/', metrica:'decisão de compra', o:'Durabilidade e cuidado são a última dúvida antes de decidir.', porque:'Clareza sobre manutenção destrava a avaliação.'},
+    {n:'09', bm:'@drlucasfirmino', cls:'Dúvidas', conv:true, tema:'Quanto dura e como cuidar',
+     ref:{url:'https://www.instagram.com/reel/DY75mFbFc4X/', metrica:'473 mil views', o:'"CPI das Lentes": espetáculo puro, com cenário de tribunal. O nicho virou show.', porque:'Alcança meio milhão e não gera confiança clínica. Clareza sobre manutenção faz o caminho oposto e destrava a avaliação.'},
      angulo:'Ela mostra a manutenção real e convida para uma avaliação, sem promessa de prazo absoluto.',
      desdobra:{reels:'Rotina de cuidado da lente em 5 passos rápidos. 40s.', carrossel:'Como fazer sua lente durar, hábito a hábito.', stories:'Quiz de cuidados com a lente.', estatico:'Card de manutenção com chamada de avaliação.'}}
   ],
@@ -809,7 +809,7 @@ const CLIENTES = [
   nome:'Clínica LK', categoria:'Reabilitação oral · desde 1995',
   resumo:'Implante, protocolo e estética. O recomeço de quem quer voltar a mastigar e sorrir.',
   arroba:'@clinicalk', perfil:'https://www.instagram.com/clinicalk/',
-  seguidores:'6.508', avatar:'img/clinica-lk/avatar.webp',
+  seguidores:'6.549', avatar:'img/clinica-lk/avatar.webp',
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
   nicho:'Reabilitação oral desde 1995. Implante, prótese protocolo, estética e lentes, no Paraíso, SP.',
@@ -851,11 +851,11 @@ const CLIENTES = [
 
   /* ---------- melhores posts ---------- */
   melhores:[
-    {img:'img/clinica-lk/best/b1.webp', url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'3.053', titulo:'Resultado de Protocolo',
+    {img:'img/clinica-lk/best/b1.webp', url:'https://www.instagram.com/reel/DbCQMqMAQX7/', metrica:'13 mil', titulo:'Resultado de Protocolo',
      porque:'Resultado com rosto, história e emoção real. O formato número um da casa: prova que reabilitação vende recomeço.'},
-    {img:'img/clinica-lk/best/b2.webp', url:'https://www.instagram.com/clinicalk/reel/DaiVg2VOjA8/', metrica:'2.474', titulo:'Paciente em cena',
+    {img:'img/clinica-lk/best/b2.webp', url:'https://www.instagram.com/reel/DaiVg2VOjA8/', metrica:'2.474', titulo:'Paciente em cena',
      porque:'Gente real na clínica, sem roteiro travado. A espontaneidade aproxima e segura a retenção.'},
-    {img:'img/clinica-lk/best/b3.webp', url:'https://www.instagram.com/clinicalk/reel/Da5ct_mOMvu/', metrica:'2.175', titulo:'Estética em cena',
+    {img:'img/clinica-lk/best/b3.webp', url:'https://www.instagram.com/reel/Da5ct_mOMvu/', metrica:'2.357', titulo:'Estética em cena',
      porque:'A frente jovem também rende: prova que a LK fala com a família inteira, do protocolo à estética.'}
   ],
 
@@ -958,9 +958,9 @@ const CLIENTES = [
 
   /* ---------- BENCHMARK ---------- */
   benchmark:[
-    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'90,7 mil', perfil:'"Realismo Dental", prótese estética com autor e marca própria, SP.', mecanismo:'Resultado ultra-realista com assinatura. O autor vale tanto quanto a técnica.', leitura:'Prótese cresce quando tem rosto e assinatura. A LK tem trinta anos de autoridade para assinar seus resultados.'},
+    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'91,2 mil', perfil:'"Realismo Dental", prótese estética com autor e marca própria, SP.', mecanismo:'Resultado ultra-realista com assinatura. O autor vale tanto quanto a técnica.', leitura:'Prótese cresce quando tem rosto e assinatura. A LK tem trinta anos de autoridade para assinar seus resultados.'},
     {at:'@odontologiadicas', url:'https://www.instagram.com/odontologiadicas/', porte:'193 mil', perfil:'Conteúdo de odontologia com relatable e emoção, MG.', mecanismo:'Reação coletiva (35,7 mil), curiosidade e vulnerabilidade. Emoção escala.', leitura:'O gancho emocional serve à LK: o medo do implante e o "voltei a mastigar" são emoção pura. Adaptamos do dentista para o paciente maduro.'},
-    {at:'padrão institucional', url:'https://www.instagram.com/explore/tags/implantodontia/', porte:'contraexemplo', perfil:'A média das clínicas de implante: aparelho, procedimento e promessa.', mecanismo:'Conteúdo de vitrine, sem rosto de paciente e sem história. Alcance baixo e frio.', leitura:'O nicho fala de dentes. A LK fala da vida que volta. Essa é a pista aberta.'}
+    {at:'@drlucasfirmino', url:'https://www.instagram.com/drlucasfirmino/', porte:'603 mil', perfil:'Lentes e implantes em escala, mais de 3 mil protocolos, se apresenta como a maior clínica da América Latina.', mecanismo:'Espetáculo e volume. Quando posta institucional, como a visita de representantes, o alcance despenca na hora.', leitura:'Prova os dois lados: o nicho tem audiência gigante, e a vitrine é justamente o que menos engaja. A LK entra pela história de vida.'}
   ],
   sintese:{
     alta:['Depoimento maduro com emoção real','Resultado de protocolo com história','Preço e medo respondidos de frente'],
@@ -971,39 +971,39 @@ const CLIENTES = [
   /* ---------- PAUTAS ---------- */
   pautas:[
     {n:'01', bm:'interno · @clinicalk', cls:'Autoridade', tema:'O protocolo que virou recomeço',
-     ref:{url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'3.053 views', o:'O melhor reel da casa: resultado de protocolo com rosto e história.', porque:'O formato campeão interno merece virar série.'},
+     ref:{url:'https://www.instagram.com/reel/DbCQMqMAQX7/', metrica:'13 mil views', o:'O melhor reel da casa: resultado de protocolo com rosto e história.', porque:'O formato campeão interno merece virar série.'},
      angulo:'Uma série mensal: cada resultado de protocolo contado como capítulo de vida, com autorização.',
      desdobra:{reels:'Depoimento do paciente + o momento do espelho + a vida depois. 50s, luz quente.', carrossel:'O caso em etapas: a chegada, o plano, o dia da entrega, o depois.', stories:'Bastidor do dia da entrega com a reação.', estatico:'Retrato do paciente sorrindo com uma frase do depoimento.'}},
     {n:'02', bm:'interno · @clinicalk', cls:'Dúvidas', conv:true, tema:'Quanto custa um protocolo, de verdade',
-     ref:{url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'1.494 no reel de preço', o:'A pergunta de preço já é um dos maiores alcances da casa.', porque:'Dúvida de preço é demanda reprimida. Responder de frente gera confiança.'},
+     ref:{url:'https://www.instagram.com/reel/Da9B0NJEZTY/', metrica:'1.704 views', o:'"Qual o preço da Prótese Protocolo?" A pergunta de preço já é um dos maiores alcances da casa.', porque:'Dúvida de preço é demanda reprimida. Responder de frente gera confiança.'},
      angulo:'Falar de investimento sem tabu: o que compõe o valor, formas de avaliar, sem prometer número na arte.',
      desdobra:{reels:'A especialista explica o que define o investimento e por que varia. 45s.', carrossel:'O que está incluso num protocolo, etapa por etapa.', stories:'Caixinha "sua maior dúvida sobre implante" respondida.', estatico:'Card "avaliação é o primeiro passo" com chamada. Sem preço na arte.'}},
     {n:'03', bm:'interno · @clinicalk', cls:'Vida pessoal', tema:'A primeira mordida',
-     ref:{url:'https://www.instagram.com/clinicalk/reel/DaiVg2VOjA8/', metrica:'2.474 views', o:'Gente real na clínica é o segundo maior alcance da casa.', porque:'A espontaneidade vence o institucional.'},
+     ref:{url:'https://www.instagram.com/reel/DaiVg2VOjA8/', metrica:'2.474 views', o:'Gente real na clínica é o segundo maior alcance da casa.', porque:'A espontaneidade vence o institucional.'},
      angulo:'A vida que volta: a primeira maçã, o churrasco, a foto de família sem esconder o sorriso.',
      desdobra:{reels:'Paciente conta a primeira coisa que comeu depois do protocolo. Riso real. 40s.', carrossel:'"O que você voltaria a comer?" com respostas reais de pacientes.', stories:'Enquete "o que você comeria primeiro?".', estatico:'Foto de comida + frase "a mordida que voltou".'}},
     {n:'04', bm:'@lucasguerreiros', cls:'Autoridade', tema:'Resultado com assinatura',
-     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'90,7 mil seguidores', o:'Prótese estética cresce com autor: o realismo assinado por um nome.', porque:'Assinatura transforma técnica em confiança.'},
+     ref:{url:'https://www.instagram.com/reel/Dcd6CXeiKDs/', metrica:'20,9 mil views', o:'Antes e depois lado a lado, com a assinatura dele na imagem.', porque:'Assinatura transforma técnica em confiança. O resultado passa a ter autor.'},
      angulo:'A LK assina seus resultados: quem fez, há quantos anos faz, e o padrão da casa desde 1995.',
      desdobra:{reels:'A especialista apresenta um caso e assina: "feito aqui, do jeito LK". 40s.', carrossel:'O padrão LK: o que não abrimos mão em cada protocolo.', stories:'A equipe responde "o que é qualidade em prótese?".', estatico:'Selo "desde 1995" com retrato da equipe.'}},
     {n:'05', bm:'@lucasguerreiros', cls:'Bastidores', tema:'A prótese como obra',
-     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'referência de macro', o:'O close do trabalho artesanal encanta e retém.', porque:'Técnica visível desarma o medo e gera fascínio.'},
+     ref:{url:'https://www.instagram.com/reel/DIzuW-StEBy/', metrica:'1,9 milhão de views', o:'O planejamento do sorriso projetado na tela grande, com o paciente vendo antes de começar.', porque:'Técnica visível desarma o medo e gera fascínio. Quase dois milhões num conteúdo de processo.'},
      angulo:'O protocolo em macro: cerâmica, encaixe, o milímetro. O laboratório como bastidor de obra.',
      desdobra:{reels:'Macro da prótese + as mãos que ajustam + o encaixe final. Sem fala, só som ambiente. 30s.', carrossel:'Do molde à entrega: a jornada de um protocolo.', stories:'Bastidor do laboratório em tempo real.', estatico:'Macro da prótese sobre fundo grafite com o dourado LK.'}},
     {n:'06', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Implante dói? Tem idade limite?',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reação coletiva a um medo comum: os comentários viram "eu também".', porque:'Medo compartilhado é o gancho emocional mais forte do nicho.'},
+     ref:{url:'https://www.instagram.com/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Reação coletiva a um medo comum: os comentários viram "eu também".', porque:'Medo compartilhado é o gancho emocional mais forte do nicho.'},
      angulo:'Os medos reais do implante respondidos de frente, com a honestidade de quem faz há 30 anos.',
      desdobra:{reels:'A especialista responde os três medos mais ouvidos na clínica. 45s.', carrossel:'Um medo por slide, com a resposta honesta.', stories:'"Verdadeiro ou falso" sobre implante.', estatico:'Card "medo é normal, dúvida é bem-vinda" com chamada.'}},
     {n:'07', bm:'@odontologiadicas', cls:'Vida pessoal', conv:true, tema:'Do outro lado da cadeira da LK',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DYqD2JiTHVb/', metrica:'23,9 mil views', o:'A profissional que se mostra vulnerável gera identificação imediata.', porque:'Vulnerabilidade humaniza e viaja longe.'},
+     ref:{url:'https://www.instagram.com/reel/DYqD2JiTHVb/', metrica:'23,9 mil views', o:'A profissional que se mostra vulnerável gera identificação imediata.', porque:'Vulnerabilidade humaniza e viaja longe.'},
      angulo:'A equipe da LK conta o caso que marcou: a entrega que fez a sala chorar. Emoção com autorização.',
      desdobra:{reels:'Uma pessoa da equipe conta o caso inesquecível. Direto na câmera. 50s.', carrossel:'"O dia que não esquecemos": um caso contado pela equipe.', stories:'Caixinha "qual sorriso mudou sua vida?".', estatico:'Frase da equipe entre aspas sobre fundo grafite.'}},
-    {n:'08', bm:'padrão institucional', cls:'Bastidores', tema:'Gente no lugar de aparelho',
-     ref:{url:'https://www.instagram.com/explore/tags/implantodontia/', metrica:'contraexemplo', o:'O nicho posta aparelho e promessa. Vitrine sem gente não conecta.', porque:'O contraste com o institucional é a nossa vantagem.'},
+    {n:'08', bm:'@drlucasfirmino', cls:'Bastidores', tema:'Gente no lugar de aparelho',
+     ref:{url:'https://www.instagram.com/reel/DdCKZ2pCIg-/', metrica:'contraexemplo · 603 mil', o:'"Recebemos os representantes da maior marca de implantes." Post de vitrine, sem nenhum paciente na tela.', porque:'Até um perfil gigante esfria quando vira institucional. O contraste com gente real é a nossa vantagem.'},
      angulo:'Cada tecnologia da LK aparece com uma pessoa usando e um paciente sentindo a diferença.',
      desdobra:{reels:'GBT em uso: a profissional explica o que o paciente sente de diferente. 40s.', carrossel:'Tecnologia da casa traduzida em benefício, uma por slide.', stories:'Tour pela clínica com a equipe apresentando.', estatico:'Foto de detalhe da tecnologia com legenda humana.'}},
-    {n:'09', bm:'padrão institucional', cls:'Autoridade', conv:true, tema:'30 anos, três gerações',
-     ref:{url:'https://www.instagram.com/explore/tags/implantodontia/', metrica:'contraexemplo', o:'Clínicas novas prometem; poucas têm três décadas para mostrar.', porque:'Tempo de casa é a prova que ninguém copia.'},
+    {n:'09', bm:'@drlucasfirmino', cls:'Autoridade', conv:true, tema:'30 anos, três gerações',
+     ref:{url:'https://www.instagram.com/reel/DY-kP2NMGBO/', metrica:'304 mil views', o:'"Homem das Lentes": o dentista virou personagem de quadrinhos para chamar atenção.', porque:'Personagem alcança, história real convence. Tempo de casa é a prova que ninguém copia.'},
      angulo:'A história da LK como argumento de conversão: quem cuidou dos seus pais cuida de você.',
      desdobra:{reels:'Linha do tempo 1995 até hoje, com fotos de época e a equipe atual. 45s.', carrossel:'Trinta anos em capítulos: como a reabilitação evoluiu na casa.', stories:'Enquete "há quanto tempo você conhece a LK?".', estatico:'Peça "desde 1995" com chamada de avaliação.'}}
   ],
@@ -1069,8 +1069,8 @@ const CLIENTES = [
 
   /* ---------- melhores posts ---------- */
   melhores:[
-    {img:'img/fabi/best/b1.webp', url:'https://www.instagram.com/fabiikim/reel/DbTSTMox6gu/', metrica:'110 mil', titulo:'Ideias de pose na trilha',
-     porque:'Lifestyle bem executado num perfil de 873 seguidores: 126 vezes a base. A Fabi já sabe criar alcance; o trabalho agora é direcionar uma fração dele para a LK. O segundo reel fez 896 e o feed de viagem não tem métrica pública: o potencial está todo concentrado nesse formato.'}
+    {img:'img/fabi/best/b1.webp', url:'https://www.instagram.com/reel/DbTSTMox6gu/', metrica:'110 mil', titulo:'Ideias de pose na trilha',
+     porque:'Colaboração com @diegodavidoff (Saia da Zona, 9,8 mil, expedições). A colab com um perfil de aventura entregou 126 vezes a base dela. A lição não é sorte: cruzar com o nicho outdoor funciona e dá para repetir de propósito, inclusive com a LK.'}
   ],
 
   /* ---------- 02 IDENTIDADE ---------- */
@@ -1173,8 +1173,8 @@ const CLIENTES = [
   /* ---------- BENCHMARK ---------- */
   benchmark:[
     {at:'@larapassosalvim', url:'https://www.instagram.com/larapassosalvim/', porte:'13,2 mil', perfil:'Ortodontista e creator: vida pessoal na frente, ortodontia como pano de fundo.', mecanismo:'Os maiores reels são pessoais: a filha (32,2 mil), get ready (26,8 mil). A profissão converte quem chegou pela pessoa.', leitura:'O blueprint exato da Fabi. A diferença: a Fabi já provou alcance maior com menos base.'},
-    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'90,7 mil', perfil:'Personal brand em odontologia: nome, assinatura e marca própria.', mecanismo:'O autor como marca. Tudo que ele posta carrega o nome e volta para o negócio.', leitura:'O teto do caminho founder: quando a pessoa vira marca, a clínica herda tudo.'},
-    {at:'interno · @fabiikim', url:'https://www.instagram.com/fabiikim/reel/DbTSTMox6gu/', porte:'110 mil views', perfil:'O próprio reel de trilha da Fabi, numa conta de 873 seguidores.', mecanismo:'Formato "ideias de pose", utilidade leve + cenário forte. O algoritmo entregou 126 vezes a base.', leitura:'A prova interna: o motor de alcance existe. Falta ritmo e ponte.'}
+    {at:'@lucasguerreiros', url:'https://www.instagram.com/lucasguerreiros/', porte:'91,2 mil', perfil:'Personal brand em odontologia: nome, assinatura e marca própria.', mecanismo:'O autor como marca. Tudo que ele posta carrega o nome e volta para o negócio.', leitura:'O teto do caminho founder: quando a pessoa vira marca, a clínica herda tudo.'},
+    {at:'interno · @fabiikim', url:'https://www.instagram.com/reel/DbTSTMox6gu/', porte:'110 mil views', perfil:'O próprio reel de trilha da Fabi, em colab com @diegodavidoff (Saia da Zona, 9,8 mil).', mecanismo:'Formato "ideias de pose", utilidade leve + cenário forte + colab com perfil de aventura. Entregou 126 vezes a base.', leitura:'A prova interna: o motor existe e a colab é o multiplicador. Falta ritmo e ponte com a LK.'}
   ],
   sintese:{
     alta:['Lifestyle com utilidade leve','Vida pessoal que carrega a profissão','POV e "um dia comigo"'],
@@ -1185,39 +1185,39 @@ const CLIENTES = [
   /* ---------- PAUTAS ---------- */
   pautas:[
     {n:'01', bm:'interno · @fabiikim', cls:'Vida pessoal', tema:'A série que o algoritmo pediu',
-     ref:{url:'https://www.instagram.com/fabiikim/reel/DbTSTMox6gu/', metrica:'110 mil views', o:'O reel de poses na trilha explodiu numa conta de 873 seguidores.', porque:'Formato validado internamente. Repetir é o caminho mais curto.'},
+     ref:{url:'https://www.instagram.com/reel/DbTSTMox6gu/', metrica:'110 mil views', o:'Poses na trilha, em colab com @diegodavidoff (Saia da Zona, 9,8 mil). Explodiu numa conta de 873 seguidores.', porque:'Formato validado internamente, e a colab foi o multiplicador. Repetir a dupla é o caminho mais curto.'},
      angulo:'Transformar o acerto em série: utilidade leve + cenário forte, uma vez por semana.',
      desdobra:{reels:'"Ideias de pose" em novos cenários: montanha, cidade, viagem. 20 a 30s.', carrossel:'As melhores fotos do cenário com dicas na legenda.', stories:'Bastidor de como fez cada foto.', estatico:'A foto mais forte do cenário.'}},
     {n:'02', bm:'@larapassosalvim', cls:'Vida pessoal', tema:'Um dia comigo, de verdade',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me com rotina real e leveza.', porque:'POV de rotina aproxima e viraliza no nicho.'},
+     ref:{url:'https://www.instagram.com/reel/DZN--mGAwOp/', metrica:'26,8 mil views', o:'Get ready with me com rotina real e leveza.', porque:'POV de rotina aproxima e viraliza no nicho.'},
      angulo:'O dia real da Fabi: treino cedo, café, clínica, fim de tarde. A ponte aparece sozinha.',
      desdobra:{reels:'POV do dia completo, do tênis ao jaleco. Cortes rápidos. 30s.', carrossel:'O dia em seis quadros.', stories:'A rotina em tempo real com enquetes.', estatico:'Foto da transição treino → clínica.'}},
     {n:'03', bm:'@larapassosalvim', cls:'Autoridade', tema:'Por que virei dentista',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Narrativa emocional em primeira pessoa engaja e faz salvar.', porque:'História de origem converte seguidor em confiança.'},
+     ref:{url:'https://www.instagram.com/reel/DYLB2ERAjIo/', metrica:'16,2 mil views', o:'Narrativa emocional em primeira pessoa engaja e faz salvar.', porque:'História de origem converte seguidor em confiança.'},
      angulo:'A história dela com a odontologia e com a LK, contada com emoção e sem institucionalês.',
      desdobra:{reels:'Ela conta a origem: por que odontologia, por que a LK. 45s, luz quente.', carrossel:'A história em capítulos com fotos pessoais.', stories:'Caixinha "o que você quer saber sobre mim?".', estatico:'Retrato dela com uma frase de origem.'}},
     {n:'04', bm:'@larapassosalvim', cls:'Bastidores', tema:'Da trilha para a cadeira',
-     ref:{url:'https://www.instagram.com/larapassosalvim/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'O momento pessoal mais forte é o que mais alcança.', porque:'A vida pessoal carrega; a profissão pega carona.'},
+     ref:{url:'https://www.instagram.com/reel/DYIjOLnAsuS/', metrica:'32,2 mil views', o:'O momento pessoal mais forte é o que mais alcança.', porque:'A vida pessoal carrega; a profissão pega carona.'},
      angulo:'O contraste que define a Fabi: a mesma energia da montanha dentro da clínica.',
      desdobra:{reels:'Transição trilha → clínica no mesmo reel, com match cut. 25s.', carrossel:'Dois mundos, uma pessoa: fotos pareadas.', stories:'Enquete "trilha ou consultório?".', estatico:'Díptico trilha + jaleco.'}},
     {n:'05', bm:'interno · @clinicalk', cls:'Bastidores', tema:'A LK pelos olhos da dona',
-     ref:{url:'https://www.instagram.com/clinicalk/reel/DaiVg2VOjA8/', metrica:'2.474 views', o:'Gente real na clínica é o que melhor performa na conta da LK.', porque:'O olhar pessoal da dona humaniza a casa inteira.'},
+     ref:{url:'https://www.instagram.com/reel/DaiVg2VOjA8/', metrica:'2.474 views', o:'Gente real na clínica é o que melhor performa na conta da LK.', porque:'O olhar pessoal da dona humaniza a casa inteira.'},
      angulo:'Tour e bastidor da LK narrados por ela, como quem apresenta a própria casa.',
      desdobra:{reels:'"Deixa eu te mostrar minha clínica": tour informal. 40s, colab com @clinicalk.', carrossel:'Os cantos favoritos dela na LK.', stories:'Um dia na LK pelos stories dela.', estatico:'Ela na recepção, sorrindo.'}},
     {n:'06', bm:'@lucasguerreiros', cls:'Autoridade', conv:true, tema:'Um caso que passou por mim',
-     ref:{url:'https://www.instagram.com/lucasguerreiros/', metrica:'90,7 mil seguidores', o:'O autor que assina o resultado transforma técnica em marca.', porque:'A assinatura pessoal converte melhor que o institucional.'},
+     ref:{url:'https://www.instagram.com/reel/DcTvGZwiYen/', metrica:'610 mil views', o:'Ele sozinho em cena, sem procedimento nenhum. A pessoa é o conteúdo.', porque:'Quando o profissional vira personagem, tudo que ele toca herda a audiência.'},
      angulo:'Ela conta um caso da LK que a marcou, com autorização. A conversão acontece no colab.',
      desdobra:{reels:'O caso narrado por ela, com o resultado autorizado. Colab com @clinicalk. 45s.', carrossel:'O caso em etapas, no tom pessoal dela.', stories:'Repost com comentário dela.', estatico:'Frase dela sobre o caso, com chamada de avaliação na LK.'}},
     {n:'07', bm:'@odontologiadicas', cls:'Dúvidas', tema:'Dente de viajante',
-     ref:{url:'https://www.instagram.com/odontologiadicas/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Curiosidade leve com reação coletiva alcança longe.', porque:'Dúvida no tom lifestyle alcança quem foge de perfil de clínica.'},
+     ref:{url:'https://www.instagram.com/reel/DV4j0FgDcjk/', metrica:'35,7 mil views', o:'Curiosidade leve com reação coletiva alcança longe.', porque:'Dúvida no tom lifestyle alcança quem foge de perfil de clínica.'},
      angulo:'Saúde bucal no universo dela: trilha, viagem, garrafa d’água, lanche de mochila.',
      desdobra:{reels:'"O que eu levo na mochila para os dentes" e outros ganchos leves. 30s.', carrossel:'Kit de viagem da dentista viajante.', stories:'Quiz de mitos de viagem e dentes.', estatico:'Flat lay da mochila com o kit.'}},
     {n:'08', bm:'@larapassosalvim', cls:'Vida pessoal', tema:'A viagem como capítulo',
-     ref:{url:'https://www.instagram.com/larapassosalvim/', metrica:'13,2 mil seguidores', o:'O feed pessoal dela sustenta a marca inteira.', porque:'Viagem contada como história cria vínculo, não só like.'},
+     ref:{url:'https://www.instagram.com/reel/DcrreMxAb9y/', metrica:'13,6 mil views', o:'Um capítulo pessoal da vida dela, com intimidade e sem nenhuma relação com odontologia.', porque:'O feed pessoal sustenta a marca inteira. Momento de vida contado como história cria vínculo, não só like.'},
      angulo:'Cada viagem da Fabi vira capítulo narrado: o lugar, o perrengue, o aprendizado.',
      desdobra:{reels:'Mini-vlog da viagem com narração pessoal. 40s.', carrossel:'A viagem em fotos com legenda-crônica.', stories:'Diário de bordo em tempo real.', estatico:'A foto definitiva da viagem.'}},
     {n:'09', bm:'interno · @clinicalk', cls:'Autoridade', conv:true, tema:'Herdeira dos 30 anos',
-     ref:{url:'https://www.instagram.com/clinicalk/reel/DbCQMqMAQX7/', metrica:'3.053 views', o:'O resultado de protocolo é o conteúdo mais forte da LK.', porque:'A história da casa ganha rosto quando a dona assume a narrativa.'},
+     ref:{url:'https://www.instagram.com/reel/DbCQMqMAQX7/', metrica:'13 mil views', o:'O resultado de protocolo é o conteúdo mais forte da LK.', porque:'A história da casa ganha rosto quando a dona assume a narrativa.'},
      angulo:'A Fabi como guardiã da história: os 30 anos da LK contados por quem carrega o nome adiante.',
      desdobra:{reels:'Ela conta a história da LK e o que não muda nunca. Colab. 50s.', carrossel:'A LK em três décadas, pelo olhar dela.', stories:'Caixinha "pergunte sobre a LK".', estatico:'Retrato dela na clínica com "desde 1995" e chamada de avaliação.'}}
   ],
