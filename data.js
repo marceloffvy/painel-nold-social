@@ -803,6 +803,224 @@ const CLIENTES = [
 {slug:'odontogon', nome:'OdontoGON', categoria:'Check-up 360°', resumo:'Confiança e clareza. Multidisciplinar.'},
 {slug:'maxfocos', nome:'MaxFocos', categoria:'Educação para dentistas', resumo:'Método e aprovação.'},
 {slug:'marcelo-tavares', nome:'Marcelo Tavares', categoria:'Próteses e implantes', resumo:'Excelência técnica e resolução.'},
+/* ============================ JÉSSICA CURI ============================ */
+{
+  slug:'jessica', ativo:true, apelido:'Jéssica',
+  nome:'Dra. Jéssica Curi', categoria:'Bucomaxilo + harmonização · SSA e SP',
+  resumo:'Do osso à pele. A cirurgiã que explica o caso antes de qualquer decisão, e diz quando não é caso de mexer.',
+  arroba:'@dra.jessicafcuri', perfil:'https://www.instagram.com/dra.jessicafcuri/',
+  seguidores:'4.578', avatar:'img/jessica/avatar.webp',
+
+  /* ---------- 01 DIAGNÓSTICO ---------- */
+  nicho:'Cirurgia bucomaxilofacial (ATM, ortognática, siso, implante) em Salvador e harmonização orofacial em São Paulo, na Vila Mariana.',
+  posicionamento:'A cirurgiã bucomaxilofacial que também harmoniza. Lê o rosto do osso à pele, explica o que está acontecendo e diz o que dá para fazer, o que esperar e quando não é caso de mexer. Em Salvador resolve dor, mordida e respiração. Em São Paulo garante estética natural com critério de cirurgia.',
+  publico:[
+    {t:'Salvador', d:'Homens e mulheres de 20 a 55 anos com dor na ATM, travamento, mordida que o aparelho não fecha, ronco e apneia.'},
+    {t:'São Paulo', d:'Mulheres de 28 a 55 perto da Vila Mariana, e um público masculino que cresce por medo de cirurgia.'},
+    {t:'O medo que une', d:'Ficar artificial. Nas duas cidades é a mesma trava.'},
+    {t:'Quem influencia', d:'A amiga que fez e ficou bem. A família, na ortognática. O ortodontista e o médico do sono.'}
+  ],
+  signos:[
+    {t:'Luz', d:'Quente e contida. Elegante, sem brilho de vitrine.'},
+    {t:'Cor', d:'Dourado, marrom profundo e creme. Paleta ainda a fechar.'},
+    {t:'Ícone', d:'A imagem do exame. Tomografia e raio-x são o elemento visual que só ela usa com naturalidade.'},
+    {t:'Gesto', d:'A mão traçando a linha do osso, no próprio rosto ou na tela.'},
+    {t:'Ritmo', d:'Aula curta de quem domina o assunto, dita sem soberba.'}
+  ],
+  linhaEditorial:[
+    {n:'01', t:'Vida pessoal', peso:'20%', d:'A Jéssica fora da sala, em recortes escolhidos. Ela expõe pouco, por escolha.', porque:'Impede a marca de soar fria sem obrigar ninguém a expor a rotina.', temas:['como escolhi odontologia às cinco da manhã','domingo: silêncio, livro e filme de terror','o cachorro','o que aprendi ensinando']},
+    {n:'02', t:'Autoridade', peso:'30%', d:'Caso explicado do osso à pele, com autorização e texto legal. O ritual da quinzena.', porque:'É a prova dentro das regras do conselho, e o que sustenta o preço acima da média.', temas:['caso de ATM com exame','ortognática passo a passo','trecho de aula da Let’s HOF','hospitais e formação']},
+    {n:'03', t:'Bastidores', peso:'20%', d:'Dia de cirurgia, preparo, material e equipe, sem paciente identificável.', porque:'Bastidor cirúrgico é o que mais alcança no nicho dela, e mostra rigor.', temas:['dia de hospital','o kit do dia','a anestesia explicada antes','atendimento online de Salvador']},
+    {n:'04', t:'Dúvidas de paciente', peso:'30%', d:'A queixa com o nome que o paciente usa, respondida sem jargão.', porque:'Puxa alcance de busca e é a porta de entrada das duas cidades.', temas:['dor de ATM e dor de cabeça','quanto tempo fico afastado','vai ficar artificial?','quando não é caso de mexer']}
+  ],
+  canais:[
+    {c:'Reels', papel:'Alcance e autoridade', o:'Queixa explicada, caso, trecho de aula, bastidor. 1 peça principal por semana.', f:'3 por semana'},
+    {c:'Carrossel', papel:'Prova dentro do conselho', o:'Caso explicado a cada 15 dias, crenças, o que a cirurgia resolve.', f:'2 casos por mês'},
+    {c:'Stories', papel:'Ritual diário', o:'Pergunta da semana, dia de cirurgia, atendimento online.', f:'Dias úteis'},
+    {c:'Estático', papel:'Fixar marca', o:'Card de crença e frase, com CRO da cidade certa.', f:'2 por semana'},
+    {c:'Foto', papel:'Acervo', o:'Retrato, exame na tela, bastidor de hospital e pele real.', f:'1 ensaio por trimestre'}
+  ],
+
+  /* ---------- ZAG ---------- */
+  zag:{
+    zig:'No mercado dela, quem explica fala com colega, em aula e congresso. Quem fala com paciente mostra o resultado pronto e para por aí.',
+    zag:'Ela explica para o paciente. Avalia do osso à pele, mostra o exame na tela e tem a coragem de dizer quando não é caso de mexer.',
+    only:'A única cirurgiã bucomaxilofacial que também harmoniza e explica o caso ao paciente antes de qualquer decisão.',
+    provas:['~40% das avaliações viram cirurgia, quatro vezes a média','Formação cirúrgica e estética na mesma pessoa','Opera no Mater Dei e é plantonista do HGE','Já recusa o que não precisa ser feito']
+  },
+
+  /* ---------- melhores posts ---------- */
+  melhores:[
+    {img:'img/jessica/best/b1.webp', url:'https://www.instagram.com/reel/DbOurfPv-6i/', metrica:'3.955', titulo:'O close do resultado',
+     porque:'Macro de lábio, sem rosto e sem promessa. O detalhe em close é o que mais alcança no perfil, e cabe nas regras do conselho.'},
+    {img:'img/jessica/best/b3.webp', url:'https://www.instagram.com/reel/DY4TbXCO2v0/', metrica:'2.025', titulo:'A equipe no hospital',
+     porque:'Bastidor com gente real e estrutura hospitalar. Mesmo padrão que explodiu no perfil do Felipe: bloco cirúrgico prende.'},
+    {img:'img/jessica/best/b1.webp', url:'https://www.instagram.com/reel/DbI24rmugK8/', metrica:'2.612', titulo:'"Você é seu projeto mais importante"',
+     porque:'Frase forte sobre bastidor. Funciona, e é o formato que ela mais repete: rende alcance médio sem construir território.'}
+  ],
+
+  /* ---------- 02 IDENTIDADE ---------- */
+  identidade:{
+    logos:[
+      {img:'img/jessica/avatar.webp', t:'Retrato', d:'Hoje a marca é o rosto dela.'}
+    ],
+    paleta:[
+      {hex:'#C9A227', nome:'Dourado'},
+      {hex:'#3A2C20', nome:'Marrom profundo'},
+      {hex:'#EDE4D6', nome:'Creme'},
+      {hex:'#1A1714', nome:'Quase-preto'}
+    ],
+    tipos:[
+      {papel:'Manual', nome:'Não existe. Marca feita com apoio de IA'},
+      {papel:'Prioridade 30 dias', nome:'Paleta e manual mínimo (Nold)'},
+      {papel:'Obrigatório na peça', nome:'CRO-BA 16230 · CRO-SP 180773'}
+    ]
+  },
+
+  /* ---------- 03 LEITURA DE PERFIL ---------- */
+  perfilAnalise:{
+    resumo:'A distância entre o que ela sabe e o que ela publica é a maior oportunidade do projeto. São 4.578 seguidores e 484 posts, com reels entre 600 e 1.000 views: alcança cerca de 20% da própria base. O feed é bonito e já tem um ar dourado consistente, mas mistura caso e vida pessoal, publica pouca explicação e não tem paleta fechada, então cada peça parece de uma marca diferente.',
+    diag:[
+      {t:'Alcance', v:'Reels de 600 a 1.000 views. Cerca de 20% da base.', s:'ajustar'},
+      {t:'Explicação', v:'Ela explica muito bem na consulta e quase nada no perfil.', s:'ajustar'},
+      {t:'Identidade', v:'Sem paleta nem manual. Cada peça sai diferente.', s:'ajustar'},
+      {t:'Duas cidades', v:'Salvador e SP disputam o mesmo feed, sem separação clara.', s:'ajustar'},
+      {t:'Estética do feed', v:'Dourado e escuro já dão um ar próprio. Boa base.', s:'ok'},
+      {t:'Conversão', v:'~40% das avaliações viram cirurgia. Quatro vezes a média.', s:'ok'}
+    ],
+    feedCores:{
+      pes:{bg:'#3A2C20', fg:'#EDE4D6', l:'Vida pessoal'},
+      aut:{bg:'#C9A227', fg:'#1A1714', l:'Autoridade'},
+      bas:{bg:'#1A1714', fg:'#C9A227', l:'Bastidores'},
+      duv:{bg:'#EDE4D6', fg:'#3A2C20', l:'Dúvidas'}
+    },
+    feedIdeal:[
+      {t:'Dúvida', c:'duv'},{t:'Caso explicado', c:'aut'},{t:'Bastidor', c:'bas'},
+      {t:'Dúvida', c:'duv'},{t:'Caso explicado', c:'aut'},{t:'Pessoal', c:'pes'},
+      {t:'Bastidor', c:'bas'},{t:'Dúvida', c:'duv'},{t:'Autoridade', c:'aut'}
+    ],
+    checklist:[
+      {t:'Paleta e manual mínimo', d:'A prioridade número um dos 30 dias. Sem isso nada se acumula.', ok:false},
+      {t:'Exame na tela', d:'Tomografia e raio-x como abertura de todo caso explicado.', ok:false},
+      {t:'Retrato de autoridade', d:'Luz quente, tom dourado, com e sem jaleco.', ok:false},
+      {t:'Bastidor de hospital', d:'Preparo, material e equipe, sem paciente identificável.', ok:false},
+      {t:'Pele real em close', d:'O natural que ela defende, com textura de verdade.', ok:false},
+      {t:'Texto legal e CRO', d:'CRO-BA nas peças de Salvador, CRO-SP nas de SP.', ok:false},
+      {t:'Banco de casos autorizados', d:'Já existe registro por caso, com autorização assinada.', ok:true},
+      {t:'DDD 11 no link da bio', d:'Com os dois atendimentos declarados.', ok:false}
+    ]
+  },
+
+  /* ---------- ENSAIO ---------- */
+  ensaio:{
+    intro:'A atmosfera do ensaio da Jéssica traduz o território: do osso à pele. Começa no exame, passa pela cirurgiã e termina na pele real. Elegante e contida, na régua de direção de arte que ela admira, sem trend.',
+    atmosfera:[
+      {t:'Luz', d:'Quente e contida. Sombra suave, nada de brilho de vitrine.'},
+      {t:'Paleta', d:'Dourado, marrom profundo e creme. Elegância sóbria.'},
+      {t:'Osso', d:'Tomografia e raio-x como matéria visual da marca.'},
+      {t:'Pele', d:'Textura real, sem retoque. O natural que ela defende.'}
+    ],
+    refs:[
+      {img:'img/jessica/ref/r01.webp', fonte:'https://www.pinterest.com/pin/492649954392928/', t:'Autoridade em tom quente'},
+      {img:'img/jessica/ref/r02.webp', fonte:'https://www.pinterest.com/pin/844493677027888/', t:'O retrato assinado'},
+      {img:'img/jessica/ref/r03.webp', fonte:'https://www.pinterest.com/pin/45739752463761816/', t:'A cirurgiã'},
+      {img:'img/jessica/ref/r04.webp', fonte:'https://www.pinterest.com/pin/259801472273840209/', t:'A tomografia, o ícone'},
+      {img:'img/jessica/ref/r05.webp', fonte:'https://www.pinterest.com/pin/36521446973657164/', t:'O raio-x do crânio'},
+      {img:'img/jessica/ref/r06.webp', fonte:'https://www.pinterest.com/pin/704883779168841635/', t:'O osso e o dourado'},
+      {img:'img/jessica/ref/r07.webp', fonte:'https://www.pinterest.com/pin/2674081026772526/', t:'Pele real, luz suave'},
+      {img:'img/jessica/ref/r08.webp', fonte:'https://www.pinterest.com/pin/9218374233486516/', t:'O close da pele'},
+      {img:'img/jessica/ref/r09.webp', fonte:'https://www.pinterest.com/pin/71916925296273676/', t:'O natural sem retoque'}
+    ],
+    shotlist:[
+      {t:'Retrato da cirurgiã', d:'Meio corpo e close, luz quente, com e sem jaleco.', c:'aut'},
+      {t:'O gesto da linha do rosto', d:'A mão traçando o osso, no próprio rosto e na tela.', c:'aut'},
+      {t:'O exame na tela', d:'Tomografia e raio-x, a abertura de todo caso explicado.', c:'bas'},
+      {t:'Dia de hospital', d:'Preparo, material e equipe. Sem paciente identificável.', c:'bas'},
+      {t:'A sacola do dia', d:'O kit entregue no dia da cirurgia, com a identidade nova.', c:'bas'},
+      {t:'Pele real em close', d:'Textura de verdade, o natural que ela defende.', c:'duv'},
+      {t:'A consulta online', d:'Ela atendendo Salvador de São Paulo. Sustenta o rodízio.', c:'duv'},
+      {t:'A Jéssica fora da sala', d:'Livro, silêncio, o cachorro. Recorte, nunca rotina exposta.', c:'pes'}
+    ]
+  },
+
+  /* ---------- CAMPANHA ---------- */
+  campanha:{
+    status:'Plataforma aprovada · conteúdo entra em novembro',
+    nome:'Entender antes de mexer.',
+    eixos:[
+      {t:'Salvador', d:'a dor e a função explicadas antes da cirurgia'},
+      {t:'São Paulo', d:'o natural que vem de dose medida e lugar certo'},
+      {t:'As duas', d:'quem ensina o procedimento faz o procedimento'}
+    ],
+    alerta:'Território: do osso à pele (institucional). Slogan: entender antes de mexer (público). Uma nunca substitui a outra.',
+    deck:'https://www.instagram.com/dra.jessicafcuri/'
+  },
+
+  /* ---------- BENCHMARK ---------- */
+  benchmark:[
+    {at:'@drmanoelroque', url:'https://www.instagram.com/drmanoelroque/', porte:'20,1 mil', perfil:'Médico e cirurgião maxilofacial, São Paulo e Santa Catarina.', mecanismo:'Depoimento de paciente e transformação funcional, medidos em 40,1 mil, 37,6 mil e 64 mil views.', leitura:'Prova que cirurgia de face alcança longe quando a história é do paciente. É o teto que a frente de Salvador persegue.'},
+    {at:'@drorionhaas', url:'https://www.instagram.com/drorionhaas/', porte:'10,6 mil', perfil:'Cirurgia do sono, Stanford e PhD PUCRS, Porto Alegre.', mecanismo:'Conteúdo técnico de apneia e ronco explicado com autoridade acadêmica. Reels de 4,4 a 11,4 mil.', leitura:'A referência para a linha de ronco e apneia, que quase ninguém liga à ortognática em Salvador.'},
+    {at:'@dralais.silveira', url:'https://www.instagram.com/dralais.silveira/', porte:'249 mil', perfil:'Harmonização orofacial em escala, fundadora de instituto e criadora de um método registrado.', mecanismo:'Lifestyle de alto padrão e método com nome próprio. Os maiores reels são viagem e rotina (36,3 mil e 28,1 mil), não procedimento.', leitura:'Contraexemplo que ensina dos dois lados. O método batizado é exatamente o que a Jéssica nega, e mesmo assim o lifestyle dela prova que rosto e vida alcançam mais que técnica.'}
+  ],
+  sintese:{
+    alta:['Bastidor cirúrgico e estrutura hospitalar','A queixa com o nome que o paciente usa','Close de detalhe, sem rosto e sem promessa'],
+    saturado:['Método com nome de profissional','Antes e depois solto, sem explicação','Perfil de harmonização em volume'],
+    lacuna:['Explicar o caso para o paciente, não para o colega','A dor de ATM com nome e exame','O ronco ligado à ortognática']
+  },
+
+  /* ---------- PAUTAS ---------- */
+  pautas:[
+    {n:'01', bm:'@drmanoelroque', cls:'Dúvidas', tema:'A dor que ninguém achou',
+     ref:{url:'https://www.instagram.com/reel/DYxxHTGhQ1t/', metrica:'40,1 mil views', o:'Depoimento de quem convivia com dor de anos e finalmente teve diagnóstico.', porque:'A dor sem nome é o gatilho emocional mais forte do nicho, e quem dá o nome vira a referência.'},
+     angulo:'Ela dá nome ao que a paciente sente: três sinais de que o problema é a articulação, com a tomografia na tela.',
+     desdobra:{reels:'Ela lista os três sinais e mostra o exame. Linguagem de paciente, sem jargão. 45s, CRO-BA.', carrossel:'O que é a ATM e por que a dor de cabeça vem junto.', stories:'Caixinha "há quanto tempo você sente essa dor?".', estatico:'Card com a frase "já me disseram que era estresse".'}},
+    {n:'02', bm:'@drmanoelroque', cls:'Autoridade', tema:'Caso explicado do osso à pele',
+     ref:{url:'https://www.instagram.com/reel/DYihRSmhiCw/', metrica:'37,6 mil views', o:'O dia da cirurgia contado por quem estava lá, com contexto e emoção.', porque:'Caso real com história vence caso clínico solto, e respeita as regras do conselho.'},
+     angulo:'O ritual da quinzena: um caso real, camada por camada, com autorização escrita e texto legal.',
+     desdobra:{reels:'A queixa, a tomografia, a decisão e o pós. Sem promessa. 60s.', carrossel:'O caso em etapas, começando pelo exame.', stories:'Bastidor do dia, sem paciente identificável.', estatico:'Frame do exame com a chamada do caso.'}},
+    {n:'03', bm:'@drmanoelroque', cls:'Dúvidas', tema:'O pós que a internet não mostra',
+     ref:{url:'https://www.instagram.com/p/DbB81PTzSiI/', metrica:'post educativo', o:'Hábito banal nomeado como possível sintoma, em linguagem de paciente.', porque:'Reconhecimento imediato: a pessoa se vê na descrição e salva o post.'},
+     angulo:'O medo do pós é a maior objeção da ortognática. Ela mostra o primeiro dia de verdade, sem suavizar.',
+     desdobra:{reels:'Como é o primeiro dia depois da ortognática, com honestidade. 50s.', carrossel:'O que dói, o que não dói e o que você vai comer na primeira semana.', stories:'Caixinha "o que mais te assusta no pós?".', estatico:'Card com a linha do tempo da recuperação.'}},
+    {n:'04', bm:'@drorionhaas', cls:'Dúvidas', tema:'O ronco que ninguém liga à mordida',
+     ref:{url:'https://www.instagram.com/reel/DYNU752x1fE/', metrica:'11,4 mil views', o:'Conteúdo de cirurgia do sono explicado com autoridade acadêmica.', porque:'Apneia tem volume de busca e quase ninguém conecta o ronco à estrutura do rosto.'},
+     angulo:'37% dos adultos de São Paulo têm apneia, e o Brasil demora 11 meses até o diagnóstico. Ela liga ronco, mordida e ortognática.',
+     desdobra:{reels:'O que o ronco faz com o seu sono, e quando a cirurgia entra. 50s.', carrossel:'O exame que mostra o problema, passo a passo.', stories:'Enquete "alguém já reclamou do seu ronco?".', estatico:'Card com o dado dos 37%, com fonte.'}},
+    {n:'05', bm:'@drorionhaas', cls:'Bastidores', tema:'Dia de hospital',
+     ref:{url:'https://www.instagram.com/reel/DMYlljVv5Qv/', metrica:'5.935 views', o:'A peça impressa que guia a cirurgia, mostrada como objeto de precisão.', porque:'Técnica visível desarma o medo e gera fascínio, sem expor paciente.'},
+     angulo:'O bastidor do bloco: preparo, material e equipe. É o formato que mais alcança no nicho e ela já tem o acervo.',
+     desdobra:{reels:'Preparo do dia de cirurgia, sem paciente identificável. Som ambiente. 40s.', carrossel:'O que acontece antes de você entrar na sala.', stories:'Sequência do dia de hospital em tempo real.', estatico:'Detalhe do instrumental com o dourado da marca.'}},
+    {n:'06', bm:'@drorionhaas', cls:'Autoridade', tema:'Quem ensina o procedimento faz o procedimento',
+     ref:{url:'https://www.instagram.com/reel/DK20LLgo7T0/', metrica:'4.471 views', o:'Quem mais está na sala além do cirurgião, explicado com didática de professor.', porque:'Autoridade acadêmica traduzida para o paciente constrói confiança sem soar currículo.'},
+     angulo:'Um trecho da aula da Let’s HOF por mês, traduzido para linguagem de paciente.',
+     desdobra:{reels:'Um pedaço da aula, com a explicação virada para quem senta na cadeira. 45s.', carrossel:'Três perguntas antes de marcar em qualquer lugar.', stories:'Bastidor do dia de aula.', estatico:'Card "quem ensina faz" com CRO.'}},
+    {n:'07', bm:'@dralais.silveira', cls:'Dúvidas', conv:true, tema:'Vai ficar artificial?',
+     ref:{url:'https://www.instagram.com/reel/DdIBRCdpZGV/', metrica:'11,1 mil views', o:'Ela fala de código de conduta e de método próprio, com marca registrada no nome.', porque:'É o oposto exato da crença da Jéssica: método com nome de gente. O contraste rende pauta.'},
+     angulo:'O natural tem técnica: dose, lugar e produto. E a coragem de dizer quando não é caso de preencher.',
+     desdobra:{reels:'Por que eu começo com pouco, e o que muda no resultado. 45s, CRO-SP.', carrossel:'Dose, lugar e produto: o que decide o natural.', stories:'Caixinha "o que te faz ter medo de preencher?".', estatico:'Card da crença "realçar o que você já tem".'}},
+    {n:'08', bm:'@dralais.silveira', cls:'Autoridade', conv:true, tema:'Método não tem dono',
+     ref:{url:'https://www.instagram.com/reel/DdMGOP-hwar/', metrica:'28,1 mil views', o:'Atendimento e relação com a paciente, no perfil de quem batizou um método com o próprio nome.', porque:'O nicho premia quem cria nome próprio. Negar isso em público é território livre.'},
+     angulo:'A crença mais forte dela: o que existe é ciência, e ciência não tem dono. Confronta a ideia, nunca a pessoa.',
+     desdobra:{reels:'Por que método com nome de gente não existe. Direto, sem citar ninguém. 40s.', carrossel:'Como saber se a técnica tem evidência.', stories:'Enquete "você já ouviu falar em método com nome de dentista?".', estatico:'Card da crença, sem nome e sem print.'}},
+    {n:'09', bm:'@dralais.silveira', cls:'Vida pessoal', tema:'A Jéssica fora da sala',
+     ref:{url:'https://www.instagram.com/reel/DdhxuRQqAip/', metrica:'36,3 mil views', o:'O maior reel dela é uma viagem à Itália. Lifestyle, não procedimento.', porque:'Mesmo num perfil de 249 mil, o que mais alcança é a vida, e não a técnica.'},
+     angulo:'Recorte escolhido, no limite que ela aceita: como escolheu odontologia às cinco da manhã, o domingo de silêncio e filme de terror.',
+     desdobra:{reels:'Ela conta a manhã em que foi fazer a prova sem contar a ninguém. 50s.', carrossel:'A história em capítulos, com fotos de arquivo.', stories:'Bastidor curto, sem falar: estudo, livro, preparo de aula.', estatico:'Retrato com a frase de origem.'}}
+  ],
+
+  /* posts fixados ---------- */
+  fixados:[
+    {n:'01', tema:'Prazer, Dra. Jéssica', papel:'Apresenta a profissional e as duas frentes. O post que a bio não conta.', precisa:'ensaio e paleta definida',
+     slides:['Capa: retrato e "entender antes de mexer"','Quem é: cirurgiã bucomaxilofacial que também harmoniza','A formação: Mandic, CED, Sírio-Libanês, Einstein','Onde opera: Mater Dei e Hospital Geral do Estado','Do osso à pele: como é a avaliação','Chamada: WhatsApp da sua cidade']},
+    {n:'02', tema:'Caso explicado', papel:'O ritual da quinzena virado em post fixado. A prova dentro das regras do conselho.', precisa:'portfólio de casos com autorização escrita',
+     slides:['Capa: "caso explicado"','A queixa, na palavra do paciente','O exame na tela','O que dá para fazer e o que não dá','O resultado com contexto, autorizado','Chamada: agende a sua avaliação · CRO']},
+    {n:'03', tema:'Quando eu digo que não é caso de mexer', papel:'A promessa que nenhum concorrente assina. Post de posicionamento e captação.', precisa:'ensaio e roteiro dela',
+     slides:['Capa: "às vezes a resposta é não fazer nada"','Por que eu começo pela estrutura','O que o tratamento não resolve','Os casos em que eu recuso','O que você ganha ouvindo um não','Chamada: entender antes de mexer']}
+  ],
+
+  ciclos:[]
+},
+
 /* ============================ CLÍNICA LK ============================ */
 {
   slug:'clinica-lk', ativo:true, apelido:'Clínica LK',
