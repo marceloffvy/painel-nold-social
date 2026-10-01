@@ -357,3 +357,19 @@ dl.facts dd b{font-weight:500}
   .pt-ref{border-right:none; border-bottom:1px solid var(--line)}
   .canais td:first-child{white-space:normal}
 }
+
+/* ---------- cartão do guia do cliente ---------- */
+.guia-card{display:grid; grid-template-columns:52px 1fr auto; gap:20px; align-items:center;
+  background:var(--green); color:#EDEFEC; padding:24px 26px; margin-top:52px}
+.guia-card:hover{background:var(--green-soft)}
+.guia-card .gi{width:52px; height:52px; color:var(--coral)}
+.guia-card .gt{min-width:0; display:flex; flex-direction:column; gap:6px}
+.guia-card .gt h3{color:#fff}
+.guia-card .gt p{margin:2px 0 0; font-size:15px; color:#BCC4BF; max-width:62ch}
+.guia-card .gx{white-space:nowrap}
+.guia-card .mono.on{color:var(--coral)}
+@media(max-width:720px){
+  .guia-card{grid-template-columns:40px 1fr; gap:16px; padding:20px}
+  .guia-card .gi{width:40px; height:40px}
+  .guia-card .gx{grid-column:2}
+}

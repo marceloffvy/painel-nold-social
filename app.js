@@ -288,6 +288,23 @@ function viewClient(slug){
           </a>`:`<div class="empty">Pautas aprovadas. O primeiro ciclo de produção entra aqui assim que as peças forem desenhadas.</div>`}
         </section>
 
+        ${c.guia?`<a class="guia-card" href="${c.guia.href}">
+          <div class="gi">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="7" y="4" width="26" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="13" y1="12" x2="27" y2="12" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="13" y1="19" x2="27" y2="19" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="13" y1="26" x2="22" y2="26" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="gt">
+            <span class="mono on">Para o cliente · página separada</span>
+            <h3>${esc(c.guia.t)}</h3>
+            <p>${esc(c.guia.d)}</p>
+          </div>
+          <span class="mono on gx">abrir o guia &rarr;</span>
+        </a>`:''}
+
       </div>
     </div>
   </div>`;

@@ -810,6 +810,8 @@ const CLIENTES = [
   resumo:'Cuidado por inteiro. Mostra o que aplica, começa pelo que é seguro e acompanha até o resultado aparecer.',
   arroba:'@skin_lumy', perfil:'https://www.instagram.com/skin_lumy/',
   seguidores:'2.785', avatar:'img/skinlumy/avatar.webp',
+  guia:{href:'guia/skinlumy', t:'Guia de Instagram da Skin Lumy',
+        d:'O manual que a Flávia usa: perfil e bio, destaques, as oito linhas de conteúdo com exemplo real, como gravar, stories, a semana e o que não fazer.'},
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
   nicho:'Clínica de estética facial, corporal e íntima na Vila Olímpia, aberta em setembro de 2026. Quatro linhas: rosto, HIFU, saúde íntima e corpo.',
