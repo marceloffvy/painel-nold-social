@@ -815,7 +815,7 @@ const CLIENTES = [
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
   nicho:'Clínica de estética facial, corporal e íntima na Vila Olímpia, aberta em setembro de 2026. Quatro linhas: rosto, HIFU, saúde íntima e corpo.',
-  posicionamento:'Tratamento estético pensado para cada mulher, do rosto ao íntimo. A paciente sabe o que está sendo aplicado e por quê, começa pelo que é seguro e é acompanhada nos dias seguintes por quem trabalhou nove anos em hospitais nos Estados Unidos.',
+  posicionamento:'Tratamento estético pensado para cada mulher, do rosto ao íntimo. A paciente sabe o que está sendo aplicado e por quê, começa pelo que é seguro e é acompanhada nos dias seguintes por quem veio de grandes hospitais dos Estados Unidos, como o de Stanford.',
   publico:[
     {t:'Quem', d:'Mulheres de 30 a 60 anos, classes A e B, num raio de 3 km da clínica: Vila Olímpia, Itaim, Brooklin, Vila Cordeiro.'},
     {t:'O medo que une', d:'Ficar artificial. Atravessa as quatro pacientes, do rosto ao corpo.'},
@@ -830,7 +830,7 @@ const CLIENTES = [
     {t:'Gesto', d:'O mapa no espelho: a marcação dos pontos antes da aplicação.'}
   ],
   linhaEditorial:[
-    {n:'01', t:'Vida pessoal', peso:'25%', d:'A Flávia fora da sala: o café de toda manhã, o chocolatinho, os nove anos nos Estados Unidos.', porque:'É o que mais alcança hoje no perfil, e o que tira a marca do tom institucional.', temas:['dica com chocolatinho','o café de toda manhã','o que aprendi atendendo mulheres de tantos países','sem filtro']},
+    {n:'01', t:'Vida pessoal', peso:'25%', d:'A Flávia fora da sala: o café de toda manhã, o chocolatinho, a passagem pelos grandes hospitais americanos.', porque:'É o que mais alcança hoje no perfil, e o que tira a marca do tom institucional.', temas:['dica com chocolatinho','o café de toda manhã','o que aprendi atendendo mulheres de tantos países','sem filtro']},
     {n:'02', t:'Autoridade', peso:'25%', d:'Análise de caso a cada 15 dias: técnica, critério, evolução e limitação, sem preço.', porque:'Prova dentro das regras do conselho, e o que sustenta preço acima da média.', temas:['análise de caso','o que o HIFU faz embaixo da pele','trajetória em saúde da mulher','quando é caso de cirurgia']},
     {n:'03', t:'Bastidores', peso:'20%', d:'O que eu apliquei hoje: a caixa, o nome do produto e para que serve, sem rosto de paciente.', porque:'Transparência é o traço número um, e ninguém na região conta isso em voz alta.', temas:['a caixa lacrada','o mapa no espelho','a tecnologia explicada','bom dia com café']},
     {n:'04', t:'Dúvidas de paciente', peso:'30%', d:'A dúvida que ela não faz em voz alta, principalmente na saúde íntima.', porque:'87% das mulheres com escape de urina nunca trataram. A demanda existe e quase ninguém fala.', temas:['escape de urina tem tratamento','quantas unidades tem um frasco','por que começar com menos','depois das canetas']}
@@ -848,7 +848,7 @@ const CLIENTES = [
     zig:'Na região, quem acolhe costuma ser barato e quem cobra mais costuma ser distante. Clínica de estética esconde o produto, promete resultado e desaparece depois da aplicação.',
     zag:'Premium e acolhedora ao mesmo tempo. Mostra a caixa lacrada antes de aplicar, começa com menos de propósito e manda mensagem no dia seguinte, na semana e no mês.',
     only:'A única clínica da Vila Olímpia que mostra o que aplica, começa pelo que é seguro e acompanha a paciente até o resultado aparecer.',
-    provas:['A caixa do produto mostrada e nomeada antes de aplicar','Mensagem de 1, 7 e 30 dias escrita por ela','HIFU íntimo com número medido antes e depois','Nove anos em hospitais nos Estados Unidos']
+    provas:['A caixa do produto mostrada e nomeada antes de aplicar','Mensagem de 1, 7 e 30 dias escrita por ela','HIFU íntimo com número medido antes e depois','Carreira em grandes hospitais dos Estados Unidos, como o de Stanford']
   },
 
   /* ---------- melhores posts ---------- */
@@ -1006,14 +1006,14 @@ const CLIENTES = [
      desdobra:{reels:'Ela explica a decisão da dose, com o mapa no espelho. 40s.', carrossel:'Natural aos 30, aos 45 e aos 60.', stories:'Caixinha "o que te faz ter medo de exagerar?".', estatico:'Card "a gente sempre pode completar depois".'}},
     {n:'09', bm:'@dralais.silveira', cls:'Vida pessoal', tema:'A Flávia fora da sala',
      ref:{url:'https://www.instagram.com/reel/DdhxuRQqAip/', metrica:'36,3 mil views', o:'O maior reel dela é uma viagem. Lifestyle, não procedimento.', porque:'Mesmo num perfil de 249 mil, a vida alcança mais que a técnica.'},
-     angulo:'A dica com chocolatinho, o café de toda manhã e os nove anos nos Estados Unidos. Leveza com moderação.',
+     angulo:'A dica com chocolatinho, o café de toda manhã e a passagem pelos grandes hospitais americanos. Leveza com moderação.',
      desdobra:{reels:'Ela responde uma dúvida com o chocolate do dia na mão. 30s.', carrossel:'O que eu aprendi atendendo mulheres de tantos países.', stories:'Bom dia com café, de segunda a sexta.', estatico:'A xícara com o símbolo SL.'}}
   ],
 
   /* posts fixados ---------- */
   fixados:[
     {n:'01', tema:'Prazer, Skin Lumy', papel:'Apresenta a clínica e a Flávia. O cartão de visita que o perfil não tem.', precisa:'ensaio e símbolo SL aplicado',
-     slides:['Capa: a Flávia e "para se olhar e se gostar de novo"','Quem é: nove anos em hospitais nos Estados Unidos','As quatro linhas: rosto, HIFU, íntima e corpo','O jeito Lumy: mostro o que aplico e acompanho depois','O que você vive aqui: café, conversa sentada, mapa no espelho','Chamada: agende sua avaliação']},
+     slides:['Capa: a Flávia e "para se olhar e se gostar de novo"','Quem é: carreira em grandes hospitais dos EUA, como o de Stanford','As quatro linhas: rosto, HIFU, íntima e corpo','O jeito Lumy: mostro o que aplico e acompanho depois','O que você vive aqui: café, conversa sentada, mapa no espelho','Chamada: agende sua avaliação']},
     {n:'02', tema:'Análise de caso', papel:'O ritual da quinzena virado em fixado. A prova dentro das regras do conselho.', precisa:'portfólio de casos com autorização escrita',
      slides:['Capa: "análise de caso"','O que incomodava a paciente','O que foi aplicado, com nome e dose','A evolução, com a mesma luz e o mesmo ângulo','A limitação: o que isso não resolve','Chamada: agende sua avaliação']},
     {n:'03', tema:'Um assunto que ninguém fala', papel:'A saúde íntima como território. Post de posicionamento e captação.', precisa:'ensaio, roteiro dela e o medidor em cena',
