@@ -803,6 +803,224 @@ const CLIENTES = [
 {slug:'odontogon', nome:'OdontoGON', categoria:'Check-up 360°', resumo:'Confiança e clareza. Multidisciplinar.'},
 {slug:'maxfocos', nome:'MaxFocos', categoria:'Educação para dentistas', resumo:'Método e aprovação.'},
 {slug:'marcelo-tavares', nome:'Marcelo Tavares', categoria:'Próteses e implantes', resumo:'Excelência técnica e resolução.'},
+/* ============================ SKIN LUMY ============================ */
+{
+  slug:'skinlumy', ativo:true, apelido:'Skin Lumy',
+  nome:'Skin Lumy · Flávia Trapenard', categoria:'Estética facial, corporal e íntima · Vila Olímpia',
+  resumo:'Cuidado por inteiro. Mostra o que aplica, começa pelo que é seguro e acompanha até o resultado aparecer.',
+  arroba:'@skin_lumy', perfil:'https://www.instagram.com/skin_lumy/',
+  seguidores:'2.785', avatar:'img/skinlumy/avatar.webp',
+
+  /* ---------- 01 DIAGNÓSTICO ---------- */
+  nicho:'Clínica de estética facial, corporal e íntima na Vila Olímpia, aberta em setembro de 2026. Quatro linhas: rosto, HIFU, saúde íntima e corpo.',
+  posicionamento:'Tratamento estético pensado para cada mulher, do rosto ao íntimo. A paciente sabe o que está sendo aplicado e por quê, começa pelo que é seguro e é acompanhada nos dias seguintes por quem trabalhou nove anos em hospitais nos Estados Unidos.',
+  publico:[
+    {t:'Quem', d:'Mulheres de 30 a 60 anos, classes A e B, num raio de 3 km da clínica: Vila Olímpia, Itaim, Brooklin, Vila Cordeiro.'},
+    {t:'O medo que une', d:'Ficar artificial. Atravessa as quatro pacientes, do rosto ao corpo.'},
+    {t:'Momentos', d:'Vontade de ser notada, rotina apertada, o rosto que muda depois dos 45, o corpo depois do parto ou da caneta.'},
+    {t:'Quem influencia', d:'A amiga que fez e ficou bem. E quem encaminha: ginecologista, fisioterapeuta pélvica, consultora de amamentação.'}
+  ],
+  signos:[
+    {t:'Luz', d:'Quente e doméstica. Recebe como quem recebe em casa.'},
+    {t:'Cor', d:'Terracota, creme e sálvia. Falta uma cor de destaque para furar o feed.'},
+    {t:'Ritual', d:'O café coado e o chocolatinho. A chegada é parte do tratamento.'},
+    {t:'Prova', d:'A caixa lacrada do produto, mostrada antes de aplicar.'},
+    {t:'Gesto', d:'O mapa no espelho: a marcação dos pontos antes da aplicação.'}
+  ],
+  linhaEditorial:[
+    {n:'01', t:'Vida pessoal', peso:'25%', d:'A Flávia fora da sala: o café de toda manhã, o chocolatinho, os nove anos nos Estados Unidos.', porque:'É o que mais alcança hoje no perfil, e o que tira a marca do tom institucional.', temas:['dica com chocolatinho','o café de toda manhã','o que aprendi atendendo mulheres de tantos países','sem filtro']},
+    {n:'02', t:'Autoridade', peso:'25%', d:'Análise de caso a cada 15 dias: técnica, critério, evolução e limitação, sem preço.', porque:'Prova dentro das regras do conselho, e o que sustenta preço acima da média.', temas:['análise de caso','o que o HIFU faz embaixo da pele','trajetória em saúde da mulher','quando é caso de cirurgia']},
+    {n:'03', t:'Bastidores', peso:'20%', d:'O que eu apliquei hoje: a caixa, o nome do produto e para que serve, sem rosto de paciente.', porque:'Transparência é o traço número um, e ninguém na região conta isso em voz alta.', temas:['a caixa lacrada','o mapa no espelho','a tecnologia explicada','bom dia com café']},
+    {n:'04', t:'Dúvidas de paciente', peso:'30%', d:'A dúvida que ela não faz em voz alta, principalmente na saúde íntima.', porque:'87% das mulheres com escape de urina nunca trataram. A demanda existe e quase ninguém fala.', temas:['escape de urina tem tratamento','quantas unidades tem um frasco','por que começar com menos','depois das canetas']}
+  ],
+  canais:[
+    {c:'Reels', papel:'Ser conhecida no bairro', o:'Crenças, bastidor, trajetória, cortes de caso. 1 peça principal por semana.', f:'3 por semana'},
+    {c:'Stories', papel:'Rituais', o:'Dica com chocolatinho na quarta, o que apliquei hoje, bom dia com café.', f:'Dias úteis'},
+    {c:'Carrossel', papel:'Provar competência', o:'Análise de caso a cada 15 dias, crenças, o que eu aplico.', f:'2 casos por mês'},
+    {c:'Estático', papel:'Fixar a marca', o:'Card de crença e foto com o símbolo SL.', f:'2 por semana'},
+    {c:'Encaminhamento', papel:'Confiança emprestada', o:'Caso e referência por e-mail para quem indica, mais o jantar científico.', f:'4 profissionais por trimestre'}
+  ],
+
+  /* ---------- ZAG ---------- */
+  zag:{
+    zig:'Na região, quem acolhe costuma ser barato e quem cobra mais costuma ser distante. Clínica de estética esconde o produto, promete resultado e desaparece depois da aplicação.',
+    zag:'Premium e acolhedora ao mesmo tempo. Mostra a caixa lacrada antes de aplicar, começa com menos de propósito e manda mensagem no dia seguinte, na semana e no mês.',
+    only:'A única clínica da Vila Olímpia que mostra o que aplica, começa pelo que é seguro e acompanha a paciente até o resultado aparecer.',
+    provas:['A caixa do produto mostrada e nomeada antes de aplicar','Mensagem de 1, 7 e 30 dias escrita por ela','HIFU íntimo com número medido antes e depois','Nove anos em hospitais nos Estados Unidos']
+  },
+
+  /* ---------- melhores posts ---------- */
+  melhores:[
+    {img:'img/skinlumy/best/b1.webp', url:'https://www.instagram.com/reel/Dc7mEFCOPPE/', metrica:'1.506', titulo:'Sem filtro',
+     porque:'O maior reel do perfil é ela sem maquiagem e sem filtro. Transparência, que é o traço número um da marca, já é o que mais alcança. A estratégia não precisa inventar nada: precisa repetir isso de propósito.'},
+    {img:'img/skinlumy/best/b2.webp', url:'https://www.instagram.com/reel/DdEfcM2R6WL/', metrica:'1.087', titulo:'A tecnologia explicada',
+     porque:'Ela em pé ao lado do aparelho, explicando o que ele faz. Educação com o equipamento em cena prende mais que o talking head solto.'},
+    {img:'img/skinlumy/best/b3.webp', url:'https://www.instagram.com/reel/DcysqGIRUKP/', metrica:'1.072', titulo:'O produto na mão',
+     porque:'Ela segurando o frasco e falando de uma paciente real. É exatamente o ritual "o que eu apliquei hoje" acontecendo sem querer.'}
+  ],
+
+  /* ---------- 02 IDENTIDADE ---------- */
+  identidade:{
+    logos:[
+      {img:'img/skinlumy/avatar.webp', t:'Perfil atual', d:'Hoje o avatar é a foto dela, não o símbolo SL.'}
+    ],
+    paleta:[
+      {hex:'#B9715D', nome:'Terracota'},
+      {hex:'#F2E7DC', nome:'Creme'},
+      {hex:'#9A9E84', nome:'Sálvia'},
+      {hex:'#D9B38C', nome:'Dourado dos raios'}
+    ],
+    tipos:[
+      {papel:'Títulos', nome:'Felix Titling (substituta: Cinzel)'},
+      {papel:'Texto', nome:'Montserrat'},
+      {papel:'Pendência', nome:'Uma cor de destaque fora do bege, para furar o feed'}
+    ]
+  },
+
+  /* ---------- 03 LEITURA DE PERFIL ---------- */
+  perfilAnalise:{
+    resumo:'São 2.785 seguidores e 366 posts, com reels entre 300 e 1.500 views. O conteúdo é generoso e técnico, e a Flávia aparece muito, o que é bom. O problema é embalagem: quase tudo é selfie vertical gravada no carro, em casa ou no corredor, sem a identidade da marca em cena. O símbolo SL não aparece, a paleta terracota e creme não aparece, e o resultado é um feed que poderia ser de qualquer clínica. O maior reel é ela sem filtro, o que confirma onde está a força.',
+    diag:[
+      {t:'Presença dela', v:'Ela aparece muito e fala bem. Matéria-prima ótima.', s:'ok'},
+      {t:'Transparência', v:'O campeão é "sem filtro". O traço da marca já funciona.', s:'ok'},
+      {t:'Identidade', v:'Símbolo SL e paleta não aparecem em nenhuma peça.', s:'ajustar'},
+      {t:'Produção', v:'Selfie no carro e no corredor. Sem enquadramento fixo.', s:'ajustar'},
+      {t:'Vocabulário', v:'"ANTES e DEPOIS" e "boca coração" contrariam o manual.', s:'ajustar'},
+      {t:'Saúde íntima', v:'O maior diferencial dela quase não aparece no feed.', s:'ajustar'}
+    ],
+    feedCores:{
+      pes:{bg:'#B9715D', fg:'#F2E7DC', l:'Vida pessoal'},
+      aut:{bg:'#9A9E84', fg:'#F2E7DC', l:'Autoridade'},
+      bas:{bg:'#3B2B24', fg:'#D9B38C', l:'Bastidores'},
+      duv:{bg:'#F2E7DC', fg:'#B9715D', l:'Dúvidas'}
+    },
+    feedIdeal:[
+      {t:'Dúvida', c:'duv'},{t:'Análise de caso', c:'aut'},{t:'O que apliquei', c:'bas'},
+      {t:'Pessoal', c:'pes'},{t:'Dúvida', c:'duv'},{t:'Análise de caso', c:'aut'},
+      {t:'O que apliquei', c:'bas'},{t:'Dúvida', c:'duv'},{t:'Pessoal', c:'pes'}
+    ],
+    checklist:[
+      {t:'Símbolo SL em toda peça', d:'Canto de todo vídeo e foto. O ícone nasce da repetição.', ok:false},
+      {t:'Cor de destaque', d:'Uma cor fora do bege e do marrom, sem ser neon, para furar o feed.', ok:false},
+      {t:'Enquadramento fixo', d:'Um lugar da clínica com luz definida para gravar sempre igual.', ok:false},
+      {t:'Trocar o vocabulário', d:'"Análise de caso" no lugar de "antes e depois". Sem "boca da moda".', ok:false},
+      {t:'A caixa lacrada em vídeo', d:'O ritual "o que eu apliquei hoje", que ninguém na região faz.', ok:false},
+      {t:'Acervo do café e do chocolatinho', d:'Os dois rituais já existem na clínica e nunca foram filmados.', ok:false},
+      {t:'Portfólio de casos', d:'31 casos já organizados em pastas, com comparativos tratados.', ok:true},
+      {t:'Autorização escrita das pacientes', d:'Confirmar com a clínica antes de publicar qualquer caso.', ok:false}
+    ]
+  },
+
+  /* ---------- ENSAIO ---------- */
+  ensaio:{
+    intro:'A atmosfera do ensaio da Skin Lumy: premium e acolhedora, no lugar que o mapa de posicionamento aponta como livre. Três atos: o lugar que recebe, a Flávia por perto e a paciente que se reconhece no espelho.',
+    atmosfera:[
+      {t:'Luz', d:'Quente e doméstica. Luz de janela, nunca luz dura de clínica.'},
+      {t:'Paleta', d:'Terracota, creme e sálvia, com o dourado dos raios.'},
+      {t:'Ritual', d:'O café coado, a xícara, o chocolatinho. A chegada em cena.'},
+      {t:'Pele', d:'Mulher de 30 a 60 com textura real. Nada de pele apagada.'}
+    ],
+    refs:[
+      {img:'img/skinlumy/ref/r01.webp', fonte:'https://www.pinterest.com/pin/50665564555691264/', t:'A sala que acolhe'},
+      {img:'img/skinlumy/ref/r02.webp', fonte:'https://www.pinterest.com/pin/14918242512681658/', t:'Recepção creme e terracota'},
+      {img:'img/skinlumy/ref/r03.webp', fonte:'https://www.pinterest.com/pin/281543727000845/', t:'Arco quente, calma'},
+      {img:'img/skinlumy/ref/r04.webp', fonte:'https://www.pinterest.com/pin/140806233429186/', t:'Mostrar o que aplica'},
+      {img:'img/skinlumy/ref/r05.webp', fonte:'https://www.pinterest.com/pin/1030409589797115495/', t:'O café da chegada'},
+      {img:'img/skinlumy/ref/r06.webp', fonte:'https://www.pinterest.com/pin/275141858482217845/', t:'Leveza e luz de janela'},
+      {img:'img/skinlumy/ref/r07.webp', fonte:'https://www.pinterest.com/pin/573505333887716487/', t:'Se olhar e se gostar'},
+      {img:'img/skinlumy/ref/r08.webp', fonte:'https://www.pinterest.com/pin/14144186326796221/', t:'Pele real aos 45'},
+      {img:'img/skinlumy/ref/r09.webp', fonte:'https://www.pinterest.com/pin/311803974226088916/', t:'Textura de verdade'}
+    ],
+    shotlist:[
+      {t:'Retrato da Flávia', d:'Meio corpo e close, luz de janela, jaleco com o SL na manga.', c:'pes'},
+      {t:'O café coado', d:'A moagem, a água, a xícara com o símbolo. O bom dia da marca.', c:'pes'},
+      {t:'A caixa lacrada', d:'Ela mostrando e nomeando o produto antes de aplicar.', c:'bas'},
+      {t:'O mapa no espelho', d:'A marcação dos pontos, vista pelo espelho, paciente autorizada.', c:'bas'},
+      {t:'A conversa sentada', d:'Antes da maca, sempre. O acolhimento que já existe.', c:'duv'},
+      {t:'A clínica em terracota', d:'Recepção e sala com a paleta da marca em cena.', c:'duv'},
+      {t:'Pele real de paciente', d:'Mulher de 30 a 60 com textura verdadeira, sem apagar poro.', c:'aut'},
+      {t:'O kit de saída', d:'Gloss, bilhete e voucher com o símbolo SL.', c:'aut'}
+    ]
+  },
+
+  /* ---------- CAMPANHA ---------- */
+  campanha:{
+    status:'Plataforma aprovada · clínica aberta em set/2026',
+    nome:'Para se olhar e se gostar de novo.',
+    eixos:[
+      {t:'Rosto', d:'descansada, com a sua cara'},
+      {t:'Firmeza', d:'o que aparece aos poucos, sem agulha'},
+      {t:'Íntima', d:'um assunto íntimo tratado com número e sem constrangimento'}
+    ],
+    alerta:'Território: cuidado por inteiro (institucional). Slogan: para se olhar e se gostar de novo (público). Foco de campanha: Full Face Botox e HIFU facial.',
+    deck:'https://www.instagram.com/skin_lumy/'
+  },
+
+  /* ---------- BENCHMARK ---------- */
+  benchmark:[
+    {at:'interno · @skin_lumy', url:'https://www.instagram.com/reel/Dc7mEFCOPPE/', porte:'1.506 views', perfil:'O próprio reel "sem filtro" da Flávia, numa conta de 2.785.', mecanismo:'Ela sem maquiagem, sem filtro, falando direto. Transparência crua.', leitura:'A prova interna: o traço número um da marca já é o que mais alcança. Falta transformar isso em ritual.'},
+    {at:'@mundodoassoalhopelvico', url:'https://www.instagram.com/mundodoassoalhopelvico/', porte:'10,4 mil', perfil:'Dra. Cristiane Carboni, reabilitação do assoalho pélvico, dor pélvica e incontinência.', mecanismo:'Autoridade acadêmica em saúde íntima, com congresso, curso e white paper. Reels de 1 a 2,7 mil.', leitura:'A referência do território íntimo, e também o alerta: ela fala muito com colega. O espaço de falar com a paciente segue aberto. Fisioterapeuta pélvica é quem encaminha para a Skin Lumy.'},
+    {at:'@dralais.silveira', url:'https://www.instagram.com/dralais.silveira/', porte:'249 mil', perfil:'Harmonização orofacial em escala, instituto próprio e um método registrado.', mecanismo:'Lifestyle de alto padrão e método com nome próprio. Os maiores reels são viagem e rotina (36,3 mil e 28,1 mil), não procedimento.', leitura:'Contraexemplo do que a Skin Lumy nega: volume, método batizado e vitrine. E ao mesmo tempo mostra que a vida da dona alcança mais que a técnica.'}
+  ],
+  sintese:{
+    alta:['A profissional sem filtro, crua e próxima','Produto e tecnologia mostrados e explicados','Lifestyle da dona, com moderação'],
+    saturado:['Antes e depois sem explicação','Promoção e pacote com desconto','Boca da moda e volume máximo'],
+    lacuna:['Saúde íntima falada sem vergonha','A caixa lacrada antes de aplicar','O acompanhamento como parte do tratamento']
+  },
+
+  /* ---------- PAUTAS ---------- */
+  pautas:[
+    {n:'01', bm:'interno · @skin_lumy', cls:'Vida pessoal', tema:'Sem filtro, de propósito',
+     ref:{url:'https://www.instagram.com/reel/Dc7mEFCOPPE/', metrica:'1.506 views', o:'O maior reel do perfil: ela sem maquiagem e sem filtro, falando direto.', porque:'A transparência que é o traço número um da marca já é o que mais alcança na conta.'},
+     angulo:'Virar o acerto em ritual: uma vez por semana ela aparece sem filtro, falando de um assunto que ninguém fala.',
+     desdobra:{reels:'Ela sem maquiagem, luz de janela, contando uma verdade do consultório. 40s.', carrossel:'O que ninguém mostra sobre a pele aos 40.', stories:'Caixinha "o que você gostaria de perguntar sem ninguém ouvir?".', estatico:'Retrato real com uma frase dela.'}},
+    {n:'02', bm:'interno · @skin_lumy', cls:'Bastidores', tema:'O que eu apliquei hoje',
+     ref:{url:'https://www.instagram.com/reel/DcysqGIRUKP/', metrica:'1.072 views', o:'Ela segurando o frasco e falando de uma paciente real.', porque:'O ritual da caixa lacrada já acontece sem querer, e ninguém na região faz isso em voz alta.'},
+     angulo:'O ritual diário: a caixa, o nome do produto, para que serve e por que começou com menos. Sem rosto de paciente.',
+     desdobra:{reels:'A caixa lacrada aberta na câmera, com o nome e a dose explicados. 30s.', carrossel:'A diferença entre as marcas de toxina.', stories:'Série "o que eu apliquei hoje", nos dias de atendimento.', estatico:'Macro da caixa com o símbolo SL.'}},
+    {n:'03', bm:'interno · @skin_lumy', cls:'Autoridade', tema:'A tecnologia que eu escolhi, e por quê',
+     ref:{url:'https://www.instagram.com/reel/DdEfcM2R6WL/', metrica:'1.087 views', o:'Ela em pé ao lado do aparelho, explicando o que ele faz.', porque:'Educação com o equipamento em cena prende mais que talking head solto.'},
+     angulo:'HIFU explicado de verdade: o que faz embaixo da pele, por que o resultado leva 90 dias e quando é caso de cirurgia.',
+     desdobra:{reels:'Ela ao lado do aparelho explicando a camada que o HIFU atinge. 45s.', carrossel:'Por que o resultado do HIFU leva 90 dias.', stories:'Enquete "você sabia que HIFU não é laser?".', estatico:'Card com a crença "o procedimento termina quando o resultado aparece".'}},
+    {n:'04', bm:'@mundodoassoalhopelvico', cls:'Dúvidas', tema:'Escape de urina tem tratamento',
+     ref:{url:'https://www.instagram.com/reel/DcCN-zpijWk/', metrica:'2.685 views', o:'Projeto de pesquisa em assoalho pélvico, no maior alcance do perfil dela.', porque:'O tema tem demanda enorme e quase nenhuma voz falando com a paciente.'},
+     angulo:'56% das brasileiras acima de 40 relatam escape e 87% nunca trataram. Ela fala disso sem vergonha, com o número do medidor.',
+     desdobra:{reels:'O que é o HIFU íntimo e para quem serve, em linguagem de paciente. 50s.', carrossel:'Cinco dúvidas que ninguém pergunta em voz alta.', stories:'Caixinha anônima sobre saúde íntima.', estatico:'Card com o dado dos 87%, com fonte.'}},
+    {n:'05', bm:'@mundodoassoalhopelvico', cls:'Dúvidas', tema:'Frases que eu mais escuto no consultório',
+     ref:{url:'https://www.instagram.com/reel/DbbeugFEsHV/', metrica:'2.264 views', o:'Ela lista as frases que mais ouve das pacientes. Relatable puro.', porque:'Reconhecimento imediato: a paciente se vê na frase e manda para a amiga.'},
+     angulo:'As frases que a Flávia mais escuta: "é só um pouquinho", "a minha amiga fez e ficou ótima", "eu não quero parecer feita".',
+     desdobra:{reels:'Lista rápida das frases, com a resposta dela em uma linha. 35s.', carrossel:'Uma frase por slide, com o que ela responde.', stories:'Enquete "você já disse alguma dessas?".', estatico:'Card com a frase mais reconhecível.'}},
+    {n:'06', bm:'@mundodoassoalhopelvico', cls:'Autoridade', conv:true, tema:'O número que mostra que funcionou',
+     ref:{url:'https://www.instagram.com/reel/Dc9qibIuRIe/', metrica:'2.192 views', o:'Bastidor de vida e trabalho, misturando rotina e autoridade técnica.', porque:'Autoridade fica mais leve quando vem junto da pessoa.'},
+     angulo:'O medidor de pressão do HIFU íntimo: o número antes e depois da sessão, com retornos em 30, 60 e 90 dias. Ninguém mostra isso.',
+     desdobra:{reels:'O medidor em cena, com o número antes e depois. Sem exposição de paciente. 40s.', carrossel:'Como a evolução é medida, sessão por sessão.', stories:'Bastidor do retorno de 30 dias.', estatico:'Card do medidor com chamada de avaliação.'}},
+    {n:'07', bm:'@dralais.silveira', cls:'Dúvidas', conv:true, tema:'A conta que não fecha',
+     ref:{url:'https://www.instagram.com/reel/DdIBRCdpZGV/', metrica:'11,1 mil views', o:'Ela fala de método próprio e código de conduta, com marca registrada no nome.', porque:'O nicho premia volume e nome próprio. Negar isso em público é território livre.'},
+     angulo:'Quantas unidades tem um frasco, e por que botox muito barato tem uma conta que não fecha. Educar uma vez e seguir.',
+     desdobra:{reels:'Ela abre a conta do frasco, sem citar concorrente. 45s.', carrossel:'Três perguntas para fazer antes de marcar em qualquer lugar.', stories:'Quiz "quantas unidades você acha que tem um frasco?".', estatico:'Card da crença, sem nome e sem print.'}},
+    {n:'08', bm:'@dralais.silveira', cls:'Autoridade', conv:true, tema:'Começar com menos',
+     ref:{url:'https://www.instagram.com/reel/DdMGOP-hwar/', metrica:'28,1 mil views', o:'Atendimento e relação com a paciente, no perfil de quem vende volume.', porque:'O medo de ficar artificial atravessa as quatro pacientes dela.'},
+     angulo:'Por que ela não faz 2 ml de labial de uma vez. A dose explicada como escolha técnica, não como economia.',
+     desdobra:{reels:'Ela explica a decisão da dose, com o mapa no espelho. 40s.', carrossel:'Natural aos 30, aos 45 e aos 60.', stories:'Caixinha "o que te faz ter medo de exagerar?".', estatico:'Card "a gente sempre pode completar depois".'}},
+    {n:'09', bm:'@dralais.silveira', cls:'Vida pessoal', tema:'A Flávia fora da sala',
+     ref:{url:'https://www.instagram.com/reel/DdhxuRQqAip/', metrica:'36,3 mil views', o:'O maior reel dela é uma viagem. Lifestyle, não procedimento.', porque:'Mesmo num perfil de 249 mil, a vida alcança mais que a técnica.'},
+     angulo:'A dica com chocolatinho, o café de toda manhã e os nove anos nos Estados Unidos. Leveza com moderação.',
+     desdobra:{reels:'Ela responde uma dúvida com o chocolate do dia na mão. 30s.', carrossel:'O que eu aprendi atendendo mulheres de tantos países.', stories:'Bom dia com café, de segunda a sexta.', estatico:'A xícara com o símbolo SL.'}}
+  ],
+
+  /* posts fixados ---------- */
+  fixados:[
+    {n:'01', tema:'Prazer, Skin Lumy', papel:'Apresenta a clínica e a Flávia. O cartão de visita que o perfil não tem.', precisa:'ensaio e símbolo SL aplicado',
+     slides:['Capa: a Flávia e "para se olhar e se gostar de novo"','Quem é: nove anos em hospitais nos Estados Unidos','As quatro linhas: rosto, HIFU, íntima e corpo','O jeito Lumy: mostro o que aplico e acompanho depois','O que você vive aqui: café, conversa sentada, mapa no espelho','Chamada: agende sua avaliação']},
+    {n:'02', tema:'Análise de caso', papel:'O ritual da quinzena virado em fixado. A prova dentro das regras do conselho.', precisa:'portfólio de casos com autorização escrita',
+     slides:['Capa: "análise de caso"','O que incomodava a paciente','O que foi aplicado, com nome e dose','A evolução, com a mesma luz e o mesmo ângulo','A limitação: o que isso não resolve','Chamada: agende sua avaliação']},
+    {n:'03', tema:'Um assunto que ninguém fala', papel:'A saúde íntima como território. Post de posicionamento e captação.', precisa:'ensaio, roteiro dela e o medidor em cena',
+     slides:['Capa: "56% das mulheres acima de 40 passam por isso"','O que é o escape de urina, sem rodeio','Por que ninguém trata: 87% nunca procuraram','O que o HIFU íntimo faz','O número medido, antes e depois','Chamada: dá para falar disso aqui']}
+  ],
+
+  ciclos:[]
+},
+
 /* ============================ JÉSSICA CURI ============================ */
 {
   slug:'jessica', ativo:true, apelido:'Jéssica',
