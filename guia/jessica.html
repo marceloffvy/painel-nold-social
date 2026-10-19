@@ -1,0 +1,2028 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guia de Instagram · Dra. Jéssica Curi</title>
+<meta name="description" content="Como usar o Instagram da Dra. Jéssica Curi: perfil, destaques, linhas de conteúdo, como gravar, stories, cadência e conformidade com o conselho.">
+<meta name="theme-color" content="#FBF7F0">
+<meta name="robots" content="noindex">
+
+<style>
+@font-face{font-family:'Hebrinks';src:url('../fonts/dthebrinks.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Hebrinks';src:url('../fonts/dthebrinks-italic.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Haas';src:url('../fonts/haas-light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Haas';src:url('../fonts/haas-roman.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Haas';src:url('../fonts/haas-medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Plex';src:url('../fonts/plexmono-300.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Plex';src:url('../fonts/plexmono-500.woff2') format('woff2');font-weight:500;font-display:swap}
+
+:root{
+  color-scheme:light;
+  --paper:#FBF7F0; --card:#FFFFFF; --creme:#EDE4D6; --creme-d:#DCD0BC;
+  --terra:#C9A227; --terra-d:#8F6F12; --salvia:#7E8A63; --salvia-l:#C3CBAF;
+  --cacau:#3A2C20; --ouro:#D8BE6B;
+  --ink:#241D17; --gray:#6E6055; --gray-l:#9A8B7D;
+  --line:#E4DACB; --line-2:#D2C4B0;
+  --serif:'Hebrinks',Georgia,'Times New Roman',serif;
+  --sans:'Haas',ui-sans-serif,-apple-system,'Helvetica Neue',Arial,sans-serif;
+  --mono:'Plex',ui-monospace,'SF Mono',Menlo,monospace;
+  --pad:clamp(18px,4vw,52px);
+}
+*{box-sizing:border-box}
+*,*::before,*::after{animation:none!important;transition:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-weight:300;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+svg{display:block;max-width:100%;height:auto}
+
+/* ---------- primitivas ---------- */
+.mono{font-family:var(--mono);font-weight:300;font-size:11px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--gray)}
+.mono.t{color:var(--terra)}
+.mark{display:inline-flex;align-items:center;gap:9px}
+.mark::before{content:'';width:7px;height:7px;background:var(--terra);flex:none}
+.tag{display:inline-block;font-family:var(--mono);font-weight:300;font-size:10px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--gray);
+  border:1px solid var(--line-2);padding:4px 10px;white-space:nowrap}
+.tag.t{border-color:var(--terra);color:var(--terra)}
+.tag.s{background:var(--cacau);border-color:var(--cacau);color:var(--creme)}
+.tag.sv{border-color:var(--salvia);color:#6E7259}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.muted{color:var(--gray)}
+code{font-family:var(--mono);font-size:.88em;background:var(--creme);
+  padding:2px 6px;border-radius:2px;word-break:break-all}
+
+/* ---------- chrome ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--paper);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;
+  padding:0 var(--pad);height:58px}
+.top .logo{font-family:var(--serif);font-size:25px;line-height:1;padding-bottom:4px}
+.top .sep{color:var(--line-2)}
+.top .who{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gray);flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.top .back{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--gray-l);border:1px solid var(--line-2);padding:5px 10px}
+
+.wrap{max-width:1180px;margin:0 auto;padding:clamp(26px,5vw,56px) var(--pad) 100px}
+
+/* ---------- capa ---------- */
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,7vw,66px);
+  line-height:1.02;letter-spacing:-.02em;margin:14px 0 14px;text-wrap:balance}
+.lead{color:var(--gray);font-size:18px;max-width:58ch;margin:0}
+.hero{border-bottom:1px solid var(--line);padding-bottom:34px;margin-bottom:38px}
+.heroflex{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap}
+.heroflex>div:first-child{flex:1 1 440px;min-width:0}
+.hav{width:112px;height:112px;border-radius:50%;object-fit:cover;border:1px solid var(--line-2);flex:none}
+
+/* ---------- índice ---------- */
+.toc{display:grid;grid-template-columns:repeat(auto-fill,minmax(188px,1fr));gap:1px;
+  border:1px solid var(--line);margin:30px 0 0}
+.toc a{background:var(--paper);padding:15px 16px 17px;display:block;min-width:0;
+  outline:1px solid var(--line)}
+.toc a:hover{background:var(--creme)}
+.toc .n{font-family:var(--mono);font-size:10px;letter-spacing:.13em;color:var(--terra);display:block;margin-bottom:7px}
+.toc .t{font-family:var(--serif);font-size:19px;line-height:1.15}
+
+/* ---------- layout de corpo ---------- */
+.cols{display:grid;grid-template-columns:200px 1fr;gap:clamp(26px,4vw,58px);align-items:start}
+.side{position:sticky;top:calc(58px + env(safe-area-inset-top,0px) + 22px);display:flex;flex-direction:column;gap:2px}
+.side a{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gray-l);padding:6px 0 6px 11px;border-left:1px solid var(--line-2);line-height:1.35}
+.side a.act{color:var(--terra);border-left-color:var(--terra)}
+.side a:hover{color:var(--ink)}
+.body{min-width:0;display:flex;flex-direction:column;gap:64px}
+
+.blk{scroll-margin-top:calc(58px + env(safe-area-inset-top,0px) + 18px);min-width:0}
+.bhead{border-top:2px solid var(--cacau);padding-top:14px;margin-bottom:22px}
+.bhead .n{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--terra);display:block;margin-bottom:9px}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(27px,4vw,38px);line-height:1.05;
+  letter-spacing:-.015em;margin:0;text-wrap:balance}
+.bhead p{color:var(--gray);margin:10px 0 0;max-width:60ch}
+h3{font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.18;margin:0}
+h4{font-family:var(--sans);font-weight:500;font-size:15px;line-height:1.3;margin:0;letter-spacing:.005em}
+.sub{margin:40px 0 18px;display:flex;flex-direction:column;gap:5px}
+.sub h3{font-size:24px}
+.sub .mono{margin-bottom:2px}
+p{margin:0 0 13px}
+p:last-child{margin-bottom:0}
+.note{background:var(--creme);padding:16px 18px;font-size:15px;line-height:1.55}
+.note b{font-weight:500}
+.note.dark{background:var(--cacau);color:var(--creme)}
+.note.dark b{color:#fff}
+
+/* ---------- cartões ---------- */
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(222px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(168px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);padding:18px 19px 20px;min-width:0;
+  display:flex;flex-direction:column;gap:9px}
+.card .mono{letter-spacing:.12em}
+.card p{font-size:15px;color:var(--gray);margin:0}
+.card.fill{background:var(--creme);border-color:var(--creme-d)}
+.card .tag{white-space:normal;line-height:1.45;align-self:flex-start;max-width:100%}
+
+/* divisão de trabalho */
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line)}
+.split>div{background:var(--card);padding:20px 21px 24px}
+.split>div.them{background:var(--creme)}
+.split ul{margin:12px 0 0;padding:0 0 0 1px;list-style:none;display:flex;flex-direction:column;gap:9px}
+.split li{font-size:15px;padding-left:18px;position:relative;line-height:1.45}
+.split li::before{content:'';position:absolute;left:0;top:8px;width:8px;height:1px;background:var(--terra)}
+
+/* linhas editoriais */
+.stage{border:1px solid var(--line-2);margin-bottom:16px}
+.stage>header{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+  padding:14px 18px;border-bottom:1px solid var(--line)}
+.stage>header .lbl{font-family:var(--serif);font-size:21px}
+.stage>header .gl{font-size:14px;color:var(--gray);flex:1;min-width:140px}
+.stage.topo>header{background:#F2E6C8}
+.stage.meio>header{background:#E6E2D6}
+.stage.fundo>header{background:var(--cacau)}
+.stage.fundo>header .lbl{color:var(--creme)}
+.stage.fundo>header .gl{color:#CBB9AC}
+.lines{display:grid;gap:1px;background:var(--line);grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+.line{background:var(--card);padding:18px 19px 20px;display:flex;flex-direction:column;gap:11px;min-width:0}
+.line .nm{display:flex;flex-direction:column;gap:7px}
+.line .nm h4{font-family:var(--serif);font-weight:400;font-size:20px}
+.line .wh{font-size:14.5px;color:var(--gray);margin:0;line-height:1.5}
+.pauta{border-left:2px solid var(--terra);padding:3px 0 3px 13px}
+.pauta .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--terra);display:block;margin-bottom:5px}
+.pauta p{font-size:14.5px;color:var(--ink);line-height:1.5;margin:0}
+.ex{background:var(--creme);padding:11px 13px;display:flex;flex-direction:column;gap:5px}
+.ex .hd{display:flex;gap:9px;align-items:baseline;justify-content:space-between}
+.ex .at{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:none;color:var(--cacau)}
+.ex .vw{font-family:var(--mono);font-weight:500;font-size:13px;color:var(--terra-d);white-space:nowrap}
+.ex .wy{font-size:13.5px;color:var(--gray);line-height:1.45}
+.ex a{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--terra)}
+.ex a:hover{color:var(--terra-d)}
+.whr{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gray-l)}
+
+/* tres regras do enquadramento */
+.rule3{display:grid;grid-template-columns:22px 1fr;gap:11px;align-items:start}
+.rule3 .n3{font-family:var(--mono);font-weight:500;font-size:10px;color:#fff;background:var(--terra);
+  width:20px;height:20px;display:grid;place-items:center;margin-top:2px}
+.rule3 p{font-size:14px;line-height:1.5;color:var(--gray);margin:0}
+.rule3 p b{color:var(--ink);font-weight:500}
+
+/* esforco da semana */
+.effort{border:1px solid var(--line-2);margin-bottom:20px}
+.effort .ehead{padding:20px 22px 18px;border-bottom:1px solid var(--line);background:var(--creme)}
+.effort .ehead h3{margin:8px 0 8px}
+.effort .ehead p{font-size:14.5px;color:var(--gray);margin:0;max-width:62ch}
+.erows{display:grid;gap:1px;background:var(--line)}
+.erow{background:var(--card);padding:18px 22px;display:grid;
+  grid-template-columns:62px 1fr auto;gap:18px;align-items:start}
+.erow .enum{font-family:var(--serif);font-size:40px;line-height:.9;color:var(--terra);
+  display:flex;align-items:baseline;gap:2px}
+.erow .enum .es{font-family:var(--sans);font-size:13px;color:var(--gray-l);padding:0 2px}
+.erow .etx h4{margin-bottom:5px}
+.erow .etx p{font-size:14.5px;color:var(--gray);margin:0;line-height:1.55}
+.erow .etag{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gray-l);border:1px solid var(--line-2);padding:4px 9px;white-space:nowrap}
+.efoot{background:var(--cacau);color:#D8CCC2;padding:15px 22px;font-size:14.5px;line-height:1.55}
+.efoot b{color:#fff;font-weight:500}
+@media(max-width:620px){
+  .erow{grid-template-columns:48px 1fr}
+  .erow .enum{font-size:32px}
+  .erow .etag{grid-column:2}
+}
+
+/* aviso de nao copiar */
+.warn{border-left:3px solid var(--terra);background:#FBF5E4;padding:20px 22px 22px;margin-bottom:26px}
+.warn h4{color:var(--terra-d);font-size:16px;margin-bottom:10px}
+.warn p{font-size:15px;color:var(--ink);line-height:1.55;margin:0 0 11px}
+.warn ul{margin:0 0 13px;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.warn li{font-size:15px;line-height:1.45;padding-left:19px;position:relative;font-style:italic;color:var(--terra-d)}
+.warn li::before{content:'';position:absolute;left:0;top:10px;width:9px;height:1px;background:var(--terra)}
+
+/* perfil mock */
+.mock{background:var(--card);border:1px solid var(--line-2);padding:20px;max-width:430px}
+.mock .mh{display:flex;gap:16px;align-items:center;margin-bottom:14px}
+.mock .mav{width:72px;height:72px;border-radius:50%;flex:none;border:1px solid var(--line-2);
+  display:grid;place-items:center;background:var(--creme);overflow:hidden}
+.mock .mstat{display:flex;gap:18px}
+.mock .mstat b{display:block;font-weight:500;font-size:15px}
+.mock .mstat span{font-size:12px;color:var(--gray)}
+.bioline{display:flex;gap:10px;align-items:flex-start;padding:5px 0;font-size:15px;line-height:1.4}
+.bioline .bn{font-family:var(--mono);font-weight:500;font-size:10px;color:#fff;background:var(--terra);
+  width:17px;height:17px;flex:none;display:grid;place-items:center;margin-top:3px}
+.bioname{font-weight:500;font-size:15.5px;margin-bottom:6px}
+.biolink{color:var(--terra);font-size:14.5px;margin-top:4px;word-break:break-all}
+.annot{display:flex;flex-direction:column;gap:11px;margin-top:20px}
+.annot li{list-style:none;display:flex;gap:11px;font-size:14.5px;line-height:1.45;color:var(--gray)}
+.annot ol{margin:0;padding:0}
+.annot .bn{font-family:var(--mono);font-weight:500;font-size:10px;color:#fff;background:var(--terra);
+  width:17px;height:17px;flex:none;display:grid;place-items:center;margin-top:3px}
+.annot b{color:var(--ink);font-weight:500}
+
+/* avatar escala */
+.scale{display:flex;gap:26px;flex-wrap:wrap;align-items:flex-end}
+.scaleset{display:flex;gap:10px;align-items:flex-end}
+.scaleset img,.scaleset .sl{border-radius:50%;border:1px solid var(--line-2);flex:none;object-fit:cover}
+.scalecol{display:flex;flex-direction:column;gap:11px}
+
+/* confirmacao */
+.okbox{display:grid;grid-template-columns:34px 1fr;gap:15px;background:#EDF0E4;
+  border:1px solid #D2DAC2;padding:18px 20px 20px;align-items:start}
+.okbox .ok{width:34px;height:34px;border-radius:50%;background:#7E8A63;color:#fff;
+  display:grid;place-items:center;font-size:17px;line-height:1}
+.okbox h4{color:#56603F;margin-bottom:7px}
+.okbox p{font-size:15px;color:var(--gray);margin:0;line-height:1.55}
+
+/* copia e cola */
+.copyrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}
+.copybox{background:var(--cacau);padding:16px 17px 17px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.copybox .mono.t{color:var(--ouro)}
+.copybox pre{margin:0;font-family:var(--sans);font-weight:300;font-size:15px;line-height:1.5;
+  color:#F7EFE7;white-space:pre-wrap;word-break:break-word}
+.cpbtn{align-self:flex-start;font-family:var(--mono);font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--cacau);background:var(--ouro);padding:7px 14px;cursor:pointer}
+.cpbtn:hover{background:#E7D49A}
+.cpbtn[data-done]{background:#9AA87E;color:#fff}
+
+/* destaques */
+.hl{display:flex;flex-direction:column;gap:11px;align-items:center;text-align:center}
+.hl .cv{position:relative;width:98px;height:98px;border-radius:50%;background:var(--creme);
+  border:1px solid var(--creme-d);display:grid;place-items:center;margin-bottom:7px}
+.hl a.cv:hover{background:#E4D8C0;border-color:var(--terra)}
+.hl .cv .dl{position:absolute;left:50%;transform:translateX(-50%);bottom:-10px;
+  background:var(--terra);color:#fff;font-family:var(--mono);font-weight:500;font-size:9px;
+  letter-spacing:.11em;text-transform:uppercase;padding:4px 9px;white-space:nowrap}
+.hl .nmh{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--cacau)}
+.hl p{font-size:13.5px;color:var(--gray);line-height:1.45;margin:0}
+
+/* fixados grid */
+.pins{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-width:330px;
+  border:1px solid var(--line-2);padding:4px;background:var(--card)}
+.pins div{aspect-ratio:1;background:var(--creme);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:3px;overflow:hidden;
+  font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;line-height:1.3;
+  color:var(--gray-l);text-align:center;padding:6px 4px}
+.pins div b{font-weight:500;display:block}
+.pins div.p{background:var(--cacau);color:var(--creme)}
+
+/* equipamento */
+.kit2{display:flex;flex-direction:column;gap:16px}
+.kitgrp{border:1px solid var(--line);background:var(--card)}
+.kitlbl{display:grid;grid-template-columns:32px 1fr;gap:15px;padding:18px 20px 16px;align-items:start}
+.kitlbl .ic{width:32px;height:32px;color:var(--terra)}
+.kitlbl h4{margin-bottom:5px}
+.kitlbl p{font-size:14.5px;color:var(--gray);margin:0;line-height:1.55;max-width:70ch}
+.sublbl{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--gray-l);padding:11px 20px 9px;border-top:1px solid var(--line);background:var(--paper)}
+.prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;
+  background:var(--line);border-top:1px solid var(--line)}
+.prod{background:var(--creme);padding:15px 18px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.prod:hover{background:#E4D8C0}
+.prod .pnm{font-weight:500;font-size:15px;line-height:1.3}
+.prod .pmeta{font-size:13.5px;color:var(--gray);line-height:1.4}
+.prod .pmeta b{color:var(--terra-d);font-weight:500}
+.prod .ppr{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  font-family:var(--mono);font-weight:500;font-size:15px;color:var(--cacau);margin-top:3px}
+.prod .ppr span{font-weight:300;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--terra)}
+
+/* caminho de ajuste */
+.path{display:flex;flex-direction:column;gap:9px}
+.path div{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--cacau);
+  background:var(--creme);padding:10px 13px;line-height:1.5}
+.path .ar{color:var(--terra);padding:0 3px}
+
+/* diagramas */
+.dia{background:var(--card);border:1px solid var(--line);padding:18px}
+.dia .cap{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--gray);margin-bottom:14px}
+.dias{display:flex;gap:14px;flex-wrap:wrap}
+.dias>.dia{flex:1 1 250px;min-width:0}
+.frames{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-start}
+.frames figure{margin:0;flex:0 1 215px;min-width:170px;display:flex;flex-direction:column;gap:9px}
+.frames figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.frames .ok{color:var(--salvia);filter:none}
+.frames .no{color:var(--terra)}
+
+/* semana */
+.weekstrip{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);margin-bottom:16px}
+.weekstrip>div{background:var(--card);padding:14px 11px 16px;min-width:0;
+  display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.weekstrip>div.off{background:#F7F2E9}
+.weekstrip>div.fix{background:var(--creme);border-top:3px solid var(--terra);padding-top:11px}
+.weekstrip .d{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--terra)}
+.weekstrip .fixo{font-family:var(--serif);font-size:17px;line-height:1.1;color:var(--cacau)}
+.weekstrip .free{font-size:12.5px;line-height:1.3;color:var(--gray-l)}
+.weekstrip>div.fix .free{color:var(--terra-d)}
+@media(max-width:820px){.weekstrip{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.weekstrip{grid-template-columns:1fr}}
+
+.weeksum{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line)}
+.weeksum>div{background:var(--cacau);color:#D8CCC2;padding:19px 21px 22px}
+.weeksum>div .mono.t{color:var(--ouro)}
+.weeksum ul{margin:13px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.weeksum li{font-size:15px;line-height:1.45;padding-left:18px;position:relative}
+.weeksum li b{color:#fff;font-weight:500}
+.weeksum li::before{content:'';position:absolute;left:0;top:9px;width:9px;height:1px;background:var(--ouro)}
+.weeksum>p{background:var(--card);color:var(--gray);padding:19px 21px 22px;font-size:14.5px;
+  line-height:1.55;margin:0}
+
+/* hooks sim/nao */
+.hooks{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line)}
+.hooks>div{background:var(--card);padding:19px 20px 22px}
+.hooks>div.bad{background:var(--creme)}
+.hooks ul{margin:13px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.hooks li{font-size:15px;line-height:1.45;padding-left:20px;position:relative}
+.hooks .good li::before{content:'';position:absolute;left:0;top:7px;width:9px;height:9px;
+  border:1px solid var(--salvia);background:var(--salvia-l)}
+.hooks .bad li::before{content:'';position:absolute;left:0;top:11px;width:9px;height:1px;background:var(--terra)}
+.hooks li i{font-style:normal;color:var(--gray);display:block;font-size:13.5px;margin-top:2px}
+
+/* nao fazer */
+.rules{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.rule{background:var(--card);padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}
+.rule .no{font-size:15px;font-weight:400;line-height:1.4}
+.rule .no b{font-weight:500;color:var(--terra-d)}
+.rule .yes{font-size:14.5px;color:var(--gray);line-height:1.4}
+.rule .yes .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--salvia);display:block;margin-bottom:3px}
+@media(max-width:620px){.rule{grid-template-columns:1fr}}
+.live{border:1px solid var(--terra);background:#FBF4E3;padding:18px 19px 20px}
+.live h4{color:var(--terra-d);margin-bottom:12px}
+.live ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.live li{font-size:15px;line-height:1.45}
+.live li span{display:block;color:var(--gray);font-size:14px;margin-top:3px}
+
+/* checklist */
+.check{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.ck{background:var(--card);padding:0}
+.ck label{display:grid;grid-template-columns:22px 58px 1fr;gap:13px;align-items:start;
+  padding:15px 18px;cursor:pointer}
+.ck input{appearance:none;width:17px;height:17px;border:1px solid var(--line-2);
+  background:var(--paper);margin:3px 0 0;cursor:pointer;flex:none;display:grid;place-items:center}
+.ck input:checked{background:var(--cacau);border-color:var(--cacau)}
+.ck input:checked::after{content:'';width:8px;height:4px;border-left:1.5px solid var(--creme);
+  border-bottom:1.5px solid var(--creme);transform:rotate(-45deg);margin-top:-2px}
+.ck .dy{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--terra);padding-top:4px}
+.ck .tx{font-size:15px;line-height:1.45}
+.ck .tx span{display:block;color:var(--gray);font-size:13.5px;margin-top:2px}
+.ck input:checked ~ .tx{color:var(--gray-l)}
+@media(max-width:520px){.ck label{grid-template-columns:22px 1fr}.ck .dy{grid-column:2}}
+
+/* refs de stories */
+.obs{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.obsrow{background:var(--card);padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+.obsrow .at{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--cacau);white-space:nowrap}
+.obsrow .at span{display:block;color:var(--gray-l);font-size:10px;letter-spacing:.11em;
+  text-transform:uppercase;margin-top:4px}
+.obsrow .w{font-size:14.5px;color:var(--gray);line-height:1.5}
+@media(max-width:560px){.obsrow{grid-template-columns:1fr}}
+
+/* fim */
+.end{border-top:2px solid var(--cacau);margin-top:72px;padding-top:26px;
+  display:flex;gap:22px;justify-content:space-between;flex-wrap:wrap;align-items:flex-end}
+.foot{border-top:1px solid var(--line);padding:18px var(--pad);display:flex;
+  justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+@media(max-width:900px){
+  .cols{grid-template-columns:1fr}
+  .side{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <span class="logo">nold</span>
+  <span class="sep">/</span>
+  <span class="who">Guia de Instagram · Dra. Jéssica Curi</span>
+  <a class="back" href="../#/c/jessica">painel</a>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div class="heroflex">
+      <div>
+        <span class="mono mark">Feito pela Nold para a Dra. Jéssica Curi · versão 1 · out/2026</span>
+        <h1>O guia do Instagram da Dra. Jéssica</h1>
+        <p class="lead">Tudo o que você precisa para gravar, publicar e manter o perfil
+        funcionando nas duas cidades. É para consultar, não para ler de uma vez.</p>
+      </div>
+      <img class="hav" src="../img/jessica/avatar.webp" alt="Dra. Jéssica Curi">
+    </div>
+
+    <nav class="toc">
+      <a href="#s0"><span class="n">00</span><span class="t">Como usar</span></a>
+      <a href="#s1"><span class="n">01</span><span class="t">Arrumar a casa</span></a>
+      <a href="#s2"><span class="n">02</span><span class="t">Os três fixados</span></a>
+      <a href="#s3"><span class="n">03</span><span class="t">As linhas de conteúdo</span></a>
+      <a href="#s4"><span class="n">04</span><span class="t">Como gravar</span></a>
+      <a href="#s5"><span class="n">05</span><span class="t">Stories</span></a>
+      <a href="#s6"><span class="n">06</span><span class="t">A semana</span></a>
+      <a href="#s7"><span class="n">07</span><span class="t">Os três primeiros segundos</span></a>
+      <a href="#s8"><span class="n">08</span><span class="t">O que não fazer</span></a>
+      <a href="#s9"><span class="n">09</span><span class="t">Música</span></a>
+      <a href="#s10"><span class="n">10</span><span class="t">Os primeiros 7 dias</span></a>
+    </nav>
+  </div>
+
+  <div class="cols">
+    <nav class="side" id="side">
+      <a href="#s0" data-j="s0">00 Como usar</a>
+      <a href="#s1" data-j="s1">01 Arrumar a casa</a>
+      <a href="#s2" data-j="s2">02 Os três fixados</a>
+      <a href="#s3" data-j="s3">03 Linhas de conteúdo</a>
+      <a href="#s4" data-j="s4">04 Como gravar</a>
+      <a href="#s5" data-j="s5">05 Stories</a>
+      <a href="#s6" data-j="s6">06 A semana</a>
+      <a href="#s7" data-j="s7">07 Três segundos</a>
+      <a href="#s8" data-j="s8">08 O que não fazer</a>
+      <a href="#s9" data-j="s9">09 Música</a>
+      <a href="#s10" data-j="s10">10 Primeiros 7 dias</a>
+    </nav>
+
+    <div class="body">
+
+      <section class="blk" id="s0">
+        <div class="bhead">
+          <span class="n">00</span>
+          <h2>Como usar este guia</h2>
+          <p>Cada seção resolve uma dúvida. Quando você for gravar, abra a 04. Quando for
+          subir story, abra a 05. Quando bater dúvida se pode publicar, abra a 08.</p>
+        </div>
+
+        <div class="split">
+          <div>
+            <span class="mono t">Campanha · a Nold faz inteiro</span>
+            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">Tudo que faz parte
+            de uma campanha no ar sai pronto da nossa mão. Você só aprova e a gente publica.</p>
+            <ul>
+              <li>Conceito, pauta e roteiro</li>
+              <li>Gravação, com a nossa equipe</li>
+              <li>Edição, corte, legenda e trilha</li>
+              <li>Capa, carrossel, card e arte</li>
+              <li>Legenda da publicação e revisão de conformidade</li>
+              <li>Os três posts fixados do topo do perfil</li>
+            </ul>
+          </div>
+          <div class="them">
+            <span class="mono t">Dia a dia · você faz inteiro</span>
+            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">O conteúdo que
+            nasce da sua cabeça é seu do começo ao fim. A gente entra só com formato, tema e
+            ideia, e este guia é isso.</p>
+            <ul>
+              <li>Decidir o assunto, dentro das linhas da seção 03</li>
+              <li>Gravar, com o enquadramento e a luz da seção 04</li>
+              <li>Editar e legendar, inclusive com a legenda automática do Instagram</li>
+              <li>Escrever e publicar, com o CRO da cidade certa</li>
+              <li>Subir os stories do dia e responder a pergunta da semana</li>
+              <li>Guardar a autorização escrita de cada paciente que aparece</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:16px">
+          <b>Não existe calendário aqui, e é de propósito.</b> Calendário de conteúdo sempre
+          acaba atrasado, e aí o atraso vira culpa e a culpa vira perfil parado. O que existe
+          é um <b>volume por semana</b>, na seção 06. Você escolhe o dia, o assunto e a hora.
+          O volume é baixo de propósito, para caber numa agenda que tem bloco cirúrgico,
+          plantão, aula e duas cidades.
+        </div>
+
+        <div class="note dark" style="margin-top:16px">
+          <b>Por que vale tanto a pena para você.</b> Cerca de <b>40% das suas avaliações
+          viram cirurgia</b>, quatro vezes a média do mercado. Quem conversa com você fecha.
+          Só que os seus reels alcançam de 600 a 1.000 pessoas, que é mais ou menos 20% de
+          quem já te segue. O seu gargalo não é convencer, é <b>ser vista</b>. Cada pessoa
+          nova que chega aqui vale mais no seu caso do que valeria em qualquer outro perfil
+          deste guia.
+        </div>
+      </section>
+
+      <!-- ======================= 01 ======================= -->
+      <section class="blk" id="s1">
+        <div class="bhead">
+          <span class="n">01</span>
+          <h2>Arrumar a casa</h2>
+          <p>Antes de produzir conteúdo novo, o perfil precisa estar legível para quem chega
+          pela primeira vez, e precisa deixar claro que você atende em duas cidades. São
+          quatro coisas: foto, nome e bio, link e destaques.</p>
+        </div>
+
+        <!-- foto -->
+        <div class="sub"><span class="mono t">01 · a</span><h3>A foto de perfil</h3></div>
+        <div class="okbox">
+          <span class="ok">✓</span>
+          <div>
+            <h4>Está certa, pode deixar como está</h4>
+            <p>A foto do seu rosto é o que a gente quer ali. Cirurgia de face se escolhe pela
+            pessoa, e o rosto humaniza um perfil que, de resto, fala de osso, exame e
+            técnica. Só dois cuidados: <b>a mesma foto por pelo menos um ano</b>, porque é
+            assim que o paciente te reconhece na lista de stories, e nada de foto cortada de
+            uma foto maior, que fica mole no tamanho pequeno.</p>
+          </div>
+        </div>
+
+        <!-- bio -->
+        <div class="sub"><span class="mono t">01 · b</span><h3>O nome e a bio</h3></div>
+        <p>O campo <b>Nome</b> é o que o Instagram usa na busca, e não o @. Hoje o seu diz
+        <code>Dra Jéssica F. Curi | BucoMaxiloFacial | Hamonização facial</code>, com
+        <b>Harmonização escrito sem o R</b> e sem nenhuma cidade. Quem procura "bucomaxilo
+        Salvador" não te encontra. A bio tem 150 caracteres e cinco trabalhos: dizer o que
+        você é, onde atende, por que vale a pena, o registro que o conselho exige, e a ação.</p>
+
+        <div class="copyrow">
+          <div class="copybox">
+            <span class="mono t">Campo Nome · copie e cole</span>
+            <pre id="cp-nome">Dra. Jéssica Curi | Bucomaxilo Salvador · Harmonização SP</pre>
+            <button class="cpbtn" data-cp="cp-nome">copiar</button>
+          </div>
+          <div class="copybox">
+            <span class="mono t">Bio · copie e cole, 135 de 150 caracteres</span>
+            <pre id="cp-bio">Cirurgiã bucomaxilofacial · harmonização facial
+Salvador e São Paulo · entender antes de mexer
+CRO-BA 16230 · CRO-SP 180773
+Avaliação ↓</pre>
+            <button class="cpbtn" data-cp="cp-bio">copiar</button>
+          </div>
+        </div>
+
+        <p style="margin-top:22px">É isso que o paciente vê, com cada linha fazendo um
+        trabalho:</p>
+
+        <div class="mock">
+          <div class="mh">
+            <img class="mav" src="../img/jessica/avatar.webp" alt="Dra. Jéssica Curi">
+            <div class="mstat">
+              <div><b>489</b><span>posts</span></div>
+              <div><b>4.610</b><span>seguidores</span></div>
+            </div>
+          </div>
+          <div class="bioname">Dra. Jéssica Curi | Bucomaxilo Salvador · Harmonização SP</div>
+          <div class="bioline"><span class="bn">1</span><span>Cirurgiã bucomaxilofacial · harmonização facial</span></div>
+          <div class="bioline"><span class="bn">2</span><span>Salvador e São Paulo · entender antes de mexer</span></div>
+          <div class="bioline"><span class="bn">3</span><span>CRO-BA 16230 · CRO-SP 180773</span></div>
+          <div class="bioline"><span class="bn">4</span><span>Avaliação ↓</span></div>
+          <div class="biolink">jessicacuri.com.br/bio</div>
+        </div>
+
+        <ol class="annot">
+          <li><span class="bn">1</span><span><b>O que você é.</b> Cirurgiã vem primeiro,
+          porque é o que ninguém mais na disputa tem. Hoje a sua bio abre com "dentista
+          geral", que é verdade e é o que menos te diferencia.</span></li>
+          <li><span class="bn">2</span><span><b>Onde e por quê.</b> As duas cidades resolvem
+          a maior confusão do perfil, e o slogan da marca entra junto. "Entender antes de
+          mexer" é a frase que a Nold vai repetir o ano inteiro.</span></li>
+          <li><span class="bn">3</span><span><b>Os dois registros.</b> O conselho exige o
+          número em peça de divulgação, e você atende em dois estados. Os dois ficam na bio;
+          <b>na peça, vai só o da cidade daquele conteúdo</b>.</span></li>
+          <li><span class="bn">4</span><span><b>A ação.</b> Uma só, apontando para o link.
+          Sem telefone solto, sem endereço, sem emoji.</span></li>
+        </ol>
+
+        <!-- link -->
+        <div class="sub"><span class="mono t">01 · c</span><h3>O link, e o problema das duas cidades</h3></div>
+        <div class="live">
+          <h4>Hoje o link manda todo mundo para o mesmo WhatsApp de Salvador</h4>
+          <ul>
+            <li>O link da sua bio é <code>api.whatsapp.com/send?phone=5571996756595</code>,
+            que é um número com <b>DDD 71</b>.
+              <span>Quem viu um conteúdo de harmonização, mora na Vila Mariana e clicou,
+              cai num telefone de outro estado. Parte dessas pessoas desiste ali, e você
+              nunca fica sabendo.</span></li>
+          </ul>
+        </div>
+        <p style="margin-top:18px">A Nold vai montar uma página só sua em
+        <code>jessicacuri.com.br/bio</code>, com dois botões grandes: <b>Salvador</b> e
+        <b>São Paulo</b>. Cada um abre o WhatsApp certo, com a mensagem já escrita. O link
+        da bio passa a ser esse, e nunca mais muda.</p>
+        <p>Ele é fixo por dois motivos. O primeiro é memória: o paciente aprende que o
+        caminho é sempre o mesmo lugar. O segundo é medição: como a página é nossa, a gente
+        troca o que tem dentro dela sem trocar o link, e enxerga quantas pessoas chegaram de
+        cada publicação e de qual cidade.</p>
+        <div class="note" style="margin-top:16px">
+          <b>Enquanto a página não fica pronta</b>, use a figurinha de link nos stories
+          apontando para o WhatsApp da cidade do conteúdo daquele dia. Conteúdo de
+          ortognática, ATM, siso ou implante vai para o 71. Conteúdo de harmonização vai para
+          o número de São Paulo, que a gente precisa que você confirme com a gente.
+        </div>
+
+        <!-- destaques -->
+        <div class="sub"><span class="mono t">01 · d</span><h3>Os quatro destaques</h3></div>
+        <div class="live">
+          <h4>Hoje são catorze, e dez deles são viagem</h4>
+          <ul>
+            <li>Contato · São Roque · Pacientes · Musas · Let's HOF · Deus · Cirurgia ·
+            Manaus · Itália · Megève · Edimburgo · Londres · Paris · Campos do Jordão.
+              <span>Quem chega no perfil vê primeiro uma fileira de destinos de viagem e
+              depois descobre que você é cirurgiã. Os de viagem não precisam sumir: eles
+              descem para o fim da fila, e os quatro de trabalho sobem para a frente.</span></li>
+          </ul>
+        </div>
+
+        <p style="margin-top:18px">Estes quatro vêm primeiro, nessa ordem, com capa
+        desenhada. <b>As artes já estão prontas aqui embaixo: clique na bolinha para
+        baixar.</b> Suba cada uma como story e escolha ela na hora de editar a capa do
+        destaque.</p>
+
+        <div class="grid g4" style="margin-top:22px">
+          <div class="hl">
+            <a class="cv" href="artes-jessica/jessica-destaque-1-casos.png" download title="Baixar a capa Casos">
+              <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
+                <rect x="11" y="11" width="74" height="74" rx="4" fill="none" stroke="#C9A227" stroke-width="1.7"/>
+                <path d="M57 19 C47 20 36 27 32 37 C30 42 34 43 35 46 C33 50 26 51 25 54 C25 57 31 56 33 58 C32 61 28 61 29 63 C31 66 34 65 34 67 C33 70 29 69 30 71 C33 76 37 76 39 78 C44 81 49 81 53 81"
+                      fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="76" y1="32" x2="81" y2="32" stroke="#C9A227" stroke-width="1.2"/>
+                <line x1="76" y1="48" x2="81" y2="48" stroke="#C9A227" stroke-width="1.2"/>
+                <line x1="76" y1="64" x2="81" y2="64" stroke="#C9A227" stroke-width="1.2"/>
+              </svg>
+              <span class="dl">baixar ↓</span>
+            </a>
+            <span class="nmh">Casos</span>
+            <p>O caso explicado da quinzena, sempre abrindo pelo exame. A sua prova.</p>
+          </div>
+          <div class="hl">
+            <a class="cv" href="artes-jessica/jessica-destaque-2-cirurgia.png" download title="Baixar a capa Cirurgia">
+              <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
+                <line x1="48" y1="10" x2="48" y2="26" stroke="#C9A227" stroke-width="1.5"/>
+                <line x1="36" y1="10" x2="60" y2="10" stroke="#C9A227" stroke-width="1.5"/>
+                <circle cx="48" cy="50" r="24" fill="none" stroke="#C9A227" stroke-width="1.7"/>
+                <circle cx="48" cy="50" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
+                <circle cx="48" cy="36" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
+                <circle cx="60" cy="43" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
+                <circle cx="60" cy="57" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
+                <circle cx="48" cy="64" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
+                <circle cx="36" cy="57" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
+                <circle cx="36" cy="43" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
+                <line x1="28" y1="76" x2="68" y2="76" stroke="#C9A227" stroke-width="1.3"/>
+              </svg>
+              <span class="dl">baixar ↓</span>
+            </a>
+            <span class="nmh">Cirurgia</span>
+            <p>Salvador: ATM, ortognática, siso e implante. O dia de hospital mora aqui.</p>
+          </div>
+          <div class="hl">
+            <a class="cv" href="artes-jessica/jessica-destaque-3-harmonizacao.png" download title="Baixar a capa Harmonização">
+              <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
+                <ellipse cx="48" cy="48" rx="19" ry="33" fill="none" stroke="#C9A227" stroke-width="1.7"/>
+                <line x1="31" y1="37" x2="65" y2="37" stroke="#C9A227" stroke-width="1.3"/>
+                <line x1="31" y1="59" x2="65" y2="59" stroke="#C9A227" stroke-width="1.3"/>
+                <line x1="18" y1="26" x2="24" y2="26" stroke="#C9A227" stroke-width="1.3"/>
+                <line x1="18" y1="48" x2="24" y2="48" stroke="#C9A227" stroke-width="1.3"/>
+                <line x1="18" y1="70" x2="24" y2="70" stroke="#C9A227" stroke-width="1.3"/>
+              </svg>
+              <span class="dl">baixar ↓</span>
+            </a>
+            <span class="nmh">Harmonização</span>
+            <p>São Paulo: o natural que vem de dose medida e lugar certo.</p>
+          </div>
+          <div class="hl">
+            <a class="cv" href="artes-jessica/jessica-destaque-4-duvidas.png" download title="Baixar a capa Dúvidas">
+              <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
+                <path d="M29 26 h38 a11 11 0 0 1 11 11 v18 a11 11 0 0 1 -11 11 h-17 l-6 13 l-0 -13 h-15 a11 11 0 0 1 -11 -11 v-18 a11 11 0 0 1 11 -11 z"
+                      fill="none" stroke="#C9A227" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="33" cy="46" r="2.9" fill="#C9A227"/>
+                <circle cx="48" cy="46" r="2.9" fill="#C9A227"/>
+                <circle cx="63" cy="46" r="2.9" fill="#C9A227"/>
+              </svg>
+              <span class="dl">baixar ↓</span>
+            </a>
+            <span class="nmh">Dúvidas</span>
+            <p>A pergunta da semana. Se enche sozinho, toda terça.</p>
+          </div>
+        </div>
+
+        <p class="muted" style="font-size:14px;margin-top:16px">Os arquivos são PNG de
+        1080 × 1920, no tamanho certo de story. Se preferir baixar tudo de uma vez, os quatro
+        estão em <code>painel-nold-social.vercel.app/guia/artes-jessica/</code>.</p>
+
+        <div class="note" style="margin-top:20px">
+          <b>O destaque Dúvidas se alimenta sozinho.</b> Toda terça você responde a caixinha
+          de perguntas. As melhores respostas vão para esse destaque no mesmo dia. Em dois
+          meses ele vira o lugar do perfil que o paciente novo abre primeiro, e você não
+          precisou produzir nada a mais para isso.
+        </div>
+      </section>
+
+      <!-- ======================= 02 ======================= -->
+      <section class="blk" id="s2">
+        <div class="bhead">
+          <span class="n">02</span>
+          <h2>Os três fixados</h2>
+          <p>O Instagram deixa fixar três publicações no topo. Elas não envelhecem e são o
+          que 100% de quem chega no perfil vê primeiro. São o cartão de visita, e a Nold
+          produz as três.</p>
+        </div>
+
+        <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start;margin-bottom:26px">
+          <div class="pins">
+            <div class="p"><b>FIXADO 01</b>quem sou eu</div>
+            <div class="p"><b>FIXADO 02</b>as duas cidades</div>
+            <div class="p"><b>FIXADO 03</b>caso explicado</div>
+            <div>post</div><div>post</div><div>post</div>
+            <div>post</div><div>post</div><div>post</div>
+          </div>
+          <p class="muted" style="font-size:15px;flex:1 1 240px;min-width:0">
+            A linha de cima do seu feed fica congelada com esses três. Tudo o que você
+            publicar depois entra abaixo. É por isso que eles levam mais trabalho de produção
+            que um post normal: ficam no ar o ano inteiro.
+          </p>
+        </div>
+
+        <div class="grid g3">
+          <div class="card">
+            <span class="mono t">Fixado 01</span>
+            <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">Quem sou eu</h4>
+            <p>A formação, o Mater Dei, o plantão no HGE, a Let's HOF. Por que uma cirurgiã
+            também harmoniza, e o que isso muda para quem senta na cadeira.</p>
+            <span class="tag">Precisa de: ensaio fotográfico</span>
+          </div>
+          <div class="card">
+            <span class="mono t">Fixado 02</span>
+            <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">As duas cidades</h4>
+            <p>O que você faz em Salvador e o que você faz em São Paulo, com o contato de
+            cada uma. É o post que mata a confusão que o perfil tem hoje.</p>
+            <span class="tag">Precisa de: calendário do rodízio e o contato de SP</span>
+          </div>
+          <div class="card">
+            <span class="mono t">Fixado 03</span>
+            <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">Caso explicado</h4>
+            <p>Um caso real do osso à pele: a queixa, o exame, a decisão, a limitação. É a
+            prova dentro das regras do conselho, e o seu banco de casos já está pronto.</p>
+            <span class="tag">Precisa de: autorização escrita do paciente</span>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:20px">
+          <b>O quarto vem depois.</b> Quando os três estiverem rodando, a gente produz
+          <b>"quando eu digo que não é caso de mexer"</b>, que é a promessa que nenhum
+          concorrente seu assina. Esse entra no lugar do caso explicado, que a essa altura já
+          vai estar morando no destaque Casos.
+        </div>
+      </section>
+
+      <!-- ======================= 03 ======================= -->
+      <section class="blk" id="s3">
+        <div class="bhead">
+          <span class="n">03</span>
+          <h2>As linhas de conteúdo</h2>
+          <p>Oito tipos de conteúdo, organizados por onde o paciente está. Quem nunca ouviu
+          falar de você precisa de uma coisa. Quem já te segue e está pensando precisa de
+          outra. Quem está quase marcando precisa de uma terceira.</p>
+        </div>
+
+        <div class="dia" style="margin-bottom:26px">
+          <div class="cap">Os três andares e o trabalho de cada um</div>
+          <svg viewBox="0 0 480 310" aria-label="Funil de conteúdo em três andares" style="margin:0 auto">
+            <polygon points="20,12 460,12 410,102 70,102" fill="#F2E6C8"/>
+            <polygon points="70,106 410,106 365,196 115,196" fill="#E6E2D6"/>
+            <polygon points="115,200 365,200 330,290 150,290" fill="#1A1714"/>
+            <text x="240" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#3A2C20">Topo · Reels</text>
+            <text x="240" y="78" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#8F6F12">SER DESCOBERTA · O SEU GARGALO</text>
+            <text x="240" y="146" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#3A2C20">Meio · Carrossel e stories</text>
+            <text x="240" y="172" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#5F6A48">GANHAR CONFIANÇA</text>
+            <text x="240" y="240" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#EDE4D6">Fundo · Stories e feed</text>
+            <text x="240" y="266" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#D8BE6B">VIRAR AVALIAÇÃO</text>
+          </svg>
+        </div>
+
+        <div class="effort">
+          <div class="ehead">
+            <span class="mono t">O esforço de uma semana</span>
+            <h3>Três coisas, e você escolhe o dia de cada uma</h3>
+            <p>Não é calendário, é volume. Se numa semana você gravar na segunda e na outra
+            no sábado depois do plantão, tudo bem. O que não pode é a semana passar sem as três.</p>
+          </div>
+          <div class="erows">
+            <div class="erow">
+              <span class="enum">1</span>
+              <div class="etx">
+                <h4>Reels</h4>
+                <p>Um por semana, de preferência de <b>topo</b>, porque alcance é o seu
+                gargalo. Nas semanas em que o topo não vier, vale trocar por um reels de
+                <b>caso explicado</b>, de <b>bastidor</b> ou de <b>posicionamento</b>. Um
+                desses quatro, nunca nenhum.</p>
+              </div>
+              <span class="etag">topo · meio</span>
+            </div>
+            <div class="erow">
+              <span class="enum">3<span class="es">a</span>5</span>
+              <div class="etx">
+                <h4>Stories por dia, de segunda a sexta</h4>
+                <p>É aqui que mora a avaliação. Story é <b>meio e fundo</b>: bastidor do dia,
+                resposta de dúvida, tratamento em foco, convite com o link da cidade certa.
+                Curtos, um assunto em cada.</p>
+              </div>
+              <span class="etag">meio · fundo</span>
+            </div>
+            <div class="erow">
+              <span class="enum">1</span>
+              <div class="etx">
+                <h4>Carrossel</h4>
+                <p>Um por semana, de <b>meio</b>: um caso explicado, ou um assunto do mercado
+                destrinchado com mais calma do que cabe num reels. É o conteúdo que o
+                paciente salva e manda para o cônjuge antes de decidir.</p>
+              </div>
+              <span class="etag">meio</span>
+            </div>
+          </div>
+          <div class="efoot">
+            <b>Resumindo:</b> duas peças de feed por semana, uma em vídeo e uma em carrossel,
+            mais os stories dos dias úteis. Só isso.
+          </div>
+        </div>
+
+        <div class="warn">
+          <h4>Os exemplos abaixo não são para copiar</h4>
+          <p>Cada linha tem um post real do Instagram ao lado. Ele está ali para você
+          entender <b>o formato e a ideia</b>, nunca para refazer igual. Copiar o vídeo dos
+          outros é a maneira mais rápida de o seu perfil virar mais um parecido com todos.</p>
+          <p>Antes de gravar qualquer coisa, passe pelas quatro perguntas, se colocando no
+          lugar do seu paciente:</p>
+          <ul>
+            <li>Eu gostaria de ver isso aqui no meio do meu feed?</li>
+            <li>Eu gostaria de escutar essa música?</li>
+            <li>Eu gostaria de ver filmado desse jeito?</li>
+            <li>Eu gostaria de ouvir alguém falando comigo nesse tom?</li>
+          </ul>
+          <p>O seu público é quem tem dor na mandíbula, quem não fecha a mordida, quem ronca,
+          e quem tem medo de ficar artificial. Não é colega de congresso.</p>
+        </div>
+
+        <div class="note dark" style="margin-bottom:26px">
+          <b>A regra das duas cidades, em uma linha.</b> Conteúdo de ATM, ortognática, siso,
+          implante e dia de hospital assina <b>CRO-BA 16230</b> e aponta para o WhatsApp de
+          Salvador. Conteúdo de harmonização assina <b>CRO-SP 180773</b> e aponta para São
+          Paulo. Conteúdo que não fala de procedimento nenhum, como vida pessoal e
+          posicionamento, pode ir sem CRO. Na dúvida, pergunte para a Nold antes.
+        </div>
+
+        <p class="muted" style="font-size:14.5px;margin-bottom:26px">Em cada linha abaixo
+        você tem o que é, um exemplo de pauta já escrito, onde publica, e um post real do
+        Instagram que funcionou <b>nesse formato e nesse assunto</b>. Todos são de cirurgia
+        bucomaxilofacial, ortognática, sono ou harmonização, e os números foram medidos por
+        nós um por um, direto no perfil de cada profissional.</p>
+
+        <!-- TOPO -->
+        <div class="stage topo">
+          <header>
+            <span class="lbl">Topo</span>
+            <span class="gl">Para quem ainda não te conhece. É aqui que o seu gargalo se
+            resolve, e por isso é tudo reels.</span>
+          </header>
+          <div class="lines">
+
+            <div class="line">
+              <div class="nm">
+                <h4>A queixa que tem nome</h4>
+                <div class="row"><span class="tag sv">Dúvidas de paciente</span></div>
+              </div>
+              <p class="wh">A pessoa sente uma coisa há anos e não sabe como se chama. Você
+              dá o nome, mostra onde fica e diz o que fazer. É o conteúdo que mais alcança no
+              seu nicho inteiro, porque alguém digitou exatamente aquilo no Google na semana
+              passada.</p>
+              <div class="pauta">
+                <span class="k">Exemplo de pauta</span>
+                <p>"Já te disseram que a sua dor de cabeça é estresse?" Você lista os três
+                sinais de que o problema é a articulação, mostra a tomografia na tela e diz o
+                que não é caso de ATM. Quarenta e cinco segundos, linguagem de paciente, zero
+                jargão. CRO-BA.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">374 mil views</span></div>
+                <span class="wy">Ele explica a <b>luxação da ATM</b>, aquela em que a pessoa
+                fica com a boca travada aberta, e diz o que fazer. Num perfil de 20 mil
+                seguidores, esse reel fez <b>374 mil views</b>, quase dezenove vezes a base.
+                É a prova mais clara deste guia: a queixa com nome viaja sozinha.</span>
+                <a href="https://www.instagram.com/reel/DdFYAHDBZo2/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Reels · 40 a 60 segundos</span>
+            </div>
+
+            <div class="line">
+              <div class="nm">
+                <h4>React de caso público</h4>
+                <div class="row"><span class="tag sv">Autoridade</span></div>
+              </div>
+              <p class="wh">Um caso ou uma afirmação que está circulando, comentado por você
+              com olho técnico. Alcança porque o assunto já está rodando sozinho, e quem
+              chega descobre você pelo critério. A regra: você comenta o procedimento e a
+              informação, nunca a pessoa.</p>
+              <div class="pauta">
+                <span class="k">Exemplo de pauta</span>
+                <p>Um vídeo viraliza dizendo que dá para "corrigir a mordida sem cirurgia".
+                Você explica o que dá para resolver com aparelho, o que só a cirurgia resolve,
+                e como se sabe a diferença olhando o exame. Sem citar o autor do vídeo e sem
+                print.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@drlucasfirmino · odontologia</span><span class="vw">23,2 mil views</span></div>
+                <span class="wy">Ele reage a um vídeo de desinformação do próprio nicho e
+                explica o certo. Mesmo conselho que o seu, mesma lógica de divulgação. O
+                formato inteiro é reação com critério, e não com deboche.</span>
+                <a href="https://www.instagram.com/reel/DdCVnodDMrj/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Reels · 40 a 60 segundos</span>
+            </div>
+
+            <div class="line">
+              <div class="nm">
+                <h4>Novidade do mercado</h4>
+                <div class="row"><span class="tag sv">Autoridade</span></div>
+              </div>
+              <p class="wh">Uma decisão de conselho, uma tecnologia nova, uma polêmica da
+              área. Você conta antes do paciente descobrir em outro lugar e diz o que pensa.
+              É o conteúdo que te põe na posição de quem sabe primeiro, e você tem uma
+              vantagem rara aqui: você dá aula, então sabe mesmo antes.</p>
+              <div class="pauta">
+                <span class="k">Exemplo de pauta</span>
+                <p>A disputa sobre a especialidade em harmonização orofacial, que a Justiça
+                anulou e o conselho recorreu. Você explica o que isso muda na prática para
+                quem vai fazer um procedimento, e o que a pessoa deveria perguntar ao
+                profissional independente de qualquer título. Esse assunto é seu por direito.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@drlucasfirmino · odontologia</span><span class="vw">473 mil views</span></div>
+                <span class="wy">O maior reel dele é sobre a polêmica do momento da
+                odontologia, encenada como tribunal. O assunto do mercado carrega o alcance
+                sozinho, e quem explica fica com a audiência.</span>
+                <a href="https://www.instagram.com/reel/DY75mFbFc4X/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Reels · 40 a 60 segundos</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- MEIO -->
+        <div class="stage meio">
+          <header>
+            <span class="lbl">Meio</span>
+            <span class="gl">Para quem já te segue e está decidindo. O trabalho aqui é
+            confiança, e por isso cabe texto e cabe tempo.</span>
+          </header>
+          <div class="lines">
+
+            <div class="line">
+              <div class="nm">
+                <h4>Caso explicado</h4>
+                <div class="row"><span class="tag sv">Autoridade</span></div>
+              </div>
+              <p class="wh">Um paciente seu, de verdade, contado como quem explica para
+              alguém que nunca estudou isso. A queixa, o exame, a decisão, o que mudou e o
+              que aquilo não resolve. Sempre abrindo pelo exame, que é o elemento visual que
+              só você usa com naturalidade.</p>
+              <div class="pauta">
+                <span class="k">Exemplo de pauta</span>
+                <p>Paciente de 32 anos que dormia mal e achava que era insônia. Você mostra a
+                tomografia, explica onde a via aérea estava estreita, por que a mordida tinha
+                a ver com isso, e quanto tempo levou. Fecha dizendo o que a cirurgia não
+                resolveu. Sem preço em nenhum slide, com autorização assinada.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">61,8 mil views</span></div>
+                <span class="wy">Um caso de ortognática contado como história, e não como
+                galeria de resultado. Três vezes a base dele, só mudando a forma de contar.</span>
+                <a href="https://www.instagram.com/reel/DcZiIxfBXMB/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Carrossel de 6 slides · a cada 15 dias</span>
+            </div>
+
+            <div class="line">
+              <div class="nm">
+                <h4>Bastidor de hospital</h4>
+                <div class="row"><span class="tag sv">Bastidores</span></div>
+              </div>
+              <p class="wh">O preparo, o material, a equipe, o bloco. É o formato que mais
+              alcança em cirurgia de face, porque técnica visível desarma o medo e gera
+              fascínio ao mesmo tempo. E você já tem o acervo: opera no Mater Dei e é
+              plantonista do HGE.</p>
+              <div class="pauta">
+                <span class="k">Exemplo de pauta</span>
+                <p>O que acontece na uma hora antes de você entrar na sala. O instrumental
+                sendo conferido, a equipe se posicionando, a checagem do exame na tela. Som
+                ambiente, sem música, sem nenhum paciente identificável em cena. Quarenta
+                segundos.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">63,5 mil views</span></div>
+                <span class="wy">Bloco cirúrgico, em colaboração com um perfil de ensino.
+                <b>Cuidado com a legenda:</b> ele escreve "antes e depois" com todas as
+                letras, e isso é exatamente o que você não pode escrever. Copie o formato,
+                nunca o texto. Está explicado na seção 08.</span>
+                <a href="https://www.instagram.com/reel/CwOWwlSBq9e/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Reels · 30 a 45 segundos</span>
+            </div>
+
+            <div class="line">
+              <div class="nm">
+                <h4>Posicionamento</h4>
+                <div class="row"><span class="tag sv">Bastidores</span></div>
+              </div>
+              <p class="wh">Uma crença sua, dita em voz alta. É o conteúdo que faz o paciente
+              certo escolher você e o paciente errado desistir, e as duas coisas são boas.
+              Aqui você pode dizer o que não faz, e você tem uma frase que nenhum concorrente
+              assina: às vezes a resposta é não mexer.</p>
+              <div class="pauta">
+                <span class="k">Exemplo de pauta</span>
+                <p>Por que método com nome de gente não existe. O que existe é técnica com
+                evidência, e evidência não tem dono. Você explica como saber se uma técnica
+                tem respaldo e quais três perguntas fazer antes de marcar em qualquer lugar.
+                Confronta a ideia, nunca a pessoa, e sem citar nome nem print.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@dralais.silveira · 249 mil</span><span class="vw">11,1 mil views</span></div>
+                <span class="wy">Ela fala de código de conduta num perfil que batizou um
+                método com o próprio nome registrado. É o contraexemplo exato da sua crença,
+                e é por isso que está aqui: o nicho premia quem cria nome próprio, então
+                negar isso em público é território livre.</span>
+                <a href="https://www.instagram.com/reel/DdIBRCdpZGV/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Carrossel, estático ou reels curto</span>
+            </div>
+
+            <div class="line">
+              <div class="nm">
+                <h4>Vida pessoal, em recorte</h4>
+                <div class="row"><span class="tag sv">Vida pessoal</span></div>
+              </div>
+              <p class="wh">Você fora da sala, no limite que você aceita. Você é reservada por
+              escolha, e o guia respeita isso: aqui não tem rotina exposta, tem recorte
+              escolhido. É o que impede a marca de soar fria sem obrigar você a abrir nada.</p>
+              <div class="pauta">
+                <span class="k">Exemplo de pauta</span>
+                <p>A manhã em que você decidiu fazer a prova de odontologia às cinco da manhã
+                sem contar a ninguém. Cinquenta segundos, você falando direto, luz de janela,
+                sem roteiro decorado. Outras que cabem: o domingo de silêncio e filme de
+                terror, o cachorro, e o que você aprendeu dando aula.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@dralais.silveira · 249 mil</span><span class="vw">36,3 mil views</span></div>
+                <span class="wy">O maior reel dela é uma viagem, não um procedimento. Mesmo
+                num perfil enorme de harmonização, a vida da dona alcança mais que a técnica.</span>
+                <a href="https://www.instagram.com/reel/DdhxuRQqAip/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">interno · @dra.jessicafcuri · 4.610</span><span class="vw">2.612 views</span></div>
+                <span class="wy">A prova dentro de casa: o seu "você é seu projeto mais
+                importante" sobre bastidor. Frase sua, em cima de imagem sua, acima da média
+                do perfil.</span>
+                <a href="https://www.instagram.com/reel/DbI24rmugK8/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Reels e stories · 25 a 50 segundos</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FUNDO -->
+        <div class="stage fundo">
+          <header>
+            <span class="lbl">Fundo</span>
+            <span class="gl">Para quem está quase marcando. O trabalho aqui é tirar a última
+            dúvida e abrir a porta da cidade certa.</span>
+          </header>
+          <div class="lines">
+
+            <div class="line" style="grid-column:1/-1">
+              <div class="nm">
+                <h4>Tratamento em foco</h4>
+                <div class="row"><span class="tag sv">Dúvidas</span><span class="tag t">conversão</span></div>
+              </div>
+              <p class="wh">Um tratamento de cada vez, sempre na mesma ordem de quatro partes.
+              É o único formato do guia que pede ação diretamente, então ele vive
+              principalmente nos stories e aparece no feed com parcimônia.</p>
+              <div class="pauta">
+                <span class="k">A ordem fixa, nunca muda</span>
+                <p><b>1. O problema</b>, na palavra do paciente, não na técnica.
+                "Acordar cansado mesmo tendo dormido oito horas."<br>
+                <b>2. A solução</b>, com o nome certo. "Cirurgia ortognática."<br>
+                <b>3. Como é</b>, com honestidade: quanto tempo dura, quanto tempo de
+                afastamento, o que dói, o que incha, o que você come na primeira semana.<br>
+                <b>4. A chamada</b>, uma linha, com o link da cidade certa.</p>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">65,6 mil views</span></div>
+                <span class="wy">A ortognática explicada pelo que ela resolve na <b>apneia do
+                sono</b>, e não pelo que ela muda no rosto. Três vezes a base dele. É
+                exatamente o território que quase ninguém liga em Salvador: ronco, mordida e
+                estrutura.</span>
+                <a href="https://www.instagram.com/reel/DeAl5vmh1Ky/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <div class="ex">
+                <div class="hd"><span class="at">@drorionhaas · 10,6 mil</span><span class="vw">3.699 views</span></div>
+                <span class="wy">"O inchaço vai acontecer, e faz parte." Ele encara a maior
+                objeção do pós sem suavizar, e explica as fases. Honestidade sobre o pós é o
+                que derruba a objeção número um da ortognática.</span>
+                <a href="https://www.instagram.com/reel/DMQ3KTPoXUP/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+              <span class="whr">Stories em sequência, e de vez em quando no feed</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="effort" style="margin-top:22px">
+          <div class="ehead">
+            <span class="mono t">O atalho que você ainda não usa</span>
+            <h3>Colab com quem te encaminha</h3>
+            <p>Quando você publica com outra pessoa como coautora, o vídeo sai nos dois
+            perfis e alcança os seguidores dela também. No seu caso isso não é só alcance, é
+            o canal de encaminhamento virando conteúdo.</p>
+          </div>
+          <div class="erows">
+            <div class="erow">
+              <span class="enum">1</span>
+              <div class="etx">
+                <h4>Com o ortodontista, o fisioterapeuta e o médico do sono</h4>
+                <p>São as pessoas que já te mandam paciente. Gravar com elas explicando onde
+                um trabalho termina e o outro começa é conteúdo bom para os dois públicos, e
+                nenhum dos dois precisa produzir sozinho.</p>
+              </div>
+              <span class="etag">41,9 mil</span>
+            </div>
+          </div>
+          <div class="erows">
+            <div class="erow" style="grid-template-columns:1fr">
+              <div class="ex" style="margin:0">
+                <div class="hd"><span class="at">@drmanoelroque × @drafabifisio</span><span class="vw">41,9 mil views</span></div>
+                <span class="wy">Cirurgião e fisioterapeuta explicando juntos a importância
+                da fisioterapia na ortognática. Dois públicos, uma gravação.</span>
+                <a href="https://www.instagram.com/reel/DdKc0kXhvwi/" target="_blank" rel="noopener">ver o reel →</a>
+              </div>
+            </div>
+          </div>
+          <div class="efoot">
+            <b>Uma por mês já muda o jogo.</b> Combine com quem já te encaminha, grave em
+            vinte minutos no consultório de um dos dois, e publiquem como coautores.
+          </div>
+        </div>
+
+        <div class="note dark" style="margin-top:22px">
+          <b>A proporção que importa.</b> De cada dez publicações, só três pedem alguma ação.
+          As outras sete entregam algo sem cobrar nada. Perfil que pede em todo post vira
+          anúncio, e a pessoa para de abrir.
+        </div>
+      </section>
+
+      <!-- ======================= 04 ======================= -->
+      <section class="blk" id="s4">
+        <div class="bhead">
+          <span class="n">04</span>
+          <h2>Como gravar</h2>
+          <p>Seu iPhone já é mais do que suficiente. O que muda o resultado é a luz, o som e
+          o enquadramento, nessa ordem de importância.</p>
+        </div>
+
+        <div class="sub"><span class="mono t">04 · a</span><h3>O equipamento</h3></div>
+        <p>Tripé, luz e microfone resolvem tudo, e o seu iPhone continua sendo a câmera.
+        Em cada item a gente separou <b>duas opções</b>: a que resolve e a que resolve
+        melhor. Todas com nota alta no Mercado Livre, conferidas em outubro de 2026, e o
+        botão leva direto para a página de compra. A luz é a única que vem em peças
+        separadas, e está explicado ali embaixo por quê.</p>
+
+        <div class="kit2">
+          <div class="kitgrp">
+            <div class="kitlbl">
+              <svg class="ic" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="11" y="3" width="10" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <line x1="16" y1="18" x2="16" y2="22" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M16 22 L7 30 M16 22 L25 30 M16 22 L16 30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              </svg>
+              <div>
+                <h4>Tripé de 2 metros</h4>
+                <p>A altura importa: ele precisa subir até a altura dos seus olhos com
+                você em pé. Confira se o suporte de celular gira, para gravar na vertical.</p>
+              </div>
+            </div>
+            <div class="prods">
+              <a class="prod" href="https://www.mercadolivre.com.br/tripe-profissional-it-blue-le-3624-2m-p-camera-celular-ring-light/p/MLB29093220" target="_blank" rel="noopener">
+                <span class="pnm">It-Blue LE-3624 · 2 m</span>
+                <span class="pmeta"><b>4,6</b> de nota · o mais barato que presta</span>
+                <span class="ppr">R$ 31 <span>comprar →</span></span>
+              </a>
+              <a class="prod" href="https://www.mercadolivre.com.br/tripe-profissional-21m-encaixe-14-suporte-para-celular/p/MLB72892614" target="_blank" rel="noopener">
+                <span class="pnm">Profissional 2,1 m · encaixe 1/4</span>
+                <span class="pmeta"><b>5,0</b> de nota · mais firme, não balança</span>
+                <span class="ppr">R$ 68 <span>comprar →</span></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="kitgrp">
+            <div class="kitlbl">
+              <svg class="ic" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="11" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <circle cx="11" cy="16" r="3.4" fill="currentColor"/>
+                <path d="M19 9 L28 4 L28 28 L19 23 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                <line x1="19" y1="9" x2="19" y2="23" stroke="currentColor" stroke-width="1.4"/>
+              </svg>
+              <div>
+                <h4>A luz, em duas peças</h4>
+                <p>Nada de kit com lâmpada rosqueada. O que presta é o corpo de LED,
+                chamado <b>COB</b>, que é aquele cilindro com o farol no meio, mais o
+                <b>softbox</b> que encaixa na frente dele. O encaixe se chama <b>Bowens</b>
+                e é padrão, então qualquer softbox Bowens entra em qualquer uma das duas
+                luzes abaixo. <b>Bicolor</b> quer dizer que você regula de quente a frio, e
+                você vai deixar sempre no quente.</p>
+              </div>
+            </div>
+            <div class="sublbl">1 · a luz</div>
+            <div class="prods">
+              <a class="prod" href="https://www.mercadolivre.com.br/iluminador-led-equifoto-zu-80-80w-cob-bicolor-2500k-6500k-video-fotografia/p/MLB52680364" target="_blank" rel="noopener">
+                <span class="pnm">Equifoto ZU-80 · 80 W bicolor</span>
+                <span class="pmeta"><b>4,8</b> de nota · a prática: mesma arquitetura, metade do preço</span>
+                <span class="ppr">R$ 474 <span>comprar →</span></span>
+              </a>
+              <a class="prod" href="https://www.mercadolivre.com.br/luz-led-bicolor-sokani-x60-mini-branco-frio-60w-dimerizavel-portatil/p/MLB45875742" target="_blank" rel="noopener">
+                <span class="pnm">Sokani X60 Mini · 60 W bicolor</span>
+                <span class="pmeta">A boa. Marca séria, compacta, e a que a Nold indica se o orçamento permitir</span>
+                <span class="ppr">R$ 899 <span>comprar →</span></span>
+              </a>
+            </div>
+            <div class="sublbl">2 · o softbox que encaixa nela</div>
+            <div class="prods">
+              <a class="prod" href="https://www.mercadolivre.com.br/softbox-octabox-fototudo-55-com-encaixe-bowens-e-colmeia/up/MLBU3136037145" target="_blank" rel="noopener">
+                <span class="pnm">Octabox Fototudo 55 cm · Bowens e colmeia</span>
+                <span class="pmeta"><b>5,0</b> de nota · cabe numa sala de clínica sem atrapalhar</span>
+                <span class="ppr">R$ 329 <span>comprar →</span></span>
+              </a>
+              <a class="prod" href="https://www.mercadolivre.com.br/softbox-octabox-fototudo-90-com-encaixe-bowens-e-colmeia/up/MLBU1162150093" target="_blank" rel="noopener">
+                <span class="pnm">Octabox Fototudo 90 cm · Bowens e colmeia</span>
+                <span class="pmeta"><b>4,9</b> de nota · luz bem mais suave, mas pede mais espaço</span>
+                <span class="ppr">R$ 381 <span>comprar →</span></span>
+              </a>
+            </div>
+            <div class="sublbl">3 · o pé, que não é o do celular</div>
+            <div class="prods">
+              <a class="prod" href="https://www.mercadolivre.com.br/tripe-21m-em-liga-de-alumino-p-estudio-softbox-iluminacao/up/MLBU1496686311" target="_blank" rel="noopener" style="grid-column:1/-1">
+                <span class="pnm">Tripé de iluminação 2,1 m em alumínio</span>
+                <span class="pmeta">A luz com softbox pesa e pega vento. O tripé do celular não segura, e luz caindo quebra duas coisas de uma vez.</span>
+                <span class="ppr">R$ 69 <span>comprar →</span></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="kitgrp">
+            <div class="kitlbl">
+              <svg class="ic" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="12" y="4" width="8" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M8 15 a8 8 0 0 0 16 0" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <line x1="16" y1="23" x2="16" y2="28" stroke="currentColor" stroke-width="1.4"/>
+                <line x1="11" y1="28" x2="21" y2="28" stroke="currentColor" stroke-width="1.4"/>
+              </svg>
+              <div>
+                <h4>Microfone de lapela sem fio, USB-C</h4>
+                <p>Som ruim faz a pessoa fechar o vídeo mais rápido que imagem ruim.
+                USB-C é o que encaixa direto no iPhone 15 e mais novos. Os dois são duplos,
+                ou seja, dá para gravar com uma paciente.</p>
+              </div>
+            </div>
+            <div class="prods">
+              <a class="prod" href="https://www.mercadolivre.com.br/microfone-sem-fio-ulanzi-j12-p-android-tipo-c--2-mics/up/MLBU800174768" target="_blank" rel="noopener">
+                <span class="pnm">Ulanzi J12 · 2 microfones</span>
+                <span class="pmeta"><b>4,7</b> de nota · resolve muito bem para reels</span>
+                <span class="ppr">R$ 190 <span>comprar →</span></span>
+              </a>
+              <a class="prod" href="https://www.mercadolivre.com.br/hollyland-microfone-sem-fio-duplo-lark-m2-usb-c-para-iphone-cor-preto/p/MLB46342327" target="_blank" rel="noopener">
+                <span class="pnm">Hollyland Lark M2 · duplo USB-C</span>
+                <span class="pmeta"><b>4,9</b> de nota com mais de 6 mil avaliações · o melhor som da faixa</span>
+                <span class="ppr">R$ 631 <span>comprar →</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted" style="font-size:14px;margin-top:14px">Preço e link conferidos em
+        outubro de 2026. Se algum anúncio sair do ar, procure pelo nome do produto no
+        próprio Mercado Livre, que ele aparece.</p>
+
+        <div class="sub"><span class="mono t">04 · b</span><h3>Ajustar o iPhone, uma vez só</h3></div>
+        <div class="path">
+          <div>Ajustes <span class="ar">›</span> Câmera <span class="ar">›</span> Gravar Vídeo <span class="ar">›</span> <b>4K a 30 fps</b></div>
+          <div>Ajustes <span class="ar">›</span> Câmera <span class="ar">›</span> <b>Grade: ativada</b> &nbsp;<span style="color:var(--gray)">é o que desenha as linhas do enquadramento na tela</span></div>
+          <div>Ajustes <span class="ar">›</span> Câmera <span class="ar">›</span> Formatos <span class="ar">›</span> <b>Mais Compatível</b> &nbsp;<span style="color:var(--gray)">o arquivo fica maior e abre em qualquer editor</span></div>
+          <div>Antes de cada gravação <span class="ar">›</span> <b>limpar a lente</b> com o pano do óculos</div>
+        </div>
+        <p class="muted" style="font-size:14.5px;margin-top:13px">Grave sempre com a câmera
+        de trás (a boa), nunca com a da frente. Para se enquadrar sozinha, coloque o tripé
+        na marca de fita no chão e confie na marca.</p>
+
+        <div class="sub"><span class="mono t">04 · c</span><h3>A luz</h3></div>
+        <p>Uma luz de frente, levemente de lado, na altura dos seus olhos. Uma parede clara
+        do outro lado devolve um pouco de luz e apaga a sombra dura. Isso é tudo.</p>
+
+        <div class="dia">
+          <div class="cap">Visto de cima · a posição que funciona</div>
+          <svg viewBox="0 0 520 360" aria-label="Diagrama de luz visto de cima">
+            <!-- fundo -->
+            <line x1="120" y1="62" x2="400" y2="62" stroke="#3A2C20" stroke-width="2.5"/>
+            <text x="260" y="48" text-anchor="middle" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#6E6055">FUNDO DA CLÍNICA</text>
+            <!-- distancia fundo -->
+            <line x1="260" y1="64" x2="260" y2="96" stroke="#C9A227" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="272" y="84" font-family="monospace" font-size="11.5" fill="#8F6F12">1,2 m</text>
+            <!-- ela -->
+            <circle cx="260" cy="120" r="23" fill="#EDE4D6" stroke="#3A2C20" stroke-width="1.6"/>
+            <polygon points="260,148 254,138 266,138" fill="#3A2C20"/>
+            <text x="260" y="125" text-anchor="middle" font-family="monospace" font-size="11" letter-spacing="1" fill="#3A2C20">VOCÊ</text>
+            <!-- eixo camera -->
+            <line x1="260" y1="150" x2="260" y2="276" stroke="#C9A227" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="272" y="218" font-family="monospace" font-size="11.5" fill="#8F6F12">1,5 m</text>
+            <!-- celular -->
+            <rect x="246" y="278" width="28" height="24" rx="3" fill="#3A2C20"/>
+            <line x1="260" y1="302" x2="260" y2="316" stroke="#3A2C20" stroke-width="1.6"/>
+            <path d="M260 316 L250 330 M260 316 L270 330" stroke="#3A2C20" stroke-width="1.6" fill="none"/>
+            <text x="260" y="348" text-anchor="middle" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#6E6055">CELULAR NA ALTURA DOS OLHOS</text>
+            <!-- LED -->
+            <rect x="96" y="216" width="56" height="38" rx="5" fill="#D8BE6B" stroke="#8F6F12" stroke-width="1.4" transform="rotate(-38 124 235)"/>
+            <line x1="152" y1="222" x2="243" y2="146" stroke="#C9A227" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="30" y="282" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#8F6F12">LED OU JANELA A 45°</text>
+            <text x="30" y="298" font-family="monospace" font-size="11" letter-spacing="1" fill="#6E6055">NA ALTURA DOS OLHOS</text>
+            <!-- arco 45 -->
+            <path d="M260 210 A62 62 0 0 0 216 192" fill="none" stroke="#C9A227" stroke-width="1"/>
+            <text x="196" y="214" font-family="monospace" font-size="11.5" fill="#8F6F12">45°</text>
+            <!-- rebatedor -->
+            <line x1="404" y1="194" x2="430" y2="254" stroke="#7E8A63" stroke-width="4"/>
+            <line x1="402" y1="218" x2="282" y2="152" stroke="#7E8A63" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="508" y="286" text-anchor="end" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#6E7259">PAREDE CLARA</text>
+            <text x="508" y="302" text-anchor="end" font-family="monospace" font-size="11" letter-spacing="1" fill="#6E6055">DEVOLVE A LUZ</text>
+          </svg>
+        </div>
+
+        <div class="dias" style="margin-top:14px">
+          <div class="dia">
+            <div class="cap">O que estraga · luz atrás de você</div>
+            <svg viewBox="0 0 240 140" aria-label="Luz atrás deixa o rosto escuro">
+              <rect x="14" y="26" width="44" height="60" rx="2" fill="#F7F1E6" stroke="#C9A227" stroke-width="1.4"/>
+              <line x1="36" y1="26" x2="36" y2="86" stroke="#C9A227" stroke-width="1"/>
+              <line x1="14" y1="56" x2="58" y2="56" stroke="#C9A227" stroke-width="1"/>
+              <path d="M64 44 L92 52 M64 58 L92 60 M64 72 L92 68" stroke="#D8BE6B" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <path d="M104 104 C106 80 114 70 126 70 C138 70 146 80 148 104 Z" fill="#5F5349"/>
+              <path d="M121 58 h10 v14 h-10 Z" fill="#5F5349"/>
+              <ellipse cx="126" cy="48" rx="15" ry="18" fill="#514539"/>
+              <rect x="190" y="52" width="20" height="30" rx="3" fill="#3A2C20"/>
+              <line x1="200" y1="82" x2="200" y2="92" stroke="#3A2C20" stroke-width="1.4"/>
+              <path d="M200 92 L193 100 M200 92 L207 100" stroke="#3A2C20" stroke-width="1.4" fill="none"/>
+              <text x="36" y="104" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#6E6055">JANELA</text>
+              <text x="126" y="122" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#8F6F12">ROSTO ESCURO</text>
+              <text x="200" y="116" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".6" fill="#9A8B7D">CELULAR</text>
+            </svg>
+          </div>
+          <div class="dia">
+            <div class="cap">O que estraga · luz do teto</div>
+            <svg viewBox="0 0 240 140" aria-label="Luz do teto cria sombra sob os olhos">
+              <rect x="96" y="14" width="48" height="9" rx="2" fill="#D8BE6B" stroke="#8F6F12" stroke-width="1.2"/>
+              <path d="M106 27 L103 40 M120 27 L120 40 M134 27 L137 40" stroke="#D8BE6B" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <path d="M96 110 C98 88 108 78 120 78 C132 78 142 88 144 110 Z" fill="#E6E2D6"/>
+              <path d="M114 64 h12 v16 h-12 Z" fill="#E6E2D6"/>
+              <ellipse cx="120" cy="62" rx="18" ry="21" fill="#F7F1E6" stroke="#3A2C20" stroke-width="1.2"/>
+              <ellipse cx="113" cy="58" rx="1.6" ry="2" fill="#3A2C20"/>
+              <ellipse cx="127" cy="58" rx="1.6" ry="2" fill="#3A2C20"/>
+              <path d="M108 61 a7 6 0 0 0 11 0 z" fill="#3A2C20" opacity=".42"/>
+              <path d="M121 61 a7 6 0 0 0 11 0 z" fill="#3A2C20" opacity=".42"/>
+              <path d="M114 72 a7 4 0 0 0 12 0" fill="none" stroke="#3A2C20" stroke-width="1.1" stroke-linecap="round"/>
+              <text x="120" y="128" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#8F6F12">SOMBRA NA OLHEIRA</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="sub"><span class="mono t">04 · d</span><h3>O enquadramento</h3></div>
+        <p>Com a grade ativada, a tela do iPhone fica dividida em nove partes. Só três
+        coisas precisam estar no lugar: <b>você</b>, o <b>título</b> e a <b>legenda</b>.</p>
+
+        <div class="frames">
+          <figure>
+            <svg viewBox="0 0 200 356" aria-label="Enquadramento correto">
+              <rect x="1" y="1" width="198" height="354" fill="#FFFFFF" stroke="#3A2C20" stroke-width="1.8"/>
+              <!-- corpo -->
+              <path d="M42 355 C46 208 70 178 100 178 C130 178 154 208 158 355 Z" fill="#E6E2D6"/>
+              <path d="M89 146 h22 v30 h-22 Z" fill="#E6E2D6"/>
+              <ellipse cx="100" cy="126" rx="25" ry="30" fill="#F7F1E6" stroke="#3A2C20" stroke-width="1.3"/>
+              <ellipse cx="91" cy="120" rx="2" ry="2.6" fill="#3A2C20"/>
+              <ellipse cx="109" cy="120" rx="2" ry="2.6" fill="#3A2C20"/>
+              <path d="M93 138 a8 5 0 0 0 14 0" fill="none" stroke="#3A2C20" stroke-width="1.2" stroke-linecap="round"/>
+              <!-- grade dos tercos -->
+              <line x1="66.7" y1="1" x2="66.7" y2="355" stroke="#C9A227" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
+              <line x1="133.3" y1="1" x2="133.3" y2="355" stroke="#C9A227" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
+              <line x1="1" y1="237.3" x2="199" y2="237.3" stroke="#C9A227" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
+              <line x1="1" y1="118.7" x2="199" y2="118.7" stroke="#C9A227" stroke-width="1.6"/>
+              <text x="6" y="113" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">OLHOS</text>
+              <!-- titulo -->
+              <rect x="26" y="38" width="148" height="30" rx="3" fill="#EDE4D6"/>
+              <text x="100" y="57" text-anchor="middle" font-family="monospace" font-size="9.5" letter-spacing=".9" fill="#8F6F12">TÍTULO DO VÍDEO</text>
+              <!-- legenda -->
+              <rect x="26" y="196" width="148" height="42" rx="3" fill="#EDE4D6"/>
+              <text x="100" y="211" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".9" fill="#8F6F12">LEGENDA</text>
+              <line x1="54" y1="221" x2="146" y2="221" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+              <line x1="70" y1="230" x2="130" y2="230" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <figcaption class="ok">Certo</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 200 356" aria-label="Enquadramento errado">
+              <rect x="1" y="1" width="198" height="354" fill="#FFFFFF" stroke="#3A2C20" stroke-width="1.8"/>
+              <path d="M24 355 C28 288 52 258 80 258 C108 258 132 288 136 355 Z" fill="#E6E2D6"/>
+              <path d="M69 226 h22 v34 h-22 Z" fill="#E6E2D6"/>
+              <ellipse cx="80" cy="206" rx="25" ry="30" fill="#F7F1E6" stroke="#3A2C20" stroke-width="1.3"/>
+              <ellipse cx="71" cy="200" rx="2" ry="2.6" fill="#3A2C20"/>
+              <ellipse cx="89" cy="200" rx="2" ry="2.6" fill="#3A2C20"/>
+              <path d="M73 218 a8 5 0 0 0 14 0" fill="none" stroke="#3A2C20" stroke-width="1.2" stroke-linecap="round"/>
+              <line x1="1" y1="118.7" x2="199" y2="118.7" stroke="#C9A227" stroke-width="1.6" stroke-dasharray="5 5"/>
+              <text x="6" y="80" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">VAZIO DEMAIS</text>
+              <text x="6" y="113" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">OLHOS DEVIAM VIR AQUI</text>
+              <text x="118" y="200" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">FORA DO</text>
+              <text x="118" y="212" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">CENTRO</text>
+              <rect x="26" y="306" width="148" height="34" rx="3" fill="#EDE4D6"/>
+              <line x1="54" y1="320" x2="146" y2="320" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+              <line x1="70" y1="330" x2="130" y2="330" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+              <text x="100" y="298" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".9" fill="#8F6F12">LEGENDA NO PÉ</text>
+            </svg>
+            <figcaption class="no">Errado</figcaption>
+          </figure>
+          <div style="flex:1 1 210px;min-width:185px;display:flex;flex-direction:column;gap:13px">
+            <div class="rule3">
+              <span class="n3">1</span>
+              <p><b>Você no centro, da cintura para cima,</b> com os olhos na linha de cima
+              da grade. Com você em pé, isso quer dizer subir o tripé até a altura dos seus
+              olhos, nunca apontar de baixo. Um palmo de folga de cada lado, e a mão
+              aparecendo, porque a mão conta história.</p>
+            </div>
+            <div class="rule3">
+              <span class="n3">2</span>
+              <p><b>Título no topo, centralizado.</b> Uma linha, duas no máximo. Ele é o
+              que segura a pessoa nos três primeiros segundos, então entra grande e sai
+              rápido.</p>
+            </div>
+            <div class="rule3">
+              <span class="n3">3</span>
+              <p><b>Legenda no meio, um pouco abaixo do centro, centralizada.</b> É onde o
+              olho já está, porque é onde está o seu rosto. Legenda no pé do vídeo faz a
+              pessoa olhar para baixo e perder a sua cara.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted" style="font-size:14.5px;margin-top:16px">Se você usar a legenda
+        automática do Instagram, arraste ela para essa altura antes de publicar. Ela nasce
+        no meio exato, e descer um pouquinho deixa o rosto livre.</p>
+
+        <div class="sub"><span class="mono t">04 · e</span><h3>Onde gravar</h3></div>
+        <p>Você tem quatro lugares e cada um serve a uma coisa. Em cada um, <b>marque a
+        posição do tripé com fita no chão</b>: o perfil fica reconhecível por repetição, e
+        você deixa de perder dez minutos procurando ângulo antes de cada gravação.</p>
+
+        <div class="grid g4" style="margin-top:16px">
+          <div class="card">
+            <span class="mono t">Lugar 1 · o principal</span>
+            <h4>Consultório em Salvador</h4>
+            <p>Para queixa, caso explicado, posicionamento e tratamento em foco. O fundo
+            precisa ter a paleta da marca em cena e, sempre que couber, <b>a tela com o
+            exame</b>. É aqui que a fita no chão fica.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">Lugar 2</span>
+            <h4>Clínica parceira, Vila Mariana</h4>
+            <p>Tudo que for harmonização. Grave em bloco nos dias em que você está em São
+            Paulo, porque a janela é curta. Assina CRO-SP.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">Lugar 3</span>
+            <h4>Hospital</h4>
+            <p>Bastidor de bloco: preparo, material, equipe. Som ambiente, sem música. Nunca
+            com paciente identificável, e sempre dentro do que o hospital autoriza.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">Lugar 4</span>
+            <h4>Casa, luz de janela</h4>
+            <p>Só vida pessoal. Nunca fale de procedimento aqui, para o paciente não
+            confundir conduta técnica com conversa de sala. E nunca grave no carro.</p>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:20px">
+          <b>O seu plano de fundo favorito é uma tela.</b> Tomografia e raio-x são o elemento
+          visual que só você usa com naturalidade, e nenhum concorrente seu tem isso. Sempre
+          que o assunto permitir, grave com o exame aberto no monitor atrás de você ou na
+          sua mão. Isso vale mais que qualquer cenário bonito.
+        </div>
+      </section>
+
+      <!-- ======================= 05 ======================= -->
+      <section class="blk" id="s5">
+        <div class="bhead">
+          <span class="n">05</span>
+          <h2>Stories</h2>
+          <p>O story é onde o paciente te conhece de verdade, porque ali você não está
+          produzida. É também o único lugar do Instagram onde o link é clicável.</p>
+        </div>
+
+        <div class="sub"><span class="mono t">05 · a</span><h3>Qualidade</h3></div>
+        <p>O Instagram comprime story por padrão, e tem um botão que desliga isso. Procure
+        pela palavra <b>qualidade</b> dentro das configurações:</p>
+        <div class="path">
+          <div>Instagram <span class="ar">›</span> Configurações e privacidade <span class="ar">›</span> Mídia <span class="ar">›</span> <b>Upload em qualidade mais alta: ativado</b></div>
+        </div>
+        <p class="muted" style="font-size:14.5px;margin-top:11px">O Instagram muda o nome
+        desse menu de vez em quando. Pode aparecer como Mídia, Qualidade de mídia ou Uso de
+        dados. É o único lugar com a palavra qualidade, então é esse.</p>
+        <p style="margin-top:13px">Grave o story dentro da câmera do iPhone e depois suba, em
+        vez de gravar dentro do aplicativo do Instagram. A diferença de nitidez é visível, e
+        você ganha a chance de revisar antes.</p>
+
+        <div class="sub"><span class="mono t">05 · b</span><h3>Enquadramento e lente</h3></div>
+        <div class="grid g2">
+          <div class="card">
+            <span class="mono t">Para mostrar o ambiente</span>
+            <h4>Grande angular, a lente 0.5x</h4>
+            <p>O bloco cirúrgico, a sala, o monitor com o exame, o instrumental na bancada. A
+            0.5x cabe o ambiente inteiro e o espaço parece maior.</p>
+          </div>
+          <div class="card fill">
+            <span class="mono t">Para mostrar você</span>
+            <h4>Lente normal, a 1x</h4>
+            <p>A 0.5x distorce o rosto de quem está perto, alarga o nariz e encurta a testa.
+            Numa conta que fala de proporção facial, isso é especialmente ruim. Quando você
+            fala para a câmera, é sempre 1x.</p>
+          </div>
+        </div>
+
+        <div class="sub"><span class="mono t">05 · c</span><h3>Tipografia e link</h3></div>
+        <div class="grid g2">
+          <div class="card">
+            <span class="mono t">A letra</span>
+            <h4>Sempre a fonte com serifa</h4>
+            <p>Entre as fontes do Instagram, escolha a que tem os pezinhos nas letras. Use só
+            ela, em todos os stories, sempre. Nada de contorno colorido, néon, sombra ou
+            letra animada: a sua marca é sóbria e elegante, e a letra é metade disso.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">O link</span>
+            <h4>Figurinha de link, com texto trocado</h4>
+            <p>Troque o texto da figurinha para <b>quero uma avaliação</b> e aponte para o
+            WhatsApp da cidade daquele conteúdo. Posicione sobre uma área lisa da imagem, no
+            terço de baixo. Um link por story, nunca dois.</p>
+          </div>
+        </div>
+
+        <div class="sub"><span class="mono t">05 · d</span><h3>Os stories que repetem</h3></div>
+        <p>Três coisas que voltam toda semana. Repetição é o que faz o paciente criar o
+        hábito de abrir o seu story.</p>
+        <div class="grid g3">
+          <div class="card">
+            <span class="mono t">Dias de cirurgia</span>
+            <h4>Dia de hospital</h4>
+            <p>A chegada, o preparo, o instrumental, a equipe. Em sequência, ao longo do dia.
+            Sem paciente identificável e sem nada que o hospital não autorize. É o conteúdo
+            que mais prende no seu nicho e o que você já vive toda semana.</p>
+          </div>
+          <div class="card fill">
+            <span class="mono t">Terça</span>
+            <h4>A pergunta da semana</h4>
+            <p>O story mais importante da semana, e o único dia marcado. Está detalhado na
+            seção 06. É ele que alimenta o destaque Dúvidas.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">Uma vez por semana</span>
+            <h4>O convite</h4>
+            <p>Um story só, com a figurinha de link apontando para a cidade certa e o texto
+            trocado para <b>quero uma avaliação</b>. É o único momento em que você pede
+            alguma coisa.</p>
+          </div>
+        </div>
+
+        <div class="sub"><span class="mono t">05 · e</span><h3>Perfis para observar</h3></div>
+        <p>Story expira em 24 horas, então não dá para deixar link de exemplo aqui. O que dá
+        é dizer onde olhar, e o que olhar. Reserve dez minutos numa terça para abrir estes
+        três e prestar atenção em uma coisa só em cada um.</p>
+
+        <div class="obs">
+          <div class="obsrow">
+            <span class="at">@drmanoelroque<span>20,1 mil · bucomaxilo</span></span>
+            <span class="w">O perfil mais parecido com o que o seu pode virar. Olhe <b>como
+            ele transforma queixa em conteúdo</b>: luxação de ATM, dor de cabeça, apneia.
+            Nenhum vídeo caro, todos com assunto que a pessoa digitou no Google. É o caminho
+            mais barato de produzir e o que mais rende nele.</span>
+          </div>
+          <div class="obsrow">
+            <span class="at">@drorionhaas<span>10,6 mil · cirurgia do sono</span></span>
+            <span class="w">Olhe o <b>acabamento</b>. Mesma letra, mesma cor, mesmo padrão de
+            capa em tudo. É isso que faz o perfil parecer uma instituição. Repare também no
+            limite dele: muita coisa fala com colega, e é por isso que o alcance trava. O
+            espaço de falar com o paciente continua aberto, e é o seu.</span>
+          </div>
+          <div class="obsrow">
+            <span class="at">@dralais.silveira<span>249 mil · harmonização</span></span>
+            <span class="w">Olhe a <b>disciplina visual</b> e ignore o resto. Ela batizou um
+            método com o próprio nome, que é exatamente o que você nega. Copie o rigor da
+            embalagem, nunca o discurso.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 06 ======================= -->
+      <section class="blk" id="s6">
+        <div class="bhead">
+          <span class="n">06</span>
+          <h2>A semana</h2>
+          <p>Um único dia é marcado: a terça. Todo o resto você encaixa onde der, desde que
+          a semana não acabe sem as três peças da seção 03.</p>
+        </div>
+
+        <div class="weekstrip">
+          <div><span class="d">Seg</span><span class="free">você escolhe</span></div>
+          <div class="fix">
+            <span class="d">Ter</span>
+            <span class="fixo">a pergunta</span>
+            <span class="free">o único dia marcado</span>
+          </div>
+          <div><span class="d">Qua</span><span class="free">você escolhe</span></div>
+          <div><span class="d">Qui</span><span class="free">você escolhe</span></div>
+          <div><span class="d">Sex</span><span class="free">você escolhe</span></div>
+          <div class="off"><span class="d">Sáb</span><span class="free">livre</span></div>
+          <div class="off"><span class="d">Dom</span><span class="free">livre</span></div>
+        </div>
+
+        <div class="weeksum">
+          <div>
+            <span class="mono t">Até domingo, a semana precisa ter</span>
+            <ul>
+              <li><b>1 reels</b>, de queixa, de caso, de bastidor ou de posicionamento</li>
+              <li><b>3 a 5 stories por dia</b>, de segunda a sexta</li>
+              <li><b>1 carrossel</b>, de caso explicado ou de assunto do mercado</li>
+            </ul>
+          </div>
+          <p>Dia de bloco é dia de story, não de gravar reels. Aproveite o hospital para o
+          bastidor e deixe a gravação com roteiro para um dia de consultório. Fim de semana é
+          livre de verdade.</p>
+        </div>
+
+        <div class="sub"><span class="mono t">06 · a</span><h3>A pergunta da semana</h3></div>
+        <p>É o ritual da marca, e o único compromisso fixo. O paciente aprende o dia e volta.
+        Ele resolve três coisas de uma vez: te dá pauta, te dá alcance e enche o destaque
+        Dúvidas sem nenhum trabalho extra.</p>
+
+        <div class="grid g4" style="margin-top:18px">
+          <div class="card">
+            <span class="mono t">Segunda, fim do dia</span>
+            <p>Sobe a caixinha de perguntas. O título é curtinho, porque o Instagram corta
+            frase longa: <b>"Pergunte sem medo"</b>. Se quiser variar, <b>"Pode
+            perguntar"</b> ou <b>"Me pergunta"</b>. Sempre o mesmo, semana após semana.</p>
+          </div>
+          <div class="card fill">
+            <span class="mono t">Terça</span>
+            <p>Você responde. Uma pergunta por story, e <b>quando couber, com o exame na
+            tela</b>. Resposta curta, direta, sem jargão. Se a resposta for "isso eu preciso
+            ver de perto", diga isso, que é a sua marca.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">Se não chegar pergunta</span>
+            <p>Responde as de sempre. A Nold mantém uma lista com as dez perguntas que mais
+            aparecem nas duas frentes, e você usa uma delas. Ninguém percebe, e o ritual não
+            quebra.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">Fecha com o convite</span>
+            <p>O último story da terça: <b>se alguma dessas era a sua, dá para conversar
+            sobre isso aqui.</b> Com a figurinha de link da cidade certa. Toda semana,
+            sempre no fim.</p>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:20px">
+          <b>E o destaque se enche.</b> No mesmo dia, antes das 24 horas, salve as melhores
+          respostas no destaque <b>Dúvidas</b>. Em oito semanas você tem quarenta respostas
+          lá dentro, cada uma gravada em dez segundos, numa terça.
+        </div>
+      </section>
+
+      <!-- ======================= 07 ======================= -->
+      <section class="blk" id="s7">
+        <div class="bhead">
+          <span class="n">07</span>
+          <h2>Os três primeiros segundos</h2>
+          <p>Em três segundos a pessoa decide se continua. O assunto vem na primeira frase, e
+          o seu nome vem depois. Quem ficou até o fim é que vai querer saber quem você é.</p>
+        </div>
+
+        <div class="hooks">
+          <div class="good">
+            <h4 style="color:#5F6A48">Começos que seguram</h4>
+            <ul>
+              <li>A queixa na palavra do paciente
+                <i>"Já te disseram que essa dor de cabeça é estresse?"</i></li>
+              <li>O exame na tela, antes de falar
+                <i>Você abre a tomografia e aponta, e só depois começa a explicar.</i></li>
+              <li>O número
+                <i>"37% dos adultos têm apneia, e o Brasil leva onze meses para diagnosticar."</i></li>
+              <li>A negação
+                <i>"Esse caso eu não operaria. Vou te explicar por quê."</i></li>
+            </ul>
+          </div>
+          <div class="bad">
+            <h4 style="color:var(--terra-d)">Começos que perdem</h4>
+            <ul>
+              <li>"Oi gente, tudo bem com vocês?"
+                <i>Três segundos gastos em nada.</i></li>
+              <li>"Hoje eu vim falar sobre…"
+                <i>Fale sobre, em vez de anunciar que vai falar sobre.</i></li>
+              <li>"Eu sou a Dra. Jéssica Curi, cirurgiã bucomaxilofacial, e…"
+                <i>O nome e o título entram no meio ou no fim, quando a pessoa já quer saber.</i></li>
+              <li>Começar pelo nome da técnica
+                <i>"Osteotomia Le Fort I" não é como o seu paciente chama o problema dele.</i></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 08 ======================= -->
+      <section class="blk" id="s8">
+        <div class="bhead">
+          <span class="n">08</span>
+          <h2>O que não fazer</h2>
+          <p>A sua área é a mais fiscalizada deste guia. Parte do que está aqui é regra do
+          conselho, parte é posicionamento da marca. Na dúvida sobre qualquer peça, pergunte
+          para a Nold antes de publicar.</p>
+        </div>
+
+        <div class="rules">
+          <div class="rule">
+            <span class="no"><b>Publicar peça de procedimento sem o registro.</b> E pior:
+            publicar com o registro da cidade errada.</span>
+            <span class="yes"><span class="k">no lugar</span><b>CRO-BA 16230</b> em tudo que
+            for cirurgia, ATM, ortognática, siso, implante e hospital. <b>CRO-SP 180773</b>
+            em tudo que for harmonização. Vida pessoal e posicionamento podem ir sem.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Escrever "antes e depois".</b> A imagem comparativa você pode
+            mostrar <b>no perfil</b>. O que não pode é a expressão escrita na arte, na
+            legenda ou no story.</span>
+            <span class="yes"><span class="k">no lugar</span><b>Caso explicado.</b> Mesma
+            imagem, mesmo conteúdo, nome que o conselho aceita e que soa mais técnico. E
+            <b>toda</b> imagem de paciente só vai ao ar com autorização escrita e assinada,
+            guardada antes da publicação.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Impulsionar qualquer peça com imagem de paciente.</b> Mesmo
+            com autorização assinada, mesmo sem o rosto.</span>
+            <span class="yes"><span class="k">no lugar</span>Comparativo só no perfil, nunca
+            em anúncio pago. Para impulsionar, use peça com você falando, card de crença ou
+            bastidor sem paciente.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Dizer "especialista em harmonização orofacial".</b> A Justiça
+            anulou a resolução que criava a especialidade e o conselho recorreu. Enquanto
+            isso não se resolve, o termo é risco.</span>
+            <span class="yes"><span class="k">no lugar</span><b>Cirurgiã bucomaxilofacial
+            que também realiza harmonização facial.</b> É mais forte, é verdade, e é
+            exatamente o que ninguém mais pode dizer.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>A palavra Botox</b> como nome genérico. É marca registrada de
+            um fabricante.</span>
+            <span class="yes"><span class="k">no lugar</span><b>Toxina botulínica.</b> E se
+            for falar da marca que você usa, diga o nome dela corretamente.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Depoimento de paciente</b> falando do resultado. O conselho
+            trata isso como propaganda de resultado, e é um dos pontos que mais gera
+            notificação.</span>
+            <span class="yes"><span class="k">no lugar</span><b>Caso explicado por você.</b>
+            A mesma história, contada do seu lugar: a queixa, o exame, a decisão, a
+            limitação. Se o paciente aparece, é como personagem do caso, não como quem
+            recomenda.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Preço em post, story ou legenda.</b> Nem valor, nem "a partir
+            de", nem parcela.</span>
+            <span class="yes"><span class="k">no lugar</span>Preço só no orçamento
+            individual, depois da avaliação. No conteúdo, fale do critério e do prazo.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Método com o seu nome.</b> "Método Jéssica Curi", "Protocolo
+            JC", qualquer coisa que transforme técnica em marca pessoal.</span>
+            <span class="yes"><span class="k">no lugar</span>É a sua crença mais forte: o que
+            existe é ciência, e ciência não tem dono. Negar isso em público é território
+            livre, e vira pauta boa.</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Prometer resultado.</b> "Garantido", "não vai doer nada",
+            "você vai sair outra pessoa".</span>
+            <span class="yes"><span class="k">no lugar</span>Prazo e limitação. "O inchaço
+            dura semanas, o resultado final leva meses, e isso aqui não resolve a parte que é
+            do ortodontista."</span>
+          </div>
+          <div class="rule">
+            <span class="no"><b>Dar conduta pelo direct.</b> Sem exame, sem ver, sem
+            anamnese.</span>
+            <span class="yes"><span class="k">no lugar</span>"Isso eu preciso ver de perto
+            para te responder com honestidade." Convida para avaliação, na cidade certa.</span>
+          </div>
+        </div>
+
+        <div class="live" style="margin-top:22px">
+          <h4>Quatro coisas que estão no ar hoje</h4>
+          <ul>
+            <li>Um post com a palavra <b>DEPOIMENTO</b> em destaque amarelo.
+              <span>É o item de maior risco do seu perfil. Arquive, e a Nold refaz o conteúdo
+              como caso explicado, que conta a mesma história dentro da regra.</span></li>
+            <li>Uma arte com <b>o seu nome em cima de "HOF · Harmonização Orofacial"</b>.
+              <span>Lido rápido, parece método com nome de gente, que é justamente o que você
+              nega. Vale refazer separando as duas coisas.</span></li>
+            <li><b>Comparativos de rosto</b> no feed.
+              <span>Podem ficar, desde que exista autorização assinada arquivada para cada
+              um. O que não pode, em nenhuma hipótese, é impulsionar esses posts.</span></li>
+            <li><b>"Hamonização"</b>, sem o R, no campo Nome do perfil.
+              <span>É o primeiro item do checklist da seção 10.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ======================= 09 ======================= -->
+      <section class="blk" id="s9">
+        <div class="bhead">
+          <span class="n">09</span>
+          <h2>Música</h2>
+          <p>Conta profissional tem acesso limitado ao catálogo musical, e isso é de
+          propósito. Entenda a regra uma vez e pare de perder tempo procurando trend.</p>
+        </div>
+
+        <div class="grid g3">
+          <div class="card">
+            <span class="mono t">A regra</span>
+            <h4>Conta profissional não pega música famosa</h4>
+            <p>O Instagram libera o catálogo comercial para contas de empresa, que é outro
+            acervo, sem os lançamentos e sem os trends do momento. Ficar trocando para conta
+            de criador para pegar o áudio da moda cria outros problemas, e não vale a troca.</p>
+          </div>
+          <div class="card">
+            <span class="mono t">O detalhe que pega</span>
+            <h4>Post impulsionado fica mudo</h4>
+            <p>Se a gente impulsionar um reel que tem música do catálogo comercial, o
+            Instagram pode silenciar o vídeo no anúncio. Um vídeo onde a música carregava a
+            emoção vira um vídeo mudo, pago, sem explicação.</p>
+          </div>
+          <div class="card fill">
+            <span class="mono t">O que fazer</span>
+            <h4>A sua voz é a trilha</h4>
+            <p>Quase todo conteúdo seu é você explicando, então a música só preenche o fundo
+            baixinho. <b>No bastidor de hospital, prefira som ambiente puro</b>: o bipe, o
+            instrumental, a equipe. Fica mais sério e mais verdadeiro que qualquer trilha.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 10 ======================= -->
+      <section class="blk" id="s10">
+        <div class="bhead">
+          <span class="n">10</span>
+          <h2>Os primeiros 7 dias</h2>
+          <p>Uma coisa por dia. Marque conforme for fazendo, que fica salvo neste navegador.
+          Em uma semana o perfil está pronto para receber o conteúdo novo.</p>
+        </div>
+
+        <div class="check" id="check">
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j1">
+            <span class="dy">Dia 1</span>
+            <span class="tx">Corrigir o campo Nome e colar a bio nova
+              <span>Hoje está escrito "Hamonização", sem o R, e sem cidade nenhuma. Os dois quadros de copiar e colar estão na seção 01.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j2">
+            <span class="dy">Dia 1</span>
+            <span class="tx">Baixar as quatro capas e reorganizar os destaques
+              <span>Casos, Cirurgia, Harmonização e Dúvidas na frente. Os de viagem descem para o fim da fila.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j3">
+            <span class="dy">Dia 2</span>
+            <span class="tx">Mandar para a Nold o contato de São Paulo
+              <span>Sem ele a gente não monta a página de bio com os dois botões, e o paciente de SP continua caindo no 71.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j4">
+            <span class="dy">Dia 2</span>
+            <span class="tx">Comprar tripé, luz e microfone
+              <span>Os links estão na seção 04. Entre R$ 1.093 e R$ 2.048 no total, dependendo das opções.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j5">
+            <span class="dy">Dia 3</span>
+            <span class="tx">Escolher o lugar fixo no consultório e marcar o chão com fita
+              <span>Tripé, luz e a sua posição, com a tela do exame no enquadramento. Três marcas de fita, e nunca mais procurar ângulo.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j6">
+            <span class="dy">Dia 4</span>
+            <span class="tx">Ajustar o iPhone e o Instagram
+              <span>4K a 30 fps, grade ativada, formato mais compatível, upload em qualidade mais alta.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j7">
+            <span class="dy">Dia 5</span>
+            <span class="tx">Gravar o primeiro reels de queixa
+              <span>Escolha uma queixa que você escuta toda semana, escreva três frases num papel e grave com o exame na tela. Não precisa estar perfeito, precisa estar no ar.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j8">
+            <span class="dy">Dia 6</span>
+            <span class="tx">Subir a primeira caixinha de perguntas
+              <span>"Pergunte sem medo". No dia seguinte, a primeira terça da pergunta da semana.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j9">
+            <span class="dy">Dia 7</span>
+            <span class="tx">Arquivar as duas peças da seção 08
+              <span>O post "DEPOIMENTO" e a arte com o seu nome em cima de HOF. Arquivar não apaga, só tira do perfil.</span></span>
+          </label></div>
+          <div class="ck"><label>
+            <input type="checkbox" data-k="j10">
+            <span class="dy">Dia 7</span>
+            <span class="tx">Conferir a autorização escrita de cada comparativo no ar
+              <span>Todo post com imagem de paciente precisa de autorização assinada arquivada. O que não tiver, arquive até resolver.</span></span>
+          </label></div>
+        </div>
+      </section>
+
+      <div class="end">
+        <div style="flex:1 1 300px;min-width:0">
+          <span class="mono mark">Dúvida em qualquer ponto</span>
+          <p style="margin-top:12px;max-width:46ch;color:var(--gray)">Manda para a gente
+          antes de publicar. Guia errado se corrige numa mensagem, post publicado fora da
+          regra do conselho dá trabalho para todo mundo.</p>
+        </div>
+        <a class="tag t" href="../#/c/jessica" style="padding:10px 16px">ver a estratégia completa no painel →</a>
+      </div>
+
+    </div><!-- /body -->
+  </div><!-- /cols -->
+</main>
+
+<footer class="foot">
+  <span class="mono">Nold · guia de Instagram para a Dra. Jéssica Curi</span>
+  <span class="mono">versão 1 · outubro de 2026</span>
+</footer>
+
+<script>
+/* nav ativa */
+(function(){
+  var links = [].slice.call(document.querySelectorAll('#side a'));
+  if(!links.length || !('IntersectionObserver' in window)) return;
+  var obs = new IntersectionObserver(function(ens){
+    ens.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){ a.classList.toggle('act', a.dataset.j === e.target.id); });
+      }
+    });
+  }, {rootMargin:'-80px 0px -72% 0px'});
+  document.querySelectorAll('.blk').forEach(function(b){ obs.observe(b); });
+})();
+
+/* copiar e colar */
+(function(){
+  document.querySelectorAll('.cpbtn').forEach(function(b){
+    b.addEventListener('click', function(){
+      var el = document.getElementById(b.dataset.cp);
+      if(!el) return;
+      var txt = el.textContent;
+      function marca(){ b.textContent='copiado'; b.setAttribute('data-done','1');
+        setTimeout(function(){ b.textContent='copiar'; b.removeAttribute('data-done'); }, 2200); }
+      try {
+        navigator.clipboard.writeText(txt).then(marca, selec);
+      } catch(e){ selec(); }
+      function selec(){
+        try {
+          var r = document.createRange(); r.selectNodeContents(el);
+          var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+          b.textContent = 'selecionado, use Cmd+C';
+          setTimeout(function(){ b.textContent='copiar'; }, 3200);
+        } catch(e2){}
+      }
+    });
+  });
+})();
+
+/* checklist persistente */
+(function(){
+  var K = 'guia-skinlumy-checklist';
+  var boxes = [].slice.call(document.querySelectorAll('#check input[type=checkbox]'));
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(K) || '{}') || {}; } catch(e){ state = {}; }
+  boxes.forEach(function(b){
+    if(state[b.dataset.k]) b.checked = true;
+    b.addEventListener('change', function(){
+      state[b.dataset.k] = b.checked;
+      try { localStorage.setItem(K, JSON.stringify(state)); } catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1030,6 +1030,8 @@ const CLIENTES = [
   resumo:'Do osso à pele. A cirurgiã que explica o caso antes de qualquer decisão, e diz quando não é caso de mexer.',
   arroba:'@dra.jessicafcuri', perfil:'https://www.instagram.com/dra.jessicafcuri/',
   seguidores:'4.578', avatar:'img/jessica/avatar.webp',
+  guia:{href:'guia/jessica', t:'Guia de Instagram da Dra. Jéssica',
+        d:'O manual que ela usa: perfil e bio com os dois CROs, a regra das duas cidades, as oito linhas de conteúdo com exemplo real, como gravar, stories, a semana e a conformidade com o conselho.'},
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
   nicho:'Cirurgia bucomaxilofacial (ATM, ortognática, siso, implante) em Salvador e harmonização orofacial em São Paulo, na Vila Mariana.',
@@ -1202,8 +1204,8 @@ const CLIENTES = [
      ref:{url:'https://www.instagram.com/p/DbB81PTzSiI/', metrica:'post educativo', o:'Hábito banal nomeado como possível sintoma, em linguagem de paciente.', porque:'Reconhecimento imediato: a pessoa se vê na descrição e salva o post.'},
      angulo:'O medo do pós é a maior objeção da ortognática. Ela mostra o primeiro dia de verdade, sem suavizar.',
      desdobra:{reels:'Como é o primeiro dia depois da ortognática, com honestidade. 50s.', carrossel:'O que dói, o que não dói e o que você vai comer na primeira semana.', stories:'Caixinha "o que mais te assusta no pós?".', estatico:'Card com a linha do tempo da recuperação.'}},
-    {n:'04', bm:'@drorionhaas', cls:'Dúvidas', tema:'O ronco que ninguém liga à mordida',
-     ref:{url:'https://www.instagram.com/reel/DYNU752x1fE/', metrica:'11,4 mil views', o:'Conteúdo de cirurgia do sono explicado com autoridade acadêmica.', porque:'Apneia tem volume de busca e quase ninguém conecta o ronco à estrutura do rosto.'},
+    {n:'04', bm:'@drmanoelroque', cls:'Dúvidas', tema:'O ronco que ninguém liga à mordida',
+     ref:{url:'https://www.instagram.com/reel/DeAl5vmh1Ky/', metrica:'65,6 mil views', o:'A ortognática explicada pelo que resolve na apneia do sono, e não pelo que muda no rosto.', porque:'Três vezes a base do perfil. Apneia tem volume de busca e quase ninguém conecta o ronco à estrutura do rosto.'},
      angulo:'37% dos adultos de São Paulo têm apneia, e o Brasil demora 11 meses até o diagnóstico. Ela liga ronco, mordida e ortognática.',
      desdobra:{reels:'O que o ronco faz com o seu sono, e quando a cirurgia entra. 50s.', carrossel:'O exame que mostra o problema, passo a passo.', stories:'Enquete "alguém já reclamou do seu ronco?".', estatico:'Card com o dado dos 37%, com fonte.'}},
     {n:'05', bm:'@drorionhaas', cls:'Bastidores', tema:'Dia de hospital',
