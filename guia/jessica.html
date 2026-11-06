@@ -78,6 +78,16 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,7vw,66px);
 .hav{width:112px;height:112px;border-radius:50%;object-fit:cover;border:1px solid var(--line-2);flex:none}
 
 /* ---------- índice ---------- */
+/* arranque */
+.arranque{border:1px solid var(--terra);background:#FBF5E4;padding:20px 22px 22px;margin:30px 0 0}
+.ar3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:14px}
+.ar3>div{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start}
+.ar3 .arn{font-family:var(--mono);font-weight:500;font-size:11px;color:#fff;background:var(--terra-d);
+  width:22px;height:22px;display:grid;place-items:center;margin-top:1px}
+.ar3 p{font-size:15px;line-height:1.5;margin:0}
+.ar3 a{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--terra-d);white-space:nowrap;border-bottom:1px solid var(--line-2)}
+
 .toc{display:grid;grid-template-columns:repeat(auto-fill,minmax(188px,1fr));gap:1px;
   border:1px solid var(--line);margin:30px 0 0}
 .toc a{background:var(--paper);padding:15px 16px 17px;display:block;min-width:0;
@@ -411,10 +421,22 @@ p:last-child{margin-bottom:0}
       <div>
         <span class="mono mark">Feito pela Nold para a Dra. Jéssica Curi · versão 1 · out/2026</span>
         <h1>O guia do Instagram da Dra. Jéssica</h1>
-        <p class="lead">Tudo o que você precisa para gravar, publicar e manter o perfil
-        funcionando nas duas cidades. É para consultar, não para ler de uma vez.</p>
+        <p class="lead">Como gravar, o que publicar e o que o conselho não deixa, nas duas
+        cidades. É para consultar, não para ler de uma vez.</p>
       </div>
       <img class="hav" src="../img/jessica/avatar.webp" alt="Dra. Jéssica Curi">
+    </div>
+
+    <div class="arranque">
+      <span class="mono t">Se você só tem dez minutos hoje</span>
+      <div class="ar3">
+        <div><span class="arn">1</span><p>Conserte o campo <b>Nome</b>. Está escrito
+          "Hamonização", sem o R, e sem cidade nenhuma. <a href="#s1">seção 01</a></p></div>
+        <div><span class="arn">2</span><p>Baixe as <b>quatro capas</b> e ponha os destaques
+          de trabalho na frente dos de viagem. <a href="#s1">seção 01</a></p></div>
+        <div><span class="arn">3</span><p>Arquive o post <b>DEPOIMENTO</b>. É o maior risco
+          do perfil hoje. <a href="#s8">seção 08</a></p></div>
+      </div>
     </div>
 
     <nav class="toc">
@@ -453,55 +475,50 @@ p:last-child{margin-bottom:0}
         <div class="bhead">
           <span class="n">00</span>
           <h2>Como usar este guia</h2>
-          <p>Cada seção resolve uma dúvida. Quando você for gravar, abra a 04. Quando for
-          subir story, abra a 05. Quando bater dúvida se pode publicar, abra a 08.</p>
+          <p>Cada seção resolve uma dúvida. Vai gravar, abre a 04. Vai subir story, abre
+          a 05. Na dúvida se pode publicar, abre a 08.</p>
         </div>
 
         <div class="split">
           <div>
             <span class="mono t">Campanha · a Nold faz inteiro</span>
-            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">Tudo que faz parte
-            de uma campanha no ar sai pronto da nossa mão. Você só aprova e a gente publica.</p>
+            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">Sai pronto da
+            nossa mão. Você aprova, a gente publica.</p>
             <ul>
               <li>Conceito, pauta e roteiro</li>
-              <li>Gravação, com a nossa equipe</li>
-              <li>Edição, corte, legenda e trilha</li>
+              <li>Gravação, edição, legenda e trilha</li>
               <li>Capa, carrossel, card e arte</li>
-              <li>Legenda da publicação e revisão de conformidade</li>
-              <li>Os três posts fixados do topo do perfil</li>
+              <li>Legenda e revisão de conformidade</li>
+              <li>Os três posts fixados</li>
             </ul>
           </div>
           <div class="them">
             <span class="mono t">Dia a dia · você faz inteiro</span>
-            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">O conteúdo que
-            nasce da sua cabeça é seu do começo ao fim. A gente entra só com formato, tema e
-            ideia, e este guia é isso.</p>
+            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">Seu do começo ao
+            fim. A gente entra com formato, tema e ideia. Este guia é isso.</p>
             <ul>
-              <li>Decidir o assunto, dentro das linhas da seção 03</li>
-              <li>Gravar, com o enquadramento e a luz da seção 04</li>
-              <li>Editar e legendar, inclusive com a legenda automática do Instagram</li>
-              <li>Escrever e publicar, com o CRO da cidade certa</li>
-              <li>Subir os stories do dia e responder a pergunta da semana</li>
-              <li>Guardar a autorização escrita de cada paciente que aparece</li>
+              <li>Escolher o assunto, nas linhas da seção 03</li>
+              <li>Gravar, com a luz e o quadro da seção 04</li>
+              <li>Editar, legendar e publicar, com o CRO da cidade certa</li>
+              <li>Os stories do dia e a pergunta da semana</li>
+              <li>Guardar a autorização de cada paciente que aparece</li>
             </ul>
           </div>
         </div>
 
         <div class="note" style="margin-top:16px">
-          <b>Não existe calendário aqui, e é de propósito.</b> Calendário de conteúdo sempre
-          acaba atrasado, e aí o atraso vira culpa e a culpa vira perfil parado. O que existe
-          é um <b>volume por semana</b>, na seção 06. Você escolhe o dia, o assunto e a hora.
-          O volume é baixo de propósito, para caber numa agenda que tem bloco cirúrgico,
+          <b>Aqui não tem calendário, e é de propósito.</b> Calendário atrasa, o atraso
+          vira culpa e a culpa vira perfil parado. Tem <b>volume por semana</b>, na seção 06.
+          Dia, assunto e hora são seus. O volume é baixo para caber numa agenda com bloco,
           plantão, aula e duas cidades.
         </div>
 
         <div class="note dark" style="margin-top:16px">
-          <b>Por que vale tanto a pena para você.</b> Cerca de <b>40% das suas avaliações
-          viram cirurgia</b>, quatro vezes a média do mercado. Quem conversa com você fecha.
-          Só que os seus reels alcançam de 600 a 1.000 pessoas, que é mais ou menos 20% de
-          quem já te segue. O seu gargalo não é convencer, é <b>ser vista</b>. Cada pessoa
-          nova que chega aqui vale mais no seu caso do que valeria em qualquer outro perfil
-          deste guia.
+          <b>Por que vale o esforço.</b> <b>40% das suas avaliações viram cirurgia.</b>
+          A média do mercado é 10%. Quem senta na sua frente, fecha. Só que o seu reel
+          alcança 800 pessoas, quase todas já suas. Você não precisa aprender a convencer.
+          Precisa ser vista. Cada seguidor novo vale quatro vezes mais para você do que
+          para o seu concorrente.
         </div>
       </section>
 
@@ -510,9 +527,8 @@ p:last-child{margin-bottom:0}
         <div class="bhead">
           <span class="n">01</span>
           <h2>Arrumar a casa</h2>
-          <p>Antes de produzir conteúdo novo, o perfil precisa estar legível para quem chega
-          pela primeira vez, e precisa deixar claro que você atende em duas cidades. São
-          quatro coisas: foto, nome e bio, link e destaques.</p>
+          <p>Quatro coisas: foto, nome e bio, link e destaques. Tudo isso se resolve num
+          dia, e sem isso nada que você publicar depois se acumula.</p>
         </div>
 
         <!-- foto -->
@@ -521,21 +537,19 @@ p:last-child{margin-bottom:0}
           <span class="ok">✓</span>
           <div>
             <h4>Está certa, pode deixar como está</h4>
-            <p>A foto do seu rosto é o que a gente quer ali. Cirurgia de face se escolhe pela
-            pessoa, e o rosto humaniza um perfil que, de resto, fala de osso, exame e
-            técnica. Só dois cuidados: <b>a mesma foto por pelo menos um ano</b>, porque é
-            assim que o paciente te reconhece na lista de stories, e nada de foto cortada de
-            uma foto maior, que fica mole no tamanho pequeno.</p>
+            <p>Cirurgia de face se escolhe pela pessoa, e o seu rosto equilibra um perfil
+            que fala de osso e exame. Dois cuidados: <b>a mesma foto por pelo menos um
+            ano</b>, que é como te reconhecem na lista de stories, e nada de recorte de foto
+            maior, que fica mole no tamanho pequeno.</p>
           </div>
         </div>
 
         <!-- bio -->
         <div class="sub"><span class="mono t">01 · b</span><h3>O nome e a bio</h3></div>
-        <p>O campo <b>Nome</b> é o que o Instagram usa na busca, e não o @. Hoje o seu diz
-        <code>Dra Jéssica F. Curi | BucoMaxiloFacial | Hamonização facial</code>, com
-        <b>Harmonização escrito sem o R</b> e sem nenhuma cidade. Quem procura "bucomaxilo
-        Salvador" não te encontra. A bio tem 150 caracteres e cinco trabalhos: dizer o que
-        você é, onde atende, por que vale a pena, o registro que o conselho exige, e a ação.</p>
+        <p>O campo <b>Nome</b> é o que o Instagram busca, não o @. O seu hoje:
+        <code>Dra Jéssica F. Curi | BucoMaxiloFacial | Hamonização facial</code>.
+        <b>Harmonização sem o R</b>, e nenhuma cidade. Quem digita "bucomaxilo Salvador"
+        não te acha.</p>
 
         <div class="copyrow">
           <div class="copybox">
@@ -553,8 +567,7 @@ Avaliação ↓</pre>
           </div>
         </div>
 
-        <p style="margin-top:22px">É isso que o paciente vê, com cada linha fazendo um
-        trabalho:</p>
+        <p style="margin-top:22px">Cada linha tem um trabalho:</p>
 
         <div class="mock">
           <div class="mh">
@@ -574,16 +587,13 @@ Avaliação ↓</pre>
 
         <ol class="annot">
           <li><span class="bn">1</span><span><b>O que você é.</b> Cirurgiã vem primeiro,
-          porque é o que ninguém mais na disputa tem. Hoje a sua bio abre com "dentista
-          geral", que é verdade e é o que menos te diferencia.</span></li>
-          <li><span class="bn">2</span><span><b>Onde e por quê.</b> As duas cidades resolvem
-          a maior confusão do perfil, e o slogan da marca entra junto. "Entender antes de
-          mexer" é a frase que a Nold vai repetir o ano inteiro.</span></li>
-          <li><span class="bn">3</span><span><b>Os dois registros.</b> O conselho exige o
-          número em peça de divulgação, e você atende em dois estados. Os dois ficam na bio;
-          <b>na peça, vai só o da cidade daquele conteúdo</b>.</span></li>
-          <li><span class="bn">4</span><span><b>A ação.</b> Uma só, apontando para o link.
-          Sem telefone solto, sem endereço, sem emoji.</span></li>
+          porque ninguém mais na sua disputa é. Hoje a bio abre com "dentista geral".</span></li>
+          <li><span class="bn">2</span><span><b>Onde e por quê.</b> As duas cidades matam
+          a maior confusão do perfil, e o slogan entra junto.</span></li>
+          <li><span class="bn">3</span><span><b>Os dois registros.</b> Obrigatório. Na bio
+          ficam os dois, <b>na peça vai só o da cidade daquele conteúdo</b>.</span></li>
+          <li><span class="bn">4</span><span><b>A ação.</b> Uma só. Sem telefone solto,
+          sem endereço, sem emoji.</span></li>
         </ol>
 
         <!-- link -->
@@ -591,26 +601,20 @@ Avaliação ↓</pre>
         <div class="live">
           <h4>Hoje o link manda todo mundo para o mesmo WhatsApp de Salvador</h4>
           <ul>
-            <li>O link da sua bio é <code>api.whatsapp.com/send?phone=5571996756595</code>,
-            que é um número com <b>DDD 71</b>.
-              <span>Quem viu um conteúdo de harmonização, mora na Vila Mariana e clicou,
-              cai num telefone de outro estado. Parte dessas pessoas desiste ali, e você
-              nunca fica sabendo.</span></li>
+            <li>O link é <code>api.whatsapp.com/send?phone=5571996756595</code>, um número
+            com <b>DDD 71</b>.
+              <span>Quem viu harmonização, mora na Vila Mariana e clicou, cai num telefone
+              de outro estado. Parte desiste ali, e você nunca fica sabendo.</span></li>
           </ul>
         </div>
-        <p style="margin-top:18px">A Nold vai montar uma página só sua em
-        <code>jessicacuri.com.br/bio</code>, com dois botões grandes: <b>Salvador</b> e
-        <b>São Paulo</b>. Cada um abre o WhatsApp certo, com a mensagem já escrita. O link
-        da bio passa a ser esse, e nunca mais muda.</p>
-        <p>Ele é fixo por dois motivos. O primeiro é memória: o paciente aprende que o
-        caminho é sempre o mesmo lugar. O segundo é medição: como a página é nossa, a gente
-        troca o que tem dentro dela sem trocar o link, e enxerga quantas pessoas chegaram de
-        cada publicação e de qual cidade.</p>
+        <p style="margin-top:18px">A Nold monta <code>jessicacuri.com.br/bio</code> com
+        dois botões, <b>Salvador</b> e <b>São Paulo</b>, cada um abrindo o WhatsApp certo
+        com a mensagem pronta. Esse vira o link e nunca mais muda: o paciente decora o
+        caminho e a gente passa a medir de onde vem cada avaliação.</p>
         <div class="note" style="margin-top:16px">
-          <b>Enquanto a página não fica pronta</b>, use a figurinha de link nos stories
-          apontando para o WhatsApp da cidade do conteúdo daquele dia. Conteúdo de
-          ortognática, ATM, siso ou implante vai para o 71. Conteúdo de harmonização vai para
-          o número de São Paulo, que a gente precisa que você confirme com a gente.
+          <b>Até a página ficar pronta</b>, a figurinha de link do story aponta para a
+          cidade daquele conteúdo. Ortognática, ATM, siso e implante vão para o 71.
+          Harmonização vai para o número de SP, que você ainda precisa nos mandar.
         </div>
 
         <!-- destaques -->
@@ -620,16 +624,15 @@ Avaliação ↓</pre>
           <ul>
             <li>Contato · São Roque · Pacientes · Musas · Let's HOF · Deus · Cirurgia ·
             Manaus · Itália · Megève · Edimburgo · Londres · Paris · Campos do Jordão.
-              <span>Quem chega no perfil vê primeiro uma fileira de destinos de viagem e
-              depois descobre que você é cirurgiã. Os de viagem não precisam sumir: eles
-              descem para o fim da fila, e os quatro de trabalho sobem para a frente.</span></li>
+              <span>Quem chega vê uma fileira de destinos antes de descobrir que você é
+              cirurgiã. Não precisa apagar nada: viagem desce para o fim, trabalho sobe para
+              a frente.</span></li>
           </ul>
         </div>
 
-        <p style="margin-top:18px">Estes quatro vêm primeiro, nessa ordem, com capa
-        desenhada. <b>As artes já estão prontas aqui embaixo: clique na bolinha para
-        baixar.</b> Suba cada uma como story e escolha ela na hora de editar a capa do
-        destaque.</p>
+        <p style="margin-top:18px">Estes quatro na frente, nessa ordem. <b>As artes já
+        estão prontas: clique na bolinha para baixar.</b> Sobe como story e escolhe na hora
+        de editar a capa do destaque.</p>
 
         <div class="grid g4" style="margin-top:22px">
           <div class="hl">
@@ -698,15 +701,14 @@ Avaliação ↓</pre>
           </div>
         </div>
 
-        <p class="muted" style="font-size:14px;margin-top:16px">Os arquivos são PNG de
-        1080 × 1920, no tamanho certo de story. Se preferir baixar tudo de uma vez, os quatro
-        estão em <code>painel-nold-social.vercel.app/guia/artes-jessica/</code>.</p>
+        <p class="muted" style="font-size:14px;margin-top:16px">PNG de 1080 × 1920, no
+        tamanho certo de story. Os quatro juntos em
+        <code>painel-nold-social.vercel.app/guia/artes-jessica/</code>.</p>
 
         <div class="note" style="margin-top:20px">
-          <b>O destaque Dúvidas se alimenta sozinho.</b> Toda terça você responde a caixinha
-          de perguntas. As melhores respostas vão para esse destaque no mesmo dia. Em dois
-          meses ele vira o lugar do perfil que o paciente novo abre primeiro, e você não
-          precisou produzir nada a mais para isso.
+          <b>O destaque Dúvidas se enche sozinho.</b> Toda terça você responde a caixinha
+          e salva as melhores ali. Em dois meses é o primeiro lugar que o paciente novo
+          abre, sem você ter produzido nada a mais.
         </div>
       </section>
 
@@ -715,9 +717,8 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">02</span>
           <h2>Os três fixados</h2>
-          <p>O Instagram deixa fixar três publicações no topo. Elas não envelhecem e são o
-          que 100% de quem chega no perfil vê primeiro. São o cartão de visita, e a Nold
-          produz as três.</p>
+          <p>Três publicações congeladas no topo. É o que 100% de quem chega vê primeiro,
+          e elas não envelhecem. A Nold produz as três.</p>
         </div>
 
         <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start;margin-bottom:26px">
@@ -729,9 +730,8 @@ Avaliação ↓</pre>
             <div>post</div><div>post</div><div>post</div>
           </div>
           <p class="muted" style="font-size:15px;flex:1 1 240px;min-width:0">
-            A linha de cima do seu feed fica congelada com esses três. Tudo o que você
-            publicar depois entra abaixo. É por isso que eles levam mais trabalho de produção
-            que um post normal: ficam no ar o ano inteiro.
+            Tudo que você publicar depois entra abaixo deles. É por isso que levam mais
+            produção que um post normal: ficam no ar o ano inteiro.
           </p>
         </div>
 
@@ -739,31 +739,30 @@ Avaliação ↓</pre>
           <div class="card">
             <span class="mono t">Fixado 01</span>
             <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">Quem sou eu</h4>
-            <p>A formação, o Mater Dei, o plantão no HGE, a Let's HOF. Por que uma cirurgiã
-            também harmoniza, e o que isso muda para quem senta na cadeira.</p>
+            <p>Mater Dei, plantão no HGE, Let's HOF. E por que uma cirurgiã também
+            harmoniza, que é o que muda tudo para quem senta na cadeira.</p>
             <span class="tag">Precisa de: ensaio fotográfico</span>
           </div>
           <div class="card">
             <span class="mono t">Fixado 02</span>
             <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">As duas cidades</h4>
-            <p>O que você faz em Salvador e o que você faz em São Paulo, com o contato de
-            cada uma. É o post que mata a confusão que o perfil tem hoje.</p>
+            <p>O que você faz em Salvador, o que você faz em São Paulo, e o contato de
+            cada uma. Mata a confusão que o perfil tem hoje.</p>
             <span class="tag">Precisa de: calendário do rodízio e o contato de SP</span>
           </div>
           <div class="card">
             <span class="mono t">Fixado 03</span>
             <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">Caso explicado</h4>
-            <p>Um caso real do osso à pele: a queixa, o exame, a decisão, a limitação. É a
-            prova dentro das regras do conselho, e o seu banco de casos já está pronto.</p>
+            <p>Um caso real do osso à pele: queixa, exame, decisão, limitação. É prova
+            dentro da regra do conselho, e o seu banco de casos já está pronto.</p>
             <span class="tag">Precisa de: autorização escrita do paciente</span>
           </div>
         </div>
 
         <div class="note" style="margin-top:20px">
-          <b>O quarto vem depois.</b> Quando os três estiverem rodando, a gente produz
-          <b>"quando eu digo que não é caso de mexer"</b>, que é a promessa que nenhum
-          concorrente seu assina. Esse entra no lugar do caso explicado, que a essa altura já
-          vai estar morando no destaque Casos.
+          <b>O quarto vem depois.</b> Com os três rodando, a gente produz <b>"quando eu
+          digo que não é caso de mexer"</b>, a promessa que nenhum concorrente seu assina.
+          Ele entra no lugar do caso explicado, que a essa altura já mora no destaque Casos.
         </div>
       </section>
 
@@ -772,9 +771,8 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">03</span>
           <h2>As linhas de conteúdo</h2>
-          <p>Oito tipos de conteúdo, organizados por onde o paciente está. Quem nunca ouviu
-          falar de você precisa de uma coisa. Quem já te segue e está pensando precisa de
-          outra. Quem está quase marcando precisa de uma terceira.</p>
+          <p>Oito tipos, separados por onde o paciente está: quem nunca ouviu falar de
+          você, quem está decidindo, e quem está quase marcando.</p>
         </div>
 
         <div class="dia" style="margin-bottom:26px">
@@ -796,18 +794,18 @@ Avaliação ↓</pre>
           <div class="ehead">
             <span class="mono t">O esforço de uma semana</span>
             <h3>Três coisas, e você escolhe o dia de cada uma</h3>
-            <p>Não é calendário, é volume. Se numa semana você gravar na segunda e na outra
-            no sábado depois do plantão, tudo bem. O que não pode é a semana passar sem as três.</p>
+            <p>Calendário aqui não existe. O que existe é volume. Gravou na segunda numa
+            semana e no sábado depois do plantão na outra, beleza. Só não pode a semana
+            acabar sem as três.</p>
           </div>
           <div class="erows">
             <div class="erow">
               <span class="enum">1</span>
               <div class="etx">
                 <h4>Reels</h4>
-                <p>Um por semana, de preferência de <b>topo</b>, porque alcance é o seu
-                gargalo. Nas semanas em que o topo não vier, vale trocar por um reels de
-                <b>caso explicado</b>, de <b>bastidor</b> ou de <b>posicionamento</b>. Um
-                desses quatro, nunca nenhum.</p>
+                <p>Um por semana, de <b>topo</b> sempre que der, porque alcance é o seu
+                gargalo. Quando o topo não vier, troca por <b>caso</b>, <b>bastidor</b> ou
+                <b>posicionamento</b>. Um desses quatro, nunca nenhum.</p>
               </div>
               <span class="etag">topo · meio</span>
             </div>
@@ -815,8 +813,8 @@ Avaliação ↓</pre>
               <span class="enum">3<span class="es">a</span>5</span>
               <div class="etx">
                 <h4>Stories por dia, de segunda a sexta</h4>
-                <p>É aqui que mora a avaliação. Story é <b>meio e fundo</b>: bastidor do dia,
-                resposta de dúvida, tratamento em foco, convite com o link da cidade certa.
+                <p>É aqui que mora a avaliação. Story é <b>meio e fundo</b>: bastidor do
+                dia, resposta de dúvida, tratamento em foco, convite com o link certo.
                 Curtos, um assunto em cada.</p>
               </div>
               <span class="etag">meio · fundo</span>
@@ -825,49 +823,47 @@ Avaliação ↓</pre>
               <span class="enum">1</span>
               <div class="etx">
                 <h4>Carrossel</h4>
-                <p>Um por semana, de <b>meio</b>: um caso explicado, ou um assunto do mercado
-                destrinchado com mais calma do que cabe num reels. É o conteúdo que o
-                paciente salva e manda para o cônjuge antes de decidir.</p>
+                <p>Um por semana, de <b>meio</b>: um caso explicado ou um assunto do
+                mercado com mais calma do que cabe num reels. É o que o paciente salva e
+                manda para a família antes de decidir.</p>
               </div>
               <span class="etag">meio</span>
             </div>
           </div>
           <div class="efoot">
-            <b>Resumindo:</b> duas peças de feed por semana, uma em vídeo e uma em carrossel,
-            mais os stories dos dias úteis. Só isso.
+            <b>Duas peças de feed por semana</b>, uma em vídeo e uma em carrossel, mais os
+            stories dos dias úteis. Só isso.
           </div>
         </div>
 
         <div class="warn">
           <h4>Os exemplos abaixo não são para copiar</h4>
-          <p>Cada linha tem um post real do Instagram ao lado. Ele está ali para você
-          entender <b>o formato e a ideia</b>, nunca para refazer igual. Copiar o vídeo dos
-          outros é a maneira mais rápida de o seu perfil virar mais um parecido com todos.</p>
-          <p>Antes de gravar qualquer coisa, passe pelas quatro perguntas, se colocando no
-          lugar do seu paciente:</p>
+          <p>Cada linha tem um post real ao lado. Ele serve para você entender <b>o
+          formato e a ideia</b>, nunca para refazer igual. Copiar vídeo dos outros é o
+          caminho mais rápido de virar mais um parecido com todos.</p>
+          <p>Antes de gravar, passe pelas quatro perguntas no lugar do seu paciente:</p>
           <ul>
             <li>Eu gostaria de ver isso aqui no meio do meu feed?</li>
             <li>Eu gostaria de escutar essa música?</li>
             <li>Eu gostaria de ver filmado desse jeito?</li>
             <li>Eu gostaria de ouvir alguém falando comigo nesse tom?</li>
           </ul>
-          <p>O seu público é quem tem dor na mandíbula, quem não fecha a mordida, quem ronca,
-          e quem tem medo de ficar artificial. Não é colega de congresso.</p>
+          <p>Qualquer uma dando não, muda. O seu público é quem tem dor na mandíbula, quem
+          não fecha a mordida, quem ronca e quem tem medo de ficar artificial. Não é colega
+          de congresso.</p>
         </div>
 
         <div class="note dark" style="margin-bottom:26px">
-          <b>A regra das duas cidades, em uma linha.</b> Conteúdo de ATM, ortognática, siso,
-          implante e dia de hospital assina <b>CRO-BA 16230</b> e aponta para o WhatsApp de
-          Salvador. Conteúdo de harmonização assina <b>CRO-SP 180773</b> e aponta para São
-          Paulo. Conteúdo que não fala de procedimento nenhum, como vida pessoal e
-          posicionamento, pode ir sem CRO. Na dúvida, pergunte para a Nold antes.
+          <b>A regra das duas cidades.</b> ATM, ortognática, siso, implante e hospital
+          assinam <b>CRO-BA 16230</b> e apontam para Salvador. Harmonização assina
+          <b>CRO-SP 180773</b> e aponta para São Paulo. Vida pessoal e posicionamento podem
+          ir sem CRO. Na dúvida, pergunta antes.
         </div>
 
-        <p class="muted" style="font-size:14.5px;margin-bottom:26px">Em cada linha abaixo
-        você tem o que é, um exemplo de pauta já escrito, onde publica, e um post real do
-        Instagram que funcionou <b>nesse formato e nesse assunto</b>. Todos são de cirurgia
-        bucomaxilofacial, ortognática, sono ou harmonização, e os números foram medidos por
-        nós um por um, direto no perfil de cada profissional.</p>
+        <p class="muted" style="font-size:14.5px;margin-bottom:26px">Cada linha tem: o que
+        é, uma pauta pronta, onde publicar e um post real que funcionou <b>nesse formato e
+        nesse assunto</b>. Todos de bucomaxilo, ortognática, sono ou harmonização, com os
+        números medidos por nós um por um.</p>
 
         <!-- TOPO -->
         <div class="stage topo">
@@ -883,23 +879,19 @@ Avaliação ↓</pre>
                 <h4>A queixa que tem nome</h4>
                 <div class="row"><span class="tag sv">Dúvidas de paciente</span></div>
               </div>
-              <p class="wh">A pessoa sente uma coisa há anos e não sabe como se chama. Você
-              dá o nome, mostra onde fica e diz o que fazer. É o conteúdo que mais alcança no
-              seu nicho inteiro, porque alguém digitou exatamente aquilo no Google na semana
-              passada.</p>
+              <p class="wh">A pessoa convive com aquilo há anos e não sabe o nome. Você dá
+              o nome e diz o que fazer. É o que mais alcança no seu nicho inteiro.</p>
               <div class="pauta">
                 <span class="k">Exemplo de pauta</span>
-                <p>"Já te disseram que a sua dor de cabeça é estresse?" Você lista os três
-                sinais de que o problema é a articulação, mostra a tomografia na tela e diz o
-                que não é caso de ATM. Quarenta e cinco segundos, linguagem de paciente, zero
-                jargão. CRO-BA.</p>
+                <p>"Já te disseram que essa dor de cabeça é estresse?" Três sinais de que
+                o problema é a articulação, a tomografia na tela, e o que <b>não</b> é caso
+                de ATM. 45 segundos, zero jargão, CRO-BA.</p>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">374 mil views</span></div>
-                <span class="wy">Ele explica a <b>luxação da ATM</b>, aquela em que a pessoa
-                fica com a boca travada aberta, e diz o que fazer. Num perfil de 20 mil
-                seguidores, esse reel fez <b>374 mil views</b>, quase dezenove vezes a base.
-                É a prova mais clara deste guia: a queixa com nome viaja sozinha.</span>
+                <span class="wy"><b>Luxação de ATM</b>, aquela em que a boca trava aberta.
+                Perfil de 20 mil seguidores, <b>374 mil views</b>. Dezenove vezes a base
+                dele. É a prova mais clara deste guia: queixa com nome viaja sozinha.</span>
                 <a href="https://www.instagram.com/reel/DdFYAHDBZo2/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Reels · 40 a 60 segundos</span>
@@ -910,22 +902,19 @@ Avaliação ↓</pre>
                 <h4>React de caso público</h4>
                 <div class="row"><span class="tag sv">Autoridade</span></div>
               </div>
-              <p class="wh">Um caso ou uma afirmação que está circulando, comentado por você
-              com olho técnico. Alcança porque o assunto já está rodando sozinho, e quem
-              chega descobre você pelo critério. A regra: você comenta o procedimento e a
-              informação, nunca a pessoa.</p>
+              <p class="wh">Algo que já está circulando, comentado com olho técnico. O
+              assunto roda sozinho e quem chega te descobre pelo critério. Comenta o
+              procedimento, nunca a pessoa.</p>
               <div class="pauta">
                 <span class="k">Exemplo de pauta</span>
-                <p>Um vídeo viraliza dizendo que dá para "corrigir a mordida sem cirurgia".
-                Você explica o que dá para resolver com aparelho, o que só a cirurgia resolve,
-                e como se sabe a diferença olhando o exame. Sem citar o autor do vídeo e sem
-                print.</p>
+                <p>Viraliza um vídeo dizendo que dá para "corrigir a mordida sem
+                cirurgia". Você mostra o que o aparelho resolve, o que só a cirurgia
+                resolve, e como se vê a diferença no exame. Sem citar autor, sem print.</p>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@drlucasfirmino · odontologia</span><span class="vw">23,2 mil views</span></div>
-                <span class="wy">Ele reage a um vídeo de desinformação do próprio nicho e
-                explica o certo. Mesmo conselho que o seu, mesma lógica de divulgação. O
-                formato inteiro é reação com critério, e não com deboche.</span>
+                <span class="wy">Reage a um vídeo de desinformação do nicho e explica o
+                certo. Mesmo conselho que o seu. Reação com critério, nunca com deboche.</span>
                 <a href="https://www.instagram.com/reel/DdCVnodDMrj/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Reels · 40 a 60 segundos</span>
@@ -936,22 +925,21 @@ Avaliação ↓</pre>
                 <h4>Novidade do mercado</h4>
                 <div class="row"><span class="tag sv">Autoridade</span></div>
               </div>
-              <p class="wh">Uma decisão de conselho, uma tecnologia nova, uma polêmica da
-              área. Você conta antes do paciente descobrir em outro lugar e diz o que pensa.
-              É o conteúdo que te põe na posição de quem sabe primeiro, e você tem uma
-              vantagem rara aqui: você dá aula, então sabe mesmo antes.</p>
+              <p class="wh">Decisão de conselho, tecnologia nova, polêmica da área, contada
+              antes do paciente descobrir em outro lugar. Você dá aula, então sabe mesmo
+              antes.</p>
               <div class="pauta">
                 <span class="k">Exemplo de pauta</span>
-                <p>A disputa sobre a especialidade em harmonização orofacial, que a Justiça
-                anulou e o conselho recorreu. Você explica o que isso muda na prática para
-                quem vai fazer um procedimento, e o que a pessoa deveria perguntar ao
-                profissional independente de qualquer título. Esse assunto é seu por direito.</p>
+                <p>A especialidade em harmonização orofacial, que a Justiça anulou e o
+                conselho recorreu. O que muda na prática para quem vai fazer o procedimento,
+                e o que perguntar seja qual for o título do profissional. Esse assunto é seu
+                por direito.</p>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@drlucasfirmino · odontologia</span><span class="vw">473 mil views</span></div>
-                <span class="wy">O maior reel dele é sobre a polêmica do momento da
-                odontologia, encenada como tribunal. O assunto do mercado carrega o alcance
-                sozinho, e quem explica fica com a audiência.</span>
+                <span class="wy">O maior reel dele é a polêmica do momento da odontologia,
+                encenada como tribunal. O assunto carrega o alcance, e quem explica fica com
+                a audiência.</span>
                 <a href="https://www.instagram.com/reel/DY75mFbFc4X/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Reels · 40 a 60 segundos</span>
@@ -974,21 +962,20 @@ Avaliação ↓</pre>
                 <h4>Caso explicado</h4>
                 <div class="row"><span class="tag sv">Autoridade</span></div>
               </div>
-              <p class="wh">Um paciente seu, de verdade, contado como quem explica para
-              alguém que nunca estudou isso. A queixa, o exame, a decisão, o que mudou e o
-              que aquilo não resolve. Sempre abrindo pelo exame, que é o elemento visual que
-              só você usa com naturalidade.</p>
+              <p class="wh">Um paciente seu, contado para quem nunca estudou isso: queixa,
+              exame, decisão, o que mudou e o que não mudou. <b>Sempre abrindo pelo
+              exame.</b></p>
               <div class="pauta">
                 <span class="k">Exemplo de pauta</span>
-                <p>Paciente de 32 anos que dormia mal e achava que era insônia. Você mostra a
-                tomografia, explica onde a via aérea estava estreita, por que a mordida tinha
-                a ver com isso, e quanto tempo levou. Fecha dizendo o que a cirurgia não
-                resolveu. Sem preço em nenhum slide, com autorização assinada.</p>
+                <p>Paciente de 32 anos que dormia mal e achava que era insônia.
+                Tomografia na tela, a via aérea estreita, o que a mordida tinha a ver com
+                isso. Fecha com o que a cirurgia <b>não</b> resolveu. Sem preço, com
+                autorização assinada.</p>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">61,8 mil views</span></div>
-                <span class="wy">Um caso de ortognática contado como história, e não como
-                galeria de resultado. Três vezes a base dele, só mudando a forma de contar.</span>
+                <span class="wy">Ortognática contada como história, não como galeria de
+                resultado. Três vezes a base dele só mudando a forma de contar.</span>
                 <a href="https://www.instagram.com/reel/DcZiIxfBXMB/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Carrossel de 6 slides · a cada 15 dias</span>
@@ -999,23 +986,19 @@ Avaliação ↓</pre>
                 <h4>Bastidor de hospital</h4>
                 <div class="row"><span class="tag sv">Bastidores</span></div>
               </div>
-              <p class="wh">O preparo, o material, a equipe, o bloco. É o formato que mais
-              alcança em cirurgia de face, porque técnica visível desarma o medo e gera
-              fascínio ao mesmo tempo. E você já tem o acervo: opera no Mater Dei e é
-              plantonista do HGE.</p>
+              <p class="wh">Preparo, material, equipe, bloco. Técnica visível desarma o
+              medo e fascina ao mesmo tempo, e você já opera toda semana.</p>
               <div class="pauta">
                 <span class="k">Exemplo de pauta</span>
-                <p>O que acontece na uma hora antes de você entrar na sala. O instrumental
-                sendo conferido, a equipe se posicionando, a checagem do exame na tela. Som
-                ambiente, sem música, sem nenhum paciente identificável em cena. Quarenta
-                segundos.</p>
+                <p>A hora antes de você entrar na sala: instrumental conferido, equipe se
+                posicionando, exame checado na tela. Som ambiente, sem música, sem nenhum
+                paciente identificável. 40 segundos.</p>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">63,5 mil views</span></div>
-                <span class="wy">Bloco cirúrgico, em colaboração com um perfil de ensino.
-                <b>Cuidado com a legenda:</b> ele escreve "antes e depois" com todas as
-                letras, e isso é exatamente o que você não pode escrever. Copie o formato,
-                nunca o texto. Está explicado na seção 08.</span>
+                <span class="wy">Bloco cirúrgico, em colab com um perfil de ensino.
+                <b>Cuidado com a legenda:</b> ele escreve "antes e depois", que é o que você
+                não pode. Copia o formato, nunca o texto.</span>
                 <a href="https://www.instagram.com/reel/CwOWwlSBq9e/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Reels · 30 a 45 segundos</span>
@@ -1026,23 +1009,20 @@ Avaliação ↓</pre>
                 <h4>Posicionamento</h4>
                 <div class="row"><span class="tag sv">Bastidores</span></div>
               </div>
-              <p class="wh">Uma crença sua, dita em voz alta. É o conteúdo que faz o paciente
-              certo escolher você e o paciente errado desistir, e as duas coisas são boas.
-              Aqui você pode dizer o que não faz, e você tem uma frase que nenhum concorrente
-              assina: às vezes a resposta é não mexer.</p>
+              <p class="wh">Uma crença sua, dita em voz alta. Faz o paciente certo escolher
+              você e o errado desistir, e as duas coisas são boas.</p>
               <div class="pauta">
                 <span class="k">Exemplo de pauta</span>
-                <p>Por que método com nome de gente não existe. O que existe é técnica com
-                evidência, e evidência não tem dono. Você explica como saber se uma técnica
-                tem respaldo e quais três perguntas fazer antes de marcar em qualquer lugar.
-                Confronta a ideia, nunca a pessoa, e sem citar nome nem print.</p>
+                <p>Por que método com nome de gente não existe: o que existe é técnica com
+                evidência, e evidência não tem dono. Mostra como saber se uma técnica tem
+                respaldo e as três perguntas antes de marcar em qualquer lugar. Confronta a
+                ideia, nunca a pessoa.</p>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@dralais.silveira · 249 mil</span><span class="vw">11,1 mil views</span></div>
-                <span class="wy">Ela fala de código de conduta num perfil que batizou um
-                método com o próprio nome registrado. É o contraexemplo exato da sua crença,
-                e é por isso que está aqui: o nicho premia quem cria nome próprio, então
-                negar isso em público é território livre.</span>
+                <span class="wy">Ela fala de código de conduta num perfil que registrou um
+                método com o próprio nome. O nicho premia quem cria nome próprio, então
+                negar isso em público é território vazio.</span>
                 <a href="https://www.instagram.com/reel/DdIBRCdpZGV/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Carrossel, estático ou reels curto</span>
@@ -1053,27 +1033,25 @@ Avaliação ↓</pre>
                 <h4>Vida pessoal, em recorte</h4>
                 <div class="row"><span class="tag sv">Vida pessoal</span></div>
               </div>
-              <p class="wh">Você fora da sala, no limite que você aceita. Você é reservada por
-              escolha, e o guia respeita isso: aqui não tem rotina exposta, tem recorte
-              escolhido. É o que impede a marca de soar fria sem obrigar você a abrir nada.</p>
+              <p class="wh">Você fora da sala, no limite que você aceita. Nada de rotina
+              exposta, só recorte escolhido.</p>
               <div class="pauta">
                 <span class="k">Exemplo de pauta</span>
-                <p>A manhã em que você decidiu fazer a prova de odontologia às cinco da manhã
-                sem contar a ninguém. Cinquenta segundos, você falando direto, luz de janela,
-                sem roteiro decorado. Outras que cabem: o domingo de silêncio e filme de
-                terror, o cachorro, e o que você aprendeu dando aula.</p>
+                <p>A manhã em que você foi fazer a prova de odontologia às cinco sem
+                contar a ninguém. 50 segundos, luz de janela, sem roteiro. Outras que cabem:
+                o domingo de silêncio e filme de terror, o cachorro, o que você aprendeu
+                dando aula.</p>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@dralais.silveira · 249 mil</span><span class="vw">36,3 mil views</span></div>
-                <span class="wy">O maior reel dela é uma viagem, não um procedimento. Mesmo
-                num perfil enorme de harmonização, a vida da dona alcança mais que a técnica.</span>
+                <span class="wy">O maior reel dela é uma viagem. Mesmo num perfil enorme de
+                harmonização, a vida da dona alcança mais que a técnica.</span>
                 <a href="https://www.instagram.com/reel/DdhxuRQqAip/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">interno · @dra.jessicafcuri · 4.610</span><span class="vw">2.612 views</span></div>
                 <span class="wy">A prova dentro de casa: o seu "você é seu projeto mais
-                importante" sobre bastidor. Frase sua, em cima de imagem sua, acima da média
-                do perfil.</span>
+                importante", acima da média do perfil.</span>
                 <a href="https://www.instagram.com/reel/DbI24rmugK8/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Reels e stories · 25 a 50 segundos</span>
@@ -1096,9 +1074,8 @@ Avaliação ↓</pre>
                 <h4>Tratamento em foco</h4>
                 <div class="row"><span class="tag sv">Dúvidas</span><span class="tag t">conversão</span></div>
               </div>
-              <p class="wh">Um tratamento de cada vez, sempre na mesma ordem de quatro partes.
-              É o único formato do guia que pede ação diretamente, então ele vive
-              principalmente nos stories e aparece no feed com parcimônia.</p>
+              <p class="wh">Um tratamento de cada vez, sempre na mesma ordem. É o único
+              formato que pede ação, então vive nos stories.</p>
               <div class="pauta">
                 <span class="k">A ordem fixa, nunca muda</span>
                 <p><b>1. O problema</b>, na palavra do paciente, não na técnica.
@@ -1110,17 +1087,15 @@ Avaliação ↓</pre>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@drmanoelroque · 20,1 mil</span><span class="vw">65,6 mil views</span></div>
-                <span class="wy">A ortognática explicada pelo que ela resolve na <b>apneia do
-                sono</b>, e não pelo que ela muda no rosto. Três vezes a base dele. É
-                exatamente o território que quase ninguém liga em Salvador: ronco, mordida e
-                estrutura.</span>
+                <span class="wy">Ortognática explicada pelo que resolve na <b>apneia do
+                sono</b>, não pelo que muda no rosto. Ronco, mordida e estrutura: o
+                território que quase ninguém liga em Salvador.</span>
                 <a href="https://www.instagram.com/reel/DeAl5vmh1Ky/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <div class="ex">
                 <div class="hd"><span class="at">@drorionhaas · 10,6 mil</span><span class="vw">3.699 views</span></div>
-                <span class="wy">"O inchaço vai acontecer, e faz parte." Ele encara a maior
-                objeção do pós sem suavizar, e explica as fases. Honestidade sobre o pós é o
-                que derruba a objeção número um da ortognática.</span>
+                <span class="wy">"O inchaço vai acontecer, e faz parte." Encarar o pós sem
+                suavizar derruba a objeção número um da ortognática.</span>
                 <a href="https://www.instagram.com/reel/DMQ3KTPoXUP/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
               <span class="whr">Stories em sequência, e de vez em quando no feed</span>
@@ -1133,18 +1108,16 @@ Avaliação ↓</pre>
           <div class="ehead">
             <span class="mono t">O atalho que você ainda não usa</span>
             <h3>Colab com quem te encaminha</h3>
-            <p>Quando você publica com outra pessoa como coautora, o vídeo sai nos dois
-            perfis e alcança os seguidores dela também. No seu caso isso não é só alcance, é
-            o canal de encaminhamento virando conteúdo.</p>
+            <p>O vídeo sai nos dois perfis e alcança os seguidores dela também. No seu
+            caso isso vai além de alcance: é o canal de encaminhamento virando conteúdo.</p>
           </div>
           <div class="erows">
             <div class="erow">
               <span class="enum">1</span>
               <div class="etx">
                 <h4>Com o ortodontista, o fisioterapeuta e o médico do sono</h4>
-                <p>São as pessoas que já te mandam paciente. Gravar com elas explicando onde
-                um trabalho termina e o outro começa é conteúdo bom para os dois públicos, e
-                nenhum dos dois precisa produzir sozinho.</p>
+                <p>Já te mandam paciente. Gravar explicando onde um trabalho termina e o
+                outro começa serve aos dois públicos, e ninguém produz sozinho.</p>
               </div>
               <span class="etag">41,9 mil</span>
             </div>
@@ -1153,22 +1126,22 @@ Avaliação ↓</pre>
             <div class="erow" style="grid-template-columns:1fr">
               <div class="ex" style="margin:0">
                 <div class="hd"><span class="at">@drmanoelroque × @drafabifisio</span><span class="vw">41,9 mil views</span></div>
-                <span class="wy">Cirurgião e fisioterapeuta explicando juntos a importância
-                da fisioterapia na ortognática. Dois públicos, uma gravação.</span>
+                <span class="wy">Cirurgião e fisioterapeuta explicando juntos a fisioterapia
+                na ortognática. Dois públicos, uma gravação.</span>
                 <a href="https://www.instagram.com/reel/DdKc0kXhvwi/" target="_blank" rel="noopener">ver o reel →</a>
               </div>
             </div>
           </div>
           <div class="efoot">
-            <b>Uma por mês já muda o jogo.</b> Combine com quem já te encaminha, grave em
-            vinte minutos no consultório de um dos dois, e publiquem como coautores.
+            <b>Uma por mês já muda o jogo.</b> Combina com quem já te encaminha, grava em
+            vinte minutos no consultório de um dos dois, publica como coautores.
           </div>
         </div>
 
         <div class="note dark" style="margin-top:22px">
-          <b>A proporção que importa.</b> De cada dez publicações, só três pedem alguma ação.
-          As outras sete entregam algo sem cobrar nada. Perfil que pede em todo post vira
-          anúncio, e a pessoa para de abrir.
+          <b>Três em dez.</b> De cada dez publicações, só três pedem alguma coisa. As
+          outras sete entregam sem cobrar. Perfil que pede em todo post vira anúncio, e a
+          pessoa para de abrir.
         </div>
       </section>
 
@@ -1177,16 +1150,14 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">04</span>
           <h2>Como gravar</h2>
-          <p>Seu iPhone já é mais do que suficiente. O que muda o resultado é a luz, o som e
-          o enquadramento, nessa ordem de importância.</p>
+          <p>Seu iPhone já basta. O que muda o resultado é luz, som e enquadramento,
+          nessa ordem.</p>
         </div>
 
         <div class="sub"><span class="mono t">04 · a</span><h3>O equipamento</h3></div>
-        <p>Tripé, luz e microfone resolvem tudo, e o seu iPhone continua sendo a câmera.
-        Em cada item a gente separou <b>duas opções</b>: a que resolve e a que resolve
-        melhor. Todas com nota alta no Mercado Livre, conferidas em outubro de 2026, e o
-        botão leva direto para a página de compra. A luz é a única que vem em peças
-        separadas, e está explicado ali embaixo por quê.</p>
+        <p>Tripé, luz e microfone. <b>Duas opções em cada</b>, a que resolve e a que
+        resolve melhor, todas com nota alta no Mercado Livre. O botão vai direto para a
+        compra. Só a luz vem em peças separadas.</p>
 
         <div class="kit2">
           <div class="kitgrp">
@@ -1198,8 +1169,8 @@ Avaliação ↓</pre>
               </svg>
               <div>
                 <h4>Tripé de 2 metros</h4>
-                <p>A altura importa: ele precisa subir até a altura dos seus olhos com
-                você em pé. Confira se o suporte de celular gira, para gravar na vertical.</p>
+                <p>Precisa subir até a altura dos seus olhos com você em pé, e o suporte
+                tem que girar para gravar na vertical.</p>
               </div>
             </div>
             <div class="prods">
@@ -1226,12 +1197,10 @@ Avaliação ↓</pre>
               </svg>
               <div>
                 <h4>A luz, em duas peças</h4>
-                <p>Nada de kit com lâmpada rosqueada. O que presta é o corpo de LED,
-                chamado <b>COB</b>, que é aquele cilindro com o farol no meio, mais o
-                <b>softbox</b> que encaixa na frente dele. O encaixe se chama <b>Bowens</b>
-                e é padrão, então qualquer softbox Bowens entra em qualquer uma das duas
-                luzes abaixo. <b>Bicolor</b> quer dizer que você regula de quente a frio, e
-                você vai deixar sempre no quente.</p>
+                <p>Nada de kit com lâmpada rosqueada. O que presta é o corpo de LED (o
+                <b>COB</b>) mais o <b>softbox</b> na frente. O encaixe <b>Bowens</b> é
+                padrão, qualquer softbox serve nas duas luzes abaixo. <b>Bicolor</b> é
+                regular de quente a frio, e você deixa sempre no quente.</p>
               </div>
             </div>
             <div class="sublbl">1 · a luz</div>
@@ -1280,9 +1249,9 @@ Avaliação ↓</pre>
               </svg>
               <div>
                 <h4>Microfone de lapela sem fio, USB-C</h4>
-                <p>Som ruim faz a pessoa fechar o vídeo mais rápido que imagem ruim.
-                USB-C é o que encaixa direto no iPhone 15 e mais novos. Os dois são duplos,
-                ou seja, dá para gravar com uma paciente.</p>
+                <p>Som ruim fecha o vídeo mais rápido que imagem ruim. USB-C encaixa
+                direto no iPhone 15 e mais novos. Os dois são duplos, dá para gravar com
+                outra pessoa.</p>
               </div>
             </div>
             <div class="prods">
@@ -1300,9 +1269,8 @@ Avaliação ↓</pre>
           </div>
         </div>
 
-        <p class="muted" style="font-size:14px;margin-top:14px">Preço e link conferidos em
-        outubro de 2026. Se algum anúncio sair do ar, procure pelo nome do produto no
-        próprio Mercado Livre, que ele aparece.</p>
+        <p class="muted" style="font-size:14px;margin-top:14px">Conferido em outubro de
+        2026. Se algum anúncio sair do ar, busca o nome do produto no Mercado Livre.</p>
 
         <div class="sub"><span class="mono t">04 · b</span><h3>Ajustar o iPhone, uma vez só</h3></div>
         <div class="path">
@@ -1311,13 +1279,13 @@ Avaliação ↓</pre>
           <div>Ajustes <span class="ar">›</span> Câmera <span class="ar">›</span> Formatos <span class="ar">›</span> <b>Mais Compatível</b> &nbsp;<span style="color:var(--gray)">o arquivo fica maior e abre em qualquer editor</span></div>
           <div>Antes de cada gravação <span class="ar">›</span> <b>limpar a lente</b> com o pano do óculos</div>
         </div>
-        <p class="muted" style="font-size:14.5px;margin-top:13px">Grave sempre com a câmera
-        de trás (a boa), nunca com a da frente. Para se enquadrar sozinha, coloque o tripé
-        na marca de fita no chão e confie na marca.</p>
+        <p class="muted" style="font-size:14.5px;margin-top:13px">Sempre com a câmera de
+        trás, nunca a da frente. Para se enquadrar sozinha, põe o tripé na marca de fita no
+        chão e confia na marca.</p>
 
         <div class="sub"><span class="mono t">04 · c</span><h3>A luz</h3></div>
-        <p>Uma luz de frente, levemente de lado, na altura dos seus olhos. Uma parede clara
-        do outro lado devolve um pouco de luz e apaga a sombra dura. Isso é tudo.</p>
+        <p>Uma luz de frente, levemente de lado, na altura dos seus olhos. Uma parede
+        clara do outro lado apaga a sombra dura. Isso é tudo.</p>
 
         <div class="dia">
           <div class="cap">Visto de cima · a posição que funciona</div>
@@ -1449,68 +1417,61 @@ Avaliação ↓</pre>
           <div style="flex:1 1 210px;min-width:185px;display:flex;flex-direction:column;gap:13px">
             <div class="rule3">
               <span class="n3">1</span>
-              <p><b>Você no centro, da cintura para cima,</b> com os olhos na linha de cima
-              da grade. Com você em pé, isso quer dizer subir o tripé até a altura dos seus
-              olhos, nunca apontar de baixo. Um palmo de folga de cada lado, e a mão
-              aparecendo, porque a mão conta história.</p>
+              <p><b>Você no centro, da cintura para cima,</b> olhos na linha de cima da
+              grade. Nunca de baixo. Um palmo de folga dos lados, e a mão aparecendo.</p>
             </div>
             <div class="rule3">
               <span class="n3">2</span>
-              <p><b>Título no topo, centralizado.</b> Uma linha, duas no máximo. Ele é o
-              que segura a pessoa nos três primeiros segundos, então entra grande e sai
-              rápido.</p>
+              <p><b>Título no topo, centralizado.</b> Uma linha, duas no máximo. Entra
+              grande e sai rápido.</p>
             </div>
             <div class="rule3">
               <span class="n3">3</span>
-              <p><b>Legenda no meio, um pouco abaixo do centro, centralizada.</b> É onde o
-              olho já está, porque é onde está o seu rosto. Legenda no pé do vídeo faz a
-              pessoa olhar para baixo e perder a sua cara.</p>
+              <p><b>Legenda no meio, um pouco abaixo do centro, centralizada.</b> No pé do
+              vídeo, a pessoa olha para baixo e perde a sua cara.</p>
             </div>
           </div>
         </div>
 
-        <p class="muted" style="font-size:14.5px;margin-top:16px">Se você usar a legenda
-        automática do Instagram, arraste ela para essa altura antes de publicar. Ela nasce
-        no meio exato, e descer um pouquinho deixa o rosto livre.</p>
+        <p class="muted" style="font-size:14.5px;margin-top:16px">Usando a legenda
+        automática do Instagram, arrasta ela para essa altura antes de publicar.</p>
 
         <div class="sub"><span class="mono t">04 · e</span><h3>Onde gravar</h3></div>
-        <p>Você tem quatro lugares e cada um serve a uma coisa. Em cada um, <b>marque a
-        posição do tripé com fita no chão</b>: o perfil fica reconhecível por repetição, e
-        você deixa de perder dez minutos procurando ângulo antes de cada gravação.</p>
+        <p>Quatro lugares, um para cada coisa. Em todos, <b>marque a posição do tripé com
+        fita no chão</b>: o perfil fica reconhecível por repetição.</p>
 
         <div class="grid g4" style="margin-top:16px">
           <div class="card">
             <span class="mono t">Lugar 1 · o principal</span>
             <h4>Consultório em Salvador</h4>
-            <p>Para queixa, caso explicado, posicionamento e tratamento em foco. O fundo
-            precisa ter a paleta da marca em cena e, sempre que couber, <b>a tela com o
-            exame</b>. É aqui que a fita no chão fica.</p>
+            <p>Queixa, caso explicado, posicionamento e tratamento em foco. Fundo com a
+            paleta da marca e, sempre que couber, <b>a tela com o exame</b>. A fita no chão
+            fica aqui.</p>
           </div>
           <div class="card">
             <span class="mono t">Lugar 2</span>
             <h4>Clínica parceira, Vila Mariana</h4>
-            <p>Tudo que for harmonização. Grave em bloco nos dias em que você está em São
-            Paulo, porque a janela é curta. Assina CRO-SP.</p>
+            <p>Tudo que for harmonização. Grava em bloco nos dias de SP, porque a janela
+            é curta. Assina CRO-SP.</p>
           </div>
           <div class="card">
             <span class="mono t">Lugar 3</span>
             <h4>Hospital</h4>
-            <p>Bastidor de bloco: preparo, material, equipe. Som ambiente, sem música. Nunca
-            com paciente identificável, e sempre dentro do que o hospital autoriza.</p>
+            <p>Preparo, material, equipe. Som ambiente, sem música. Nunca com paciente
+            identificável, e sempre dentro do que o hospital autoriza.</p>
           </div>
           <div class="card">
             <span class="mono t">Lugar 4</span>
             <h4>Casa, luz de janela</h4>
-            <p>Só vida pessoal. Nunca fale de procedimento aqui, para o paciente não
-            confundir conduta técnica com conversa de sala. E nunca grave no carro.</p>
+            <p>Só vida pessoal. Nunca fale de procedimento aqui, e nunca grave no
+            carro.</p>
           </div>
         </div>
 
         <div class="note" style="margin-top:20px">
-          <b>O seu plano de fundo favorito é uma tela.</b> Tomografia e raio-x são o elemento
-          visual que só você usa com naturalidade, e nenhum concorrente seu tem isso. Sempre
-          que o assunto permitir, grave com o exame aberto no monitor atrás de você ou na
-          sua mão. Isso vale mais que qualquer cenário bonito.
+          <b>O seu melhor cenário é uma tela.</b> Tomografia e raio-x são a imagem que só
+          você usa com naturalidade. Grave com o exame aberto no monitor atrás ou na sua
+          mão sempre que der. Vale mais que qualquer cenário bonito.
         </div>
       </section>
 
@@ -1519,8 +1480,8 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">05</span>
           <h2>Stories</h2>
-          <p>O story é onde o paciente te conhece de verdade, porque ali você não está
-          produzida. É também o único lugar do Instagram onde o link é clicável.</p>
+          <p>É onde o paciente te conhece de verdade, porque ali você não está produzida.
+          E é o único lugar do Instagram onde o link é clicável.</p>
         </div>
 
         <div class="sub"><span class="mono t">05 · a</span><h3>Qualidade</h3></div>
@@ -1529,28 +1490,17 @@ Avaliação ↓</pre>
         <div class="path">
           <div>Instagram <span class="ar">›</span> Configurações e privacidade <span class="ar">›</span> Mídia <span class="ar">›</span> <b>Upload em qualidade mais alta: ativado</b></div>
         </div>
-        <p class="muted" style="font-size:14.5px;margin-top:11px">O Instagram muda o nome
-        desse menu de vez em quando. Pode aparecer como Mídia, Qualidade de mídia ou Uso de
-        dados. É o único lugar com a palavra qualidade, então é esse.</p>
-        <p style="margin-top:13px">Grave o story dentro da câmera do iPhone e depois suba, em
-        vez de gravar dentro do aplicativo do Instagram. A diferença de nitidez é visível, e
-        você ganha a chance de revisar antes.</p>
+        <p class="muted" style="font-size:14.5px;margin-top:11px">O nome do menu muda de
+        tempos em tempos: Mídia, Qualidade de mídia, Uso de dados. É o único com a palavra
+        qualidade.</p>
+        <p style="margin-top:13px">Grave na câmera do iPhone e suba depois, em vez de gravar
+        dentro do Instagram. A diferença de nitidez é visível, e você ainda revisa antes.</p>
 
-        <div class="sub"><span class="mono t">05 · b</span><h3>Enquadramento e lente</h3></div>
-        <div class="grid g2">
-          <div class="card">
-            <span class="mono t">Para mostrar o ambiente</span>
-            <h4>Grande angular, a lente 0.5x</h4>
-            <p>O bloco cirúrgico, a sala, o monitor com o exame, o instrumental na bancada. A
-            0.5x cabe o ambiente inteiro e o espaço parece maior.</p>
-          </div>
-          <div class="card fill">
-            <span class="mono t">Para mostrar você</span>
-            <h4>Lente normal, a 1x</h4>
-            <p>A 0.5x distorce o rosto de quem está perto, alarga o nariz e encurta a testa.
-            Numa conta que fala de proporção facial, isso é especialmente ruim. Quando você
-            fala para a câmera, é sempre 1x.</p>
-          </div>
+        <div class="note" style="margin-top:22px">
+          <b>A lente.</b> Ambiente (bloco, sala, o monitor com o exame) na <b>0.5x</b>, que
+          cabe tudo. Você falando, <b>sempre 1x</b>: a 0.5x alarga o nariz e encurta a
+          testa de quem está perto, e numa conta que fala de proporção facial isso é
+          constrangedor.
         </div>
 
         <div class="sub"><span class="mono t">05 · c</span><h3>Tipografia e link</h3></div>
@@ -1558,70 +1508,66 @@ Avaliação ↓</pre>
           <div class="card">
             <span class="mono t">A letra</span>
             <h4>Sempre a fonte com serifa</h4>
-            <p>Entre as fontes do Instagram, escolha a que tem os pezinhos nas letras. Use só
-            ela, em todos os stories, sempre. Nada de contorno colorido, néon, sombra ou
-            letra animada: a sua marca é sóbria e elegante, e a letra é metade disso.</p>
+            <p>A que tem os pezinhos nas letras. Só ela, sempre. Nada de contorno
+            colorido, néon, sombra ou letra animada. A sua marca é sóbria, e a letra é
+            metade disso.</p>
           </div>
           <div class="card">
             <span class="mono t">O link</span>
             <h4>Figurinha de link, com texto trocado</h4>
-            <p>Troque o texto da figurinha para <b>quero uma avaliação</b> e aponte para o
-            WhatsApp da cidade daquele conteúdo. Posicione sobre uma área lisa da imagem, no
-            terço de baixo. Um link por story, nunca dois.</p>
+            <p>Troca o texto para <b>quero uma avaliação</b> e aponta para o WhatsApp da
+            cidade daquele conteúdo. Sobre uma área lisa, no terço de baixo. Um link por
+            story, nunca dois.</p>
           </div>
         </div>
 
         <div class="sub"><span class="mono t">05 · d</span><h3>Os stories que repetem</h3></div>
-        <p>Três coisas que voltam toda semana. Repetição é o que faz o paciente criar o
-        hábito de abrir o seu story.</p>
+        <p>Três coisas que voltam toda semana. Repetição é o que cria o hábito de abrir o
+        seu story.</p>
         <div class="grid g3">
           <div class="card">
             <span class="mono t">Dias de cirurgia</span>
             <h4>Dia de hospital</h4>
-            <p>A chegada, o preparo, o instrumental, a equipe. Em sequência, ao longo do dia.
-            Sem paciente identificável e sem nada que o hospital não autorize. É o conteúdo
-            que mais prende no seu nicho e o que você já vive toda semana.</p>
+            <p>Chegada, preparo, instrumental, equipe, em sequência ao longo do dia. Sem
+            paciente identificável. É o que mais prende no seu nicho, e você já vive isso
+            toda semana.</p>
           </div>
           <div class="card fill">
             <span class="mono t">Terça</span>
             <h4>A pergunta da semana</h4>
-            <p>O story mais importante da semana, e o único dia marcado. Está detalhado na
+            <p>O story mais importante da semana e o único dia marcado. Detalhado na
             seção 06. É ele que alimenta o destaque Dúvidas.</p>
           </div>
           <div class="card">
             <span class="mono t">Uma vez por semana</span>
             <h4>O convite</h4>
-            <p>Um story só, com a figurinha de link apontando para a cidade certa e o texto
-            trocado para <b>quero uma avaliação</b>. É o único momento em que você pede
-            alguma coisa.</p>
+            <p>Um story só, link da cidade certa, texto <b>quero uma avaliação</b>. É o
+            único momento da semana em que você pede alguma coisa.</p>
           </div>
         </div>
 
         <div class="sub"><span class="mono t">05 · e</span><h3>Perfis para observar</h3></div>
-        <p>Story expira em 24 horas, então não dá para deixar link de exemplo aqui. O que dá
-        é dizer onde olhar, e o que olhar. Reserve dez minutos numa terça para abrir estes
-        três e prestar atenção em uma coisa só em cada um.</p>
+        <p>Story expira em 24 horas, então não dá para deixar link. Dá para dizer onde
+        olhar. Dez minutos numa terça, uma coisa só em cada um.</p>
 
         <div class="obs">
           <div class="obsrow">
             <span class="at">@drmanoelroque<span>20,1 mil · bucomaxilo</span></span>
             <span class="w">O perfil mais parecido com o que o seu pode virar. Olhe <b>como
             ele transforma queixa em conteúdo</b>: luxação de ATM, dor de cabeça, apneia.
-            Nenhum vídeo caro, todos com assunto que a pessoa digitou no Google. É o caminho
-            mais barato de produzir e o que mais rende nele.</span>
+            Nenhum vídeo caro. É o mais barato de produzir e o que mais rende nele.</span>
           </div>
           <div class="obsrow">
             <span class="at">@drorionhaas<span>10,6 mil · cirurgia do sono</span></span>
-            <span class="w">Olhe o <b>acabamento</b>. Mesma letra, mesma cor, mesmo padrão de
-            capa em tudo. É isso que faz o perfil parecer uma instituição. Repare também no
-            limite dele: muita coisa fala com colega, e é por isso que o alcance trava. O
-            espaço de falar com o paciente continua aberto, e é o seu.</span>
+            <span class="w">Olhe o <b>acabamento</b>: mesma letra, mesma cor, mesma capa
+            em tudo. É o que faz um perfil parecer instituição. E repare no limite dele:
+            fala muito com colega, e por isso o alcance trava.</span>
           </div>
           <div class="obsrow">
             <span class="at">@dralais.silveira<span>249 mil · harmonização</span></span>
-            <span class="w">Olhe a <b>disciplina visual</b> e ignore o resto. Ela batizou um
-            método com o próprio nome, que é exatamente o que você nega. Copie o rigor da
-            embalagem, nunca o discurso.</span>
+            <span class="w">Olhe a <b>disciplina visual</b> e ignore o resto. Ela batizou
+            um método com o próprio nome, que é o que você nega. Copie o rigor da embalagem,
+            nunca o discurso.</span>
           </div>
         </div>
       </section>
@@ -1631,8 +1577,8 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">06</span>
           <h2>A semana</h2>
-          <p>Um único dia é marcado: a terça. Todo o resto você encaixa onde der, desde que
-          a semana não acabe sem as três peças da seção 03.</p>
+          <p>Um dia marcado: a terça. O resto você encaixa onde der, desde que a semana
+          não acabe sem as três peças da seção 03.</p>
         </div>
 
         <div class="weekstrip">
@@ -1658,34 +1604,31 @@ Avaliação ↓</pre>
               <li><b>1 carrossel</b>, de caso explicado ou de assunto do mercado</li>
             </ul>
           </div>
-          <p>Dia de bloco é dia de story, não de gravar reels. Aproveite o hospital para o
-          bastidor e deixe a gravação com roteiro para um dia de consultório. Fim de semana é
-          livre de verdade.</p>
+          <p>Dia de bloco é dia de story, não de gravar reels. O hospital rende bastidor.
+          A gravação com roteiro fica para um dia de consultório.</p>
         </div>
 
         <div class="sub"><span class="mono t">06 · a</span><h3>A pergunta da semana</h3></div>
-        <p>É o ritual da marca, e o único compromisso fixo. O paciente aprende o dia e volta.
-        Ele resolve três coisas de uma vez: te dá pauta, te dá alcance e enche o destaque
-        Dúvidas sem nenhum trabalho extra.</p>
+        <p>O único compromisso fixo. O paciente aprende o dia e volta. Resolve três coisas
+        de uma vez: te dá pauta, te dá alcance e enche o destaque Dúvidas de graça.</p>
 
         <div class="grid g4" style="margin-top:18px">
           <div class="card">
             <span class="mono t">Segunda, fim do dia</span>
-            <p>Sobe a caixinha de perguntas. O título é curtinho, porque o Instagram corta
-            frase longa: <b>"Pergunte sem medo"</b>. Se quiser variar, <b>"Pode
-            perguntar"</b> ou <b>"Me pergunta"</b>. Sempre o mesmo, semana após semana.</p>
+            <p>Sobe a caixinha. Título curto, porque o Instagram corta frase longa:
+            <b>"Pergunte sem medo"</b>. Ou <b>"Pode perguntar"</b>. Sempre o mesmo, semana
+            após semana.</p>
           </div>
           <div class="card fill">
             <span class="mono t">Terça</span>
-            <p>Você responde. Uma pergunta por story, e <b>quando couber, com o exame na
-            tela</b>. Resposta curta, direta, sem jargão. Se a resposta for "isso eu preciso
-            ver de perto", diga isso, que é a sua marca.</p>
+            <p>Uma pergunta por story, e <b>com o exame na tela sempre que couber</b>.
+            Curta, direta, sem jargão. Se for caso de "isso eu preciso ver de perto", diga
+            isso. É a sua marca.</p>
           </div>
           <div class="card">
             <span class="mono t">Se não chegar pergunta</span>
-            <p>Responde as de sempre. A Nold mantém uma lista com as dez perguntas que mais
-            aparecem nas duas frentes, e você usa uma delas. Ninguém percebe, e o ritual não
-            quebra.</p>
+            <p>Responde as de sempre. A Nold mantém a lista das dez que mais aparecem nas
+            duas frentes. Ninguém percebe, e o ritual não quebra.</p>
           </div>
           <div class="card">
             <span class="mono t">Fecha com o convite</span>
@@ -1696,9 +1639,9 @@ Avaliação ↓</pre>
         </div>
 
         <div class="note" style="margin-top:20px">
-          <b>E o destaque se enche.</b> No mesmo dia, antes das 24 horas, salve as melhores
-          respostas no destaque <b>Dúvidas</b>. Em oito semanas você tem quarenta respostas
-          lá dentro, cada uma gravada em dez segundos, numa terça.
+          <b>E o destaque se enche.</b> Antes das 24 horas, salve as melhores respostas no
+          destaque <b>Dúvidas</b>. Em oito semanas são quarenta respostas lá dentro, cada
+          uma gravada em dez segundos, numa terça.
         </div>
       </section>
 
@@ -1707,8 +1650,8 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">07</span>
           <h2>Os três primeiros segundos</h2>
-          <p>Em três segundos a pessoa decide se continua. O assunto vem na primeira frase, e
-          o seu nome vem depois. Quem ficou até o fim é que vai querer saber quem você é.</p>
+          <p>Em três segundos a pessoa decide se continua. O assunto vem na primeira
+          frase. O seu nome vem depois, para quem ficou.</p>
         </div>
 
         <div class="hooks">
@@ -1746,98 +1689,94 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">08</span>
           <h2>O que não fazer</h2>
-          <p>A sua área é a mais fiscalizada deste guia. Parte do que está aqui é regra do
-          conselho, parte é posicionamento da marca. Na dúvida sobre qualquer peça, pergunte
-          para a Nold antes de publicar.</p>
+          <p>A sua área é a mais fiscalizada da carteira. Parte disto é regra do conselho,
+          parte é posicionamento. Na dúvida, pergunta antes de publicar.</p>
         </div>
 
         <div class="rules">
           <div class="rule">
             <span class="no"><b>Publicar peça de procedimento sem o registro.</b> E pior:
             publicar com o registro da cidade errada.</span>
-            <span class="yes"><span class="k">no lugar</span><b>CRO-BA 16230</b> em tudo que
-            for cirurgia, ATM, ortognática, siso, implante e hospital. <b>CRO-SP 180773</b>
-            em tudo que for harmonização. Vida pessoal e posicionamento podem ir sem.</span>
+            <span class="yes"><span class="k">no lugar</span><b>CRO-BA 16230</b> em
+            cirurgia, ATM, ortognática, siso, implante e hospital. <b>CRO-SP 180773</b> em
+            harmonização.</span>
           </div>
           <div class="rule">
             <span class="no"><b>Escrever "antes e depois".</b> A imagem comparativa você pode
             mostrar <b>no perfil</b>. O que não pode é a expressão escrita na arte, na
             legenda ou no story.</span>
             <span class="yes"><span class="k">no lugar</span><b>Caso explicado.</b> Mesma
-            imagem, mesmo conteúdo, nome que o conselho aceita e que soa mais técnico. E
-            <b>toda</b> imagem de paciente só vai ao ar com autorização escrita e assinada,
-            guardada antes da publicação.</span>
+            imagem, nome que o conselho aceita. E imagem de paciente só vai ao ar com
+            autorização assinada.</span>
           </div>
           <div class="rule">
             <span class="no"><b>Impulsionar qualquer peça com imagem de paciente.</b> Mesmo
             com autorização assinada, mesmo sem o rosto.</span>
-            <span class="yes"><span class="k">no lugar</span>Comparativo só no perfil, nunca
-            em anúncio pago. Para impulsionar, use peça com você falando, card de crença ou
-            bastidor sem paciente.</span>
+            <span class="yes"><span class="k">no lugar</span>Comparativo só no perfil. Para
+            impulsionar, use peça com você falando, card de crença ou bastidor sem
+            paciente.</span>
           </div>
           <div class="rule">
-            <span class="no"><b>Dizer "especialista em harmonização orofacial".</b> A Justiça
-            anulou a resolução que criava a especialidade e o conselho recorreu. Enquanto
-            isso não se resolve, o termo é risco.</span>
+            <span class="no"><b>Dizer "especialista em harmonização orofacial".</b> A
+            Justiça anulou a resolução e o conselho recorreu. Enquanto não se resolve, o
+            termo é risco.</span>
             <span class="yes"><span class="k">no lugar</span><b>Cirurgiã bucomaxilofacial
-            que também realiza harmonização facial.</b> É mais forte, é verdade, e é
-            exatamente o que ninguém mais pode dizer.</span>
+            que também realiza harmonização facial.</b> Mais forte, e ninguém mais pode
+            dizer.</span>
           </div>
           <div class="rule">
             <span class="no"><b>A palavra Botox</b> como nome genérico. É marca registrada de
             um fabricante.</span>
-            <span class="yes"><span class="k">no lugar</span><b>Toxina botulínica.</b> E se
-            for falar da marca que você usa, diga o nome dela corretamente.</span>
+            <span class="yes"><span class="k">no lugar</span><b>Toxina botulínica.</b> Se
+            for citar a marca que você usa, o nome correto dela.</span>
           </div>
           <div class="rule">
-            <span class="no"><b>Depoimento de paciente</b> falando do resultado. O conselho
-            trata isso como propaganda de resultado, e é um dos pontos que mais gera
+            <span class="no"><b>Depoimento de paciente</b> falando do resultado. O
+            conselho trata como propaganda de resultado, e é dos pontos que mais geram
             notificação.</span>
-            <span class="yes"><span class="k">no lugar</span><b>Caso explicado por você.</b>
-            A mesma história, contada do seu lugar: a queixa, o exame, a decisão, a
-            limitação. Se o paciente aparece, é como personagem do caso, não como quem
-            recomenda.</span>
+            <span class="yes"><span class="k">no lugar</span><b>Caso explicado por
+            você.</b> A mesma história do seu lugar. Se o paciente aparece, é personagem do
+            caso, nunca quem recomenda.</span>
           </div>
           <div class="rule">
             <span class="no"><b>Preço em post, story ou legenda.</b> Nem valor, nem "a partir
             de", nem parcela.</span>
-            <span class="yes"><span class="k">no lugar</span>Preço só no orçamento
-            individual, depois da avaliação. No conteúdo, fale do critério e do prazo.</span>
+            <span class="yes"><span class="k">no lugar</span>Preço só no orçamento, depois
+            da avaliação. No conteúdo, critério e prazo.</span>
           </div>
           <div class="rule">
             <span class="no"><b>Método com o seu nome.</b> "Método Jéssica Curi", "Protocolo
             JC", qualquer coisa que transforme técnica em marca pessoal.</span>
-            <span class="yes"><span class="k">no lugar</span>É a sua crença mais forte: o que
-            existe é ciência, e ciência não tem dono. Negar isso em público é território
-            livre, e vira pauta boa.</span>
+            <span class="yes"><span class="k">no lugar</span>A sua crença mais forte: o que
+            existe é ciência, e ciência não tem dono. Vira pauta boa.</span>
           </div>
           <div class="rule">
             <span class="no"><b>Prometer resultado.</b> "Garantido", "não vai doer nada",
             "você vai sair outra pessoa".</span>
             <span class="yes"><span class="k">no lugar</span>Prazo e limitação. "O inchaço
-            dura semanas, o resultado final leva meses, e isso aqui não resolve a parte que é
-            do ortodontista."</span>
+            dura semanas, o resultado leva meses, e isso não resolve a parte do
+            ortodontista."</span>
           </div>
           <div class="rule">
             <span class="no"><b>Dar conduta pelo direct.</b> Sem exame, sem ver, sem
             anamnese.</span>
             <span class="yes"><span class="k">no lugar</span>"Isso eu preciso ver de perto
-            para te responder com honestidade." Convida para avaliação, na cidade certa.</span>
+            para te responder com honestidade." E convida para a avaliação.</span>
           </div>
         </div>
 
         <div class="live" style="margin-top:22px">
           <h4>Quatro coisas que estão no ar hoje</h4>
           <ul>
-            <li>Um post com a palavra <b>DEPOIMENTO</b> em destaque amarelo.
-              <span>É o item de maior risco do seu perfil. Arquive, e a Nold refaz o conteúdo
-              como caso explicado, que conta a mesma história dentro da regra.</span></li>
+            <li>Um post com a palavra <b>DEPOIMENTO</b> em amarelo.
+              <span>O item de maior risco do perfil. Arquiva, e a Nold refaz como caso
+              explicado, que conta a mesma história dentro da regra.</span></li>
             <li>Uma arte com <b>o seu nome em cima de "HOF · Harmonização Orofacial"</b>.
-              <span>Lido rápido, parece método com nome de gente, que é justamente o que você
-              nega. Vale refazer separando as duas coisas.</span></li>
+              <span>Lido rápido vira método com nome de gente, que é o que você nega. Vale
+              refazer separando as duas coisas.</span></li>
             <li><b>Comparativos de rosto</b> no feed.
-              <span>Podem ficar, desde que exista autorização assinada arquivada para cada
-              um. O que não pode, em nenhuma hipótese, é impulsionar esses posts.</span></li>
+              <span>Podem ficar, desde que exista autorização assinada para cada um. O que
+              não pode, em hipótese nenhuma, é impulsionar.</span></li>
             <li><b>"Hamonização"</b>, sem o R, no campo Nome do perfil.
               <span>É o primeiro item do checklist da seção 10.</span></li>
           </ul>
@@ -1849,31 +1788,23 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">09</span>
           <h2>Música</h2>
-          <p>Conta profissional tem acesso limitado ao catálogo musical, e isso é de
-          propósito. Entenda a regra uma vez e pare de perder tempo procurando trend.</p>
+          <p>Conta profissional não pega música famosa, e é de propósito. Entenda a regra
+          uma vez e pare de procurar trend.</p>
         </div>
 
-        <div class="grid g3">
+        <div class="grid g2">
           <div class="card">
             <span class="mono t">A regra</span>
-            <h4>Conta profissional não pega música famosa</h4>
-            <p>O Instagram libera o catálogo comercial para contas de empresa, que é outro
-            acervo, sem os lançamentos e sem os trends do momento. Ficar trocando para conta
-            de criador para pegar o áudio da moda cria outros problemas, e não vale a troca.</p>
-          </div>
-          <div class="card">
-            <span class="mono t">O detalhe que pega</span>
-            <h4>Post impulsionado fica mudo</h4>
-            <p>Se a gente impulsionar um reel que tem música do catálogo comercial, o
-            Instagram pode silenciar o vídeo no anúncio. Um vídeo onde a música carregava a
-            emoção vira um vídeo mudo, pago, sem explicação.</p>
+            <p>Conta de empresa só acessa o catálogo comercial, sem lançamento e sem trend.
+            Trocar para conta de criador atrás do áudio da moda cria outros problemas e não
+            compensa. E se a gente impulsionar um reel com música de lá, o Instagram pode
+            silenciar o vídeo no anúncio.</p>
           </div>
           <div class="card fill">
             <span class="mono t">O que fazer</span>
-            <h4>A sua voz é a trilha</h4>
-            <p>Quase todo conteúdo seu é você explicando, então a música só preenche o fundo
-            baixinho. <b>No bastidor de hospital, prefira som ambiente puro</b>: o bipe, o
-            instrumental, a equipe. Fica mais sério e mais verdadeiro que qualquer trilha.</p>
+            <p>A sua voz é a trilha. A música só preenche o fundo baixinho. <b>No bastidor
+            de hospital, som ambiente puro</b>: o bipe, o instrumental, a equipe. Mais sério
+            e mais verdadeiro que qualquer trilha.</p>
           </div>
         </div>
       </section>
@@ -1883,8 +1814,8 @@ Avaliação ↓</pre>
         <div class="bhead">
           <span class="n">10</span>
           <h2>Os primeiros 7 dias</h2>
-          <p>Uma coisa por dia. Marque conforme for fazendo, que fica salvo neste navegador.
-          Em uma semana o perfil está pronto para receber o conteúdo novo.</p>
+          <p>Uma coisa por dia. Marque conforme for fazendo, que fica salvo neste
+          navegador. Em uma semana o perfil está pronto.</p>
         </div>
 
         <div class="check" id="check">
@@ -1892,7 +1823,7 @@ Avaliação ↓</pre>
             <input type="checkbox" data-k="j1">
             <span class="dy">Dia 1</span>
             <span class="tx">Corrigir o campo Nome e colar a bio nova
-              <span>Hoje está escrito "Hamonização", sem o R, e sem cidade nenhuma. Os dois quadros de copiar e colar estão na seção 01.</span></span>
+              <span>Hoje está "Hamonização", sem o R, e sem cidade nenhuma. Os quadros de copiar e colar estão na seção 01.</span></span>
           </label></div>
           <div class="ck"><label>
             <input type="checkbox" data-k="j2">
@@ -1904,7 +1835,7 @@ Avaliação ↓</pre>
             <input type="checkbox" data-k="j3">
             <span class="dy">Dia 2</span>
             <span class="tx">Mandar para a Nold o contato de São Paulo
-              <span>Sem ele a gente não monta a página de bio com os dois botões, e o paciente de SP continua caindo no 71.</span></span>
+              <span>Sem ele não dá para montar a página de bio, e o paciente de SP continua caindo no 71.</span></span>
           </label></div>
           <div class="ck"><label>
             <input type="checkbox" data-k="j4">
@@ -1916,7 +1847,7 @@ Avaliação ↓</pre>
             <input type="checkbox" data-k="j5">
             <span class="dy">Dia 3</span>
             <span class="tx">Escolher o lugar fixo no consultório e marcar o chão com fita
-              <span>Tripé, luz e a sua posição, com a tela do exame no enquadramento. Três marcas de fita, e nunca mais procurar ângulo.</span></span>
+              <span>Tripé, luz e a sua posição, com a tela do exame no quadro. Três marcas de fita e nunca mais procurar ângulo.</span></span>
           </label></div>
           <div class="ck"><label>
             <input type="checkbox" data-k="j6">
@@ -1928,7 +1859,7 @@ Avaliação ↓</pre>
             <input type="checkbox" data-k="j7">
             <span class="dy">Dia 5</span>
             <span class="tx">Gravar o primeiro reels de queixa
-              <span>Escolha uma queixa que você escuta toda semana, escreva três frases num papel e grave com o exame na tela. Não precisa estar perfeito, precisa estar no ar.</span></span>
+              <span>Uma queixa que você escuta toda semana, três frases num papel, o exame na tela. Não precisa estar perfeito, precisa estar no ar.</span></span>
           </label></div>
           <div class="ck"><label>
             <input type="checkbox" data-k="j8">
@@ -1946,7 +1877,7 @@ Avaliação ↓</pre>
             <input type="checkbox" data-k="j10">
             <span class="dy">Dia 7</span>
             <span class="tx">Conferir a autorização escrita de cada comparativo no ar
-              <span>Todo post com imagem de paciente precisa de autorização assinada arquivada. O que não tiver, arquive até resolver.</span></span>
+              <span>Todo post com imagem de paciente precisa de autorização assinada. O que não tiver, arquiva até resolver.</span></span>
           </label></div>
         </div>
       </section>
