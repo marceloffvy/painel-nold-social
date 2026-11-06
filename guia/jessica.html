@@ -251,6 +251,8 @@ p:last-child{margin-bottom:0}
 .copybox .mono.t{color:var(--ouro)}
 .copybox pre{margin:0;font-family:var(--sans);font-weight:300;font-size:15px;line-height:1.5;
   color:#F7EFE7;white-space:pre-wrap;word-break:break-word}
+.cpnota{font-size:12.5px;line-height:1.45;color:#C8B89F;margin:0}
+.cpnota b{color:var(--ouro);font-weight:500}
 .cpbtn{align-self:flex-start;font-family:var(--mono);font-size:10px;letter-spacing:.13em;
   text-transform:uppercase;color:var(--cacau);background:var(--ouro);padding:7px 14px;cursor:pointer}
 .cpbtn:hover{background:#E7D49A}
@@ -481,26 +483,27 @@ p:last-child{margin-bottom:0}
 
         <div class="split">
           <div>
-            <span class="mono t">Campanha · a Nold faz inteiro</span>
-            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">Sai pronto da
-            nossa mão. Você aprova, a gente publica.</p>
+            <span class="mono t">Campanha · a Nold entrega</span>
+            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">As peças da
+            campanha no ar saem prontas da nossa mão. Você aprova e a gente publica.</p>
             <ul>
-              <li>Conceito, pauta e roteiro</li>
-              <li>Gravação, edição, legenda e trilha</li>
-              <li>Capa, carrossel, card e arte</li>
-              <li>Legenda e revisão de conformidade</li>
-              <li>Os três posts fixados</li>
+              <li>O roteiro de cada peça da campanha</li>
+              <li>A gravação dos vídeos da campanha, com a nossa equipe</li>
+              <li>A edição desses vídeos</li>
+              <li><b>Modelos de arte</b> para você personalizar e usar quando quiser</li>
             </ul>
           </div>
           <div class="them">
-            <span class="mono t">Dia a dia · você faz inteiro</span>
-            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">Seu do começo ao
-            fim. A gente entra com formato, tema e ideia. Este guia é isso.</p>
+            <span class="mono t">Dia a dia · você faz</span>
+            <p style="font-size:14.5px;color:var(--gray);margin:10px 0 0">Stories e
+            conteúdo orgânico são seus, do começo ao fim. A gente entra com formato, tema e
+            ideia, e este guia é isso.</p>
             <ul>
+              <li>Todos os stories</li>
               <li>Escolher o assunto, nas linhas da seção 03</li>
               <li>Gravar, com a luz e o quadro da seção 04</li>
               <li>Editar, legendar e publicar, com o CRO da cidade certa</li>
-              <li>Os stories do dia e a pergunta da semana</li>
+              <li>Personalizar os modelos de arte nos seus posts</li>
               <li>Guardar a autorização de cada paciente que aparece</li>
             </ul>
           </div>
@@ -513,13 +516,6 @@ p:last-child{margin-bottom:0}
           plantão, aula e duas cidades.
         </div>
 
-        <div class="note dark" style="margin-top:16px">
-          <b>Por que vale o esforço.</b> <b>40% das suas avaliações viram cirurgia.</b>
-          A média do mercado é 10%. Quem senta na sua frente, fecha. Só que o seu reel
-          alcança 800 pessoas, quase todas já suas. Você não precisa aprender a convencer.
-          Precisa ser vista. Cada seguidor novo vale quatro vezes mais para você do que
-          para o seu concorrente.
-        </div>
       </section>
 
       <!-- ======================= 01 ======================= -->
@@ -556,14 +552,18 @@ p:last-child{margin-bottom:0}
             <span class="mono t">Campo Nome · copie e cole</span>
             <pre id="cp-nome">Dra. Jéssica Curi | Bucomaxilo Salvador · Harmonização SP</pre>
             <button class="cpbtn" data-cp="cp-nome">copiar</button>
+            <p class="cpnota">Cabe: são <b>57 caracteres</b>, menos que os 59 que o seu
+            nome já tem hoje.</p>
           </div>
           <div class="copybox">
-            <span class="mono t">Bio · copie e cole, 135 de 150 caracteres</span>
+            <span class="mono t">Bio · copie e cole, 109 de 150 caracteres</span>
             <pre id="cp-bio">Cirurgiã bucomaxilofacial · harmonização facial
-Salvador e São Paulo · entender antes de mexer
+Salvador e São Paulo
 CRO-BA 16230 · CRO-SP 180773
 Avaliação ↓</pre>
             <button class="cpbtn" data-cp="cp-bio">copiar</button>
+            <p class="cpnota">Sobraram 41 caracteres, que é a folga para o registro entrar
+            na primeira linha se o conselho exigir.</p>
           </div>
         </div>
 
@@ -579,7 +579,7 @@ Avaliação ↓</pre>
           </div>
           <div class="bioname">Dra. Jéssica Curi | Bucomaxilo Salvador · Harmonização SP</div>
           <div class="bioline"><span class="bn">1</span><span>Cirurgiã bucomaxilofacial · harmonização facial</span></div>
-          <div class="bioline"><span class="bn">2</span><span>Salvador e São Paulo · entender antes de mexer</span></div>
+          <div class="bioline"><span class="bn">2</span><span>Salvador e São Paulo</span></div>
           <div class="bioline"><span class="bn">3</span><span>CRO-BA 16230 · CRO-SP 180773</span></div>
           <div class="bioline"><span class="bn">4</span><span>Avaliação ↓</span></div>
           <div class="biolink">jessicacuri.com.br/bio</div>
@@ -588,8 +588,9 @@ Avaliação ↓</pre>
         <ol class="annot">
           <li><span class="bn">1</span><span><b>O que você é.</b> Cirurgiã vem primeiro,
           porque ninguém mais na sua disputa é. Hoje a bio abre com "dentista geral".</span></li>
-          <li><span class="bn">2</span><span><b>Onde e por quê.</b> As duas cidades matam
-          a maior confusão do perfil, e o slogan entra junto.</span></li>
+          <li><span class="bn">2</span><span><b>Onde.</b> As duas cidades matam a maior
+          confusão do perfil. É a linha que decide se a pessoa de São Paulo continua
+          lendo.</span></li>
           <li><span class="bn">3</span><span><b>Os dois registros.</b> Obrigatório. Na bio
           ficam os dois, <b>na peça vai só o da cidade daquele conteúdo</b>.</span></li>
           <li><span class="bn">4</span><span><b>A ação.</b> Uma só. Sem telefone solto,
@@ -718,7 +719,7 @@ Avaliação ↓</pre>
           <span class="n">02</span>
           <h2>Os três fixados</h2>
           <p>Três publicações congeladas no topo. É o que 100% de quem chega vê primeiro,
-          e elas não envelhecem. A Nold produz as três.</p>
+          e elas não envelhecem. A Nold escreve e desenha as três.</p>
         </div>
 
         <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start;margin-bottom:26px">
@@ -824,8 +825,9 @@ Avaliação ↓</pre>
               <div class="etx">
                 <h4>Carrossel</h4>
                 <p>Um por semana, de <b>meio</b>: um caso explicado ou um assunto do
-                mercado com mais calma do que cabe num reels. É o que o paciente salva e
-                manda para a família antes de decidir.</p>
+                mercado com mais calma do que cabe num reels. <b>Você monta no modelo de
+                arte que a Nold te entrega</b>, só trocando texto e imagem. É o que o
+                paciente salva e manda para a família antes de decidir.</p>
               </div>
               <span class="etag">meio</span>
             </div>
