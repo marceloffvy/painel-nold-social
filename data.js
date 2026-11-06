@@ -1031,7 +1031,7 @@ const CLIENTES = [
   arroba:'@dra.jessicafcuri', perfil:'https://www.instagram.com/dra.jessicafcuri/',
   seguidores:'4.578', avatar:'img/jessica/avatar.webp',
   guia:{href:'guia/jessica', t:'Guia de Instagram da Dra. Jéssica',
-        d:'O manual que ela usa: perfil e bio com os dois CROs, a regra das duas cidades, as oito linhas de conteúdo com exemplo real, como gravar, stories, a semana e a conformidade com o conselho.'},
+        d:'O manual que ela usa: perfil e bio com os dois CROs, a regra das duas cidades, as oito linhas de conteúdo com exemplo real, como gravar, stories, a semana e a conformidade com o conselho. Nas cores da identidade dela.'},
 
   /* ---------- 01 DIAGNÓSTICO ---------- */
   nicho:'Cirurgia bucomaxilofacial (ATM, ortognática, siso, implante) em Salvador e harmonização orofacial em São Paulo, na Vila Mariana.',
@@ -1044,7 +1044,7 @@ const CLIENTES = [
   ],
   signos:[
     {t:'Luz', d:'Quente e contida. Elegante, sem brilho de vitrine.'},
-    {t:'Cor', d:'Dourado, marrom profundo e creme. Paleta ainda a fechar.'},
+    {t:'Cor', d:'Off-white, nude, rosé, oliva, cinza e grafite. Paleta fechada.'},
     {t:'Ícone', d:'A imagem do exame. Tomografia e raio-x são o elemento visual que só ela usa com naturalidade.'},
     {t:'Gesto', d:'A mão traçando a linha do osso, no próprio rosto ou na tela.'},
     {t:'Ritmo', d:'Aula curta de quem domina o assunto, dita sem soberba.'}
@@ -1084,17 +1084,19 @@ const CLIENTES = [
   /* ---------- 02 IDENTIDADE ---------- */
   identidade:{
     logos:[
-      {img:'img/jessica/avatar.webp', t:'Retrato', d:'Hoje a marca é o rosto dela.'}
+      {img:'img/jessica/avatar.webp', t:'Retrato', d:'O rosto dela no perfil. O monograma JC fica nas peças.'}
     ],
     paleta:[
-      {hex:'#C9A227', nome:'Dourado'},
-      {hex:'#3A2C20', nome:'Marrom profundo'},
-      {hex:'#EDE4D6', nome:'Creme'},
-      {hex:'#1A1714', nome:'Quase-preto'}
+      {hex:'#FAF8F6', nome:'Off-white'},
+      {hex:'#DFD0C9', nome:'Nude'},
+      {hex:'#D1BAB4', nome:'Rosé'},
+      {hex:'#98997B', nome:'Oliva'},
+      {hex:'#716C66', nome:'Cinza quente'},
+      {hex:'#444444', nome:'Grafite'}
     ],
     tipos:[
-      {papel:'Manual', nome:'Não existe. Marca feita com apoio de IA'},
-      {papel:'Prioridade 30 dias', nome:'Paleta e manual mínimo (Nold)'},
+      {papel:'Símbolo', nome:'Monograma JC em traço caligráfico fino'},
+      {papel:'Títulos', nome:'Serifada fina em caixa alta espaçada'},
       {papel:'Obrigatório na peça', nome:'CRO-BA 16230 · CRO-SP 180773'}
     ]
   },
@@ -1105,7 +1107,7 @@ const CLIENTES = [
     diag:[
       {t:'Alcance', v:'Reels de 600 a 1.000 views. Cerca de 20% da base.', s:'ajustar'},
       {t:'Explicação', v:'Ela explica muito bem na consulta e quase nada no perfil.', s:'ajustar'},
-      {t:'Identidade', v:'Sem paleta nem manual. Cada peça sai diferente.', s:'ajustar'},
+      {t:'Identidade', v:'Paleta e monograma JC existem. Falta aplicar no feed.', s:'ajustar'},
       {t:'Duas cidades', v:'Salvador e SP disputam o mesmo feed, sem separação clara.', s:'ajustar'},
       {t:'Estética do feed', v:'Dourado e escuro já dão um ar próprio. Boa base.', s:'ok'},
       {t:'Conversão', v:'~40% das avaliações viram cirurgia. Quatro vezes a média.', s:'ok'}
@@ -1122,14 +1124,14 @@ const CLIENTES = [
       {t:'Bastidor', c:'bas'},{t:'Dúvida', c:'duv'},{t:'Autoridade', c:'aut'}
     ],
     checklist:[
-      {t:'Paleta e manual mínimo', d:'A prioridade número um dos 30 dias. Sem isso nada se acumula.', ok:false},
+      {t:'Paleta e monograma', d:'Existem: off-white, nude, rosé, oliva, cinza e grafite, mais o JC.', ok:true},
       {t:'Exame na tela', d:'Tomografia e raio-x como abertura de todo caso explicado.', ok:false},
       {t:'Retrato de autoridade', d:'Luz quente, tom dourado, com e sem jaleco.', ok:false},
       {t:'Bastidor de hospital', d:'Preparo, material e equipe, sem paciente identificável.', ok:false},
       {t:'Pele real em close', d:'O natural que ela defende, com textura de verdade.', ok:false},
       {t:'Texto legal e CRO', d:'CRO-BA nas peças de Salvador, CRO-SP nas de SP.', ok:false},
       {t:'Banco de casos autorizados', d:'Já existe registro por caso, com autorização assinada.', ok:true},
-      {t:'DDD 11 no link da bio', d:'Com os dois atendimentos declarados.', ok:false}
+      {t:'Link da bio com as duas cidades', d:'dra-jessica-curi.vercel.app/bio, com CRO e contato de cada uma.', ok:true}
     ]
   },
 

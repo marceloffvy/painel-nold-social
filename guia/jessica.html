@@ -19,11 +19,11 @@
 
 :root{
   color-scheme:light;
-  --paper:#FBF7F0; --card:#FFFFFF; --creme:#EDE4D6; --creme-d:#DCD0BC;
-  --terra:#C9A227; --terra-d:#8F6F12; --salvia:#7E8A63; --salvia-l:#C3CBAF;
-  --cacau:#3A2C20; --ouro:#D8BE6B;
-  --ink:#241D17; --gray:#6E6055; --gray-l:#9A8B7D;
-  --line:#E4DACB; --line-2:#D2C4B0;
+  --paper:#FAF8F6; --card:#FFFFFF; --creme:#EFE8E3; --creme-d:#DFD0C9;
+  --terra:#716C66; --terra-d:#444444; --salvia:#98997B; --salvia-l:#C6C7B2;
+  --cacau:#444444; --ouro:#D1BAB4;
+  --ink:#3C3A38; --gray:#716C66; --gray-l:#A39D96;
+  --line:#E8E0DA; --line-2:#DFD0C9;
   --serif:'Hebrinks',Georgia,'Times New Roman',serif;
   --sans:'Haas',ui-sans-serif,-apple-system,'Helvetica Neue',Arial,sans-serif;
   --mono:'Plex',ui-monospace,'SF Mono',Menlo,monospace;
@@ -79,7 +79,7 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,7vw,66px);
 
 /* ---------- índice ---------- */
 /* arranque */
-.arranque{border:1px solid var(--terra);background:#FBF5E4;padding:20px 22px 22px;margin:30px 0 0}
+.arranque{border:1px solid var(--terra);background:#F3EFEA;padding:20px 22px 22px;margin:30px 0 0}
 .ar3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:14px}
 .ar3>div{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start}
 .ar3 .arn{font-family:var(--mono);font-weight:500;font-size:11px;color:#fff;background:var(--terra-d);
@@ -150,8 +150,8 @@ p:last-child{margin-bottom:0}
   padding:14px 18px;border-bottom:1px solid var(--line)}
 .stage>header .lbl{font-family:var(--serif);font-size:21px}
 .stage>header .gl{font-size:14px;color:var(--gray);flex:1;min-width:140px}
-.stage.topo>header{background:#F2E6C8}
-.stage.meio>header{background:#E6E2D6}
+.stage.topo>header{background:#E8DED6}
+.stage.meio>header{background:#E8E9DD}
 .stage.fundo>header{background:var(--cacau)}
 .stage.fundo>header .lbl{color:var(--creme)}
 .stage.fundo>header .gl{color:#CBB9AC}
@@ -204,7 +204,7 @@ p:last-child{margin-bottom:0}
 }
 
 /* aviso de nao copiar */
-.warn{border-left:3px solid var(--terra);background:#FBF5E4;padding:20px 22px 22px;margin-bottom:26px}
+.warn{border-left:3px solid var(--terra);background:#F3EFEA;padding:20px 22px 22px;margin-bottom:26px}
 .warn h4{color:var(--terra-d);font-size:16px;margin-bottom:10px}
 .warn p{font-size:15px;color:var(--ink);line-height:1.55;margin:0 0 11px}
 .warn ul{margin:0 0 13px;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
@@ -238,8 +238,8 @@ p:last-child{margin-bottom:0}
 .scalecol{display:flex;flex-direction:column;gap:11px}
 
 /* confirmacao */
-.okbox{display:grid;grid-template-columns:34px 1fr;gap:15px;background:#EDF0E4;
-  border:1px solid #D2DAC2;padding:18px 20px 20px;align-items:start}
+.okbox{display:grid;grid-template-columns:34px 1fr;gap:15px;background:#EDEFE5;
+  border:1px solid #CFD2BE;padding:18px 20px 20px;align-items:start}
 .okbox .ok{width:34px;height:34px;border-radius:50%;background:#7E8A63;color:#fff;
   display:grid;place-items:center;font-size:17px;line-height:1}
 .okbox h4{color:#56603F;margin-bottom:7px}
@@ -251,33 +251,23 @@ p:last-child{margin-bottom:0}
 .copybox .mono.t{color:var(--ouro)}
 .copybox pre{margin:0;font-family:var(--sans);font-weight:300;font-size:15px;line-height:1.5;
   color:#F7EFE7;white-space:pre-wrap;word-break:break-word}
-.cpnota{font-size:12.5px;line-height:1.45;color:#C8B89F;margin:0}
+.cpnota{font-size:12.5px;line-height:1.45;color:#BFB6AE;margin:0}
 .cpnota b{color:var(--ouro);font-weight:500}
 .cpbtn{align-self:flex-start;font-family:var(--mono);font-size:10px;letter-spacing:.13em;
   text-transform:uppercase;color:var(--cacau);background:var(--ouro);padding:7px 14px;cursor:pointer}
-.cpbtn:hover{background:#E7D49A}
+.cpbtn:hover{background:#C7C8B3}
 .cpbtn[data-done]{background:#9AA87E;color:#fff}
 
 /* destaques */
 .hl{display:flex;flex-direction:column;gap:11px;align-items:center;text-align:center}
 .hl .cv{position:relative;width:98px;height:98px;border-radius:50%;background:var(--creme);
   border:1px solid var(--creme-d);display:grid;place-items:center;margin-bottom:7px}
-.hl a.cv:hover{background:#E4D8C0;border-color:var(--terra)}
+.hl a.cv:hover{background:#E6DED8;border-color:var(--terra)}
 .hl .cv .dl{position:absolute;left:50%;transform:translateX(-50%);bottom:-10px;
   background:var(--terra);color:#fff;font-family:var(--mono);font-weight:500;font-size:9px;
   letter-spacing:.11em;text-transform:uppercase;padding:4px 9px;white-space:nowrap}
 .hl .nmh{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--cacau)}
 .hl p{font-size:13.5px;color:var(--gray);line-height:1.45;margin:0}
-
-/* fixados grid */
-.pins{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-width:330px;
-  border:1px solid var(--line-2);padding:4px;background:var(--card)}
-.pins div{aspect-ratio:1;background:var(--creme);display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:3px;overflow:hidden;
-  font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;line-height:1.3;
-  color:var(--gray-l);text-align:center;padding:6px 4px}
-.pins div b{font-weight:500;display:block}
-.pins div.p{background:var(--cacau);color:var(--creme)}
 
 /* equipamento */
 .kit2{display:flex;flex-direction:column;gap:16px}
@@ -291,7 +281,7 @@ p:last-child{margin-bottom:0}
 .prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;
   background:var(--line);border-top:1px solid var(--line)}
 .prod{background:var(--creme);padding:15px 18px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
-.prod:hover{background:#E4D8C0}
+.prod:hover{background:#E6DED8}
 .prod .pnm{font-weight:500;font-size:15px;line-height:1.3}
 .prod .pmeta{font-size:13.5px;color:var(--gray);line-height:1.4}
 .prod .pmeta b{color:var(--terra-d);font-weight:500}
@@ -322,7 +312,7 @@ p:last-child{margin-bottom:0}
   border:1px solid var(--line);margin-bottom:16px}
 .weekstrip>div{background:var(--card);padding:14px 11px 16px;min-width:0;
   display:flex;flex-direction:column;gap:6px;align-items:flex-start}
-.weekstrip>div.off{background:#F7F2E9}
+.weekstrip>div.off{background:#F4F1ED}
 .weekstrip>div.fix{background:var(--creme);border-top:3px solid var(--terra);padding-top:11px}
 .weekstrip .d{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--terra)}
 .weekstrip .fixo{font-family:var(--serif);font-size:17px;line-height:1.1;color:var(--cacau)}
@@ -434,25 +424,24 @@ p:last-child{margin-bottom:0}
       <div class="ar3">
         <div><span class="arn">1</span><p>Conserte o campo <b>Nome</b>. Está escrito
           "Hamonização", sem o R, e sem cidade nenhuma. <a href="#s1">seção 01</a></p></div>
-        <div><span class="arn">2</span><p>Baixe as <b>quatro capas</b> e ponha os destaques
-          de trabalho na frente dos de viagem. <a href="#s1">seção 01</a></p></div>
+        <div><span class="arn">2</span><p>Troque o <b>link da bio</b> pela página que já
+          separa as duas cidades. <a href="#s1">seção 01</a></p></div>
         <div><span class="arn">3</span><p>Arquive o post <b>DEPOIMENTO</b>. É o maior risco
-          do perfil hoje. <a href="#s8">seção 08</a></p></div>
+          do perfil hoje. <a href="#s7">seção 07</a></p></div>
       </div>
     </div>
 
     <nav class="toc">
       <a href="#s0"><span class="n">00</span><span class="t">Como usar</span></a>
       <a href="#s1"><span class="n">01</span><span class="t">Arrumar a casa</span></a>
-      <a href="#s2"><span class="n">02</span><span class="t">Os três fixados</span></a>
-      <a href="#s3"><span class="n">03</span><span class="t">As linhas de conteúdo</span></a>
-      <a href="#s4"><span class="n">04</span><span class="t">Como gravar</span></a>
-      <a href="#s5"><span class="n">05</span><span class="t">Stories</span></a>
-      <a href="#s6"><span class="n">06</span><span class="t">A semana</span></a>
-      <a href="#s7"><span class="n">07</span><span class="t">Os três primeiros segundos</span></a>
-      <a href="#s8"><span class="n">08</span><span class="t">O que não fazer</span></a>
-      <a href="#s9"><span class="n">09</span><span class="t">Música</span></a>
-      <a href="#s10"><span class="n">10</span><span class="t">Os primeiros 7 dias</span></a>
+      <a href="#s2"><span class="n">02</span><span class="t">As linhas de conteúdo</span></a>
+      <a href="#s3"><span class="n">03</span><span class="t">Como gravar</span></a>
+      <a href="#s4"><span class="n">04</span><span class="t">Stories</span></a>
+      <a href="#s5"><span class="n">05</span><span class="t">A semana</span></a>
+      <a href="#s6"><span class="n">06</span><span class="t">Os três primeiros segundos</span></a>
+      <a href="#s7"><span class="n">07</span><span class="t">O que não fazer</span></a>
+      <a href="#s8"><span class="n">08</span><span class="t">Música</span></a>
+      <a href="#s9"><span class="n">09</span><span class="t">Os primeiros 7 dias</span></a>
     </nav>
   </div>
 
@@ -460,15 +449,14 @@ p:last-child{margin-bottom:0}
     <nav class="side" id="side">
       <a href="#s0" data-j="s0">00 Como usar</a>
       <a href="#s1" data-j="s1">01 Arrumar a casa</a>
-      <a href="#s2" data-j="s2">02 Os três fixados</a>
-      <a href="#s3" data-j="s3">03 Linhas de conteúdo</a>
-      <a href="#s4" data-j="s4">04 Como gravar</a>
-      <a href="#s5" data-j="s5">05 Stories</a>
-      <a href="#s6" data-j="s6">06 A semana</a>
-      <a href="#s7" data-j="s7">07 Três segundos</a>
-      <a href="#s8" data-j="s8">08 O que não fazer</a>
-      <a href="#s9" data-j="s9">09 Música</a>
-      <a href="#s10" data-j="s10">10 Primeiros 7 dias</a>
+      <a href="#s2" data-j="s2">02 Linhas de conteúdo</a>
+      <a href="#s3" data-j="s3">03 Como gravar</a>
+      <a href="#s4" data-j="s4">04 Stories</a>
+      <a href="#s5" data-j="s5">05 A semana</a>
+      <a href="#s6" data-j="s6">06 Três segundos</a>
+      <a href="#s7" data-j="s7">07 O que não fazer</a>
+      <a href="#s8" data-j="s8">08 Música</a>
+      <a href="#s9" data-j="s9">09 Primeiros 7 dias</a>
     </nav>
 
     <div class="body">
@@ -500,8 +488,8 @@ p:last-child{margin-bottom:0}
             ideia, e este guia é isso.</p>
             <ul>
               <li>Todos os stories</li>
-              <li>Escolher o assunto, nas linhas da seção 03</li>
-              <li>Gravar, com a luz e o quadro da seção 04</li>
+              <li>Escolher o assunto, nas linhas da seção 02</li>
+              <li>Gravar, com a luz e o quadro da seção 03</li>
               <li>Editar, legendar e publicar, com o CRO da cidade certa</li>
               <li>Personalizar os modelos de arte nos seus posts</li>
               <li>Guardar a autorização de cada paciente que aparece</li>
@@ -511,7 +499,7 @@ p:last-child{margin-bottom:0}
 
         <div class="note" style="margin-top:16px">
           <b>Aqui não tem calendário, e é de propósito.</b> Calendário atrasa, o atraso
-          vira culpa e a culpa vira perfil parado. Tem <b>volume por semana</b>, na seção 06.
+          vira culpa e a culpa vira perfil parado. Tem <b>volume por semana</b>, na seção 05.
           Dia, assunto e hora são seus. O volume é baixo para caber numa agenda com bloco,
           plantão, aula e duas cidades.
         </div>
@@ -582,7 +570,7 @@ Avaliação ↓</pre>
           <div class="bioline"><span class="bn">2</span><span>Salvador e São Paulo</span></div>
           <div class="bioline"><span class="bn">3</span><span>CRO-BA 16230 · CRO-SP 180773</span></div>
           <div class="bioline"><span class="bn">4</span><span>Avaliação ↓</span></div>
-          <div class="biolink">jessicacuri.com.br/bio</div>
+          <div class="biolink">dra-jessica-curi.vercel.app/bio</div>
         </div>
 
         <ol class="annot">
@@ -598,9 +586,9 @@ Avaliação ↓</pre>
         </ol>
 
         <!-- link -->
-        <div class="sub"><span class="mono t">01 · c</span><h3>O link, e o problema das duas cidades</h3></div>
+        <div class="sub"><span class="mono t">01 · c</span><h3>O link</h3></div>
         <div class="live">
-          <h4>Hoje o link manda todo mundo para o mesmo WhatsApp de Salvador</h4>
+          <h4>Hoje o link manda todo mundo para o WhatsApp de Salvador</h4>
           <ul>
             <li>O link é <code>api.whatsapp.com/send?phone=5571996756595</code>, um número
             com <b>DDD 71</b>.
@@ -608,15 +596,21 @@ Avaliação ↓</pre>
               de outro estado. Parte desiste ali, e você nunca fica sabendo.</span></li>
           </ul>
         </div>
-        <p style="margin-top:18px">A Nold monta <code>jessicacuri.com.br/bio</code> com
-        dois botões, <b>Salvador</b> e <b>São Paulo</b>, cada um abrindo o WhatsApp certo
-        com a mensagem pronta. Esse vira o link e nunca mais muda: o paciente decora o
-        caminho e a gente passa a medir de onde vem cada avaliação.</p>
-        <div class="note" style="margin-top:16px">
-          <b>Até a página ficar pronta</b>, a figurinha de link do story aponta para a
-          cidade daquele conteúdo. Ortognática, ATM, siso e implante vão para o 71.
-          Harmonização vai para o número de SP, que você ainda precisa nos mandar.
+
+        <p style="margin-top:18px">A página que resolve isso <b>já está no ar</b>:</p>
+        <div class="copyrow" style="grid-template-columns:1fr">
+          <div class="copybox">
+            <span class="mono t">Link da bio · copie e cole</span>
+            <pre id="cp-link">https://dra-jessica-curi.vercel.app/bio</pre>
+            <button class="cpbtn" data-cp="cp-link">copiar</button>
+            <p class="cpnota">Ela já separa as duas cidades, cada uma com o seu CRO:
+            Salvador para mandíbula, mordida, respiração e siso; São Paulo para toxina,
+            preenchimento, bioestimulador e papada.</p>
+          </div>
         </div>
+        <p style="margin-top:16px">Troque o link da bio por esse hoje. Ele é fixo e nunca
+        muda: o paciente decora o caminho, e a gente passa a medir de onde vem cada
+        avaliação.</p>
 
         <!-- destaques -->
         <div class="sub"><span class="mono t">01 · d</span><h3>Os quatro destaques</h3></div>
@@ -639,66 +633,68 @@ Avaliação ↓</pre>
           <div class="hl">
             <a class="cv" href="artes-jessica/jessica-destaque-1-casos.png" download title="Baixar a capa Casos">
               <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
-                <rect x="11" y="11" width="74" height="74" rx="4" fill="none" stroke="#C9A227" stroke-width="1.7"/>
+                <rect x="11" y="11" width="74" height="74" rx="4" fill="none" stroke="#98997B" stroke-width="1.7"/>
                 <path d="M57 19 C47 20 36 27 32 37 C30 42 34 43 35 46 C33 50 26 51 25 54 C25 57 31 56 33 58 C32 61 28 61 29 63 C31 66 34 65 34 67 C33 70 29 69 30 71 C33 76 37 76 39 78 C44 81 49 81 53 81"
-                      fill="none" stroke="#C9A227" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <line x1="76" y1="32" x2="81" y2="32" stroke="#C9A227" stroke-width="1.2"/>
-                <line x1="76" y1="48" x2="81" y2="48" stroke="#C9A227" stroke-width="1.2"/>
-                <line x1="76" y1="64" x2="81" y2="64" stroke="#C9A227" stroke-width="1.2"/>
+                      fill="none" stroke="#98997B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="76" y1="32" x2="81" y2="32" stroke="#98997B" stroke-width="1.2"/>
+                <line x1="76" y1="48" x2="81" y2="48" stroke="#98997B" stroke-width="1.2"/>
+                <line x1="76" y1="64" x2="81" y2="64" stroke="#98997B" stroke-width="1.2"/>
               </svg>
               <span class="dl">baixar ↓</span>
             </a>
             <span class="nmh">Casos</span>
-            <p>O caso explicado da quinzena, sempre abrindo pelo exame. A sua prova.</p>
+            <p>Seus casos reais, um por um, cada um começando pelo exame. É a prova de que o
+            trabalho funciona.</p>
           </div>
           <div class="hl">
             <a class="cv" href="artes-jessica/jessica-destaque-2-cirurgia.png" download title="Baixar a capa Cirurgia">
               <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
-                <line x1="48" y1="10" x2="48" y2="26" stroke="#C9A227" stroke-width="1.5"/>
-                <line x1="36" y1="10" x2="60" y2="10" stroke="#C9A227" stroke-width="1.5"/>
-                <circle cx="48" cy="50" r="24" fill="none" stroke="#C9A227" stroke-width="1.7"/>
-                <circle cx="48" cy="50" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
-                <circle cx="48" cy="36" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
-                <circle cx="60" cy="43" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
-                <circle cx="60" cy="57" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
-                <circle cx="48" cy="64" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
-                <circle cx="36" cy="57" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
-                <circle cx="36" cy="43" r="5" fill="none" stroke="#C9A227" stroke-width="1.3"/>
-                <line x1="28" y1="76" x2="68" y2="76" stroke="#C9A227" stroke-width="1.3"/>
+                <line x1="48" y1="10" x2="48" y2="26" stroke="#98997B" stroke-width="1.5"/>
+                <line x1="36" y1="10" x2="60" y2="10" stroke="#98997B" stroke-width="1.5"/>
+                <circle cx="48" cy="50" r="24" fill="none" stroke="#98997B" stroke-width="1.7"/>
+                <circle cx="48" cy="50" r="5" fill="none" stroke="#98997B" stroke-width="1.3"/>
+                <circle cx="48" cy="36" r="5" fill="none" stroke="#98997B" stroke-width="1.3"/>
+                <circle cx="60" cy="43" r="5" fill="none" stroke="#98997B" stroke-width="1.3"/>
+                <circle cx="60" cy="57" r="5" fill="none" stroke="#98997B" stroke-width="1.3"/>
+                <circle cx="48" cy="64" r="5" fill="none" stroke="#98997B" stroke-width="1.3"/>
+                <circle cx="36" cy="57" r="5" fill="none" stroke="#98997B" stroke-width="1.3"/>
+                <circle cx="36" cy="43" r="5" fill="none" stroke="#98997B" stroke-width="1.3"/>
+                <line x1="28" y1="76" x2="68" y2="76" stroke="#98997B" stroke-width="1.3"/>
               </svg>
               <span class="dl">baixar ↓</span>
             </a>
             <span class="nmh">Cirurgia</span>
-            <p>Salvador: ATM, ortognática, siso e implante. O dia de hospital mora aqui.</p>
+            <p>O que você faz em Salvador: mandíbula, mordida, respiração e siso. E os dias
+            de hospital.</p>
           </div>
           <div class="hl">
             <a class="cv" href="artes-jessica/jessica-destaque-3-harmonizacao.png" download title="Baixar a capa Harmonização">
               <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
-                <ellipse cx="48" cy="48" rx="19" ry="33" fill="none" stroke="#C9A227" stroke-width="1.7"/>
-                <line x1="31" y1="37" x2="65" y2="37" stroke="#C9A227" stroke-width="1.3"/>
-                <line x1="31" y1="59" x2="65" y2="59" stroke="#C9A227" stroke-width="1.3"/>
-                <line x1="18" y1="26" x2="24" y2="26" stroke="#C9A227" stroke-width="1.3"/>
-                <line x1="18" y1="48" x2="24" y2="48" stroke="#C9A227" stroke-width="1.3"/>
-                <line x1="18" y1="70" x2="24" y2="70" stroke="#C9A227" stroke-width="1.3"/>
+                <ellipse cx="48" cy="48" rx="19" ry="33" fill="none" stroke="#98997B" stroke-width="1.7"/>
+                <line x1="31" y1="37" x2="65" y2="37" stroke="#98997B" stroke-width="1.3"/>
+                <line x1="31" y1="59" x2="65" y2="59" stroke="#98997B" stroke-width="1.3"/>
+                <line x1="18" y1="26" x2="24" y2="26" stroke="#98997B" stroke-width="1.3"/>
+                <line x1="18" y1="48" x2="24" y2="48" stroke="#98997B" stroke-width="1.3"/>
+                <line x1="18" y1="70" x2="24" y2="70" stroke="#98997B" stroke-width="1.3"/>
               </svg>
               <span class="dl">baixar ↓</span>
             </a>
             <span class="nmh">Harmonização</span>
-            <p>São Paulo: o natural que vem de dose medida e lugar certo.</p>
+            <p>O que você faz em São Paulo: toxina, preenchimento, bioestimulador e papada.</p>
           </div>
           <div class="hl">
             <a class="cv" href="artes-jessica/jessica-destaque-4-duvidas.png" download title="Baixar a capa Dúvidas">
               <svg viewBox="0 0 96 96" width="62" height="62" aria-hidden="true">
                 <path d="M29 26 h38 a11 11 0 0 1 11 11 v18 a11 11 0 0 1 -11 11 h-17 l-6 13 l-0 -13 h-15 a11 11 0 0 1 -11 -11 v-18 a11 11 0 0 1 11 -11 z"
-                      fill="none" stroke="#C9A227" stroke-width="1.6" stroke-linejoin="round"/>
-                <circle cx="33" cy="46" r="2.9" fill="#C9A227"/>
-                <circle cx="48" cy="46" r="2.9" fill="#C9A227"/>
-                <circle cx="63" cy="46" r="2.9" fill="#C9A227"/>
+                      fill="none" stroke="#98997B" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="33" cy="46" r="2.9" fill="#98997B"/>
+                <circle cx="48" cy="46" r="2.9" fill="#98997B"/>
+                <circle cx="63" cy="46" r="2.9" fill="#98997B"/>
               </svg>
               <span class="dl">baixar ↓</span>
             </a>
             <span class="nmh">Dúvidas</span>
-            <p>A pergunta da semana. Se enche sozinho, toda terça.</p>
+            <p>As respostas da terça. Você salva as melhores aqui e ele cresce sozinho.</p>
           </div>
         </div>
 
@@ -713,64 +709,11 @@ Avaliação ↓</pre>
         </div>
       </section>
 
-      <!-- ======================= 02 ======================= -->
+
+      <!-- ======================= 03 ======================= -->
       <section class="blk" id="s2">
         <div class="bhead">
           <span class="n">02</span>
-          <h2>Os três fixados</h2>
-          <p>Três publicações congeladas no topo. É o que 100% de quem chega vê primeiro,
-          e elas não envelhecem. A Nold escreve e desenha as três.</p>
-        </div>
-
-        <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:flex-start;margin-bottom:26px">
-          <div class="pins">
-            <div class="p"><b>FIXADO 01</b>quem sou eu</div>
-            <div class="p"><b>FIXADO 02</b>as duas cidades</div>
-            <div class="p"><b>FIXADO 03</b>caso explicado</div>
-            <div>post</div><div>post</div><div>post</div>
-            <div>post</div><div>post</div><div>post</div>
-          </div>
-          <p class="muted" style="font-size:15px;flex:1 1 240px;min-width:0">
-            Tudo que você publicar depois entra abaixo deles. É por isso que levam mais
-            produção que um post normal: ficam no ar o ano inteiro.
-          </p>
-        </div>
-
-        <div class="grid g3">
-          <div class="card">
-            <span class="mono t">Fixado 01</span>
-            <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">Quem sou eu</h4>
-            <p>Mater Dei, plantão no HGE, Let's HOF. E por que uma cirurgiã também
-            harmoniza, que é o que muda tudo para quem senta na cadeira.</p>
-            <span class="tag">Precisa de: ensaio fotográfico</span>
-          </div>
-          <div class="card">
-            <span class="mono t">Fixado 02</span>
-            <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">As duas cidades</h4>
-            <p>O que você faz em Salvador, o que você faz em São Paulo, e o contato de
-            cada uma. Mata a confusão que o perfil tem hoje.</p>
-            <span class="tag">Precisa de: calendário do rodízio e o contato de SP</span>
-          </div>
-          <div class="card">
-            <span class="mono t">Fixado 03</span>
-            <h4 style="font-family:var(--serif);font-weight:400;font-size:20px">Caso explicado</h4>
-            <p>Um caso real do osso à pele: queixa, exame, decisão, limitação. É prova
-            dentro da regra do conselho, e o seu banco de casos já está pronto.</p>
-            <span class="tag">Precisa de: autorização escrita do paciente</span>
-          </div>
-        </div>
-
-        <div class="note" style="margin-top:20px">
-          <b>O quarto vem depois.</b> Com os três rodando, a gente produz <b>"quando eu
-          digo que não é caso de mexer"</b>, a promessa que nenhum concorrente seu assina.
-          Ele entra no lugar do caso explicado, que a essa altura já mora no destaque Casos.
-        </div>
-      </section>
-
-      <!-- ======================= 03 ======================= -->
-      <section class="blk" id="s3">
-        <div class="bhead">
-          <span class="n">03</span>
           <h2>As linhas de conteúdo</h2>
           <p>Oito tipos, separados por onde o paciente está: quem nunca ouviu falar de
           você, quem está decidindo, e quem está quase marcando.</p>
@@ -779,15 +722,15 @@ Avaliação ↓</pre>
         <div class="dia" style="margin-bottom:26px">
           <div class="cap">Os três andares e o trabalho de cada um</div>
           <svg viewBox="0 0 480 310" aria-label="Funil de conteúdo em três andares" style="margin:0 auto">
-            <polygon points="20,12 460,12 410,102 70,102" fill="#F2E6C8"/>
-            <polygon points="70,106 410,106 365,196 115,196" fill="#E6E2D6"/>
-            <polygon points="115,200 365,200 330,290 150,290" fill="#1A1714"/>
-            <text x="240" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#3A2C20">Topo · Reels</text>
-            <text x="240" y="78" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#8F6F12">SER DESCOBERTA · O SEU GARGALO</text>
-            <text x="240" y="146" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#3A2C20">Meio · Carrossel e stories</text>
-            <text x="240" y="172" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#5F6A48">GANHAR CONFIANÇA</text>
-            <text x="240" y="240" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#EDE4D6">Fundo · Stories e feed</text>
-            <text x="240" y="266" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#D8BE6B">VIRAR AVALIAÇÃO</text>
+            <polygon points="20,12 460,12 410,102 70,102" fill="#DFD0C9"/>
+            <polygon points="70,106 410,106 365,196 115,196" fill="#E6E3DC"/>
+            <polygon points="115,200 365,200 330,290 150,290" fill="#444444"/>
+            <text x="240" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#444444">Topo · Reels</text>
+            <text x="240" y="78" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#716C66">SER DESCOBERTA · O SEU GARGALO</text>
+            <text x="240" y="146" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#444444">Meio · Carrossel e stories</text>
+            <text x="240" y="172" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#716C66">GANHAR CONFIANÇA</text>
+            <text x="240" y="240" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#EFE8E3">Fundo · Stories e feed</text>
+            <text x="240" y="266" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1.2" fill="#D1BAB4">VIRAR AVALIAÇÃO</text>
           </svg>
         </div>
 
@@ -1148,15 +1091,15 @@ Avaliação ↓</pre>
       </section>
 
       <!-- ======================= 04 ======================= -->
-      <section class="blk" id="s4">
+      <section class="blk" id="s3">
         <div class="bhead">
-          <span class="n">04</span>
+          <span class="n">03</span>
           <h2>Como gravar</h2>
           <p>Seu iPhone já basta. O que muda o resultado é luz, som e enquadramento,
           nessa ordem.</p>
         </div>
 
-        <div class="sub"><span class="mono t">04 · a</span><h3>O equipamento</h3></div>
+        <div class="sub"><span class="mono t">03 · a</span><h3>O equipamento</h3></div>
         <p>Tripé, luz e microfone. <b>Duas opções em cada</b>, a que resolve e a que
         resolve melhor, todas com nota alta no Mercado Livre. O botão vai direto para a
         compra. Só a luz vem em peças separadas.</p>
@@ -1274,7 +1217,7 @@ Avaliação ↓</pre>
         <p class="muted" style="font-size:14px;margin-top:14px">Conferido em outubro de
         2026. Se algum anúncio sair do ar, busca o nome do produto no Mercado Livre.</p>
 
-        <div class="sub"><span class="mono t">04 · b</span><h3>Ajustar o iPhone, uma vez só</h3></div>
+        <div class="sub"><span class="mono t">03 · b</span><h3>Ajustar o iPhone, uma vez só</h3></div>
         <div class="path">
           <div>Ajustes <span class="ar">›</span> Câmera <span class="ar">›</span> Gravar Vídeo <span class="ar">›</span> <b>4K a 30 fps</b></div>
           <div>Ajustes <span class="ar">›</span> Câmera <span class="ar">›</span> <b>Grade: ativada</b> &nbsp;<span style="color:var(--gray)">é o que desenha as linhas do enquadramento na tela</span></div>
@@ -1285,7 +1228,7 @@ Avaliação ↓</pre>
         trás, nunca a da frente. Para se enquadrar sozinha, põe o tripé na marca de fita no
         chão e confia na marca.</p>
 
-        <div class="sub"><span class="mono t">04 · c</span><h3>A luz</h3></div>
+        <div class="sub"><span class="mono t">03 · c</span><h3>A luz</h3></div>
         <p>Uma luz de frente, levemente de lado, na altura dos seus olhos. Uma parede
         clara do outro lado apaga a sombra dura. Isso é tudo.</p>
 
@@ -1293,36 +1236,36 @@ Avaliação ↓</pre>
           <div class="cap">Visto de cima · a posição que funciona</div>
           <svg viewBox="0 0 520 360" aria-label="Diagrama de luz visto de cima">
             <!-- fundo -->
-            <line x1="120" y1="62" x2="400" y2="62" stroke="#3A2C20" stroke-width="2.5"/>
-            <text x="260" y="48" text-anchor="middle" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#6E6055">FUNDO DA CLÍNICA</text>
+            <line x1="120" y1="62" x2="400" y2="62" stroke="#444444" stroke-width="2.5"/>
+            <text x="260" y="48" text-anchor="middle" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#716C66">FUNDO DA CLÍNICA</text>
             <!-- distancia fundo -->
-            <line x1="260" y1="64" x2="260" y2="96" stroke="#C9A227" stroke-width="1" stroke-dasharray="3 3"/>
-            <text x="272" y="84" font-family="monospace" font-size="11.5" fill="#8F6F12">1,2 m</text>
+            <line x1="260" y1="64" x2="260" y2="96" stroke="#98997B" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="272" y="84" font-family="monospace" font-size="11.5" fill="#716C66">1,2 m</text>
             <!-- ela -->
-            <circle cx="260" cy="120" r="23" fill="#EDE4D6" stroke="#3A2C20" stroke-width="1.6"/>
-            <polygon points="260,148 254,138 266,138" fill="#3A2C20"/>
-            <text x="260" y="125" text-anchor="middle" font-family="monospace" font-size="11" letter-spacing="1" fill="#3A2C20">VOCÊ</text>
+            <circle cx="260" cy="120" r="23" fill="#EFE8E3" stroke="#444444" stroke-width="1.6"/>
+            <polygon points="260,148 254,138 266,138" fill="#444444"/>
+            <text x="260" y="125" text-anchor="middle" font-family="monospace" font-size="11" letter-spacing="1" fill="#444444">VOCÊ</text>
             <!-- eixo camera -->
-            <line x1="260" y1="150" x2="260" y2="276" stroke="#C9A227" stroke-width="1" stroke-dasharray="3 3"/>
-            <text x="272" y="218" font-family="monospace" font-size="11.5" fill="#8F6F12">1,5 m</text>
+            <line x1="260" y1="150" x2="260" y2="276" stroke="#98997B" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="272" y="218" font-family="monospace" font-size="11.5" fill="#716C66">1,5 m</text>
             <!-- celular -->
-            <rect x="246" y="278" width="28" height="24" rx="3" fill="#3A2C20"/>
-            <line x1="260" y1="302" x2="260" y2="316" stroke="#3A2C20" stroke-width="1.6"/>
-            <path d="M260 316 L250 330 M260 316 L270 330" stroke="#3A2C20" stroke-width="1.6" fill="none"/>
-            <text x="260" y="348" text-anchor="middle" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#6E6055">CELULAR NA ALTURA DOS OLHOS</text>
+            <rect x="246" y="278" width="28" height="24" rx="3" fill="#444444"/>
+            <line x1="260" y1="302" x2="260" y2="316" stroke="#444444" stroke-width="1.6"/>
+            <path d="M260 316 L250 330 M260 316 L270 330" stroke="#444444" stroke-width="1.6" fill="none"/>
+            <text x="260" y="348" text-anchor="middle" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#716C66">CELULAR NA ALTURA DOS OLHOS</text>
             <!-- LED -->
-            <rect x="96" y="216" width="56" height="38" rx="5" fill="#D8BE6B" stroke="#8F6F12" stroke-width="1.4" transform="rotate(-38 124 235)"/>
-            <line x1="152" y1="222" x2="243" y2="146" stroke="#C9A227" stroke-width="1" stroke-dasharray="3 3"/>
-            <text x="30" y="282" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#8F6F12">LED OU JANELA A 45°</text>
-            <text x="30" y="298" font-family="monospace" font-size="11" letter-spacing="1" fill="#6E6055">NA ALTURA DOS OLHOS</text>
+            <rect x="96" y="216" width="56" height="38" rx="5" fill="#D1BAB4" stroke="#716C66" stroke-width="1.4" transform="rotate(-38 124 235)"/>
+            <line x1="152" y1="222" x2="243" y2="146" stroke="#98997B" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="30" y="282" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#716C66">LED OU JANELA A 45°</text>
+            <text x="30" y="298" font-family="monospace" font-size="11" letter-spacing="1" fill="#716C66">NA ALTURA DOS OLHOS</text>
             <!-- arco 45 -->
-            <path d="M260 210 A62 62 0 0 0 216 192" fill="none" stroke="#C9A227" stroke-width="1"/>
-            <text x="196" y="214" font-family="monospace" font-size="11.5" fill="#8F6F12">45°</text>
+            <path d="M260 210 A62 62 0 0 0 216 192" fill="none" stroke="#98997B" stroke-width="1"/>
+            <text x="196" y="214" font-family="monospace" font-size="11.5" fill="#716C66">45°</text>
             <!-- rebatedor -->
-            <line x1="404" y1="194" x2="430" y2="254" stroke="#7E8A63" stroke-width="4"/>
-            <line x1="402" y1="218" x2="282" y2="152" stroke="#7E8A63" stroke-width="1" stroke-dasharray="3 3"/>
+            <line x1="404" y1="194" x2="430" y2="254" stroke="#98997B" stroke-width="4"/>
+            <line x1="402" y1="218" x2="282" y2="152" stroke="#98997B" stroke-width="1" stroke-dasharray="3 3"/>
             <text x="508" y="286" text-anchor="end" font-family="monospace" font-size="11.5" letter-spacing="1" fill="#6E7259">PAREDE CLARA</text>
-            <text x="508" y="302" text-anchor="end" font-family="monospace" font-size="11" letter-spacing="1" fill="#6E6055">DEVOLVE A LUZ</text>
+            <text x="508" y="302" text-anchor="end" font-family="monospace" font-size="11" letter-spacing="1" fill="#716C66">DEVOLVE A LUZ</text>
           </svg>
         </div>
 
@@ -1330,89 +1273,89 @@ Avaliação ↓</pre>
           <div class="dia">
             <div class="cap">O que estraga · luz atrás de você</div>
             <svg viewBox="0 0 240 140" aria-label="Luz atrás deixa o rosto escuro">
-              <rect x="14" y="26" width="44" height="60" rx="2" fill="#F7F1E6" stroke="#C9A227" stroke-width="1.4"/>
-              <line x1="36" y1="26" x2="36" y2="86" stroke="#C9A227" stroke-width="1"/>
-              <line x1="14" y1="56" x2="58" y2="56" stroke="#C9A227" stroke-width="1"/>
-              <path d="M64 44 L92 52 M64 58 L92 60 M64 72 L92 68" stroke="#D8BE6B" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-              <path d="M104 104 C106 80 114 70 126 70 C138 70 146 80 148 104 Z" fill="#5F5349"/>
-              <path d="M121 58 h10 v14 h-10 Z" fill="#5F5349"/>
-              <ellipse cx="126" cy="48" rx="15" ry="18" fill="#514539"/>
-              <rect x="190" y="52" width="20" height="30" rx="3" fill="#3A2C20"/>
-              <line x1="200" y1="82" x2="200" y2="92" stroke="#3A2C20" stroke-width="1.4"/>
-              <path d="M200 92 L193 100 M200 92 L207 100" stroke="#3A2C20" stroke-width="1.4" fill="none"/>
-              <text x="36" y="104" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#6E6055">JANELA</text>
-              <text x="126" y="122" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#8F6F12">ROSTO ESCURO</text>
-              <text x="200" y="116" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".6" fill="#9A8B7D">CELULAR</text>
+              <rect x="14" y="26" width="44" height="60" rx="2" fill="#FAF8F6" stroke="#98997B" stroke-width="1.4"/>
+              <line x1="36" y1="26" x2="36" y2="86" stroke="#98997B" stroke-width="1"/>
+              <line x1="14" y1="56" x2="58" y2="56" stroke="#98997B" stroke-width="1"/>
+              <path d="M64 44 L92 52 M64 58 L92 60 M64 72 L92 68" stroke="#D1BAB4" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <path d="M104 104 C106 80 114 70 126 70 C138 70 146 80 148 104 Z" fill="#6B6560"/>
+              <path d="M121 58 h10 v14 h-10 Z" fill="#6B6560"/>
+              <ellipse cx="126" cy="48" rx="15" ry="18" fill="#595450"/>
+              <rect x="190" y="52" width="20" height="30" rx="3" fill="#444444"/>
+              <line x1="200" y1="82" x2="200" y2="92" stroke="#444444" stroke-width="1.4"/>
+              <path d="M200 92 L193 100 M200 92 L207 100" stroke="#444444" stroke-width="1.4" fill="none"/>
+              <text x="36" y="104" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#716C66">JANELA</text>
+              <text x="126" y="122" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#716C66">ROSTO ESCURO</text>
+              <text x="200" y="116" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".6" fill="#A39D96">CELULAR</text>
             </svg>
           </div>
           <div class="dia">
             <div class="cap">O que estraga · luz do teto</div>
             <svg viewBox="0 0 240 140" aria-label="Luz do teto cria sombra sob os olhos">
-              <rect x="96" y="14" width="48" height="9" rx="2" fill="#D8BE6B" stroke="#8F6F12" stroke-width="1.2"/>
-              <path d="M106 27 L103 40 M120 27 L120 40 M134 27 L137 40" stroke="#D8BE6B" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-              <path d="M96 110 C98 88 108 78 120 78 C132 78 142 88 144 110 Z" fill="#E6E2D6"/>
-              <path d="M114 64 h12 v16 h-12 Z" fill="#E6E2D6"/>
-              <ellipse cx="120" cy="62" rx="18" ry="21" fill="#F7F1E6" stroke="#3A2C20" stroke-width="1.2"/>
-              <ellipse cx="113" cy="58" rx="1.6" ry="2" fill="#3A2C20"/>
-              <ellipse cx="127" cy="58" rx="1.6" ry="2" fill="#3A2C20"/>
-              <path d="M108 61 a7 6 0 0 0 11 0 z" fill="#3A2C20" opacity=".42"/>
-              <path d="M121 61 a7 6 0 0 0 11 0 z" fill="#3A2C20" opacity=".42"/>
-              <path d="M114 72 a7 4 0 0 0 12 0" fill="none" stroke="#3A2C20" stroke-width="1.1" stroke-linecap="round"/>
-              <text x="120" y="128" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#8F6F12">SOMBRA NA OLHEIRA</text>
+              <rect x="96" y="14" width="48" height="9" rx="2" fill="#D1BAB4" stroke="#716C66" stroke-width="1.2"/>
+              <path d="M106 27 L103 40 M120 27 L120 40 M134 27 L137 40" stroke="#D1BAB4" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <path d="M96 110 C98 88 108 78 120 78 C132 78 142 88 144 110 Z" fill="#E6E3DC"/>
+              <path d="M114 64 h12 v16 h-12 Z" fill="#E6E3DC"/>
+              <ellipse cx="120" cy="62" rx="18" ry="21" fill="#FAF8F6" stroke="#444444" stroke-width="1.2"/>
+              <ellipse cx="113" cy="58" rx="1.6" ry="2" fill="#444444"/>
+              <ellipse cx="127" cy="58" rx="1.6" ry="2" fill="#444444"/>
+              <path d="M108 61 a7 6 0 0 0 11 0 z" fill="#444444" opacity=".42"/>
+              <path d="M121 61 a7 6 0 0 0 11 0 z" fill="#444444" opacity=".42"/>
+              <path d="M114 72 a7 4 0 0 0 12 0" fill="none" stroke="#444444" stroke-width="1.1" stroke-linecap="round"/>
+              <text x="120" y="128" text-anchor="middle" font-family="monospace" font-size="10" letter-spacing=".8" fill="#716C66">SOMBRA NA OLHEIRA</text>
             </svg>
           </div>
         </div>
 
-        <div class="sub"><span class="mono t">04 · d</span><h3>O enquadramento</h3></div>
+        <div class="sub"><span class="mono t">03 · d</span><h3>O enquadramento</h3></div>
         <p>Com a grade ativada, a tela do iPhone fica dividida em nove partes. Só três
         coisas precisam estar no lugar: <b>você</b>, o <b>título</b> e a <b>legenda</b>.</p>
 
         <div class="frames">
           <figure>
             <svg viewBox="0 0 200 356" aria-label="Enquadramento correto">
-              <rect x="1" y="1" width="198" height="354" fill="#FFFFFF" stroke="#3A2C20" stroke-width="1.8"/>
+              <rect x="1" y="1" width="198" height="354" fill="#FFFFFF" stroke="#444444" stroke-width="1.8"/>
               <!-- corpo -->
-              <path d="M42 355 C46 208 70 178 100 178 C130 178 154 208 158 355 Z" fill="#E6E2D6"/>
-              <path d="M89 146 h22 v30 h-22 Z" fill="#E6E2D6"/>
-              <ellipse cx="100" cy="126" rx="25" ry="30" fill="#F7F1E6" stroke="#3A2C20" stroke-width="1.3"/>
-              <ellipse cx="91" cy="120" rx="2" ry="2.6" fill="#3A2C20"/>
-              <ellipse cx="109" cy="120" rx="2" ry="2.6" fill="#3A2C20"/>
-              <path d="M93 138 a8 5 0 0 0 14 0" fill="none" stroke="#3A2C20" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M42 355 C46 208 70 178 100 178 C130 178 154 208 158 355 Z" fill="#E6E3DC"/>
+              <path d="M89 146 h22 v30 h-22 Z" fill="#E6E3DC"/>
+              <ellipse cx="100" cy="126" rx="25" ry="30" fill="#FAF8F6" stroke="#444444" stroke-width="1.3"/>
+              <ellipse cx="91" cy="120" rx="2" ry="2.6" fill="#444444"/>
+              <ellipse cx="109" cy="120" rx="2" ry="2.6" fill="#444444"/>
+              <path d="M93 138 a8 5 0 0 0 14 0" fill="none" stroke="#444444" stroke-width="1.2" stroke-linecap="round"/>
               <!-- grade dos tercos -->
-              <line x1="66.7" y1="1" x2="66.7" y2="355" stroke="#C9A227" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
-              <line x1="133.3" y1="1" x2="133.3" y2="355" stroke="#C9A227" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
-              <line x1="1" y1="237.3" x2="199" y2="237.3" stroke="#C9A227" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
-              <line x1="1" y1="118.7" x2="199" y2="118.7" stroke="#C9A227" stroke-width="1.6"/>
-              <text x="6" y="113" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">OLHOS</text>
+              <line x1="66.7" y1="1" x2="66.7" y2="355" stroke="#98997B" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
+              <line x1="133.3" y1="1" x2="133.3" y2="355" stroke="#98997B" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
+              <line x1="1" y1="237.3" x2="199" y2="237.3" stroke="#98997B" stroke-width=".8" stroke-dasharray="4 5" opacity=".45"/>
+              <line x1="1" y1="118.7" x2="199" y2="118.7" stroke="#98997B" stroke-width="1.6"/>
+              <text x="6" y="113" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#716C66">OLHOS</text>
               <!-- titulo -->
-              <rect x="26" y="38" width="148" height="30" rx="3" fill="#EDE4D6"/>
-              <text x="100" y="57" text-anchor="middle" font-family="monospace" font-size="9.5" letter-spacing=".9" fill="#8F6F12">TÍTULO DO VÍDEO</text>
+              <rect x="26" y="38" width="148" height="30" rx="3" fill="#EFE8E3"/>
+              <text x="100" y="57" text-anchor="middle" font-family="monospace" font-size="9.5" letter-spacing=".9" fill="#716C66">TÍTULO DO VÍDEO</text>
               <!-- legenda -->
-              <rect x="26" y="196" width="148" height="42" rx="3" fill="#EDE4D6"/>
-              <text x="100" y="211" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".9" fill="#8F6F12">LEGENDA</text>
-              <line x1="54" y1="221" x2="146" y2="221" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
-              <line x1="70" y1="230" x2="130" y2="230" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+              <rect x="26" y="196" width="148" height="42" rx="3" fill="#EFE8E3"/>
+              <text x="100" y="211" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".9" fill="#716C66">LEGENDA</text>
+              <line x1="54" y1="221" x2="146" y2="221" stroke="#98997B" stroke-width="3" stroke-linecap="round"/>
+              <line x1="70" y1="230" x2="130" y2="230" stroke="#98997B" stroke-width="3" stroke-linecap="round"/>
             </svg>
             <figcaption class="ok">Certo</figcaption>
           </figure>
           <figure>
             <svg viewBox="0 0 200 356" aria-label="Enquadramento errado">
-              <rect x="1" y="1" width="198" height="354" fill="#FFFFFF" stroke="#3A2C20" stroke-width="1.8"/>
-              <path d="M24 355 C28 288 52 258 80 258 C108 258 132 288 136 355 Z" fill="#E6E2D6"/>
-              <path d="M69 226 h22 v34 h-22 Z" fill="#E6E2D6"/>
-              <ellipse cx="80" cy="206" rx="25" ry="30" fill="#F7F1E6" stroke="#3A2C20" stroke-width="1.3"/>
-              <ellipse cx="71" cy="200" rx="2" ry="2.6" fill="#3A2C20"/>
-              <ellipse cx="89" cy="200" rx="2" ry="2.6" fill="#3A2C20"/>
-              <path d="M73 218 a8 5 0 0 0 14 0" fill="none" stroke="#3A2C20" stroke-width="1.2" stroke-linecap="round"/>
-              <line x1="1" y1="118.7" x2="199" y2="118.7" stroke="#C9A227" stroke-width="1.6" stroke-dasharray="5 5"/>
-              <text x="6" y="80" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">VAZIO DEMAIS</text>
-              <text x="6" y="113" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">OLHOS DEVIAM VIR AQUI</text>
-              <text x="118" y="200" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">FORA DO</text>
-              <text x="118" y="212" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#8F6F12">CENTRO</text>
-              <rect x="26" y="306" width="148" height="34" rx="3" fill="#EDE4D6"/>
-              <line x1="54" y1="320" x2="146" y2="320" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
-              <line x1="70" y1="330" x2="130" y2="330" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
-              <text x="100" y="298" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".9" fill="#8F6F12">LEGENDA NO PÉ</text>
+              <rect x="1" y="1" width="198" height="354" fill="#FFFFFF" stroke="#444444" stroke-width="1.8"/>
+              <path d="M24 355 C28 288 52 258 80 258 C108 258 132 288 136 355 Z" fill="#E6E3DC"/>
+              <path d="M69 226 h22 v34 h-22 Z" fill="#E6E3DC"/>
+              <ellipse cx="80" cy="206" rx="25" ry="30" fill="#FAF8F6" stroke="#444444" stroke-width="1.3"/>
+              <ellipse cx="71" cy="200" rx="2" ry="2.6" fill="#444444"/>
+              <ellipse cx="89" cy="200" rx="2" ry="2.6" fill="#444444"/>
+              <path d="M73 218 a8 5 0 0 0 14 0" fill="none" stroke="#444444" stroke-width="1.2" stroke-linecap="round"/>
+              <line x1="1" y1="118.7" x2="199" y2="118.7" stroke="#98997B" stroke-width="1.6" stroke-dasharray="5 5"/>
+              <text x="6" y="80" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#716C66">VAZIO DEMAIS</text>
+              <text x="6" y="113" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#716C66">OLHOS DEVIAM VIR AQUI</text>
+              <text x="118" y="200" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#716C66">FORA DO</text>
+              <text x="118" y="212" font-family="monospace" font-size="9.5" letter-spacing=".5" fill="#716C66">CENTRO</text>
+              <rect x="26" y="306" width="148" height="34" rx="3" fill="#EFE8E3"/>
+              <line x1="54" y1="320" x2="146" y2="320" stroke="#98997B" stroke-width="3" stroke-linecap="round"/>
+              <line x1="70" y1="330" x2="130" y2="330" stroke="#98997B" stroke-width="3" stroke-linecap="round"/>
+              <text x="100" y="298" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing=".9" fill="#716C66">LEGENDA NO PÉ</text>
             </svg>
             <figcaption class="no">Errado</figcaption>
           </figure>
@@ -1438,7 +1381,7 @@ Avaliação ↓</pre>
         <p class="muted" style="font-size:14.5px;margin-top:16px">Usando a legenda
         automática do Instagram, arrasta ela para essa altura antes de publicar.</p>
 
-        <div class="sub"><span class="mono t">04 · e</span><h3>Onde gravar</h3></div>
+        <div class="sub"><span class="mono t">03 · e</span><h3>Onde gravar</h3></div>
         <p>Quatro lugares, um para cada coisa. Em todos, <b>marque a posição do tripé com
         fita no chão</b>: o perfil fica reconhecível por repetição.</p>
 
@@ -1478,15 +1421,15 @@ Avaliação ↓</pre>
       </section>
 
       <!-- ======================= 05 ======================= -->
-      <section class="blk" id="s5">
+      <section class="blk" id="s4">
         <div class="bhead">
-          <span class="n">05</span>
+          <span class="n">04</span>
           <h2>Stories</h2>
           <p>É onde o paciente te conhece de verdade, porque ali você não está produzida.
           E é o único lugar do Instagram onde o link é clicável.</p>
         </div>
 
-        <div class="sub"><span class="mono t">05 · a</span><h3>Qualidade</h3></div>
+        <div class="sub"><span class="mono t">04 · a</span><h3>Qualidade</h3></div>
         <p>O Instagram comprime story por padrão, e tem um botão que desliga isso. Procure
         pela palavra <b>qualidade</b> dentro das configurações:</p>
         <div class="path">
@@ -1505,7 +1448,7 @@ Avaliação ↓</pre>
           constrangedor.
         </div>
 
-        <div class="sub"><span class="mono t">05 · c</span><h3>Tipografia e link</h3></div>
+        <div class="sub"><span class="mono t">04 · b</span><h3>Tipografia e link</h3></div>
         <div class="grid g2">
           <div class="card">
             <span class="mono t">A letra</span>
@@ -1523,7 +1466,7 @@ Avaliação ↓</pre>
           </div>
         </div>
 
-        <div class="sub"><span class="mono t">05 · d</span><h3>Os stories que repetem</h3></div>
+        <div class="sub"><span class="mono t">04 · c</span><h3>Os stories que repetem</h3></div>
         <p>Três coisas que voltam toda semana. Repetição é o que cria o hábito de abrir o
         seu story.</p>
         <div class="grid g3">
@@ -1538,7 +1481,7 @@ Avaliação ↓</pre>
             <span class="mono t">Terça</span>
             <h4>A pergunta da semana</h4>
             <p>O story mais importante da semana e o único dia marcado. Detalhado na
-            seção 06. É ele que alimenta o destaque Dúvidas.</p>
+            seção 05. É ele que alimenta o destaque Dúvidas.</p>
           </div>
           <div class="card">
             <span class="mono t">Uma vez por semana</span>
@@ -1548,7 +1491,7 @@ Avaliação ↓</pre>
           </div>
         </div>
 
-        <div class="sub"><span class="mono t">05 · e</span><h3>Perfis para observar</h3></div>
+        <div class="sub"><span class="mono t">04 · d</span><h3>Perfis para observar</h3></div>
         <p>Story expira em 24 horas, então não dá para deixar link. Dá para dizer onde
         olhar. Dez minutos numa terça, uma coisa só em cada um.</p>
 
@@ -1575,12 +1518,12 @@ Avaliação ↓</pre>
       </section>
 
       <!-- ======================= 06 ======================= -->
-      <section class="blk" id="s6">
+      <section class="blk" id="s5">
         <div class="bhead">
-          <span class="n">06</span>
+          <span class="n">05</span>
           <h2>A semana</h2>
           <p>Um dia marcado: a terça. O resto você encaixa onde der, desde que a semana
-          não acabe sem as três peças da seção 03.</p>
+          não acabe sem as três peças da seção 02.</p>
         </div>
 
         <div class="weekstrip">
@@ -1610,7 +1553,7 @@ Avaliação ↓</pre>
           A gravação com roteiro fica para um dia de consultório.</p>
         </div>
 
-        <div class="sub"><span class="mono t">06 · a</span><h3>A pergunta da semana</h3></div>
+        <div class="sub"><span class="mono t">05 · a</span><h3>A pergunta da semana</h3></div>
         <p>O único compromisso fixo. O paciente aprende o dia e volta. Resolve três coisas
         de uma vez: te dá pauta, te dá alcance e enche o destaque Dúvidas de graça.</p>
 
@@ -1648,9 +1591,9 @@ Avaliação ↓</pre>
       </section>
 
       <!-- ======================= 07 ======================= -->
-      <section class="blk" id="s7">
+      <section class="blk" id="s6">
         <div class="bhead">
-          <span class="n">07</span>
+          <span class="n">06</span>
           <h2>Os três primeiros segundos</h2>
           <p>Em três segundos a pessoa decide se continua. O assunto vem na primeira
           frase. O seu nome vem depois, para quem ficou.</p>
@@ -1687,9 +1630,9 @@ Avaliação ↓</pre>
       </section>
 
       <!-- ======================= 08 ======================= -->
-      <section class="blk" id="s8">
+      <section class="blk" id="s7">
         <div class="bhead">
-          <span class="n">08</span>
+          <span class="n">07</span>
           <h2>O que não fazer</h2>
           <p>A sua área é a mais fiscalizada da carteira. Parte disto é regra do conselho,
           parte é posicionamento. Na dúvida, pergunta antes de publicar.</p>
@@ -1780,15 +1723,15 @@ Avaliação ↓</pre>
               <span>Podem ficar, desde que exista autorização assinada para cada um. O que
               não pode, em hipótese nenhuma, é impulsionar.</span></li>
             <li><b>"Hamonização"</b>, sem o R, no campo Nome do perfil.
-              <span>É o primeiro item do checklist da seção 10.</span></li>
+              <span>É o primeiro item do checklist da seção 09.</span></li>
           </ul>
         </div>
       </section>
 
       <!-- ======================= 09 ======================= -->
-      <section class="blk" id="s9">
+      <section class="blk" id="s8">
         <div class="bhead">
-          <span class="n">09</span>
+          <span class="n">08</span>
           <h2>Música</h2>
           <p>Conta profissional não pega música famosa, e é de propósito. Entenda a regra
           uma vez e pare de procurar trend.</p>
@@ -1812,9 +1755,9 @@ Avaliação ↓</pre>
       </section>
 
       <!-- ======================= 10 ======================= -->
-      <section class="blk" id="s10">
+      <section class="blk" id="s9">
         <div class="bhead">
-          <span class="n">10</span>
+          <span class="n">09</span>
           <h2>Os primeiros 7 dias</h2>
           <p>Uma coisa por dia. Marque conforme for fazendo, que fica salvo neste
           navegador. Em uma semana o perfil está pronto.</p>
@@ -1836,14 +1779,14 @@ Avaliação ↓</pre>
           <div class="ck"><label>
             <input type="checkbox" data-k="j3">
             <span class="dy">Dia 2</span>
-            <span class="tx">Mandar para a Nold o contato de São Paulo
-              <span>Sem ele não dá para montar a página de bio, e o paciente de SP continua caindo no 71.</span></span>
+            <span class="tx">Trocar o link da bio pela página das duas cidades
+              <span>A página de bio já está no ar e já separa as duas cidades. Troque o link e o paciente de SP para de cair no 71.</span></span>
           </label></div>
           <div class="ck"><label>
             <input type="checkbox" data-k="j4">
             <span class="dy">Dia 2</span>
             <span class="tx">Comprar tripé, luz e microfone
-              <span>Os links estão na seção 04. Entre R$ 1.093 e R$ 2.048 no total, dependendo das opções.</span></span>
+              <span>Os links estão na seção 03. Entre R$ 1.093 e R$ 2.048 no total, dependendo das opções.</span></span>
           </label></div>
           <div class="ck"><label>
             <input type="checkbox" data-k="j5">
@@ -1872,7 +1815,7 @@ Avaliação ↓</pre>
           <div class="ck"><label>
             <input type="checkbox" data-k="j9">
             <span class="dy">Dia 7</span>
-            <span class="tx">Arquivar as duas peças da seção 08
+            <span class="tx">Arquivar as duas peças da seção 07
               <span>O post "DEPOIMENTO" e a arte com o seu nome em cima de HOF. Arquivar não apaga, só tira do perfil.</span></span>
           </label></div>
           <div class="ck"><label>
